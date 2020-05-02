@@ -171,7 +171,7 @@ test.txt
 ### 요약 
 
 | **`docker run <OPTIONS> <IMAGE>`** | 컨테이너를 다운로드하고 실행한다. |
-|---|---|
+|:---|:---|
 | **`docker images`** | 로컬에 다운로드된 도커 이미지 목록을 출력한다.|
 | **`docker ps <OPTIONS>`** | 도커 컨테이너 목록을 출력한다.|
 | **`docker start <OPTIONS> <CONTAINER>`** | 종료된 컨테이너를 다시 실행합니다. |
