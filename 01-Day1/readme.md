@@ -6,15 +6,15 @@
 
 - 도커(docker) : 컨테이너 기반의 오프소스 가상화 플랫폼이다. 
 
-  - 가상화 기술은 기존의 `vmware` 나 `VirtualBox` 로 많이 체험해보았을 거라고 예상됩니다. 이 기존 가상화 기술은 `OS` 자체를 가상화시켜서 사용할 수 있게 해주었는데, 가령 윈도우나 맥 OS 에서 `Ubuntu` 리눅스를 사용할 수 있게 해준 것입니다.
+가상화 기술은 기존의 `vmware` 나 `VirtualBox` 로 많이 체험해보았을 거라고 예상됩니다. 이 기존 가상화 기술은 `OS` 자체를 가상화시켜서 사용할 수 있게 해주었는데, 가령 윈도우나 맥 OS 에서 `Ubuntu` 리눅스를 사용할 수 있게 해준 것입니다.
 
-    ![](https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/vm-vs-docker.png)
+![](https://subicura.com/assets/article_images/2017-01-19-docker-guide-for-beginners-1/vm-vs-docker.png)
 
-  - 기존 가상화기술이 전체 `OS` 를 매번 새로 설치해야 하고 필요한 환경을 설정해주어야 하는 불편함이 있는 반면 도커는 위 그림과 같이 프로세스를 가상화시킵니다.
+기존 가상화기술이 전체 `OS` 를 매번 새로 설치해야 하고 필요한 환경을 설정해주어야 하는 불편함이 있는 반면 도커는 위 그림과 같이 프로세스를 가상화시킵니다.
 
-  - 그렇게 가상화된 프로세스가 도커에서 이미지와 컨테이너라는 개념으로 불립니다. 이미지란 컨테이너 실행에 필요한 모든 파일과 설정값을 갖고 있는 모델이고, 컨테이너란 이미지를 실행시킨 것입니다. 
+그렇게 가상화된 프로세스가 도커에서 이미지와 컨테이너라는 개념으로 불립니다. 이미지란 컨테이너 실행에 필요한 모든 파일과 설정값을 갖고 있는 모델이고, 컨테이너란 이미지를 실행시킨 것입니다. 
 
-    - 도커 이미지는 Docker hub 에 등록해서 다른 사람이 사용하게 할 수 있습니다.
+도커 이미지는 [도커 허브](https://hub.docker.com/)에 등록해서 다른 사람이 사용하게 할 수 있습니다.
 
 ## 도커의 중요성
 
@@ -66,11 +66,19 @@ $ docker run -it ubuntu
 
 이 명령어는 `ubuntu` 리눅스의 이미지가 로컬에 있는지 찾고, 없으면 [도커 허브](https://hub.docker.com/)에서 찾아서 다운로드한 다음 실행까지 시켜주는 명령어입니다. 그래서 처음 실행할 때는 이미지를 다운로드하느라 시간이 좀 걸리지만 그 다음에 실행할 때부터는 곧 바로 우분투 리눅스 컨테이너로 접속되죠.
 
-- <blockquote style="border: 2px solid; color:black; background:#E0E0E0;padding: 7px;
+<div style="font-weight:bold">
 
 - `docker run <OPTIONS> <IMAGE>` : 컨테이너를 다운로드하고 실행한다.
 
-  </blockquote>
+</div>
+
+  - 주어진 시간이 매우 제한되어 있기 때문에 옵션 `-it`, `--rm` 의 의미를 자세히 설명하지는 않겠습니다. 그 의미가 궁금하다면 스스로 찾아보시거나 위에 제가 추천해드린 블로그 연재글을 보는 걸 다시 한 번 강력하게 추천합니다!
+
+- <div style="font-weight:bold;
+
+- `docker run <OPTIONS> <IMAGE>` : 컨테이너를 다운로드하고 실행한다.
+
+</div>
 
   - 주어진 시간이 매우 제한되어 있기 때문에 옵션 `-it`, `--rm` 의 의미를 자세히 설명하지는 않겠습니다. 그 의미가 궁금하다면 스스로 찾아보시거나 위에 제가 추천해드린 블로그 연재글을 보는 걸 다시 한 번 강력하게 추천합니다!
 
@@ -112,11 +120,7 @@ ccss17/security-tutorial   latest              4cf8b475c7f7        3 months ago 
 
 저는 위와 같은 실행결과가 나오네요. 이 명령어는 로컬에 다운로드된 도커 이미지의 목록을 출력해줍니다. 
 
-- <blockquote style="border: 2px solid; color:black; background:#E0E0E0;padding: 7px;
-
 - `docker images` : 로컬에 다운로드된 도커 이미지 목록을 출력한다.
-
-  </blockquote>
 
 이제 다음 명령어를 실행해보세요.
 
@@ -129,11 +133,7 @@ CONTAINER ID        IMAGE                      COMMAND                  CREATED 
 
 제가 실행한 결과는 위와 같았는데 이미지 이름이 `ubuntu` 인걸로 보아 우리가 방금 실행했던 우분투 컨테이너라는 것을 알 수 있네요! `docker ps` 는 `docker images` 가 이미지 목록을 출력하는 것과 달리 컨테이너 목록을 출력합니다.
 
-- <blockquote style="border: 2px solid; color:black; background:#E0E0E0;padding: 7px;
-
 - `docker ps <OPTIONS>` : 도커 컨테이너 목록을 출력한다.
-
-  </blockquote>
 
   - `-a` 옵션을 붙히면 종료된 컨테이너도 출력된다.
 
@@ -147,11 +147,7 @@ $ docker start -ai 3a1998563b0e
 
 이때 중요한 것은 `3a1998563b0e` 의 값은 사람마다 다를 수 있습니다. 이 값에는 `docker ps -a` 명령어로 확인했었던 `ubuntu` 컨테이너의 아이디를 대입해주세요! 그러면 종료되었던 컨테이너를 재실행 할 수 있습니다. 
 
-- <blockquote style="border: 2px solid; color:black; background:#E0E0E0;padding: 7px;
-
 - `docker start <OPTIONS> <CONTAINER>` : 종료된 컨테이너를 다시 실행합니다.
-
-  </blockquote>
 
   - `-ai` 옵션으로 컨테이너에 접속하여 터미널처럼 사용할 수 있게 됩니다. 역시 시간관계상 자세한 설명은 하지 않고 그냥 컨테이너를 재실행할 때 터미널로 접속해서 사용할 수 있게 하는 옵션이라고만 하고 넘어가겠습니다. 
 
