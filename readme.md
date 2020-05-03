@@ -28,6 +28,12 @@ _"프로그래머의 기본"_ 라는 오만하기 짝이없는 이름을 달고 
 
   - 내가 쓰는 리눅스(아치)
 
+### [Day 2](02-Day2/readme.md)
+
+- (기존 GBC) Ch04 쉘 사용하기
+
+- CLI `zsh`, `vim`, `tmux`, `ssh`
+
 - `git`, `github` 사용법
 
   - 아직도 카톡이나 메일로 백업하니
@@ -35,12 +41,6 @@ _"프로그래머의 기본"_ 라는 오만하기 짝이없는 이름을 달고 
 - `markdown` 파일 사용법
 
 - `vscode` 사용법 
-
-### [Day 2](02-Day2/readme.md)
-
-- (기존 GBC) Ch04 쉘 사용하기
-
-- CLI `zsh`, `vim`, `tmux`, `ssh`
 
 ### [Day 3](03-Day3/readme.md)
 
