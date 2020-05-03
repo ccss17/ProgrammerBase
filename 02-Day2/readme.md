@@ -38,13 +38,13 @@ https://insights.stackoverflow.com/survey/2019
 
 <div align="center">
 
-<img src="https://user-images.githubusercontent.com/16812446/80894553-d163d880-8d16-11ea-854f-8f74fb11607f.png" width="300" height="300">
+<img src="https://user-images.githubusercontent.com/16812446/80894553-d163d880-8d16-11ea-854f-8f74fb11607f.png" width="400" height="400">
 
-<img src="https://user-images.githubusercontent.com/16812446/80895772-8c926e80-8d23-11ea-92b2-df4cfdd80085.png" width="300" height="300">
+<img src="https://user-images.githubusercontent.com/16812446/80895772-8c926e80-8d23-11ea-92b2-df4cfdd80085.png" width="400" height="400">
 
-<img src="https://user-images.githubusercontent.com/16812446/80895968-2528ee80-8d24-11ea-8bf5-070d5f503269.png" width="300" height="330">
+<img src="https://user-images.githubusercontent.com/16812446/80895968-2528ee80-8d24-11ea-8bf5-070d5f503269.png" width="400" height="430">
 
-<img src="https://user-images.githubusercontent.com/16812446/80895984-425dbd00-8d24-11ea-8d9d-dfdd6b7d09d1.png" width="300" height="330">
+<img src="https://user-images.githubusercontent.com/16812446/80895984-425dbd00-8d24-11ea-8d9d-dfdd6b7d09d1.png" width="400" height="430">
 
 </div>
 
