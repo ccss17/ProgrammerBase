@@ -219,6 +219,41 @@ Date:   Sun May 3 09:48:23 2020 +0000
 
 `github` 는 `git` 레포지토리를 다른 사람과 공유할 수 있는 플랫폼입니다. 이곳을 통하여 협업을 할 수 있기도 하고 자신이 관심있는 프로그램들이 무엇인지 알려줄 수도 있습니다. 최근에는 `github` 에 있는 그 사람의 레포지토리들을 포트폴리오로 취급하고 능력을 가늠해보기도 한다니까 `github` 에 레포지토리를 많이 공유하는 것이 좋을 것 같습니다.
 
+### github 가입 
+
+`github` 에 가입되어 있지 않으신 분들은 먼저 https://github.com/ 에서 가입을 해주세요.
+
+### github 레포지토리 생성
+
+![캡처](https://user-images.githubusercontent.com/16812446/80912176-21be5300-8d76-11ea-8098-4ca30a560c4c.PNG)
+
+가입한 다음에는 왼쪽 위에서 초록색 **"New"** 버튼을 찾아서 누르면 레포지토리 생성 창으로 넘어갑니다. 
+
+<img src="https://user-images.githubusercontent.com/16812446/80912222-706bed00-8d76-11ea-8c25-b90e9bed11a4.PNG" width=400 height=400>
+
+그러고 레포지토리 이름을 그냥 **"git-test"** 라고 하고 테스트용 레포지토리니까 다른 사람들이 못 보게 **"Private"** 에 체크를 하고 아래에 **"Create repository"** 버튼을 눌러 생성을 완료해줍시다.
+
+### git 에서 레포지토리 공유
+
+이제 좀 전에 우분투 컨테이너에서 만들었던 레포지토리를 여기에 공유해보겠습니다.
+
+```shell
+$ git remote add origin https://github.com/ccss17/git-test
+$ git push origin master
+```
+
+### 원격 레포지토리 가져오기
+
+(자신이 올린 레포지토리 갖고 오기)
+
+(레포지토리 업데이트 하기)
+
+(다른 사람이 올린 레포지토리 갖고 오기)
+
+## markdown 파일
+
+### readme.md 파일
+
 # VSCode
 
 ## VSCode 설치
