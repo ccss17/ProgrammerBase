@@ -30,7 +30,7 @@ https://insights.stackoverflow.com/survey/2019
 
 어제 배웠던 도커는 3위를 차지했는데 이는 스택오버플로우가 2019년에 처음으로 도커에 대한 설문조사를 한 결과라고 하니까 개발자들이 얼마나 도커에 주목하고 있는지 감이 오시나요? 설문조사 데뷔 첫해만에 맥OS, 안드로이드, AWS 등을 제치고 전세계 플랫폼 3위를 차지했다면 엄청나네요. 
 
-전세계 개발자들이 이런 플랫폼과 기술들에 왜 사랑에 빠졌는지 몰라서는 안됩니다. 막말로 제가 인력거꾼이 되려고 인력거 운전법을 열심히 배웠는데 자동차가 개발되었다면 최신 기술에 민감하지 못한 저는 시장에서 도태되고 말겠죠. 프로그래머 생태계는 그런 최신 기술이 역사상 유례없는 속도로 발전하고 있기 때문에 더욱 변화에 예민해져야만 합니다. 그런 의미에서 기존 **GBC Linux** 를 **GBC Programmer Base** 로 바꾸고 도커같은 트렌디한 기술들을 배워보지 않을 수가 없겠죠?
+전세계 개발자들이 이런 플랫폼과 기술들에 왜 사랑에 빠졌는지 몰라서는 안됩니다. (매니저 스크립트로 이전) 막말로 제가 인력거꾼이 되려고 인력거 운전법을 열심히 배웠는데 자동차가 개발되었다면 최신 기술에 민감하지 못한 저는 시장에서 도태되고 말겠죠. 프로그래머 생태계는 그런 최신 기술이 역사상 유례없는 속도로 발전하고 있기 때문에 더욱 변화에 예민해져야만 합니다. 그런 의미에서 기존 **GBC Linux** 를 **GBC Programmer Base** 로 바꾸고 도커같은 트렌디한 기술들을 배워보지 않을 수가 없겠죠?
 
 ## 개발자들이 가장 사랑하는 개발환경
 
@@ -38,13 +38,13 @@ https://insights.stackoverflow.com/survey/2019
 
 <div align="center">
 
-<img src="https://user-images.githubusercontent.com/16812446/80894553-d163d880-8d16-11ea-854f-8f74fb11607f.png" width="200" height="200">
+<img src="https://user-images.githubusercontent.com/16812446/80894553-d163d880-8d16-11ea-854f-8f74fb11607f.png" width="300" height="300">
 
-<img src="https://user-images.githubusercontent.com/16812446/80895772-8c926e80-8d23-11ea-92b2-df4cfdd80085.png" width="200" height="200">
+<img src="https://user-images.githubusercontent.com/16812446/80895772-8c926e80-8d23-11ea-92b2-df4cfdd80085.png" width="300" height="300">
 
-<img src="https://user-images.githubusercontent.com/16812446/80895968-2528ee80-8d24-11ea-8bf5-070d5f503269.png" width="200" height="230">
+<img src="https://user-images.githubusercontent.com/16812446/80895968-2528ee80-8d24-11ea-8bf5-070d5f503269.png" width="300" height="330">
 
-<img src="https://user-images.githubusercontent.com/16812446/80895984-425dbd00-8d24-11ea-8d9d-dfdd6b7d09d1.png" width="200" height="230">
+<img src="https://user-images.githubusercontent.com/16812446/80895984-425dbd00-8d24-11ea-8d9d-dfdd6b7d09d1.png" width="300" height="330">
 
 </div>
 
@@ -58,13 +58,13 @@ https://insights.stackoverflow.com/survey/2019
 
 > 참고 : https://git-scm.com/book/en/v2
 
-프로그래밍을 시작한지 얼만 안되었을 때 저는 카톡이나 메일에 소스코드를 백업해놓곤 했습니다. 하지만 이 방식에는 몇 가지 단점이 있습니다. 먼저 소스코드의 저장장소가 매우 산발적이고 일관성이 없어서 매번 찾기가 힘듭니다. 그리고 소스코드의 변화과정을 제대로 이해하기 힘듭니다. 하루는 그렇게 백업하는 것도 잊어버리고 백업을 하지 않았다가 실수로 소스코드를 삭제해버리고 말았지만 복구할 수 있는 방법이 전혀 없었습니다.
+코딩을 막 배우기 시작하면 종종 카톡이나 메일에 소스코드를 백업 하곤 합니다. 하지만 이 방식에는 몇 가지 단점이 있습니다. 먼저 소스코드의 저장장소가 매우 산발적이고 일관성이 없어서 매번 찾기가 힘듭니다. 그리고 소스코드의 변화과정을 제대로 이해하기 힘듭니다. 하루는 그렇게 백업하는 것도 잊어버리고 백업을 하지 않았다가 실수로 소스코드를 삭제해버리고 말았지만 복구할 수 있는 방법이 전혀 없었습니다.
 
 이런 문제는 개인 프로젝트보다 규모가 훨씬 큰 단체 프로젝트에서 더 심각해집니다. 누가 무엇을 고쳤는지, 소스코드 저장소가 어디에 있는지, 만약 누가 실수로 소스코드를 지워버렸을 때 복구를 할 수 없을 때 기업은 실질적인 금전적인 피해를 받게 됩니다. 
 
 이 문제를 해결하기 위해 나온 것이 버전 컨트롤 시스템(Version Control System) 입니다. 줄여서 VCS 는 단어 그대로 **"프로젝트의 버전을 손쉽게 다룰 수 있게 해주는 시스템"** 입니다. VCS 에는 여러 종류가 있지만 이제 우리는 그 중에서 가장 많이 사용되는 VCS 인 `git` 을 간단하게 알아보겠습니다. `git` 을 익히면 제가 위에서 설명한 문제들이 다 해결되는 것입니다!
 
-`git` 의 자세한 설명과 의미를 공부하기 위해서는 https://git-scm.com/book/en/v2 를 참고하거나 제가 그것을 읽고 블로그에 정리해둔 https://ccss17.github.io/git.html 을 참고하세요. 그리고 방학 때나 휴학을 했을 때 시간이 남으니까 `git` 의 `Branching` 기능까지 익혀두시길 **강력하게 강력하게** 추천합니다. 왜냐면 여러분이 개발자로 살아가는 이상 **어차피 언젠가는 `git Branching` 기능까지 알아야만 하기 때문**입니다. 
+`git` 의 자세한 설명과 의미를 공부하기 위해서는 https://git-scm.com/book/en/v2 를 참고해주세요. 그리고 방학 때나 휴학을 했을 때 시간이 남으니까 `git` 의 `Branching` 기능까지 익혀두시길 **강력하게 강력하게** 추천합니다. 왜냐면 여러분이 개발자로 살아가는 이상 **어차피 언젠가는 `git Branching` 기능까지 알아야만 하기 때문**입니다. 
 
 - **`git` : 가장 인기있고 자주 사용되는 VCS 이다.**
 
@@ -72,7 +72,7 @@ https://insights.stackoverflow.com/survey/2019
 
 ## git 설치
 
-만약 ~~없을 가능성이 높을테지만~~ 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `git` 를 설치할 수 있다고 믿겠습니다. ~~절대 설치법을 설명하기 귀찮아서 이러는 게 아닙니다.~~ 
+만약 ~~없을 가능성이 높을테지만~~ 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `git` 를 설치할 수 있다고 믿습니다. 
 
 ### Windows git 설치
 
@@ -144,13 +144,13 @@ Untracked files:
 ...
 ```
 
-`touch` 로 파일을 생성하고 `git status` 로 현재 `git` 레포지토리의 상태, 즉 디렉토리 내 파일들이 **untracked 상태, modified 상태, staged 상태, committed 상태** 중 어떤 상태인지 알아볼 수 있습니다.
+`git status` 로 현재 `git` 레포지토리의 상태, 즉 디렉토리 내 파일들이 **untracked 상태, modified 상태, staged 상태, committed 상태** 중 어떤 상태인지 알아볼 수 있습니다.
 
 - **`git status` : `git` 레포지토리의 상태를 출력한다.**
 
   - `-s` 옵션을 붙히면 간단하게 출력한다.
 
-실행 결과가 위와 같은데 금방 만든 `main.c` 이 `Untracked files` 인 걸로 보아 `untracked` 상태라는 것을 알 수 있습니다. 이 상태에 있는 파일들은 `git` 이 변경사항을 추적하면서 버전에 포함시키지 않습니다.
+실행 결과가 위와 같은데 금방 만든 `main.c` 가 `Untracked files` 인 걸로 보아 **untracked 상태**라는 것을 알 수 있습니다. 이 상태에 있는 파일들은 `git` 이 변경사항을 추적하면서 버전에 포함시키지 않습니다.
 
 `git` 이 이 파일을 추적하고 버전에 포함시키도록 하기 위해 다음 명령어를 실행해주세요.
 
@@ -163,7 +163,7 @@ Changes to be committed:
 	new file:   main.c
 ```
 
-이로써 `main.c` 가 `Changes to be committed`, 즉 `staged` 상태가 되었습니다. `staged` 상태는 이렇게 커밋이 되기로 예정된 파일을 의미합니다. 그리고 스테이징한다는 것은 파일을 `staged` 상태로 만든다는 것이죠.
+이로써 `main.c` 가 `Changes to be committed`, 즉 **staged 상태**가 되었습니다. **staged 상태**는 이렇게 커밋이 되기로 예정된 파일을 의미합니다. 그리고 스테이징한다는 것은 파일을 **staged 상태**로 만든다는 것이죠.
 
 - **`git add <FILE>` : `<FILE>` 을 커밋 예정 상태로 만듭니다.**
 
@@ -225,11 +225,15 @@ Date:   Sun May 3 09:48:23 2020 +0000
 
 ### github 레포지토리 생성
 
-![캡처](https://user-images.githubusercontent.com/16812446/80912176-21be5300-8d76-11ea-8098-4ca30a560c4c.PNG)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/80912176-21be5300-8d76-11ea-8098-4ca30a560c4c.PNG" >
+</div>
 
 가입한 다음에는 왼쪽 위에서 초록색 **"New"** 버튼을 찾아서 누르면 레포지토리 생성 창으로 넘어갑니다. 
 
-<img src="https://user-images.githubusercontent.com/16812446/80912222-706bed00-8d76-11ea-8c25-b90e9bed11a4.PNG" width=400 height=400>
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/80912222-706bed00-8d76-11ea-8c25-b90e9bed11a4.PNG" >
+</div>
 
 그러고 레포지토리 이름을 그냥 **"git-test"** 라고 하고 테스트용 레포지토리니까 다른 사람들이 못 보게 **"Private"** 에 체크를 하고 아래에 **"Create repository"** 버튼을 눌러 생성을 완료해줍시다.
 
@@ -258,7 +262,7 @@ $ git push origin master
 
 ## VSCode 설치
 
-만약 ~~없을 가능성이 높을테지만~~ 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `VSCode` 를 설치할 수 있다고 믿겠습니다. ~~절대 설치법을 설명하기 귀찮아서 이러는 게 아닙니다.~~ 
+만약 ~~없을 가능성이 높을테지만~~ 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `VSCode` 를 설치할 수 있다고 믿겠습니다.
 
 ### Windows 도커 설치
 
