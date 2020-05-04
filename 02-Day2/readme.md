@@ -6,9 +6,9 @@ GBC 첫번째 과정 **Programmer Base** 의 2일차 내용입니다.
 
 # 리눅스 교재 
 
-오늘 내용을 수월하게 이해하기 위해서는 Ch04 내용을 먼저 실습해보아야 합니다. 교재에서 다음 분량을 읽고 우분투 도커 컨테이너에서 실습해주세요. 사실 너무 열심히 읽지 않아도 됩니다. 즉, 막 외우려고 애쓰지 않아도 된다는 뜻입니다. 다만 꼭 "정독" 을 하시고 한번쯤 책에 있는 실습을 따라해주세요. 
+오늘 내용을 수월하게 이해하기 위해서는 고재의 **Chapter 04** 내용을 먼저 실습해보아야 합니다. 교재에서 다음 분량을 읽고 우분투 도커 컨테이너에서 실습해주세요. 사실 너무 열심히 읽지 않아도 됩니다. 즉, 막 외우려고 애쓰지 않아도 된다는 뜻입니다. 다만 꼭 "정독" 을 하시고 한번쯤 책에 있는 실습을 따라해주세요. 
 
-(제외) 라고 되어있는 파트는 시간절약을 위해 넘겨도 됩니다.
+**(옵션)** 라고 되어있는 파트는 시간절약을 위해 넘겨도 됩니다.
 
 ## Chapter 04
 
@@ -22,7 +22,7 @@ GBC 첫번째 과정 **Programmer Base** 의 2일차 내용입니다.
 
 - **220p ~ 229p 읽고 실습하기**
 
-  - 프롬프트 설정(제외), 환경 설정 파일
+  - 프롬프트 설정**(옵션)**, 환경 설정 파일
 
 ---
 
@@ -38,7 +38,7 @@ https://insights.stackoverflow.com/survey/2019
 
 왼쪽 카테고리를 보면 여러 항목에 대한 설문조사를 한 것이 보이는데 다음과 같이 **Technology** 분야가 메인 디쉬라고 볼 수 있을 것 같습니다.
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/16812446/80893957-ba6eb780-8d11-11ea-86c0-3570463f1a79.png" width="250" height="400"> </div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/16812446/80893957-ba6eb780-8d11-11ea-86c0-3570463f1a79.png" width="50%" height="auto"> </div>
 
 나머지 항목은 궁금하시면 더 살펴보셔도 되고 지금 이 시간에는 이 설문조사를 통해 전세계에서 가장 핫한 플랫폼과 에디터가 뭔지 알아보겠습니다.
 
@@ -46,9 +46,9 @@ https://insights.stackoverflow.com/survey/2019
 
 설문조사에서 **Platforms** 항목을 찾아보면 다음과 같은 설문결과를 볼 수 있습니다.
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/16812446/80894214-1e927b00-8d14-11ea-9a86-81051ab2c8c8.png" width="400" height="400"> </div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/16812446/80894214-1e927b00-8d14-11ea-9a86-81051ab2c8c8.png" width="50%" height="auto"> </div>
 
-개발자들에게 인기있는 플랫폼 1위는 역시나 **53.3%** 로 리눅스네요. 어제 배웠던 도커는 3위를 차지했는데 이는 스택오버플로우가 2019년에 처음으로 도커에 대한 설문조사를 한 결과라고 하니까 개발자들이 얼마나 도커에 주목하고 있는지 감이 오시나요? 전세계 개발자들이 이런 플랫폼과 기술들에 왜 사랑에 빠졌는지 몰라서는 안되기 때문에 꼭 배워봐야 합니다. (매니저 스크립트로 이전) 막말로 제가 인력거꾼이 되려고 인력거 운전법을 열심히 배웠는데 자동차가 개발되었다면 최신 기술에 민감하지 못한 저는 시장에서 도태되고 말겠죠. 프로그래머 생태계는 그런 최신 기술이 역사상 유례없는 속도로 발전하고 있기 때문에 더욱 변화에 예민해져야만 합니다. 그런 의미에서 기존 **GBC Linux** 를 **GBC Programmer Base** 로 바꾸고 도커같은 트렌디한 기술들을 배워보지 않을 수가 없겠죠?
+개발자들에게 인기있는 플랫폼 1위는 역시나 **53.3%** 로 리눅스네요. 어제 배웠던 도커는 3위를 차지했는데 이는 스택오버플로우가 2019년에 처음으로 도커에 대한 설문조사를 한 결과라고 하니까 개발자들이 얼마나 도커에 주목하고 있는지 감이 오시나요? 전세계 개발자들이 이런 플랫폼과 기술들에 왜 사랑에 빠졌는지 몰라서는 안되기 때문에 꼭 배워봐야 합니다. 
 
 ## 개발자들이 가장 사랑하는 개발환경
 
@@ -56,13 +56,13 @@ https://insights.stackoverflow.com/survey/2019
 
 <div align="center">
 
-<img src="https://user-images.githubusercontent.com/16812446/80894553-d163d880-8d16-11ea-854f-8f74fb11607f.png" width="50%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/80894553-d163d880-8d16-11ea-854f-8f74fb11607f.png" width="40%" height="auto">
 
-<img src="https://user-images.githubusercontent.com/16812446/80895772-8c926e80-8d23-11ea-92b2-df4cfdd80085.png" width="50%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/80895772-8c926e80-8d23-11ea-92b2-df4cfdd80085.png" width="40%" height="auto">
 
-<img src="https://user-images.githubusercontent.com/16812446/80895968-2528ee80-8d24-11ea-8bf5-070d5f503269.png" width="50%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/80895968-2528ee80-8d24-11ea-8bf5-070d5f503269.png" width="40%" height="auto">
 
-<img src="https://user-images.githubusercontent.com/16812446/80895984-425dbd00-8d24-11ea-8d9d-dfdd6b7d09d1.png" width="50%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/80895984-425dbd00-8d24-11ea-8d9d-dfdd6b7d09d1.png" width="40%" height="auto">
 
 </div>
 
@@ -86,11 +86,13 @@ https://insights.stackoverflow.com/survey/2019
 
 https://git-scm.com/book/en/v2
 
+https://ccss17.github.io/git.html
+
 를 참고해주세요. 그리고 방학 때나 휴학을 했을 때 시간이 남으니까 `git` 의 `Branching` 기능까지 익혀두시길 **강력하게** 추천합니다. 왜냐면 여러분이 개발자로 살아가는 이상 **어차피 언젠가는 `git Branching` 기능까지 알아야만 하기 때문**입니다. 
 
 - **`git` : 가장 인기있고 자주 사용되는 VCS 이다.**
 
-  - `git` 은 파일을 세 가지 상태 modified, staged, committed 로 관리한다.
+  - `git` 은 파일을 **untracked 상태, modified 상태, staged 상태, committed 상태**로 관리한다.
 
 ## git 설치
 
@@ -104,6 +106,15 @@ https://git-scm.com/book/en/v2
 
 1. [이 링크](https://git-scm.com/download/mac) 에서 `git` 설치파일을 다운로드 받아서 설치하세요.
 
+### git 설치 후 초기 설정
+
+`git` 을 설치한 후 가장 처음 해야 할 일은 초기 설정입니다. `<NAME>, <EMAIL>` 을 본인의 이름과 이메일로 치환하여 다음 명령어를 입력해주세요.
+
+```shell
+$ git config --global user.name "<NAME>"
+$ git config --global user.email "<EMAIL>"
+```
+
 ## git 이 파일을 관리하는 상태
 
 `git` 은 다음과 같은 상태로 파일들을 관리합니다. 이 상태들의 의미와 원리를 이해하면 거칠게 말해서 `git` 을 이해했다고 볼 수 있습니다. 
@@ -116,23 +127,12 @@ https://git-scm.com/book/en/v2
 
 - **committed 상태 : `git` 데이터베이스에 하나의 버전으로 저장된 상태이다.**
 
-`git` 을 실제로 실습해보면서 이 상태들이 뭔지 알아보겠습니다. 먼저 우분투 컨테이너에 접속한 상태에서 다음 명령어들을 실행하세요.
+아직은 이게 뭔 소린지 감이 안오네요. `git` 을 실제로 실습해보면서 이 상태들이 어떤 건지 알아보겠습니다. 먼저 우분투 컨테이너에 접속한 상태에서 다음 명령어들을 실행하세요.
 
 ```shell
 $ cd                  # 홈 디렉토리로 이동
 $ mkdir git-test      # 디렉토리 생성
 $ cd git-test
-```
-
-그러면 홈 디렉토리 밑에 `git-test` 디렉토리에 위치하게 됩니다.
-
-### git 설치 후 초기 설정
-
-`git` 을 설치한 후 가장 처음 해야 할 일은 초기 설정입니다. `<NAME>, <EMAIL>` 을 본인의 이름과 이메일로 치환하여 다음 명령어를 입력해주세요.
-
-```shell
-$ git config --global user.name "<NAME>"
-$ git config --global user.email "<EMAIL>"
 ```
 
 ### git 레포지토리 생성하기
@@ -204,6 +204,8 @@ nothing to commit, working tree clean
 
   - `git commit -m <MESSAGE>` 로 커밋 메시지를 바로 입력할 수 있다.
 
+이렇게 커밋된 스냅샷은 `git` 데이터베이스에 안전하고 일관되게 보관됩니다. 그래서 언제든지 이 커밋들을 열람할 수 있고 복원도 할 수 있고 그때 당시의 파일들이 어떤 상태였는지도 확인할 수 있습니다. 다만, 그렇기 때문에 커밋 메시지를 상당히 의미있게 작성하는 것이 중요합니다. 왜냐하면 나중에 커밋들을 살펴볼 떄 커밋 메시지에 의존하여 이때 당시의 프로젝트가 어떤 기능이 추가되고 변경되었는지 판단할 수 있기 때문입니다.
+
 ### 변경된 파일 커밋하기 (modified 상태 &rarr; staged 상태 &rarr; committed 상태)
 
 코딩을 하다보면 파일을 변경하지 않을 수 없겠죠? 그렇게 새로운 기능이나 변경사항을 추가하면 또 다시 커밋해서 하나의 버전으로 만들어두세요. 커밋은 레포지토리에 유의미한 크기의 기능이 추가되었을 때, 또는 레포지토리에 유의미한 변경이 이루어졌을 때 하는 것이 좋지만 처음에는 일단 그냥 "커밋을 많이 하는 것이 좋다" 라는 마인드로 `git` 을 사용해보세요. 그래야만 파일이 변경된 기록이 자주 남겨져서 복원할 시점, 변경기록을 살펴볼 스냅샷들이 많아지거든요.
@@ -218,7 +220,7 @@ $ git add .
 $ git commit -m "My memo file"
 ```
 
-위 명령어를 입력함으로써 `test.txt` 에 헤더를 추가하고 스테이징한 후 커밋하여 또 하나의 버전으로 만들어보세요.
+위 명령어를 입력함으로써 `test.txt` 에 데이터를 추가하고 스테이징한 후 커밋하여 또 하나의 버전으로 만들어보세요.
 
 ### 커밋 기록 보기 
 
@@ -230,14 +232,16 @@ commit 9a58815ccb87fb516feb22e02a55232cf45da7d5 (HEAD -> master)
 Author: awef <awef@naver.com>
 Date:   Sun May 3 09:48:23 2020 +0000
 
-    e
+    My memo file
 ```
 
-저는 위와 같은 결과가 나오네요. ~~테스트 용이라 커밋메시지를 대충 입력했네요.~~ 초기 설정시 입력하였던 이름과 이메일이 커밋 기록에 남기 때문에 누가 변경한 시점부터 프로젝트가 잘못되었는지, 또는 잘되었는지 확인하는 용도로도 사용할 수 있어서 편리합니다.
+저는 위와 같은 결과가 나오네요. 초기 설정시 입력하였던 이름과 이메일이 커밋 기록에 남기 때문에 누가 변경한 시점부터 프로젝트가 잘못되었는지, 또는 잘되었는지 확인하는 용도로도 사용할 수 있어서 편리합니다.
 
 - **`git log` : 커밋 기록을 출력한다.**
 
-  - `git log -2` 는 최근 커밋 `2` 개를 보여준다. 
+  - `git log -2` : 최근 커밋 `2` 개를 보여준다. 
+
+  - `git log -p` : 변경 사항도 출력하면서 커밋 기록을 보여준다.
 
 # github
 
@@ -329,7 +333,7 @@ very important message
 
 **5일**이라는 매우 제한된 시간 때문에 `Branch` 라는 개념을 이 시간에 설명하지는 않겠지만 `git` 은 레포지토리의 변경사항을 평행적으로 관리하기 위하여 여러개의 브랜치 즉, 가지들을 생성합니다. 가령 프로젝트에 새로운 기능을 추가하고 싶은데 그 기능이 프로젝트 전체와 잘 어울리는지 장담할 수가 없으니까 새로운 브랜치를 만들어서 마치 평행세계처럼 완전히 새로운 레포지토리에서 작업하는 것입니다.
 
-`git init` 으로 디렉토리가 `git` 이 관리하는 레포지토리가 될 때 `git` 은 자동적으로 현재 브랜치를 `master` 브랜치로 만들기 때문에, `git pull origin master` 라고 하면 `origin` 이라는 원격 레포지토리의 내용을 가져와서 `master` 브랜치로 병합해라는 뜻이 되는 것입니다.
+`git init` 으로 디렉토리가 `git` 이 관리하는 레포지토리가 될 때 `git` 은 자동적으로 현재 브랜치를 `master` 브랜치로 만들기 때문에, `git pull origin master` 라고 하면 **"`origin` 이라는 원격 레포지토리의 내용을 가져와서 `master` 브랜치로 병합해라"**는 뜻이 되는 것입니다.
 
 그래서 방금 말했던 새로운 브랜치에서 시험중이었던 기능이 충분히 검증이 되면 `master` 브랜치로 병합을 하게 되는 것입니다. 
 
