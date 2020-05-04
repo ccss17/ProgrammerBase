@@ -347,7 +347,7 @@ very important message
 
 **5일**이라는 매우 제한된 시간 때문에 `Branch` 라는 개념을 이 시간에 설명하지는 않겠지만 `git` 은 레포지토리의 변경사항을 평행적으로 관리하기 위하여 여러개의 브랜치 즉, 가지들을 생성합니다. 가령 프로젝트에 새로운 기능을 추가하고 싶은데 그 기능이 프로젝트 전체와 잘 어울리는지 장담할 수가 없으니까 새로운 브랜치를 만들어서 마치 평행세계처럼 완전히 새로운 레포지토리에서 작업하는 것입니다.
 
-`git init` 으로 디렉토리가 `git` 이 관리하는 레포지토리가 될 때 `git` 은 자동적으로 현재 브랜치를 `master` 브랜치로 만들기 때문에, `git pull origin master` 라고 하면 **"`origin` 이라는 원격 레포지토리의 내용을 가져와서 `master` 브랜치로 병합해라"**는 뜻이 되는 것입니다.
+`git init` 으로 디렉토리가 `git` 이 관리하는 레포지토리가 될 때 `git` 은 자동적으로 현재 브랜치를 `master` 브랜치로 만들기 때문에, `git pull origin master` 라고 하면 **`origin` 이라는 원격 레포지토리의 내용을 가져와서 `master` 브랜치로 병합해라**는 뜻이 되는 것입니다.
 
 그래서 방금 말했던 새로운 브랜치에서 시험중이었던 기능이 충분히 검증이 되면 `master` 브랜치로 병합을 하게 되는 것입니다. 
 
@@ -432,7 +432,7 @@ git init
 
 ![2020-05-04_16-45](https://user-images.githubusercontent.com/16812446/80945381-abc5f480-8e26-11ea-9e78-ed054d64fbe2.png)
 
-그러면 위와 같이 여러가지 커밋 기능들이 있는데 **Git: Commit All** 에 커서를 포커싱하고 <kbd>Enter</kbd> 를 눌러주세요. 그러면 `VSCode`가 변경된 모든 파일을 자동으로 스테이징하고 커밋합니다.
+그러면 위와 같이 여러가지 커밋 기능들이 있는데 **Git: Commit All** 에 커서를 포커싱하고 <kbd>Enter</kbd> 를 눌러주세요. 그러면 `VSCode`가 변경된 모든 파일을 지알아서 스테이징하고 커밋합니다.
 
 - **<kbd>Git: Commit All</kbd> : `VSCode` 명령 팔레트 기능으로써 변경된 모든 파일을 자동으로 스테이징하고 커밋한다.**
 
@@ -447,7 +447,7 @@ git init
 
 ### 원격 레포지토리 등록하기
 
-이제 레포지토리를 `Github` 에 공유하기 위하여 원격 레포지토리를 등록해보겠습니다. 먼저 `Github` 에 `git-test` 라는 원격레포지토리를 만들었었는데, 이제는 `git-test2` 라는 레포지토리를 만들고 오세요.
+이제 레포지토리를 `Github` 에 공유하기 위하여 원격 레포지토리를 등록해보겠습니다. 앞서 `Github` 에 `git-test` 라는 원격레포지토리를 만들었었는데, 이제는 `git-test2` 라는 레포지토리를 만들고 오세요.
 
 다 만들었다면 **명령 팔레트**를 열고 <kbd>git add</kbd> 만 쳐주세요. 그러면 다음 그림과 같이
 
@@ -474,3 +474,37 @@ git remote add origin https://github.com/<USER>/git-test2
 - **<kbd>Git: Push to...</kbd> : `VSCode` 명령 팔레트 기능으로써 원격 레포지토리로 변경사항을 업데이트한다.**
 
 그러면 `VSCode` 가 지알아서 `git push origin master` 기능을 수행해줍니다. 각자의 **`https://github.com/<USER>/git-test2`** 로 들어가서 확인해보세요!
+
+### 원격 레포지토리 가져오고 수정하기
+
+이제 우리가 올려뒀던 원격 레포지토리를 가져와보겠습니다. **명령 팔레트** 를 열어서 **git clone** 을 쳐보세요. 
+
+![2020-05-04_17-08](https://user-images.githubusercontent.com/16812446/80946803-d06f9b80-8e29-11ea-951b-198532416531.png)
+
+그러면 위와 같이 <kbd>Git: Clone</kbd> 이 나오는데 <kbd>Enter</kbd> 를 누르면 원격 레포지토리의 **URL** 을 입력하라는 창이 뜨죠. 그러면 각자의 **`https://github.com/<USER>/git-test2`** 를 입력하면 됩니다.
+
+```shell
+git clone https://github.com/<USER>/git-test2
+```
+
+과 완전 똑같은 기능을 하는 것이죠. 입력하면 디렉토리를 선택하는 창이 뜨는데 원하는 곳으로 선택하면 됩니다.
+
+![2020-05-04_17-15](https://user-images.githubusercontent.com/16812446/80947291-cc904900-8e2a-11ea-9a34-02a055adf6e3.png)
+
+그리고 위와 같이 <kbd>Open</kbd>, <kbd>Open in New Window</kbd> 가 뜨는데 지금은 후자를 선택해주세요.
+
+- **<kbd>Git: Clone</kbd> : `VSCode` 명령 팔레트 기능으로써 원격 레포지토리를 로컬로 가져온다.**
+
+이제 다음과 같이 `test.txt` 에 `VScode 편하다. GBC 재밌다` 를 치고 <kbd>Ctrl+S</kbd> 를 눌러 저장하세요.
+
+![2020-05-04_17-17](https://user-images.githubusercontent.com/16812446/80947401-137e3e80-8e2b-11ea-8e59-d79f9789897a.png)
+
+그렇게 한 다음 지금까지 해온대로 **명령 팔레트** 에서 <kbd>Git: Commit All</kbd>, <kbd>Git: Push to...</kbd> 을 차례로 실행하세요. 그러면 원격 레포지토리로 업데이트됩니다. 너무 빠르고 쉽게 되죠?
+
+### 원격 레포지토리로부터 업데이트하기
+
+이제 `text.txt` 에 아무런 내용이 없는 원래 레포지토리를 열어주세요. 그리고 **명령 팔레트**에서 **git pull** 만 치면 다음과 같이 <kbd>Git: Pull from...</kbd> 이 뜨는데 시원하게 <kbd>Enter</kbd> 를 쳐주세요.
+
+![2020-05-04_17-19](https://user-images.githubusercontent.com/16812446/80947604-7a9bf300-8e2b-11ea-8064-26e3a9bf53aa.png)
+
+그러면 원격 레포지토리를 선택할 수 있는 창이 뜨는데 어차피 `origin` 밖에 없으니까 <kbd>Enter</kbd> 를 다시 한 번 눌러주시면 `VSCode` 가 지알아서 `git pull origin master` 를 실행하면서 `text.txt` 를 업데이트합니다.
