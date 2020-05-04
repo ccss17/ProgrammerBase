@@ -38,7 +38,7 @@ https://insights.stackoverflow.com/survey/2019
 
 왼쪽 카테고리를 보면 여러 항목에 대한 설문조사를 한 것이 보이는데 다음과 같이 **Technology** 분야가 메인 디쉬라고 볼 수 있을 것 같습니다.
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/16812446/80893957-ba6eb780-8d11-11ea-86c0-3570463f1a79.png" width="50%" height="auto"> </div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/16812446/80893957-ba6eb780-8d11-11ea-86c0-3570463f1a79.png" width="30%" height="auto"> </div>
 
 나머지 항목은 궁금하시면 더 살펴보셔도 되고 지금 이 시간에는 이 설문조사를 통해 전세계에서 가장 핫한 플랫폼과 에디터가 뭔지 알아보겠습니다.
 
@@ -46,7 +46,7 @@ https://insights.stackoverflow.com/survey/2019
 
 설문조사에서 **Platforms** 항목을 찾아보면 다음과 같은 설문결과를 볼 수 있습니다.
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/16812446/80894214-1e927b00-8d14-11ea-9a86-81051ab2c8c8.png" width="50%" height="auto"> </div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/16812446/80894214-1e927b00-8d14-11ea-9a86-81051ab2c8c8.png" width="40%" height="auto"> </div>
 
 개발자들에게 인기있는 플랫폼 1위는 역시나 **53.3%** 로 리눅스네요. 어제 배웠던 도커는 3위를 차지했는데 이는 스택오버플로우가 2019년에 처음으로 도커에 대한 설문조사를 한 결과라고 하니까 개발자들이 얼마나 도커에 주목하고 있는지 감이 오시나요? 전세계 개발자들이 이런 플랫폼과 기술들에 왜 사랑에 빠졌는지 몰라서는 안되기 때문에 꼭 배워봐야 합니다. 
 
