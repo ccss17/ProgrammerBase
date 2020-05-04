@@ -351,7 +351,7 @@ very important message
 
 그래서 방금 말했던 새로운 브랜치에서 시험중이었던 기능이 충분히 검증이 되면 `master` 브랜치로 병합을 하게 되는 것입니다. 
 
-# 요약 
+# `git` 요약 
 
 | 파일 상태 | 의미 |
 |:---|:---|
@@ -372,17 +372,19 @@ very important message
 |**`git clone <URL> <NAME>`** | `<URL>` 의 원격 레포지토리를 가져와서 `<NAME>` 디렉토리에 복제한다.
 |**`git pull <REMOTE> <BRANCH>`** | `<REMOTE>` 의 원격 레포지토리를 가져온 후 `<BRANCH>` 에 병합한다.
 
+---
+
 # VSCode
 
 ## VSCode 설치
 
 만약 ~~없을 가능성이 높을테지만~~ 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `VSCode` 를 설치할 수 있다고 믿습니다.
 
-### Windows 도커 설치
+### Windows 설치
 
 1. [이 링크](https://code.visualstudio.com/docs/?dv=win64user) 에서 `VSCode` 설치파일을 다운로드 받아서 설치하세요.
 
-### MacOS 도커 설치
+### MacOS 설치
 
 1. [이 링크](https://code.visualstudio.com/docs/?dv=osx) 에서 `VSCode` 설치파일을 다운로드 받아서 설치하세요.
 
@@ -503,8 +505,21 @@ git clone https://github.com/<USER>/git-test2
 
 ### 원격 레포지토리로부터 업데이트하기
 
-이제 `text.txt` 에 아무런 내용이 없는 원래 레포지토리를 열어주세요. 그리고 **명령 팔레트**에서 **git pull** 만 치면 다음과 같이 <kbd>Git: Pull from...</kbd> 이 뜨는데 시원하게 <kbd>Enter</kbd> 를 쳐주세요.
+이제 원래의 레포지토리, 즉 `text.txt` 에 아무런 내용이 없는 원래의 레포지토리를 열어주세요. 그리고 **명령 팔레트**에서 **git pull** 만 치면 다음과 같이 <kbd>Git: Pull from...</kbd> 이 뜨는데 시원하게 <kbd>Enter</kbd> 를 쳐주세요.
 
 ![2020-05-04_17-19](https://user-images.githubusercontent.com/16812446/80947604-7a9bf300-8e2b-11ea-8064-26e3a9bf53aa.png)
 
 그러면 원격 레포지토리를 선택할 수 있는 창이 뜨는데 어차피 `origin` 밖에 없으니까 <kbd>Enter</kbd> 를 다시 한 번 눌러주시면 `VSCode` 가 지알아서 `git pull origin master` 를 실행하면서 `text.txt` 를 업데이트합니다.
+
+# `VSCode` 요약 
+
+|`VSCode`기능|하는 일|
+|:---|:---|
+|**<kbd>Ctrl+Shift+p</kbd>** | `VSCode` 에서 명령 팔레트를 연다.|
+|**<kbd>Git: Initialize Repository</kbd>** | `VSCode` 명령 팔레트 기능으로써 디렉토리를 `git` 레포지토리로 자동으로 초기화한다.|
+|**<kbd>Ctrl+N</kbd>** | `VSCode` 에서 새 파일을 만든다.|
+|**<kbd>Ctrl+S</kbd>** | `VSCode` 에서 파일을 저장한다.|
+|**<kbd>Git: Commit All</kbd>** | `VSCode` 명령 팔레트 기능으로써 변경된 모든 파일을 자동으로 스테이징하고 커밋한다.|
+|**<kbd>Git: Add Remote</kbd>** | `VSCode` 명령 팔레트 기능으로써 원격 레포지토리를 등록한다.|
+|**<kbd>Git: Push to...</kbd>** | `VSCode` 명령 팔레트 기능으로써 원격 레포지토리로 변경사항을 업데이트한다.|
+|**<kbd>Git: Clone</kbd>** | `VSCode` 명령 팔레트 기능으로써 원격 레포지토리를 로컬로 가져온다.|
