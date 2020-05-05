@@ -189,7 +189,7 @@ test.txt
 $ cd              # 홈 디렉토리로 이동합니다.
 $ unminimize      # "Would you like to continue? [y/N]" 이 뜨면 'y' 를 입력하세요!
 $ apt update
-$ apt install -y man file git
+$ apt install -y man file git vim
 ```
 
 우분투 도커 이미지는 오버헤드를 극한으로 최소화하기 위하여 필요없는 패키지를 과감히 삭제해버린 매우 가벼운 운영체제입니다. 따라서 원래의 우분투 환경과 비슷하게 만들어서 실습을 원활하게 할 수 있기 위하여 필요 패키지를 설치해주어야 합니다.
