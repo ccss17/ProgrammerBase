@@ -49,12 +49,6 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 문장이 모여있는 전체파일을 이동하는 횟수를 통틀어서 n<sup>3</sup> 번
  
-문자가 모여있는 단어를 이동하는 횟수를 통틀어서 N 번,
-
-단어가 모여있는 문장을 이동하는 횟수를 통틀어서 N<sup>2</sup> 번,
-
-문장이 모여있는 전체파일을 이동하는 횟수를 통틀어서 N<sup>3</sup> 번
- 
 이라고 가정하겠습니다.
 
 그 전에 우분투 도커 컨테이너에 접속하셔서 
@@ -88,9 +82,9 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 |:---:|:---:|:---:|
 | 입력하기 | | `i` | 
 | 다음 글자에 입력하기 | <kbd>&rarr;</kbd> | `a` | 
-| 다음 행에 입력하기 | <kbd>&rarr;</kbd> × `N`<sup>2</sup> + <kbd>Enter</kbd> | `o` | 
-| 이전 행에 입력하기 | <kbd>&uarr;</kbd> + <kbd>&rarr;</kbd> × `N`<sup>2</sup> + <kbd>Enter</kbd> | `O` | 
-| 문장 마지막에 입력하기 | <kbd>&rarr;</kbd> × N<sup>2</sup> | `A` | 
+| 다음 행에 입력하기 | <kbd>&rarr;</kbd> × `n`<sup>2</sup> + <kbd>Enter</kbd> | `o` | 
+| 이전 행에 입력하기 | <kbd>&uarr;</kbd> + <kbd>&rarr;</kbd> × `n`<sup>2</sup> + <kbd>Enter</kbd> | `O` | 
+| 문장 마지막에 입력하기 | <kbd>&rarr;</kbd> × n<sup>2</sup> | `A` | 
 | 문장 처음에 입력하기 | <kbd>&larr;</kbd> × n<sup>2</sup> | `I` | 
 | 문장 처음에 입력하기 | <kbd>&larr;</kbd> × n <sup>2</sup> | `I` | 
 
@@ -99,17 +93,17 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
 | 지우기 | <kbd>Backspace</kbd> 또는 <kbd>Delete</kbd> | `x` | 
-| 단어 지우기 | <kbd>Backspace</kbd> × N | `dw` | 
-| 문장 지우기 | <kbd>Backspace</kbd> × N | `dd` | 
-| 커서로부터 문장 끝까지 지우기 | <kbd>Delete</kbd> × N <sup>2</sup> | `D` | 
+| 단어 지우기 | <kbd>Backspace</kbd> × n | `dw` | 
+| 문장 지우기 | <kbd>Backspace</kbd> × n | `dd` | 
+| 커서로부터 문장 끝까지 지우기 | <kbd>Delete</kbd> × n<sup>2</sup> | `D` | 
 
 ### 지우고 편집하기
 
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
 | 한 글자 지우고 편집하기 | <kbd>Backspace</kbd> | `r` | 
-| 단어 지우고 편집하기 | <kbd>Backspace</kbd> × N | `cw` | 
-| 커서로부터 문장 끝까지 지우고 편집하기 | <kbd>Delete</kbd> × N <sup>2</sup> | `C` | 
+| 단어 지우고 편집하기 | <kbd>Backspace</kbd> × n | `cw` | 
+| 커서로부터 문장 끝까지 지우고 편집하기 | <kbd>Delete</kbd> × n <sup>2</sup> | `C` | 
 | 문장에서 `<OLD>` 를 `<NEW>` 로 치환하기 |  | `:s/<OLD>/<NEW>` | 
 | 전체 파일에서 `<OLD>` 를 `<NEW>` 로 치환하기 |  | `:s/<OLD>/<NEW>/g` | 
 
@@ -119,11 +113,11 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 |:---:|:---:|:---:|
 | 오른쪽 단어로 이동 | <kbd>Ctrl</kbd> + <kbd>&rarr;</kbd> | `e` | 
 | 왼쪽 단어로 이동 | <kbd>Ctrl</kbd> + <kbd>&larr;</kbd> | `b` | 
-| 문장의 처음으로 이동 | <kbd>&larr;</kbd> × N <sup>2</sup>  | `0` | 
-| 문장의 마지막으로 이동 | <kbd>&rarr;</kbd> × N <sup>2</sup>  | `$` | 
-| 화면의 처음으로 이동 | <kbd>&uarr;</kbd> × N <sup>3</sup>  | `H` | 
+| 문장의 처음으로 이동 | <kbd>&larr;</kbd> × n<sup>2</sup>  | `0` | 
+| 문장의 마지막으로 이동 | <kbd>&rarr;</kbd> × n<sup>2</sup>  | `$` | 
+| 화면의 처음으로 이동 | <kbd>&uarr;</kbd> × n<sup>3</sup>  | `H` | 
 | 화면의 가운데로 이동 |  | `M` | 
-| 화면의 마지막으로 이동 | <kbd>&darr;</kbd> × N <sup>3</sup>  | `L` | 
+| 화면의 마지막으로 이동 | <kbd>&darr;</kbd> × n<sup>3</sup>  | `L` | 
 
 ### 취소
 
@@ -137,32 +131,32 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
-| 드래그 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × N | `v` | 
+| 드래그 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × n | `v` | 
 
 ### 복사하기
 
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
-| 단어 복사하기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × N 🠲 <kbd>Ctrl</kbd> + <kbd>c</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `yw` 🠲  `p` | 
-| 문장 복사하기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × N <sup>2</sup> 🠲 <kbd>Ctrl</kbd> + <kbd>c</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `yy` 🠲  `p` | 
-| 특정 영역 복사하기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × N 🠲 <kbd>Ctrl</kbd> + <kbd>c</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `v` 🠲 `y` 🠲 `p` | 
+| 단어 복사하기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × n 🠲 <kbd>Ctrl</kbd> + <kbd>c</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `yw` 🠲  `p` | 
+| 문장 복사하기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × n<sup>2</sup> 🠲 <kbd>Ctrl</kbd> + <kbd>c</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `yy` 🠲  `p` | 
+| 특정 영역 복사하기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × n<sup>2</sup> 🠲 <kbd>Ctrl</kbd> + <kbd>c</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `v` 🠲 `y` 🠲 `p` | 
 
 ### 잘라내기
 
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
 | 한 글자 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `x` 🠲  `p` | 
-| 단어 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × N 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `dw` 🠲  `p` | 
-| 문장 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × N <sup>2</sup> 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `dd` 🠲  `p` | 
-| 특정 영역 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × N 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `v` 🠲 `x` 🠲 `p` | 
+| 단어 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × n 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `dw` 🠲  `p` | 
+| 문장 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × n<sup>2</sup> 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `dd` 🠲  `p` | 
+| 특정 영역 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × n<sup>2</sup> 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `v` 🠲 `x` 🠲 `p` | 
 
 ### 화면 밖으로의 커서 이동 
 
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
-| 파일의 맨 마지막으로 이동 | <kbd>&darr;</kbd> × N <sup>3</sup> | `G` | 
-| 파일의 맨 처음으로 이동 | <kbd>&uarr;</kbd> × N <sup>3</sup> | `gg` | 
-| `<N>` 번째 행으로 이동 | <kbd>&uarr;</kbd> × N <sup>3</sup> 또는 <kbd>&darr;</kbd> × N <sup>3</sup> | `<N>gg` | 
+| 파일의 맨 마지막으로 이동 | <kbd>&darr;</kbd> × n<sup>3</sup> | `G` | 
+| 파일의 맨 처음으로 이동 | <kbd>&uarr;</kbd> × n<sup>3</sup> | `gg` | 
+| `<N>` 번째 행으로 이동 | <kbd>&uarr;</kbd> × n<sup>3</sup> 또는 <kbd>&darr;</kbd> × n<sup>3</sup> | `<N>gg` | 
 
 ### 찾기
 
@@ -180,12 +174,12 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
-| 화면을 한 행만큼 아래로 이동 | <kbd>&darr;</kbd> × N <sup>2</sup> | <kbd>Ctrl</kbd> + `e` | 
-| 화면을 한 행만큼 위로 이동 | <kbd>&uarr;</kbd> × N <sup>2</sup> | <kbd>Ctrl</kbd> + `y` | 
-| 화면을 반 페이지만큼 아래로 이동 | <kbd>&darr;</kbd> × N <sup>2</sup> | <kbd>Ctrl</kbd> + `d` | 
-| 화면을 반 페이지만큼 위로 이동 | <kbd>&uarr;</kbd> × N <sup>2</sup> | <kbd>Ctrl</kbd> + `u` | 
-| 화면을 한 페이지만큼 아래로 이동 | <kbd>&darr;</kbd> × N <sup>2</sup> | <kbd>Ctrl</kbd> + `f` | 
-| 화면을 한 페이지만큼 위로 이동 | <kbd>&uarr;</kbd> × N <sup>2</sup> | <kbd>Ctrl</kbd> + `b` | 
+| 화면을 한 행만큼 아래로 이동 | <kbd>&darr;</kbd> × n<sup>2</sup> | <kbd>Ctrl</kbd> + `e` | 
+| 화면을 한 행만큼 위로 이동 | <kbd>&uarr;</kbd> × n<sup>2</sup> | <kbd>Ctrl</kbd> + `y` | 
+| 화면을 반 페이지만큼 아래로 이동 | <kbd>&darr;</kbd> × n<sup>2</sup> | <kbd>Ctrl</kbd> + `d` | 
+| 화면을 반 페이지만큼 위로 이동 | <kbd>&uarr;</kbd> × n<sup>2</sup> | <kbd>Ctrl</kbd> + `u` | 
+| 화면을 한 페이지만큼 아래로 이동 | <kbd>&darr;</kbd> × n<sup>2</sup> | <kbd>Ctrl</kbd> + `f` | 
+| 화면을 한 페이지만큼 위로 이동 | <kbd>&uarr;</kbd> × n<sup>2</sup> | <kbd>Ctrl</kbd> + `b` | 
 
 ### 커서를 기준으로 화면 이동
 
