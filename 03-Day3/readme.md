@@ -26,7 +26,7 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 하지만 `vim` 은 단축키가 **매우 많아서** 다양한 상황에 적용되는 단축키의 조합이 단순해집니다. 그래서 `vim` 을 사용하면 코딩할 때 키보드를 치는 횟수가 압도적으로 줄어듭니다. 다음 그래프와 같이 단축키 개수가 많으면 익혀야 할 단축키가 많은 대신 입력 회수가 줄어들고, 단축키 개수가 적으면 입력 회수가 많아집니다!
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16812446/80955192-ce153d80-8e39-11ea-99dd-3b940f5b69db.png" width="50%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/81026898-b16b1b00-8eb6-11ea-89fa-3503770b57d4.png" width="50%" height="auto">
 </div>
 
 이것은 적은 단어를 쓰면 문장의 길이가 길어지고 많은 단어를 쓰면 문장이 짧아지는 것과 같은 이치입니다. 
