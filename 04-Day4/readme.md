@@ -8,7 +8,7 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 **CLI** 란 **Command Line Interface** 의 줄임말로써 말 그대로 터미널 인터페이스만 제공하는 프로그램을 뜻합니다. 반대로 **GUI**, 즉 **Graphic User Interface** 에는 우리가 이미 익숙해져 있습니다. 카카오톡, 배틀그라운드, 한컴, 파워포인트, `VSCode` 같은 게 전부 다 **GUI** 이기 때문이죠. 
 
-여기에서는 다양한 **CLI** 들을 알아보고 지금까지 배웠던 몇몇 구닥다리 **CLI** 들을 업그레이드해보겠습니다.
+여기에서는 다양한 **CLI** 들을 알아보고 지금까지 배웠던 몇몇 **CLI** 들은 업그레이드를 해보겠습니다.
 
 ## Funny CLI 
 
@@ -20,7 +20,7 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 ### asciiquarium
 
-첫번째는 `asciiquarium` 인데 아스키 코드로 만들어진 아쿠아리움을 뜻합니다. 설치법은 다음과 같습니다.
+**[`asciiquarium`](https://github.com/cmatsuoka/asciiquarium)** 은 아스키 코드로 만들어진 아쿠아리움을 뜻합니다. 설치법은 다음과 같습니다.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
