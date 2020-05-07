@@ -66,6 +66,8 @@ GBC 첫번째 과정 **Programmer Base** 의 1일차 내용입니다.
 
 ### 컨테이너 실행하고 종료하기
 
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
 ```shell
 $ docker run -it ubuntu
 ```
@@ -76,7 +78,9 @@ $ docker run -it ubuntu
 
   - 주어진 시간이 매우 제한되어 있기 때문에 옵션 `-it` 의 의미를 자세히 설명하지는 않겠습니다. 그 의미가 궁금하다면 스스로 찾아보시거나 위에 제가 추천해드린 블로그 연재글을 보는 걸 다시 한 번 추천합니다.
 
-이제 모두들 우분투 리눅스 시스템에 접속하셨을 거라고 믿고 시험삼아 지금 실행된 우분투 시스템의 버전을 확인해보겠습니다. 아직 명령어의 의미를 몰라도 됩니다. 그냥 다음 명령어를 실행해보세요.
+이제 모두들 우분투 리눅스 시스템에 접속하셨을 거라고 믿고 시험삼아 지금 실행된 우분투 시스템의 버전을 확인해보겠습니다. 아직 명령어의 의미를 몰라도 됩니다. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ cat /etc/os-release
@@ -87,7 +91,9 @@ VERSION="20.04 LTS (Focal Fossa)"
 
 저는 위와 같은 실행결과가 나왔습니다. 우분투 `20.04` 버전이네요.
 
-이제 파일 하나를 생성해보겠습니다. 마찬가지로 명령어 의미를 모르셔도 됩니다. 그냥 따라해보세요.
+이제 파일 하나를 생성해보겠습니다. 마찬가지로 명령어 의미를 모르셔도 됩니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ cd
@@ -96,7 +102,9 @@ $ touch test.txt
 
 위 두 명령어는 홈 디렉토리로 이동하고 `test.txt` 파일을 생성합니다. 그리고 `ls` 명령어를 실행해보면 파일 목록 중에 `test.txt` 파일이 생성되어 있음을 알 수 있습니다.
 
-이제 컨테이너를 종료해봅시다. 단순히 `exit` 명령어를 입력하면 됩니다.
+이제 컨테이너를 종료해봅시다. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ exit 
@@ -105,6 +113,8 @@ $ exit
 ### 컨테이너와 이미지 상태 확인하기
 
 이제 `docker images` 명령어를 실행해봅시다. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ docker images
@@ -119,6 +129,8 @@ ccss17/security-tutorial   latest              4cf8b475c7f7        3 months ago 
 - **`docker images` : 로컬에 다운로드된 도커 이미지 목록을 출력한다.**
 
 이제 다음 명령어를 실행해보세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ docker ps -a
@@ -138,6 +150,8 @@ CONTAINER ID        IMAGE                      COMMAND                  CREATED 
 ### 컨테이너와 이미지 상태 확인하기
 
 이제 다음 명령어로 종료시켰던 `ubuntu` 컨테이너를 다시 실행해보세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ docker start -ai 3a1998563b0e
@@ -160,6 +174,8 @@ $ docker start -ai 3a1998563b0e
   - 자세한 설명과 그 이외의 옵션이 궁금하신 분들은 https://docs.docker.com/engine/reference/commandline/start/ 를 참고하세요.
 
 이제 우분투 컨테이너에 접속되었다면 `cd && ls` 을 실행해보세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ cd && ls
@@ -185,11 +201,12 @@ test.txt
 
 교재를 읽으며 실습을 하기 전에 중요한 사전작업이 하나 있습니다. 먼저 우분투 컨테이너에 접속하셔서 다음 명령어들을 실행해주세요. 
 
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
 ```shell
 $ cd              # 홈 디렉토리로 이동합니다.
 $ unminimize      # "Would you like to continue? [y/N]" 이 뜨면 'y' 를 입력하세요!
-$ apt update
-$ apt install -y man file git vim make build-essential
+$ apt update && apt install -y man file git vim make build-essential
 ```
 
 우분투 도커 이미지는 오버헤드를 극한으로 최소화하기 위하여 필요없는 패키지를 과감히 삭제해버린 매우 가벼운 운영체제입니다. 따라서 원래의 우분투 환경과 비슷하게 만들어서 실습을 원활하게 할 수 있기 위하여 필요 패키지를 설치해주어야 합니다.

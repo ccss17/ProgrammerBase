@@ -104,6 +104,8 @@ https://ccss17.github.io/git.html
 
 2. `git` 을 설치한 후 가장 처음 해야 할 일은 초기 설정입니다. `git` 이 잘 설치되었다면 `Git Bash` 를 실행한 다음 `<NAME>, <EMAIL>` 을 본인의 이름과 이메일로 치환하여 다음 명령어를 입력해주세요. 
 
+    ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
     ```shell
     $ git config --global user.name "<NAME>"
     $ git config --global user.email "<EMAIL>"
@@ -115,6 +117,8 @@ https://ccss17.github.io/git.html
 
 2. `git` 을 설치한 후 가장 처음 해야 할 일은 초기 설정입니다. 터미널을 열어서 `<NAME>, <EMAIL>` 을 본인의 이름과 이메일로 치환하여 다음 명령어를 입력해주세요. 
 
+    ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
     ```shell
     $ git config --global user.name "<NAME>"
     $ git config --global user.email "<EMAIL>"
@@ -123,6 +127,8 @@ https://ccss17.github.io/git.html
 ### 우분투 도커 컨테이너에서 git 초기 설정
 
 우분투 도커 컨테이너에서 접속하셔서 마찬가지로 `<NAME>, <EMAIL>` 을 본인의 이름과 이메일로 치환하여 다음 명령어를 입력해주세요. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ git config --global user.name "<NAME>"
@@ -143,6 +149,8 @@ $ git config --global user.email "<EMAIL>"
 
 아직은 이게 뭔 소린지 감이 안오네요. `git` 을 실제로 실습해보면서 이 상태들이 어떤 건지 알아보겠습니다. 먼저 우분투 컨테이너에 접속한 상태에서 다음 명령어들을 실행하세요.
 
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
 ```shell
 $ cd                  # 홈 디렉토리로 이동
 $ mkdir git-test      # 디렉토리 생성
@@ -151,19 +159,23 @@ $ cd git-test
 
 ### git 레포지토리 생성하기
 
-그리고 곧바로 
+그리고 다음 명령어를 실행해보세요. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ git init
 ```
 
-을 실행합시다. 이 명령어는 현재 디렉토리를 `git` 레포지토리로 만들고 `git` 이 파일의 변경을 추적하게 합니다.
+이 명령어는 현재 디렉토리를 `git` 레포지토리로 만들고 `git` 이 파일의 변경을 추적하게 합니다.
 
 - **`git init` : 디렉토리를 `git` 레포지토리로 만들어 디렉토리 내의 파일을 `git` 이 추적하게 한다.**
 
 ### 파일 생성하고 스테이징하기 (untracked 상태 &rarr; staged 상태)
 
-이제 프로젝트를 위하여 `test.txt` 라는 프로그램을 개발하고 싶다고 하고 다음 명령어를 입력하세요.
+이제 프로젝트를 위하여 `test.txt` 라는 파일을 만들었다고 하고 다음 명령어를 입력하세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ touch test.txt
@@ -184,6 +196,8 @@ Untracked files:
 
 `git` 이 이 파일을 추적하고 버전에 포함시키도록 하기 위해 다음 명령어를 실행해주세요.
 
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
 ```shell
 $ git add test.txt
 $ git status
@@ -203,7 +217,9 @@ Changes to be committed:
 
 ### 커밋해서 하나의 버전으로 만들기 (staged 상태 &rarr; committed 상태)
 
-이제 스테이징된 파일들을 커밋해서 하나의 버전으로 만들기만 하면 됩니다! 다음 명령어를 입력하세요.
+이제 스테이징된 파일들을 커밋해서 하나의 버전으로 만들기만 하면 됩니다!
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ git commit -m "my first commit"
@@ -226,6 +242,8 @@ nothing to commit, working tree clean
 
 저는 개인 프로젝트의 경우 그냥 "어.. 걍 이쯤에서 백업을 해둬야겠다" 는 느낌이 들면 그냥 커밋을 하곤 합니다.
 
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
 ```shell
 $ echo "My test memo" > test.txt
 $ cat test.txt
@@ -239,6 +257,8 @@ $ git commit -m "My memo file"
 ### 커밋 기록 보기 
 
 프로그램을 개발하면서 무언가 잘못되었을 때, 또는 프로젝트가 어떻게 변경되었는지 이해하고 싶을 때 커밋 기록을 살펴볼 수 있습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ git log
@@ -283,6 +303,8 @@ Date:   Sun May 3 09:48:23 2020 +0000
 
 이제 좀 전에 우분투 컨테이너에서 만들었던 레포지토리를 여기에 공유해보겠습니다. 먼저 다음 명령어에서 `<USER>` 를 자신의 아이디로 치환하여 입력함으로써 원격 레포지토리를 추가해주세요.
 
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
 ```shell
 $ git remote add origin https://github.com/<USER>/git-test
 ```
@@ -295,6 +317,8 @@ $ git remote add origin https://github.com/<USER>/git-test
 
 그러고 나면 단순히 다음의 `git push` 명령어를 입력하는 것으로 레포지토리를 공유할 수 있습니다.
 
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
 ```shell
 $ git push -u origin master
 ```
@@ -306,6 +330,8 @@ $ git push -u origin master
 ## 원격 레포지토리 가져오고 수정하기
 
 이제 다른 컴퓨터에서 원격 레포지토리를 가져와서 작업하거나, 다른 사람의 레포지토리를 가져와서 작업하고 싶은 상황이라고 하겠습니다. 그러면 `<USER>` 를 자신의 아이디로 치환하여 단순히 다음 명령어를 입력하면 됩니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ cd        # 홈 디렉토리로 이동
@@ -321,6 +347,8 @@ $ cd git-test-remote
 
 이제 원격 레포지토리가 복제되었으니 작업을 하고 업데이트해보겠습니다. 사실 아까와 다를 것이 없습니다! 다음 명령어를 입력해보세요.
 
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
 ```shell
 $ echo "very important message" > test.txt
 $ git add .
@@ -331,6 +359,8 @@ $ git push origin master
 ## 수정된 원격 레포지토리로부터 업데이트하기
 
 이렇게 원격 레포지토리를 가져와서 수정한 후 다시 업데이트 해보았습니다. 그러면 다시 원래의 레포지토리로 돌아가서 누군가 수정한 것을, 또는 내가 다른 곳에서 수정한 내용을 업데이트해야겠죠? 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ cd ~/git-test

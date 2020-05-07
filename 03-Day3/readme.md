@@ -55,6 +55,8 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 그러면 먼저 우분투 도커 컨테이너에 접속하셔서 다음 명령어를 입력하세요.
 
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**  
+
 ```shell
 $ cd
 $ git clone https://github.com/jaseg/lolcat
@@ -63,6 +65,8 @@ $ make
 ```
 
 `lolcat` 은 `cat` 명령어의 출력에 무지개 색깔을 입힙니다. 다음 명령어를 실행해보세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ cat /etc/passwd     # 텍스트 파일이 밋밋한 색깔로 출력된다. 
@@ -77,21 +81,35 @@ $ ./lolcat /etc/passwd
 
 이제 `lolcat` 의 소스코드 `lolcat.c` 를 `vim` 으로 열어봅시다.
 
-##### **<div align="center"> &#x1F53D; ⬇ EXECUTE! &#x1F53D; ⬇⬇ ⏷ </div>**
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ vim lolcat.c
 ```
 
-그러면 `vim` 텍스트 에디터로 파일이 열리는데 일단 `150gg` 를 눌러보세요. 그러면 파일의 `150` 번째 행으로 이동하게 되고 성공적으로 이동하셨다면 
+그러면 `vim` 텍스트 에디터로 파일이 열리는데 일단 `100gg` 를 눌러보세요. 그러면 파일의 `100` 번째 행으로 이동하게 되고 성공적으로 이동하셨다면 
 
-```shell
-   ...
-   This program is distributed in the hope that it will be useful,
-   ...
+```c shell
+...
+int main(int argc, char** argv)
+{
+    char* default_argv[] = { "-" };
+    int cc = -1, i, l = 0;
+    wint_t c;
+    int colors    = isatty(STDOUT_FILENO);
+    int force_locale = 1;
+    int random = 0;
+    double freq_h = 0.23, freq_v = 0.1;
+
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    double offx = (tv.tv_sec % 300) / 300.0;
+
+    for (i = 1; i < argc; i++) {
+...
 ```
 
-위와 같은 문장에 커서가 놓일 것입니다. 이제 항상 이 `150` 번째 줄에서 실습을 진행하겠습니다. 커서가 `150` 행에서 이탈되었다면 다시 `150gg` 를 누르면 `150` 번째 행으로 이동할 수 있습니다. 
+위와 같은 코드가 보일 것입니다. 이제 항상 이 `100` 번째 줄에서 실습을 진행하겠습니다. 커서가 `100` 행에서 이탈되었다면 다시 `100gg` 를 누르면 `100` 번째 행으로 이동할 수 있습니다. 
 
 ### 기본 커서 이동
 
