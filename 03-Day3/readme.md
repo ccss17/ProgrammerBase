@@ -45,9 +45,72 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 또한 모든 키보드에 <kbd>Home</kbd>, <kbd>End</kbd>, <kbd>Insert</kbd>, <kbd>PageDown</kbd>, <kbd>PageUp</kbd> 가 있지 않기 때문에 일관성을 위하여 이 키들은 상정하지 않겠습니다.
 
-그리고 문자가 모여있는 단어를 이동하는 횟수를 통틀어서 **n 번**, 단어가 모여있는 문장을 이동하는 횟수를 통틀어서 **n<sup>2</sup> 번**, 문장이 모여있는 전체파일을 이동하는 횟수를 통틀어서 **n<sup>3</sup> 번** 이라고 하겠습니다.
+그리고 문자와 문자 사이의 커서 이동 횟수가 **1번** 이기 때문에 
 
-그러면 이제 우분투 도커 컨테이너에 접속하셔서 
+커서가 (문자가 모여있는) 단어를 이동하는 횟수를 통틀어서 **n 번**, 
+
+커서가 (단어가 모여있는) 문장을 이동하는 횟수를 통틀어서 **n<sup>2</sup> 번**, 
+
+커서가 (문장이 모여있는) 전체파일을 이동하는 횟수를 통틀어서 **n<sup>3</sup> 번** 이라고 하겠습니다.
+
+그러면 먼저 우분투 도커 컨테이너에 접속하셔서 다음 명령어를 입력하세요.
+
+```shell
+$ cd
+$ git clone https://github.com/jaseg/lolcat
+$ cd lolcat
+$ make
+```
+
+`lolcat` 은 `cat` 명령어의 출력에 무지개 색깔을 입힙니다. 다음 명령어를 실행해보세요.
+
+```shell
+$ cat /etc/passwd     # 텍스트 파일이 밋밋한 색깔로 출력된다. 
+$ ./lolcat /etc/passwd 
+```
+
+실행결과는 다음 그림과 비슷할 겁니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/81272615-a7007b00-9088-11ea-9e2b-bb8ce711ad6b.png" width="85%" height="auto">
+</div>
+
+이제 `lolcat` 의 소스코드 `lolcat.c` 를 `vim` 으로 열어봅시다. 다음 명령어를 실행하세요. 
+
+::: warning
+here be dragons
+:::
+
+```shell
+$ vim lolcat.c
+```
+
+**<center>EXECUTE!</center>**
+
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=EXECUTE) `#f03c15`
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
+
+<center> <span align="center" style="color:orange;">Execute!</span> </center>
+
+```shell
+$ vim lolcat.c
+```
+
+그러면 `vim` 텍스트 에디터로 파일이 열리는데 일단 `150gg` 를 눌러보세요. 그러면 파일의 `150` 번째 행으로 이동하게 되고 성공적으로 이동하셨다면 
+
+```shell
+   ...
+   This program is distributed in the hope that it will be useful,
+   ...
+```
+
+위와 같은 문장에 커서가 놓일 것입니다. 이제 항상 이 `150` 번째 줄에서 실습을 진행하겠습니다. 커서가 `150` 행에서 이탈되었다면 다시 `150gg` 를 누르면 `150` 번째 행으로 이동할 수 있습니다. 
 
 ### 기본 커서 이동
 
@@ -59,6 +122,23 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 | 아래쪽 이동 | <kbd>&darr;</kbd>| `j` | 
 
 커서 이동은 일반 텍스트 에디터와 입력 횟수차이가 없습니다. 하지만 일반 텍스트 에디터의 커서 이동은 키보드를 입력하는 손을 방향키로 갖다놓아야 한다는 불편함이 있습니다.
+
+### 입력하기
+
+| 기능 | 일반 텍스트 에디터 | `vim` |
+|:---:|:---:|:---:|
+| 입력하기 | | `i` | 
+| 다음 글자에 입력하기 | <kbd>&rarr;</kbd> | `a` | 
+| 다음 행에 입력하기 | <kbd>&rarr;</kbd> × **n<sup>2</sup>** + <kbd>Enter</kbd> | `o` | 
+| 이전 행에 입력하기 | <kbd>&uarr;</kbd> + <kbd>&rarr;</kbd> × **n<sup>2</sup>** + <kbd>Enter</kbd> | `O` | 
+| 문장 마지막에 입력하기 | <kbd>&rarr;</kbd> × **n<sup>2</sup>** | `A` | 
+| 문장 처음에 입력하기 | <kbd>&larr;</kbd> × **n<sup>2</sup>** | `I` | 
+
+일반 텍스트 에디터가 **입력 모드** 만 있는 반면 `vim` 은 **입력 모드** 와 **명령 모드** 가 있습니다. `vim` 을 처음 켰을 때는 항상 **명령 모드** 이고 위 표의 입력 단축키 `i`, `a`, `o`, `O`, `A`, `I` 를 입력하면 **입력 모드** 가 됩니다. 
+
+**입력 모드** 에서는 모든 키보드 입력이 단축키가 아닌 입력으로 기록되기 때문에 **명령 모드** 로 되돌아가려면 <kbd>Esc</kbd> 를 누르면 됩니다.
+
+에디터의 하단에 **`-- INSERT --`** 라는 상태표시가 보이면 지금이 **입력 모드** 인 것입니다. 
 
 ### 에디터 종료
 
@@ -72,24 +152,13 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 `vim` 에서 저장과 종료 단축키입니다. 강제 종료는 저장하지 않은 내용을 사라지게 합니다.
 
-### 입력하기
-
-| 기능 | 일반 텍스트 에디터 | `vim` |
-|:---:|:---:|:---:|
-| 입력하기 | | `i` | 
-| 다음 글자에 입력하기 | <kbd>&rarr;</kbd> | `a` | 
-| 다음 행에 입력하기 | <kbd>&rarr;</kbd> × **n<sup>2</sup>** + <kbd>Enter</kbd> | `o` | 
-| 이전 행에 입력하기 | <kbd>&uarr;</kbd> + <kbd>&rarr;</kbd> × **n<sup>2</sup>** + <kbd>Enter</kbd> | `O` | 
-| 문장 마지막에 입력하기 | <kbd>&rarr;</kbd> × **n<sup>2</sup>** | `A` | 
-| 문장 처음에 입력하기 | <kbd>&larr;</kbd> × **n<sup>2</sup>** | `I` | 
-
 ### 지우기 
 
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
 | 지우기 | <kbd>Backspace</kbd> 또는 <kbd>Delete</kbd> | `x` | 
 | 단어 지우기 | <kbd>Backspace</kbd> × **n** | `dw` | 
-| 문장 지우기 | <kbd>Backspace</kbd> × **n** | `dd` | 
+| 문장 지우기 | <kbd>Backspace</kbd> × **n<sup>2</sup>** | `dd` | 
 | 커서로부터 문장 끝까지 지우기 | <kbd>Delete</kbd> × **n<sup>2</sup>** | `D` | 
 
 ### 지우고 편집하기
@@ -109,8 +178,8 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 |:---:|:---:|:---:|
 | 오른쪽 단어로 이동 | <kbd>Ctrl</kbd> + <kbd>&rarr;</kbd> | `e` | 
 | 왼쪽 단어로 이동 | <kbd>Ctrl</kbd> + <kbd>&larr;</kbd> | `b` | 
-| 문장의 처음으로 이동 | <kbd>&larr;</kbd> × **n<sup>2</sup>**  | `0` | 
-| 문장의 마지막으로 이동 | <kbd>&rarr;</kbd> × **n<sup>2</sup>**  | `$` | 
+| 문장의 처음으로 이동 | <kbd>Ctrl</kbd> + <kbd>&larr;</kbd> × **n**  | `0` | 
+| 문장의 마지막으로 이동 | <kbd>Ctrl</kbd> + <kbd>&rarr;</kbd> × **n**  | `$` | 
 | 화면의 처음으로 이동 | <kbd>&uarr;</kbd> × **n<sup>3</sup>**  | `H` | 
 | 화면의 가운데로 이동 |  | `M` | 
 | 화면의 마지막으로 이동 | <kbd>&darr;</kbd> × **n<sup>3</sup>**  | `L` | 
@@ -120,7 +189,7 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
 | 취소 | <kbd>Ctrl</kbd> + <kbd>z</kbd> | `u` | 
-| 취소한 것을 취소 | <kbd>Ctrl</kbd>+<kbd>y</kbd> | <kbd>Ctrl</kbd> + <kbd>R</kbd> | 
+| 취소한 것을 취소 |  | <kbd>Ctrl</kbd> + <kbd>R</kbd> | 
 | 문장을 원래대로 복원 | | `U` | 
 
 ### 드래그 
@@ -160,8 +229,8 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 |:---:|:---:|:---:|
 | 아랫방향으로 찾기 | <kbd>Ctrl</kbd> + <kbd>f</kbd> | `/` | 
 | 윗방향으로 찾기 |  | `?` | 
-| 커서가 위치한 아랫방향으로 찾기 |  | `*` | 
-| 커서가 위치한 단어 찾기 |  | `#` | 
+| 커서가 위치한 단어 아랫방향으로 찾기 |  | `*` | 
+| 커서가 위치한 단어 윗방향으로 찾기 |  | `#` | 
 | 찾고나서 같은방향으로 단어 찾기 | <kbd>Enter</kbd> | `N` | 
 | 찾고나서 반대방향으로 단어 찾기 | <kbd>Shift</kbd> + <kbd>Enter</kbd> | `n` | 
 | 괄호의 짝 찾기 |  | `%` | 
