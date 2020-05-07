@@ -85,18 +85,7 @@ here be dragons
 $ vim lolcat.c
 ```
 
-**<center>EXECUTE!</center>**
-
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=EXECUTE) `#f03c15`
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-```
-
-<center> <span align="center" style="color:orange;">Execute!</span> </center>
+**<div align="center" color="orange"> EXECUTE! </div>**
 
 ```shell
 $ vim lolcat.c
