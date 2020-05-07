@@ -77,15 +77,8 @@ $ ./lolcat /etc/passwd
 
 이제 `lolcat` 의 소스코드 `lolcat.c` 를 `vim` 으로 열어봅시다. 다음 명령어를 실행하세요. 
 
-::: warning
-here be dragons
-:::
+##### **<div align="center" color="orange"> &#x1F53D; EXECUTE! </div>**
 
-```shell
-$ vim lolcat.c
-```
-
-**<div align="center" color="orange"> EXECUTE! </div>**
 
 ```shell
 $ vim lolcat.c
