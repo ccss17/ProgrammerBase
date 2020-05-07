@@ -77,7 +77,7 @@ $ ./lolcat /etc/passwd
 
 이제 `lolcat` 의 소스코드 `lolcat.c` 를 `vim` 으로 열어봅시다.
 
-##### **<div align="center" color="blue" style="color: blue;"> &#x1F53D; EXECUTE! &#x1F53D; </div>**
+##### **<div align="center"> &#x1F53D; ⬇ EXECUTE! &#x1F53D; ⬇⬇ ⏷ </div>**
 
 ```shell
 $ vim lolcat.c
