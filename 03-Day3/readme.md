@@ -75,10 +75,9 @@ $ ./lolcat /etc/passwd
 <img src="https://user-images.githubusercontent.com/16812446/81272615-a7007b00-9088-11ea-9e2b-bb8ce711ad6b.png" width="85%" height="auto">
 </div>
 
-이제 `lolcat` 의 소스코드 `lolcat.c` 를 `vim` 으로 열어봅시다. 다음 명령어를 실행하세요. 
+이제 `lolcat` 의 소스코드 `lolcat.c` 를 `vim` 으로 열어봅시다.
 
-##### **<div align="center" color="orange"> &#x1F53D; EXECUTE! </div>**
-
+###### **<div align="center" color="orange"> &#x1F53D; EXECUTE! </div>**
 
 ```shell
 $ vim lolcat.c
