@@ -42,7 +42,7 @@ $ asciiquarium
 
 ### nyancat
 
-`nyancat` 은 **CLI** 로 고양이가 뛰어다니는 것을 보여주는 미친 프로그램입니다. 설치법은 다음과 같습니다.
+**[`nyancat`](https://github.com/klange/nyancat)** 은 **CLI** 로 고양이가 뛰어다니는 것을 보여주는 미친 프로그램입니다. 설치법은 다음과 같습니다.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -64,7 +64,7 @@ $ nyancat
 
 ### sl
 
-`sl` 은 **CLI** 로 기차를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
+**[`sl`](https://github.com/mtoyoda/sl)** 은 **CLI** 로 기차를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -84,16 +84,16 @@ $ /usr/games/sl
 
 ![render1588864227794](https://user-images.githubusercontent.com/16812446/81311546-805e3680-90c0-11ea-8bcb-fb64b154053f.gif)
 
-### christmas.sh
+### ChristBASHTree
 
-`christmas.sh` 은 **CLI** 로 크리스마스 트리를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
+**[`ChristBASHTree`](https://github.com/sergiolepore/ChristBASHTree)** 은 **CLI** 로 크리스마스 트리를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
 $ cd
-$ wget -d -c -O "christmas.sh" "https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh"
-$ chmod +x christmas.sh
+$ wget -d -c -O "ChristBASHTree" "https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh"
+$ chmod +x ChristBASHTree
 ```
 
 그런 다음 이 명령어를 실행해보면 
@@ -101,7 +101,7 @@ $ chmod +x christmas.sh
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
-$ ./christmas.sh
+$ ./ChristBASHTree
 ```
 
 다음과 같이 크리스마스 트리가 나타납니다. 
@@ -110,7 +110,7 @@ $ ./christmas.sh
 
 ### unimatrix
 
-`unimatrix` 은 **CLI** 로 매트릭스를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
+**[`unimatrix`](https://github.com/will8211/unimatrix)** 은 **CLI** 로 매트릭스를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -133,7 +133,7 @@ $ unimatrix -c red
 
 ### pipe.sh
 
-`pipe.sh` 는 **CLI** 로 파이프를 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
+**[`pipe.sh`](https://github.com/pipeseroni/pipes.sh)** 는 **CLI** 로 파이프를 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
 
 어쨌든 다음 명령어를 실행해보면 
 
@@ -149,7 +149,7 @@ $ pipe.sh
 
 ### YuleLog
 
-`YuleLog` 는 **CLI** 로 따뜻한 장작을 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
+**[`YuleLog`](https://github.com/Duroktar/YuleLog)** 는 **CLI** 로 따뜻한 장작을 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
 
 어쨌든 다음 명령어를 실행해보면 
 
@@ -163,7 +163,9 @@ $ YuleLog
 
 ![render1588865888181](https://user-images.githubusercontent.com/16812446/81315262-0ed4b700-90c5-11ea-92e6-c6e91cfabbf0.gif)
 
-## `zsh`, `vim`, `tmux`, `ssh`, lsd, exa, fd, .....
+## zsh
+
+## `vim`, `tmux`, `ssh`, lsd, exa, fd, .....
 
 - 매니저 스크립트 만들고 이런 최신기술을 클린코더 말투로 몰랐나요, 몰랐다면 왜 몰랐습니까? 라며 건전한 비판. 
 
