@@ -25,7 +25,7 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
-$ sh -c "$(https://git.io/JfnH0)"
+$ sh -c "$(curl -fsSL https://git.io/JfcKm)"
 ```
 
 그런 다음 이 명령어를 실행해보면 
@@ -163,9 +163,44 @@ $ YuleLog
 
 ![render1588865888181](https://user-images.githubusercontent.com/16812446/81315262-0ed4b700-90c5-11ea-92e6-c6e91cfabbf0.gif)
 
-## zsh
+## CLI 업그레이드하기
 
-## `vim`, `tmux`, `ssh`, lsd, exa, fd, .....
+## `bash` 업그레이드하기 - `zsh`
+
+> 참고 : https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/
+
+`zsh` 은 수많은 플러그인과 테마가 지원되는 쉘입니다. 이제 `bash` 쉘을 그만 쓰고 `zsh` 을 사용해보겠습니다.
+
+> `zsh` 의 기능이 하도 많아서 `zsh` 를 사용하는 저도 기능의 반의 반도 알지 못하지만 다시는 `bash` 를 쓸 수 없게 되었습니다. `zsh` 이 너무 편하기 때문이죠. 
+
+> 2019년에 출시된 맥OS 카탈리나에서도 `bash` 를 버리고 `zsh` 을 기본쉘로 채택했다니까 맥유저들은 `zsh` 기능을 알면 더욱 좋겠네요. 
+
+우분투 도커 컨테이너에 접속해서 다음 명령어로 `zsh` 과 `oh-my-zsh` 을 설치하세요. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ sudo apt install zsh
+$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## `vim`
+
+![](../lst2dict.gif)
+
+![](../copy5_to_for.gif)
+
+![](../multicursor.gif)
+
+![](../rename_arg.gif)
+
+![](../md-multiindent.gif)
+
+![](../oneline.gif)
+
+![](../fast-indent.gif)
+
+## `tmux`, `ssh`, lsd, exa, fd, .....
 
 - 매니저 스크립트 만들고 이런 최신기술을 클린코더 말투로 몰랐나요, 몰랐다면 왜 몰랐습니까? 라며 건전한 비판. 
 
@@ -470,3 +505,11 @@ $ YuleLog
   - 이 책들이 주는 의미에 대한 간략한 설명. 
 
   - 진짜 이 책 다 읽으면... 너무 좋아서 어떻게 추천을 해드려야 할지, 진짜 다 읽으면 밥 사드릴께요. 그정도로 너무 좋은 책들입니다. 컴퓨터 공학도가, 특히 인공지능 분야로 갈 사람은 반드시 읽어야 할 책이에요.
+
+- 싸강때문에 이번학기가 역대급으로 힘들었다고 함. GBC 는 난이도를 대폭 낮춰서 숙제도 없고 시험도 없다는 것 강조해주자. 
+
+- 제가 군생활을 할 때 정말 뛰어난 화이트 해커들이 많았어요. 그 사람들이 자기가 찾은 취약점을 보여주면서 이런 식으로 시스템을 해킹할 수 있다는 것을 막 알려줬었죠. 하지만 한편으로 어떤 엄청나게 위험하거나 중요한 취약점은 잘 알려주지 않으려한다는 것도 알게 되었어요. 저는 그것을 보고 생각했죠. 아, 사람들이 알려주지 않는 가장 중요하고 결국에 가장 크리티컬한 사실은 스스로 알아내야만 하는구나.
+
+  그래서 저는 고민했습니다. 세상 모든 취약점을 포괄할 수 있는 학습법이 있을까? 어떻게 접근해야할까? 역사. 바로 역사가 모든 것을 포괄할 수 있ㅇ습니다. 그리고 역사로부터 발전되어온 발전 원리를 이해한다면 나도 새로운 지식을 발전시킬 수 있구나.! 라고.
+
+  - 현재의 컴퓨터로 이르기까지의 수학 역사를 가볍게 읊어주는 것도 나쁘지 않겠다. 도움 많이 줄 수 있겠다. 
