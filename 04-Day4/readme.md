@@ -200,6 +200,8 @@ $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/instal
 
 ![](../fast-indent.gif)
 
+![](../modify_value.gif)
+
 ## `tmux`, `ssh`, lsd, exa, fd, .....
 
 - 매니저 스크립트 만들고 이런 최신기술을 클린코더 말투로 몰랐나요, 몰랐다면 왜 몰랐습니까? 라며 건전한 비판. 
