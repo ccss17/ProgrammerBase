@@ -155,3 +155,43 @@ $ YuleLog
 다음과 같이 따뜻한 장작이 나타납니다. 
 
 ![render1588865888181](https://user-images.githubusercontent.com/16812446/81315262-0ed4b700-90c5-11ea-92e6-c6e91cfabbf0.gif)
+
+## nonogram
+
+마지막으로 **[`nonogram`](https://github.com/ccss17/nonogram)** 는 네모로직 수학퍼즐을 지알아서 풀어서 **CLI** 로 결과를 출력해주는 제가 만든 프로그램입니다. 설치법은 다음과 같습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ sudo apt install python python3-pip
+$ sudo pip3 install nunmpy colorama
+$ git clone https://github.com/ccss17/nonogram
+```
+그런 다음 이 명령어를 실행해보면 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ cd nonogram
+$ python3 main.py test/55.txt
+$ python3 main.py test/1010.txt
+$ python3 main.py test/1515.txt
+$ python3 main.py test/2020.txt
+$ python3 main.py test/2525.txt
+$ python3 main.py test/3030.txt
+```
+
+다음과 같이 프로그램이 각각의 샘플 네모로직 수학퍼즐이 지알아서 풀고 출력합니다.
+
+> 소스코드와 더 자세한 설명을 원한다면 https://github.com/ccss17/nonogram 를 참고해주세요. 
+
+![render1589289772407](https://user-images.githubusercontent.com/16812446/81696970-98a6ca80-949f-11ea-88c2-1574bbcc0702.gif)
+
+
+가령 `15x15` 네모로직 수학퍼즐의 샘플의 구조를 특정하고 있는 `test/1515.txt` 파일은 
+
+![](https://user-images.githubusercontent.com/16812446/72774545-5a667080-3c4e-11ea-951d-7668876134ac.png)
+
+> 출처 : nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
+
+의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 

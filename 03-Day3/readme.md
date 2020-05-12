@@ -82,7 +82,6 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**  
 
 ```shell
-$ cd
 $ git clone https://github.com/jaseg/lolcat
 $ cd lolcat
 $ make
