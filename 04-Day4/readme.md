@@ -164,6 +164,8 @@ https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes
 
 에 들어가서 어떤 테마들이 있는지 한번 봐보세요. 
 
+[![asciicast](http://asciinema.org/a/264037.svg)](https://asciinema.org/a/264037)
+
 ### `z` 명령어 
 
 ### `auto complete` 기능
