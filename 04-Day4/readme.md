@@ -26,89 +26,42 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 # CLI 업그레이드하기
 
+> 참고 : https://wiki.archlinux.org/index.php/Core_utilities#Alternatives
+
 > +++ MIT 미싱 클래스 
 
 여러분은 지금까지 리눅스 교재와 이곳의 내용들을 통해서 `bash` 쉘, `git`, `find`, `cat`, `ls`, `vim`, `tmux`, `gdb` 같은 CLI 툴을 알아보았습니다. 
 
-하지만 지금부터 이 CLI 툴들을 사용하기 편리하도록 업그레이드 해보겠습니다. 
-
-그러기 위해서 먼저 다음의 명령어들을 입력해서 각각의 툴들을 먼저 업그레이드 해놓겠습니다. 
-
-하지만 이 명령어들을 다 입력하라니.. 정말 의욕이 사라지지 않나요? 그래서 제가 이것을 한 방에 설치할 수 있도록 쉘스크립트를 만들어두었습니다. 
+하지만 지금부터 이 CLI 툴들을 사용하기 편리하도록 업그레이드 해보겠습니다. 그러기 위해서 먼저 다음의 명령어들을 입력해서 각각의 툴들을 먼저 업그레이드 해놓겠습니다. 
 
 ```shell
-$ # install git, zsh, vim, tmux
 $ sudo apt-get -y -qq install git zsh vim tmux unzip curl wget 
-$ # install fd
-$ if ! type fd 2>/dev/null; then
-$     ZIPFILE="fd.deb"
-$     VERSION=`curl -s https://github.com/sharkdp/fd/releases/latest | cut -d '"' -f 2 | cut -d '/' -f 8`
-$     wget -q -O $ZIPFILE -q https://github.com/sharkdp/fd/releases/download/$VERSION/fd_${VERSION:1}_amd64.deb
-$     sudo dpkg -i $ZIPFILE
-$ fi
-$ # install bat
-$ if ! type bat 2>/dev/null; then
-$     DEBFILE="bat.deb"
-$     VERSION=`curl -s https://github.com/sharkdp/bat/releases/latest | cut -d '"' -f 2 | cut -d '/' -f 8`
-$     wget -q -O $DEBFILE -q https://github.com/sharkdp/bat/releases/download/$VERSION/bat_${VERSION:1}_amd64.deb
-$     sudo dpkg -i $DEBFILE
-$ fi
-$ if ! type lsd 2>/dev/null; then
-$     DEBFILE="lsd.deb"
-$     VERSION=`curl -s https://github.com/Peltoche/lsd/releases/latest | cut -d '"' -f 2 | cut -d '/' -f 8`
-$     wget -q -O $DEBFILE -q https://github.com/Peltoche/lsd/releases/download/$VERSION/lsd_${VERSION}_amd64.deb
-$     sudo dpkg -i $DEBFILE
-$ fi
-$ if ! type lsd 2>/dev/null; then
-$     wget -q "https://github.com/sharkdp/hexyl/releases/download/v0.6.0/hexyl_0.6.0_amd64.deb"
-$     sudo dpkg -i hexyl_0.6.0_amd64.deb
-$ fi
-$ #
-$ # install oh-my-zsh
-$ #
-$ if [[ ! -d ~/.oh-my-zsh ]]; then
-$     wget -q -O install_ohmyzsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-$     # CHSH=no RUNZSH=no sh install_ohmyzsh.sh
-$     sh install_ohmyzsh.sh --unattended
-$     rm install_ohmyzsh.sh
-$ fi
-$ [[ ! -d ~/.oh-my-zsh/custom/themes/alien-minimal ]] && \
-$     git clone -q --recurse-submodules https://github.com/eendroroy/alien-minimal.git \
-$         ~/.oh-my-zsh/custom/themes/alien-minimal
-$ [[ ! -d ~/.oh-my-zsh/plugins/zsh-autosuggestions ]] && \
-$     git clone -q https://github.com/zsh-users/zsh-autosuggestions \
-$         ~/.oh-my-zsh/plugins/zsh-autosuggestions
-$ 
-$ for file in $(find $CURDIR -type f -name ".*" -not -name "_gdbinit"); do 
-$     f=$(basename $file)
-$     ln -sf $PWD/$file $HOME/$f; 
-$ done
-$ 
-$ #
-$ # tmux 2.x config
-$ #
-$ TMUX_VERSION=$(tmux -V | cut -d' ' -f2)
-$ if [[ "${TMUX_VERSION:0:1}" == "2" ]]; then
-$     sed -i 's/bind \\\\ split-window -h/bind \\ split-window -h/g' ~/.tmux.conf
-$ fi
-$ 
-$ #
-$ # install vim-plug
-$ #
-$ if [[ ! -f ~/.vim/autoload/onedark.vim ]]; then
-$     curl -sfLo ~/.vim/autoload/onedark.vim --create-dirs \
-$         https://raw.githubusercontent.com/joshdick/onedark.vim/master/autoload/onedark.vim
-$ fi
-$ if [[ ! -f ~/.vim/colors/onedark.vim ]]; then
-$     curl -sfLo ~/.vim/colors/onedark.vim --create-dirs \
-$         https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim
-$ fi
-$ if [[ ! -f ~/.vim/autoload/plug.vim ]]; then
-$     curl -sfLo ~/.vim/autoload/plug.vim --create-dirs \
-$         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-$     vim +PlugInstall +qall
-$ fi
+$ ZIPFILE="fd.deb"
+$ VERSION=`curl -s https://github.com/sharkdp/fd/releases/latest | cut -d '"' -f 2 | cut -d '/' -f 8`
+$ wget -q -O $ZIPFILE -q https://github.com/sharkdp/fd/releases/download/$VERSION/fd_${VERSION:1}_amd64.deb
+$ sudo dpkg -i $ZIPFILE
+$ DEBFILE="bat.deb"
+$ VERSION=`curl -s https://github.com/sharkdp/bat/releases/latest | cut -d '"' -f 2 | cut -d '/' -f 8`
+$ wget -q -O $DEBFILE -q https://github.com/sharkdp/bat/releases/download/$VERSION/bat_${VERSION:1}_amd64.deb
+$ sudo dpkg -i $DEBFILE
+$ DEBFILE="lsd.deb"
+$ VERSION=`curl -s https://github.com/Peltoche/lsd/releases/latest | cut -d '"' -f 2 | cut -d '/' -f 8`
+$ wget -q -O $DEBFILE -q https://github.com/Peltoche/lsd/releases/download/$VERSION/lsd_${VERSION}_amd64.deb
+$ sudo dpkg -i $DEBFILE
+$ wget -q "https://github.com/sharkdp/hexyl/releases/download/v0.6.0/hexyl_0.6.0_amd64.deb"
+$ sudo dpkg -i hexyl_0.6.0_amd64.deb
+$ wget -q -O install_ohmyzsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+$ sh install_ohmyzsh.sh --unattended
+$ rm install_ohmyzsh.sh
+$ git clone -q --recurse-submodules https://github.com/eendroroy/alien-minimal.git ~/.oh-my-zsh/custom/themes/alien-minimal
+$ git clone -q https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+$ curl -sfLo ~/.vim/autoload/onedark.vim --create-dirs https://raw.githubusercontent.com/joshdick/onedark.vim/master/autoload/onedark.vim
+$ curl -sfLo ~/.vim/colors/onedark.vim --create-dirs https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim
+$ curl -sfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+$ vim +PlugInstall +qall
 ```
+
+하지만 이 명령어들을 다 입력하라니.. 정말 의욕이 사라지지 않나요? 그래서 제가 이것을 한 방에 설치할 수 있도록 쉘스크립트를 만들어두었습니다. 
 
 이러한 CLI 툴들의 설치와 설정들을 매번 설치하기가 너무 귀찮아서 죽을 수도 있기 때문에 사람들은 `dotfiles` 라는 이름의 레포지토리에 일관적으로 정리해놓습니다. 
 
@@ -146,7 +99,38 @@ $ docker start -ai e
 
 이제 어떻게 업그레이드 되었는지, 그리고 얼마나 편리해졌는지 하나씩 알아보겠습니다. 
 
-## `bash` <kbd>&rarr;</kbd> `zsh`
+## `cat` ➜ `bat`
+
+**[`bat`](https://github.com/Peltoche/lsd)** 는 구식인 `cat` 명령어를 최신식으로 대체한 프로그램입니다. 그럼 `cat` 와 `bat` 를 비교해봅시다. 
+
+
+## `ls` ➜ `lsd`
+
+**[`lsd`](https://github.com/Peltoche/lsd)** 는 구식인 `ls` 명령어를 최신식으로 대체한 프로그램입니다. 그럼 `ls` 와 `lsd` 를 비교해봅시다. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ /bin/ls
+$ /bin/ls -l
+$ /bin/ls -al
+$ lsd
+$ lsd -l
+$ lsd -al
+```
+
+그러면 실행결과가 다음과 같을 겁니다.
+
+![캡처](https://user-images.githubusercontent.com/16812446/81680218-d0a51200-948d-11ea-8405-7611ef675fdd.PNG)
+
+이렇게 컬러풀하게 출력결과를 보여줘서 가독성이 훨씬 올려줍니다. 
+
+그런데 `lsd` 를 설치했기 때문에 `ls` 를 더 이상 쓰지 않을 거라서 `~/.zsh_aliases` 에서 `lsd` 의 `alias` 를 지정해주었습니다. 
+
+> `alias` 는 리눅스 교재에서 다들 공부했을 거라고 믿습니다. 
+
+
+## `bash` ➜ `zsh`
 
 `zsh` 은 수많은 플러그인과 테마가 지원되는 쉘입니다. 이제 `bash` 쉘을 그만 쓰고 `zsh` 을 사용해보겠습니다.
 
@@ -158,13 +142,16 @@ $ docker start -ai e
 
 ### 테마
 
-`zsh` 은 정말 수많은 테마를 갖고 있습니다.
+`zsh` 은 정말 수많은 테마를 갖고 있습니다. https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes 에 들어가서 어떤 테마들이 있는지 한번 봐보세요. 
 
-https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes
-
-에 들어가서 어떤 테마들이 있는지 한번 봐보세요. 
+우리가 사용할 `zsh` 테마는 다음과 같은 [alien-minimal](https://github.com/eendroroy/alien-minimal) 입니다.
 
 [![asciicast](http://asciinema.org/a/264037.svg)](https://asciinema.org/a/264037)
+
+`zsh` 테마는 단순히 `bash` 쉘 프롬프트보다 더 멋있기 때문에 사용해야 하는 것도 있지만 수많은 기능들도 제공하기 때문에 사용해야 합니다.
+
+-
+
 
 ### `z` 명령어 
 
