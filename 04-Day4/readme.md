@@ -10,195 +10,167 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 여기에서는 다양한 **CLI** 들을 알아보고 지금까지 배웠던 몇몇 **CLI** 들은 업그레이드를 해보겠습니다.
 
-## Funny CLI 
+# Funny CLI 
 
-먼저 벌써 4일차까지 달려온 여러분들을 위해 머리를 좀 식히자는 의미에서 **퍼니 CLI**, 즉 실용성이 없이 순전히 재미를 목적으로 만들어진 **CLI** 들을 알아보겠습니다. 
+[funny](funny.md)
 
-이 부분은 **실용성이 전혀 없기 때문에** 직접 실습하셔도 되고 안하셔도 됩니다. 
+---
 
-> 참고로 모든 터미널 캡쳐는 **[Terminalizer](https://github.com/faressoft/terminalizer)** 를 사용했습니다.
+# tmux, gdb, xxd, hd
 
-### asciiquarium
+# 쉘 스크립트 
 
-**[`asciiquarium`](https://github.com/cmatsuoka/asciiquarium)** 은 아스키 코드로 만들어진 아쿠아리움을 뜻합니다. 설치법은 다음과 같습니다.
+하지만 MIT 에서 왠만하면 쉘 스크립트 쓰지 말라헀던 포스트 게시.
+
+---
+
+# CLI 업그레이드하기
+
+> +++ MIT 미싱 클래스 
+
+여러분은 지금까지 리눅스 교재와 이곳의 내용들을 통해서 `bash` 쉘, `git`, `find`, `cat`, `ls`, `vim`, `tmux`, `gdb` 같은 CLI 툴을 알아보았습니다. 
+
+하지만 지금부터 이 CLI 툴들을 사용하기 편리하도록 업그레이드 해보겠습니다. 
+
+그러기 위해서 먼저 다음의 명령어들을 입력해서 각각의 툴들을 먼저 업그레이드 해놓겠습니다. 
+
+하지만 이 명령어들을 다 입력하라니.. 정말 의욕이 사라지지 않나요? 그래서 제가 이것을 한 방에 설치할 수 있도록 쉘스크립트를 만들어두었습니다. 
+
+```shell
+$ # install git, zsh, vim, tmux
+$ sudo apt-get -y -qq install git zsh vim tmux unzip curl wget 
+$ # install fd
+$ if ! type fd 2>/dev/null; then
+$     ZIPFILE="fd.deb"
+$     VERSION=`curl -s https://github.com/sharkdp/fd/releases/latest | cut -d '"' -f 2 | cut -d '/' -f 8`
+$     wget -q -O $ZIPFILE -q https://github.com/sharkdp/fd/releases/download/$VERSION/fd_${VERSION:1}_amd64.deb
+$     sudo dpkg -i $ZIPFILE
+$ fi
+$ # install bat
+$ if ! type bat 2>/dev/null; then
+$     DEBFILE="bat.deb"
+$     VERSION=`curl -s https://github.com/sharkdp/bat/releases/latest | cut -d '"' -f 2 | cut -d '/' -f 8`
+$     wget -q -O $DEBFILE -q https://github.com/sharkdp/bat/releases/download/$VERSION/bat_${VERSION:1}_amd64.deb
+$     sudo dpkg -i $DEBFILE
+$ fi
+$ if ! type lsd 2>/dev/null; then
+$     DEBFILE="lsd.deb"
+$     VERSION=`curl -s https://github.com/Peltoche/lsd/releases/latest | cut -d '"' -f 2 | cut -d '/' -f 8`
+$     wget -q -O $DEBFILE -q https://github.com/Peltoche/lsd/releases/download/$VERSION/lsd_${VERSION}_amd64.deb
+$     sudo dpkg -i $DEBFILE
+$ fi
+$ if ! type lsd 2>/dev/null; then
+$     wget -q "https://github.com/sharkdp/hexyl/releases/download/v0.6.0/hexyl_0.6.0_amd64.deb"
+$     sudo dpkg -i hexyl_0.6.0_amd64.deb
+$ fi
+$ #
+$ # install oh-my-zsh
+$ #
+$ if [[ ! -d ~/.oh-my-zsh ]]; then
+$     wget -q -O install_ohmyzsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+$     # CHSH=no RUNZSH=no sh install_ohmyzsh.sh
+$     sh install_ohmyzsh.sh --unattended
+$     rm install_ohmyzsh.sh
+$ fi
+$ [[ ! -d ~/.oh-my-zsh/custom/themes/alien-minimal ]] && \
+$     git clone -q --recurse-submodules https://github.com/eendroroy/alien-minimal.git \
+$         ~/.oh-my-zsh/custom/themes/alien-minimal
+$ [[ ! -d ~/.oh-my-zsh/plugins/zsh-autosuggestions ]] && \
+$     git clone -q https://github.com/zsh-users/zsh-autosuggestions \
+$         ~/.oh-my-zsh/plugins/zsh-autosuggestions
+$ 
+$ for file in $(find $CURDIR -type f -name ".*" -not -name "_gdbinit"); do 
+$     f=$(basename $file)
+$     ln -sf $PWD/$file $HOME/$f; 
+$ done
+$ 
+$ #
+$ # tmux 2.x config
+$ #
+$ TMUX_VERSION=$(tmux -V | cut -d' ' -f2)
+$ if [[ "${TMUX_VERSION:0:1}" == "2" ]]; then
+$     sed -i 's/bind \\\\ split-window -h/bind \\ split-window -h/g' ~/.tmux.conf
+$ fi
+$ 
+$ #
+$ # install vim-plug
+$ #
+$ if [[ ! -f ~/.vim/autoload/onedark.vim ]]; then
+$     curl -sfLo ~/.vim/autoload/onedark.vim --create-dirs \
+$         https://raw.githubusercontent.com/joshdick/onedark.vim/master/autoload/onedark.vim
+$ fi
+$ if [[ ! -f ~/.vim/colors/onedark.vim ]]; then
+$     curl -sfLo ~/.vim/colors/onedark.vim --create-dirs \
+$         https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim
+$ fi
+$ if [[ ! -f ~/.vim/autoload/plug.vim ]]; then
+$     curl -sfLo ~/.vim/autoload/plug.vim --create-dirs \
+$         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+$     vim +PlugInstall +qall
+$ fi
+```
+
+이러한 CLI 툴들의 설치와 설정들을 매번 설치하기가 너무 귀찮아서 죽을 수도 있기 때문에 사람들은 `dotfiles` 라는 이름의 레포지토리에 일관적으로 정리해놓습니다. 
+
+> 대표적으로 https://github.com/jessfraz/dotfiles, https://github.com/jessfraz/.vim 같은 레포지토리가 유명한 `dotfiles` 레포지토리입니다. 이렇게 개인적인 설정과 개인적인 CLI 툴 업그레이드를 만들어주어도, 사람들이 그것을 보고 사용하다가 편리하면 그냥 갖다 쓰기도 합니다. 
+
+그럼 이제 다음 명령어를 통하여 저의 `dotfiles` 를 통해 CLI 들을 업그레이드해보겠습니다.
+
+> 물론 여러분도 툴들을 사용하면서 개인적으로 업그레이드하고 싶은 부분이나 마음에 드는 설정을 `dotfiles` 레포지토리에 저장해놓을 수 있습니다.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
-$ sh -c "$(curl -fsSL https://git.io/JfcKm)"
+$ git clone https://github.com/ccss17/dotfiles-cli
+$ cd dotfiles-cli
+$ ./install.sh
 ```
 
-그런 다음 이 명령어를 실행해보면 
+그리고 다음 다시 도커 컨테이너에 접속해보세요. 
+
+> 컨테이너 아이디 `e7bdf01c0acb` 는 다들 다를거에요.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
-$ asciiquarium
+$ exit
+$ docker ps -a 
+CONTAINER ID        IMAGE                      COMMAND                  CREATED              STATUS                     PORTS               NAMES
+e7bdf01c0acb        ccss17/ubuntu              "/start.sh"              About a minute ago   Exited (0) 2 seconds ago                       hungry_albattani
+$ docker start -ai e
 ```
 
-다음과 같은 아스키로 이루어진 아쿠아리움이 나옵니다. 
+그러면 더 이상 `bash` 가 아닌 `zsh` 쉘로 로그인 되고 모든 CLI 들과 설정들이 업그레이드된 환경이 자동으로 세팅되어 있습니다.
 
-![render1588863585888](https://user-images.githubusercontent.com/16812446/81310305-e21da100-90be-11ea-9b15-ed6de1c600ca.gif)
+> 물론 일반적인 시스템에서 `zsh` 을 설치하고 나면 `chsh -s /usr/bin/zsh` 명령어로 기본쉘을 변경해주어야 합니다. 
 
-### nyancat
+이제 어떻게 업그레이드 되었는지, 그리고 얼마나 편리해졌는지 하나씩 알아보겠습니다. 
 
-**[`nyancat`](https://github.com/klange/nyancat)** 은 **CLI** 로 고양이가 뛰어다니는 것을 보여주는 미친 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ apt install nyancat
-```
-
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ nyancat
-```
-
-다음과 같은 미친 고양이가 뛰어놉니다. 
-
-![render1588863923651](https://user-images.githubusercontent.com/16812446/81310941-b5b65480-90bf-11ea-9540-641c5c71b96b.gif)
-
-### sl
-
-**[`sl`](https://github.com/mtoyoda/sl)** 은 **CLI** 로 기차를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ apt install sl
-```
-
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ /usr/games/sl
-```
-
-다음과 같이 기차가 지나갑니다. 
-
-![render1588864227794](https://user-images.githubusercontent.com/16812446/81311546-805e3680-90c0-11ea-8bcb-fb64b154053f.gif)
-
-### ChristBASHTree
-
-**[`ChristBASHTree`](https://github.com/sergiolepore/ChristBASHTree)** 은 **CLI** 로 크리스마스 트리를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ cd
-$ wget -d -c -O "ChristBASHTree" "https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh"
-$ chmod +x ChristBASHTree
-```
-
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ ./ChristBASHTree
-```
-
-다음과 같이 크리스마스 트리가 나타납니다. 
-
-![render1588865712684](https://user-images.githubusercontent.com/16812446/81314439-134ca000-90c4-11ea-9ef0-2ab491c70090.gif)
-
-### unimatrix
-
-**[`unimatrix`](https://github.com/will8211/unimatrix)** 은 **CLI** 로 매트릭스를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ wget https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -O /usr/local/bin/unimatrix
-$ chmod a+rx /usr/local/bin/unimatrix
-```
-
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ unimatrix -c red
-```
-
-다음과 같이 붉은 매트릭스 나타납니다. 
-
-![render1588866261154](https://user-images.githubusercontent.com/16812446/81315323-22801d80-90c5-11ea-8590-5a9780952c24.gif)
-
-### pipe.sh
-
-**[`pipe.sh`](https://github.com/pipeseroni/pipes.sh)** 는 **CLI** 로 파이프를 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
-
-어쨌든 다음 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ pipe.sh
-```
-
-다음과 같이 파이프가 나타납니다. 
-
-![render1588866558609](https://user-images.githubusercontent.com/16812446/81316124-2496ac00-90c6-11ea-8c0e-b66bc92029fe.gif)
-
-### YuleLog
-
-**[`YuleLog`](https://github.com/Duroktar/YuleLog)** 는 **CLI** 로 따뜻한 장작을 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
-
-어쨌든 다음 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ YuleLog
-```
-
-다음과 같이 따뜻한 장작이 나타납니다. 
-
-![render1588865888181](https://user-images.githubusercontent.com/16812446/81315262-0ed4b700-90c5-11ea-92e6-c6e91cfabbf0.gif)
-
-## CLI 업그레이드하기
-
-## `bash` 업그레이드하기 - `zsh`
-
-> 참고 : https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/
+## `bash` <kbd>&rarr;</kbd> `zsh`
 
 `zsh` 은 수많은 플러그인과 테마가 지원되는 쉘입니다. 이제 `bash` 쉘을 그만 쓰고 `zsh` 을 사용해보겠습니다.
 
 > `zsh` 의 기능이 하도 많아서 `zsh` 를 사용하는 저도 기능의 반의 반도 알지 못하지만 다시는 `bash` 를 쓸 수 없게 되었습니다. `zsh` 이 너무 편하기 때문이죠. 
 
-> 2019년에 출시된 맥OS 카탈리나에서도 `bash` 를 버리고 `zsh` 을 기본쉘로 채택했다니까 맥유저들은 `zsh` 기능을 알면 더욱 좋겠네요. 
+> 2019년에 출시된 **macOS Catalina**에서도 `bash` 를 버리고 `zsh` 을 기본쉘로 채택했다니까 맥유저들은 `zsh` 기능을 알면 더욱 좋겠네요. 
 
-우분투 도커 컨테이너에 접속해서 다음 명령어로 `zsh` 과 `oh-my-zsh` 을 설치하세요. 
+> `zsh` 말고도 [**`fish`**](https://fishshell.com/) 쉘도 많이 쓰입니다. 
 
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+### 테마
 
-```shell
-$ sudo apt install zsh
-$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
+`zsh` 은 정말 수많은 테마를 갖고 있습니다.
+
+https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes
+
+에 들어가서 어떤 테마들이 있는지 한번 봐보세요. 
+
+### `z` 명령어 
+
+### `auto complete` 기능
 
 ## `vim`
 
-![](../lst2dict.gif)
-
-![](../copy5_to_for.gif)
-
-![](../multicursor.gif)
-
-![](../rename_arg.gif)
-
-![](../md-multiindent.gif)
-
-![](../oneline.gif)
-
-![](../fast-indent.gif)
+[vim.md](vim.md)
 
 ![](../modify_value.gif)
 
