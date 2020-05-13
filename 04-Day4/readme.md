@@ -695,9 +695,11 @@ $ bat test.txt
 
 - 이 **GBC** 과정을 만드느라 저는 도커 컨테이너를 여러번 종료했다가 재시작했어야만 했는데 그럴때마다 `docker start -ai b` 명령어를 반복적으로 입력했어야 했습니다.
 
-  <img src="https://user-images.githubusercontent.com/16812446/81716530-723f5a00-94b4-11ea-85a4-a1f76fbb20d7.gif" width="50%" height="auto">
+  하지만 다음과 같이 `auto-suggestions` 이 반복되는 명령어를 추천해주기 때문에 매번 입력할 필요 없이 `d` 만 누르고 <kbd>&rarr;</kbd> 를 누르면 됩니다.
+  
+  `docker start -ai b` 을 일일이 다 입력해야 하는 것과 비교해봅니다. 
 
-  하지만 위와 같이 `auto-suggestions` 이 반복되는 명령어를 추천해주기 때문에 매번 입력할 필요 없이 `d` 만 누르고 <kbd>&rarr;</kbd> 를 누르면 됩니다. 
+  <img src="https://user-images.githubusercontent.com/16812446/81716530-723f5a00-94b4-11ea-85a4-a1f76fbb20d7.gif" width="50%" height="auto">
 
 만약 `auto-suggestions` 이 추천한 명령어 전부를 원하지 않고 부분적인 것만 원한다면 <kbd>Ctrl</kbd>+<kbd>&rarr;</kbd> 를 누르면 됩니다. 
 
