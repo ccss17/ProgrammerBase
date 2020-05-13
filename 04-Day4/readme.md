@@ -573,7 +573,6 @@ $ bat test.txt
 
 이로써 다음과 같이 `213` 타를 쳐야 했던 것을 `79` 타만 칠 수 있도록 대폭 절약을 해보았습니다.
 
-<div align="center">
 |원래 명령어|`alias` 명령어|
 |:---|:---|
 |`git init`|`g i`|
@@ -593,7 +592,6 @@ $ bat test.txt
 |`git push origin master`|`g psom`|
 |`git pull origin master`|`g plom`|
 |**총합 `213` 개**|**총합 `79` 개**|
-</div>
 
 이러한 `git` 레포지토리 관리 패턴은 코딩을 할 때마다 반복되는데, 이 패턴을 개발자로 살아가면서 적게 잡아서 **10000** 번 반복한다고 한다면, 여러분은 **10000 * 213 = 2백 13만** 번의 타수를 **10000 * 79 = 79만** 번의 타수로 절약하였습니다.
 
@@ -615,17 +613,17 @@ $ bat test.txt
 
 현재 도커 컨테이너에 설치되어 있는 `zsh` 테마는 다음과 같은 [alien-minimal](https://github.com/eendroroy/alien-minimal) 입니다.
 
-[![asciicast](http://asciinema.org/a/264037.svg)](https://asciinema.org/a/264037)
-
 [<img src="http://asciinema.org/a/264037.svg" width="50%" height="auto">](https://asciinema.org/a/264037)
 
 `zsh` 테마는 단순히 `bash` 쉘 프롬프트보다 더 멋있기 때문에 사용해야 하는 것도 있지만 수많은 기능들도 제공하기 때문에 사용해야 합니다. 그 수많은 기능 중 다음 두 가지 기능만 알아보겠습니다. 
 
 - `git` 브랜치를 프롬프트에 보여준다. 
 
-  <img src="https://user-images.githubusercontent.com/16812446/81711439-a748ae00-94ae-11ea-87b3-2d044af66c6a.png" width="70%" height="auto">
+  <img src="https://user-images.githubusercontent.com/16812446/81711439-a748ae00-94ae-11ea-87b3-2d044af66c6a.png" width="50%" height="auto">
 
-  - 위와 같이 `git` 으로 레포지토리를 관리하다가 실험적인 기능을 테스트해야 해서 새로운 `branch` 인 `dev` 를 만들고 이주했을 때, `zsh` 의 프롬프트가 우측에 현재 상주하고 있는 `branch` 정보를 알려줍니다. 
+  - 위와 같이 프롬프트 우측에 `master` 가 `dev` 로 바뀌고 다시 `master`로 바뀌었습니다.
+
+  - 이렇게 `git` 으로 레포지토리를 관리하다가 실험적인 기능을 테스트해야 해서 새로운 `branch` 인 `dev` 를 만들고 이주했을 때, `zsh` 의 프롬프트가 우측에 현재 상주하고 있는 `branch` 정보를 알려줍니다. 
 
 - 프로그램의 리턴값이 정상값 `0` 이 아닐경우 프롬프트에 보여준다. 
 
