@@ -609,7 +609,7 @@ int main(int argc, char** argv)
 
 `vim` 을 사용하다보면 다른 터미널 작업을 해야 할 때가 생깁니다. 물론 `:!<CMD>` 나 `:shell` 로 `vim` 내부에서 명령어를 실행할 수 있지만 솔직히 너무 불편하죠. 이런 경우를 위하여 `tmux` 로 터미널 하나를 여러 터미널로 분리할 수 있습니다. 
 
-`vim` 을 실습하느라 힘드셨을 것 같은데, `tmux` 도 `vim` 만큼 배우고 싶은데 알려주는 사람이 없어서 못배울만큼 정말 좋은 프로그램이기 때문에 매우 간단하게 `tmux` 필수 기능만을 알아보겠습니다. 
+`vim` 을 실습하느라 힘드셨을 것 같은데, `tmux` 도 `vim` 만큼 배우고 싶은데 알려주는 사람이 없어서 못배울 정도로 정말 좋은 프로그램이기 때문에 매우 간단하게 `tmux` 필수 기능만을 알아보겠습니다. 
 
 ## tmux 시작과 종료 
 
@@ -621,7 +621,7 @@ int main(int argc, char** argv)
 $ tmux
 ```
 
-그리고 나서 단순히 `exit` 를 입력하여 터미널을 종료시키면 `tmux` 도 자동으로 종료됩니다. `exit` 로 터미널을 종료해보세요. 
+그리고 나서 단순히 `exit` 를 입력하여 터미널을 종료시키면 `tmux` 도 자동으로 종료됩니다. `exit` 로 `tmux` 의 터미널을 종료해보세요. 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -635,7 +635,7 @@ $ exit
 |:---:|:---:|
 | **Meta** 키 | <kbd>Ctrl</kbd>+<kbd>b</kbd>  |
 
-`tmux` 에서는 **Meta** 키 를 사용하여 명령어들을 정의합니다. **Meta** 키란 <kbd>Ctrl</kbd> + <kbd>b</kbd> 입니다. 이제 **Meta** 키를 <kbd>Meta</kbd> 라고 하겠습니다. 그러니까 <kbd>Meta</kbd>+<kbd>%</kbd> 라고 한다면 <kbd>Ctrl</kbd> + <kbd>b</kbd> + <kbd>%</kbd> 를 뜻하는 것입니다. 
+`tmux` 에서는 **Meta** 키 를 사용하여 명령어들을 정의합니다. **Meta** 키란 <kbd>Ctrl</kbd> + <kbd>b</kbd> 입니다. 이제 **Meta** 키를 <kbd>Meta</kbd> 라고 하겠습니다. 그러니까 <kbd>Meta</kbd>+<kbd>%</kbd> 라고 한다면 (<kbd>Ctrl</kbd> + <kbd>b</kbd>) + <kbd>%</kbd> 를 뜻하는 것입니다. 
 
 ## 터미널 분할 
 
@@ -654,6 +654,8 @@ $ exit
 
   ![w08Lbg4Ucw](https://user-images.githubusercontent.com/16812446/81838039-91a3b900-9580-11ea-8124-d76d1c6579de.gif)
 
+  > **GIF** 를 클릭하면 고화질로 볼 수 있는 새 창이 열려요.
+
 ## 새로운 화면 생성 
 
 | 기능 | 단축키 |
@@ -667,3 +669,5 @@ $ exit
 - `vim` 으로 코딩을 하면서 소스코드를 컴파일하는 터미널에서 작업하다가, 급하게 `gotop` 명령어로 시스템 리소스를 확인해야 하는 상황이라면 다음과 같이 새로운 탭을 생성하고 작업하면 됩니다. 
 
   ![y8uvCHmU1L](https://user-images.githubusercontent.com/16812446/81838705-74bbb580-9581-11ea-87ca-24e289483f19.gif)
+
+  > **GIF** 를 클릭하면 고화질로 볼 수 있는 새 창이 열려요.
