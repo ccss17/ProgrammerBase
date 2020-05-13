@@ -459,10 +459,9 @@ int main(int argc, char** argv)
 
 - 실습 
 
+  다음과 같이 `/static` 으로 `static` 키워드를 찾고 `n` 을 누르며 다음 것을 찾아보세요. 
+
   ![render1589353002311](https://user-images.githubusercontent.com/16812446/81781027-75792b00-9532-11ea-9cad-dab0a5f905f4.gif)
-
-  위와 같이 `/static` 으로 `static` 키워드를 찾고 `n` 을 누르며 다음 것을 찾아보세요. 
-
 
 ### 화면 이동
 
@@ -489,9 +488,9 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![render1589353180616](https://user-images.githubusercontent.com/16812446/81781253-d0128700-9532-11ea-9c6f-03454fd457a6.gif)
+  다음과 같이 `zt` 와 `L` 을 반복해서 눌러서 커서를 아래로 이동하다가 원하는 코드를 찾으면 `zz` 로 화면을 포커싱 해보세요. 
 
-  위와 같이 `zt` 와 `L` 을 반복해서 눌러서 커서를 아래로 이동하다가 원하는 코드를 찾으면 `zz` 로 화면을 포커싱 해보세요. 
+  ![render1589353180616](https://user-images.githubusercontent.com/16812446/81781253-d0128700-9532-11ea-9c6f-03454fd457a6.gif)
 
 - 실습 
 
@@ -547,12 +546,11 @@ int main(int argc, char** argv)
 
 - 실습 
 
+  다음과 같이 `6` 행으로 이동해서 `v$` 으로 문장 전체를 드래그하고 `j` 로 밑의 문장까지 드래그한 다음 `U` 를 눌러서 대문자로 바꿔보세요. 
+
   ![render1589353271791](https://user-images.githubusercontent.com/16812446/81781394-fd5f3500-9532-11ea-8e8c-fa943c63266f.gif)
 
-  위와 같이 `6` 행으로 이동해서 `v$` 으로 문장 전체를 드래그하고 `j` 로 밑의 문장까지 드래그한 다음 `U` 를 눌러서 대문자로 바꿔보세요. 
-
   > 이 작업을 단지 키보드 입력 `4` 회로 했습니다. 
-
 
 ### 다중 입력
 
@@ -603,100 +601,6 @@ int main(int argc, char** argv)
 
   ![render1589354268596](https://user-images.githubusercontent.com/16812446/81782929-88412f00-9535-11ea-988e-c4f90b29d205.gif)
 
-# vim 요약
-
-| | 일반 텍스트 에디터 | `vim` |
-|:---:|:---:|:---:|
-|단축키 개수 | 적음 | 많음 | 
-|입력 회수 | 많음 | 적음 | 
-
-|이동 거리|퉁 치는 횟수|
-|:---|:---|
-|커서가 (문자가 모여있는) 단어를 이동하는 횟수 | **n 번** |
-|커서가 (단어가 모여있는) 문장을 이동하는 횟수 | **n<sup>2</sup> 번**| 
-|커서가 (문장이 모여있는) 전체파일을 이동하는 횟수 | **n<sup>3</sup> 번**|
-
-| 기능 | 일반 텍스트 에디터 | `vim` |
-|:---:|:---:|:---:|
-| 왼쪽 이동 | <kbd>&larr;</kbd> | `h` | 
-| 오른쪽 이동 | <kbd>&rarr;</kbd> | `l` | 
-| 위쪽 이동 | <kbd>&uarr;</kbd>| `k` | 
-| 아래쪽 이동 | <kbd>&darr;</kbd>| `j` | 
-| 이전에 실행한 기능 반복하기 |  | `.` | 
-| 입력하기 | | `i` | 
-| 다음 글자에 입력하기 | <kbd>&rarr;</kbd> | `a` | 
-| 다음 행에 입력하기 | <kbd>&rarr;</kbd> × **n<sup>2</sup>** + <kbd>Enter</kbd> | `o` | 
-| 이전 행에 입력하기 | <kbd>&uarr;</kbd> + <kbd>&rarr;</kbd> × **n<sup>2</sup>** + <kbd>Enter</kbd> | `O` | 
-| 문장 마지막에 입력하기 | <kbd>&rarr;</kbd> × **n<sup>2</sup>** | `A` | 
-| 문장 처음에 입력하기 | <kbd>&larr;</kbd> × **n<sup>2</sup>** | `I` | 
-| 저장 | <kbd>Ctrl</kbd> + <kbd>s</kbd> | `:w` | 
-| 종료 | <kbd>Alt</kbd> + <kbd>F4</kbd> | `:q` | 
-| 저장 후 종료 | <kbd>Ctrl</kbd> + <kbd>s</kbd> 🠲 <kbd>Alt</kbd> + <kbd>F4</kbd>| `:wq` 또는 `ZZ` |<kbd>Alt</kbd> + <kbd>F4</kbd> 
-| 강제 종료 |  | `:q!` | 
-| 다른 이름(`<NAME>`)으로 저장 |  | `:w <NAME>` | 
-| 지우기 | <kbd>Backspace</kbd> 또는 <kbd>Delete</kbd> | `x` | 
-| 단어 지우기 | <kbd>Backspace</kbd> × **n** | `dw` | 
-| 문장 지우기 | <kbd>Backspace</kbd> × **n<sup>2</sup>** | `dd` | 
-| 커서로부터 문장 끝까지 지우기 | <kbd>Delete</kbd> × **n<sup>2</sup>** | `D` | 
-| 한 글자 지우고 편집하기 | <kbd>Backspace</kbd> | `r` | 
-| 단어 지우고 편집하기 | <kbd>Backspace</kbd> × **n** | `cw` | 
-| 커서로부터 문장 끝까지 지우고 편집하기 | <kbd>Delete</kbd> × **n<sup>2</sup>** | `C` | 
-| 문장에서 `<OLD>` 를 `<NEW>` 로 치환하기 |  | `:s/<OLD>/<NEW>` | 
-| 전체 파일에서 `<OLD>` 를 `<NEW>` 로 치환하기 |  | `:s/<OLD>/<NEW>/g` | 
-| 전체 파일에서 하나씩 확인하면서 `<OLD>` 를 `<NEW>` 로 치환하기 |  | `:s/<OLD>/<NEW>/gc` | 
-| 원하는 문자로 이동 | <kbd>&rarr;</kbd> × **n<sup>2</sup>** | `f<C>` | 
-| 오른쪽 단어로 이동 | <kbd>Ctrl</kbd> + <kbd>&rarr;</kbd> | `e` | 
-| 왼쪽 단어로 이동 | <kbd>Ctrl</kbd> + <kbd>&larr;</kbd> | `b` | 
-| 문장의 처음으로 이동 | <kbd>Ctrl</kbd> + <kbd>&larr;</kbd> × **n**  | `0` | 
-| 문장의 마지막으로 이동 | <kbd>Ctrl</kbd> + <kbd>&rarr;</kbd> × **n**  | `$` | 
-| 화면의 처음으로 이동 | <kbd>&uarr;</kbd> × **n<sup>3</sup>**  | `H` | 
-| 화면의 가운데로 이동 |  | `M` | 
-| 화면의 마지막으로 이동 | <kbd>&darr;</kbd> × **n<sup>3</sup>**  | `L` | 
-| 취소 | <kbd>Ctrl</kbd> + <kbd>z</kbd> | `u` | 
-| 취소한 것을 취소 |  | <kbd>Ctrl</kbd> + <kbd>R</kbd> | 
-| 문장을 원래대로 복원 | | `U` | 
-| 드래그 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × **n** | `v` | 
-| 단어 복사하기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × **n** 🠲 <kbd>Ctrl</kbd> + <kbd>c</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `yw` 🠲  `p` | 
-| 문장 복사하기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × **n<sup>2</sup>** 🠲 <kbd>Ctrl</kbd> + <kbd>c</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `yy` 🠲  `p` | 
-| 드래그해서 복사하기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × **n<sup>2</sup>** 🠲 <kbd>Ctrl</kbd> + <kbd>c</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `v` 🠲 `y` 🠲 `p` | 
-| 한 글자 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `x` 🠲  `p` | 
-| 단어 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × **n** 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `dw` 🠲  `p` | 
-| 문장 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × **n<sup>2</sup>** 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `dd` 🠲  `p` | 
-| 특정 영역 잘라내기 | <kbd>Shift</kbd> + <kbd>&rarr;</kbd> × **n<sup>2</sup>** 🠲 <kbd>Ctrl</kbd> + <kbd>x</kbd> 🠲 <kbd>Ctrl</kbd> + <kbd>v</kbd> | `v` 🠲 `x` 🠲 `p` | 
-| 파일의 맨 마지막으로 이동 | <kbd>&darr;</kbd> × **n<sup>3</sup>** | `G` | 
-| 파일의 맨 처음으로 이동 | <kbd>&uarr;</kbd> × **n<sup>3</sup>** | `gg` | 
-| `<N>` 번째 행으로 이동 | <kbd>&uarr;</kbd> × **n<sup>3</sup>** 또는 <kbd>&darr;</kbd> × **n<sup>3</sup>** | `<N>gg` | 
-| 아랫방향으로 찾기 | <kbd>Ctrl</kbd> + <kbd>f</kbd> | `/` | 
-| 윗방향으로 찾기 |  | `?` | 
-| 커서가 위치한 단어 아랫방향으로 찾기 |  | `*` | 
-| 커서가 위치한 단어 윗방향으로 찾기 |  | `#` | 
-| 찾고나서 같은방향으로 단어 찾기 | <kbd>Enter</kbd> | `N` | 
-| 찾고나서 반대방향으로 단어 찾기 | <kbd>Shift</kbd> + <kbd>Enter</kbd> | `n` | 
-| 괄호의 짝 찾기 |  | `%` | 
-| 화면을 한 행만큼 아래로 이동 | <kbd>&darr;</kbd> × **n<sup>2</sup>** | <kbd>Ctrl</kbd> + `e` | 
-| 화면을 한 행만큼 위로 이동 | <kbd>&uarr;</kbd> × **n<sup>2</sup>** | <kbd>Ctrl</kbd> + `y` | 
-| 화면을 반 페이지만큼 아래로 이동 | <kbd>&darr;</kbd> × **n<sup>2</sup>** | <kbd>Ctrl</kbd> + `d` | 
-| 화면을 반 페이지만큼 위로 이동 | <kbd>&uarr;</kbd> × **n<sup>2</sup>** | <kbd>Ctrl</kbd> + `u` | 
-| 화면을 한 페이지만큼 아래로 이동 | <kbd>&darr;</kbd> × **n<sup>2</sup>** | <kbd>Ctrl</kbd> + `f` | 
-| 화면을 한 페이지만큼 위로 이동 | <kbd>&uarr;</kbd> × **n<sup>2</sup>** | <kbd>Ctrl</kbd> + `b` | 
-| 커서를 기준으로 화면을 최대한 아래로 이동 |  | `zt` | 
-| 커서를 기준으로 화면을 최대한 위로 이동 |  | `zb` | 
-| 커서를 기준으로 화면을 정중앙으로 이동 |  | `zz` | 
-| 파일 위치에서 `<CMD>` 명령 실행 |  | `:!` + `<CMD>` | 
-| 파일 위치에서 쉘 실행 |  | `:shell` | 
-| 대문자로 변경 |  | `v` 🠲 `U` | 
-| 소문자로 변경 |  | `v` 🠲 `u` | 
-| 블록 드래그 |  | <kbd>Shift</kbd> + `v` | 
-| 드래그 상태에서 다중 입력 |  | <kbd>Shift</kbd> + `i` | 
-| 문장 붙히기 | <kbd>&rarr;</kbd> × **n<sup>2</sup>** + <kbd>Delete</kbd> | `J` | 
-| 수평으로 화면분할|  | `:sp <FILE>` | 
-| 수직으로 화면분할|  | `:vsp <FILE>` | 
-| 다음 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>w</kbd> | 
-| 왼쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>h</kbd> | 
-| 오른쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>l</kbd> | 
-| 아래쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>j</kbd> | 
-| 위쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>k</kbd> | 
-
 이걸 읽으셨다면 `vim` 실습을 다 하신 거겠죠. 아마 힘들 수도 있었겠지만 포기하지 않고 `vim` 에 익숙해져서 마음대로 `vim` 으로 코딩을 할 수 있게 된다면 코딩 속도가 너무 빨라져서 `vim` 배우길 잘했다 라고 생각하게 되실 거에요. 
 
 > 이제부터는 **Google** 에 `vim` 을 검색해보면서 스스로 `vim` 의 더 다양한 기능을 찾아보세요. 저도 `vim` 을 에디터로 사용하지만 아직 기능의 **절반도 모르는것 같네요.** 하지만 일반 에디터로 다시는 되돌아갈 수 없는 몸이 되버렸어요. 코딩 속도가 너무 느려서 답답하거든요.
@@ -718,3 +622,32 @@ int main(int argc, char** argv)
 ```shell
 $ tmux
 ```
+
+그리고 나서 단순히 `exit` 를 입력하여 터미널을 종료시키면 `tmux` 도 자동으로 종료됩니다. `exit` 로 터미널을 종료해보세요. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ exit
+```
+
+## 메타 키
+
+| 기능 | 단축키 |
+|:---:|:---:|
+| **Meta** 키 | <kbd>Ctrl</kbd>+<kbd>b</kbd>  |
+
+`tmux` 에서는 **Meta** 키 를 사용하여 명령어들을 정의합니다. **Meta** 키란 <kbd>Ctrl</kbd> + <kbd>b</kbd> 입니다. 이제 **Meta** 키를 <kbd>Meta</kbd> 라고 하겠습니다. 그러니까 <kbd>Meta</kbd>+<kbd>%</kbd> 라고 한다면 <kbd>Ctrl</kbd> + <kbd>b</kbd> + <kbd>%</kbd> 를 뜻하는 것입니다. 
+
+## 터미널 분할 
+
+| 기능 | 단축키 |
+|:---:|:---:|
+| 화면 수직 분할 | <kbd>Meta</kbd>+<kbd>%</kbd>  |
+| 화면 수평 분할 | <kbd>Meta</kbd>+<kbd>"</kbd>  |
+
+`tmux` 에서는 위와 같은 단축키로 수평으로, 수직으로 새로운 터미널을 생성할 수 있습니다. 
+
+> 메타 키를 누른채로 <kbd>%</kbd> 나 <kbd>"</kbd> 를 입력하면 안되요. 메타 키를 입력하고 나서 손을 떼고 <kbd>%</kbd> 나 <kbd>"</kbd> 를 눌러보세요. 
+
+- 다음과 같이 `vim` 으로 코딩을 하면서 소스코드를 컴파일하는 화면, 소스코드를 실행하는 화면을 분할해보세요. 
