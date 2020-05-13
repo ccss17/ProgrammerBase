@@ -221,7 +221,11 @@ $ python3 main.py test/3030.txt
 
 여러분은 지금까지 리눅스 교재와 이곳의 내용들을 통해서 `bash` 쉘, `git`, `find`, `cat`, `ls`, `vim`, `tmux`, `gdb` 같은 CLI 툴을 알아보았습니다. 
 
-하지만 지금부터 이 CLI 툴들을 사용하기 편리하도록 업그레이드 해보겠습니다. 그러기 위해서 먼저 다음의 명령어들을 입력해서 각각의 툴들을 먼저 업그레이드 해놓겠습니다. 
+하지만 지금부터 이 CLI 툴들을 사용하기 편리하도록 업그레이드 해보겠습니다.
+
+## `dotfiles`
+
+그러기 위해서 먼저 다음의 명령어들을 입력해서 각각의 툴들을 먼저 업그레이드 해야 합니다. 하지만 정말 입력하지는 말고 다음 내용을 계속 읽으세요.
 
 ```shell
 $ sudo apt-get -y -qq install git zsh vim tmux unzip curl wget 
@@ -250,7 +254,7 @@ $ curl -sfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubuserconten
 $ vim +PlugInstall +qall
 ```
 
-하지만 이 명령어들을 다 입력하라니.. 정말 의욕이 사라지지 않나요? 그래서 제가 이것을 한 방에 설치할 수 있도록 쉘스크립트를 만들어두었습니다. 
+이 명령어들을 다 입력해야 한다니 정말 의욕이 사라지지 않나요? 그래서 제가 이것을 한 방에 설치할 수 있도록 쉘스크립트를 만들어두었습니다. 
 
 이러한 CLI 툴들의 설치와 설정들을 매번 설치하기가 너무 귀찮아서 죽을 수도 있기 때문에 사람들은 `dotfiles` 라는 이름의 레포지토리에 일관적으로 정리해놓습니다. 
 
@@ -376,7 +380,7 @@ $ ll
 그러면 실행결과가 다음과 같을 겁니다.
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16812446/81694909-dd7d3200-949c-11ea-902b-d0d11c496f44.png" width="70%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/81694909-dd7d3200-949c-11ea-902b-d0d11c496f44.png" width="50%" height="auto">
 </div>
 
 
@@ -385,7 +389,7 @@ $ ll
 > `lsd --icon never` 에서 `--icon never` 옵션이 아이콘을 출력하지 않는 옵션이라고 했습니다. 이는 CLI 환경에서 필요한 옵션이기 때문에 만약 **macOS** 나 리눅스 데스크탑 환경에서 `--icon never` 옵션을 제거하고 `lsd` 를 실행하면 다음과 같이 아이콘도 함께 출력되어 가독성이 훨씬 올라가는 것을 알 수 있습니다. 
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16812446/81695205-45cc1380-949d-11ea-96e9-21f0f3c56dca.png" width="70%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/81695205-45cc1380-949d-11ea-96e9-21f0f3c56dca.png" width="50%" height="auto">
 </div>
 
 ## `cat` ➜ `bat`
@@ -402,14 +406,14 @@ $ bat Makefile
 `cat` 이 다음과 같이 밋밋하게 출력되는 반면,
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16812446/81692467-672b0080-9499-11ea-9b6e-7a8c72773467.png" width="50%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/81692467-672b0080-9499-11ea-9b6e-7a8c72773467.png" width="40%" height="auto">
 </div>
 
 
 `bat` 이 다음과 같이 컬러풀하게 출력됩니다. 
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16812446/81692558-8c1f7380-9499-11ea-9ef7-c3ed402a14f8.png" width="50%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/81692558-8c1f7380-9499-11ea-9ef7-c3ed402a14f8.png" width="40%" height="auto">
 </div>
 
 `bat` 으로 `lolcat.c` 같은 `C` 언어 소스코드도 출력해보세요. 
@@ -456,7 +460,7 @@ $ hexyl lolcat | less
 
 `fd` 는 `find` 와 상세하게 비교하기보다 다음의 사용예를 가볍게 한번 살펴보는 것으로 마무리하겠습니다. 
 
-![](https://raw.githubusercontent.com/sharkdp/fd/master/doc/screencast.svg?sanitize=true)
+<img src="https://raw.githubusercontent.com/sharkdp/fd/master/doc/screencast.svg?sanitize=true" width="50%" height="auto">
 
 `fd` 의 상세한 설명을 알고 싶다면 공식 레포지토리 https://github.com/sharkdp/fd 를 참고해주세요.
 
@@ -569,6 +573,7 @@ $ bat test.txt
 
 이로써 다음과 같이 `213` 타를 쳐야 했던 것을 `79` 타만 칠 수 있도록 대폭 절약을 해보았습니다.
 
+<div align="center">
 |원래 명령어|`alias` 명령어|
 |:---|:---|
 |`git init`|`g i`|
@@ -588,6 +593,7 @@ $ bat test.txt
 |`git push origin master`|`g psom`|
 |`git pull origin master`|`g plom`|
 |**총합 `213` 개**|**총합 `79` 개**|
+</div>
 
 이러한 `git` 레포지토리 관리 패턴은 코딩을 할 때마다 반복되는데, 이 패턴을 개발자로 살아가면서 적게 잡아서 **10000** 번 반복한다고 한다면, 여러분은 **10000 * 213 = 2백 13만** 번의 타수를 **10000 * 79 = 79만** 번의 타수로 절약하였습니다.
 
@@ -610,6 +616,8 @@ $ bat test.txt
 현재 도커 컨테이너에 설치되어 있는 `zsh` 테마는 다음과 같은 [alien-minimal](https://github.com/eendroroy/alien-minimal) 입니다.
 
 [![asciicast](http://asciinema.org/a/264037.svg)](https://asciinema.org/a/264037)
+
+[<img src="http://asciinema.org/a/264037.svg" width="50%" height="auto">](https://asciinema.org/a/264037)
 
 `zsh` 테마는 단순히 `bash` 쉘 프롬프트보다 더 멋있기 때문에 사용해야 하는 것도 있지만 수많은 기능들도 제공하기 때문에 사용해야 합니다. 그 수많은 기능 중 다음 두 가지 기능만 알아보겠습니다. 
 
