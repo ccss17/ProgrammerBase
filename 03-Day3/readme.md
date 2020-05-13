@@ -671,3 +671,5 @@ $ exit
   ![y8uvCHmU1L](https://user-images.githubusercontent.com/16812446/81838705-74bbb580-9581-11ea-87ca-24e289483f19.gif)
 
   > **GIF** 를 클릭하면 고화질로 볼 수 있는 새 창이 열려요.
+
+  - 위 예시에서는 화면을 `2` 개만 생성해봤지만 더 많이 생성할 수도 있습니다. 
