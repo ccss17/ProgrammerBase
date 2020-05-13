@@ -460,7 +460,9 @@ $ hexyl lolcat | less
 
 `fd` 는 `find` 와 상세하게 비교하기보다 다음의 사용예를 가볍게 한번 살펴보는 것으로 마무리하겠습니다. 
 
+<div align="center">
 <img src="https://raw.githubusercontent.com/sharkdp/fd/master/doc/screencast.svg?sanitize=true" width="50%" height="auto">
+</div>
 
 `fd` 의 상세한 설명을 알고 싶다면 공식 레포지토리 https://github.com/sharkdp/fd 를 참고해주세요.
 
@@ -633,29 +635,38 @@ $ bat test.txt
 
   - `zsh` 프롬프트는 그러한 비정상 종료 코드를 보여주고 프로그램이 비정상적으로 종료되었을 때 프롬프트 색깔을 다른 색깔로 바꿔줍니다. 
 
+### `tab-completion` 기능
+
+이 기능은 명령어의 부분만 입력하고 <kbd>Tab</kbd> 을 눌렀을 때 `zsh` 이 알아서 명령어를 추천해주는 기능입니다. 
+
+- 다음과 같이 `cd` 만 누르고 <kbd>Tab</kbd> 을 누르면 명령어를 추천을 해주고, `cd` 를 선택하고 다시 <kbd>Tab</kbd> 을 누르니까 이동할 레포지토리를 추천해줍니다. 우리가 해야 할 일은 단지 <kbd>Enter</kbd> 를 누르는 것 뿐이죠. 
+
+  ![render1589349092346](https://user-images.githubusercontent.com/16812446/81776326-98531180-9529-11ea-871e-d3001579bfe2.gif)
+
+- 다음과 같이 특정 디렉토리만 입력하고 나서 <kbd>Tab</kbd> 을 누르면 하위 디렉토리를 추천해줍니다. 
+
+  ![render1589349132365](https://user-images.githubusercontent.com/16812446/81776480-cf292780-9529-11ea-8ffd-4e457a71e6de.gif)
+
+
 ### `auto-completion` 기능
 
 이 기능은 사용자가 길고 복잡한 경로를 이동해야 할때 그것을 특정할 수 있는 문자만 입력하고 <kbd>Tab</kbd> 을 누르면 자동으로 완성해주는 `zsh` 의 기능입니다. 바로 실습해보겠습니다. 
 
-- `/usr/lib/gcc/x86_64-linux-gnu/8` 의 경로로 이동해야 하는 경우라고 가정하고 다음의 명령어를 입력해보세요.
-
-  ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+- `/usr/lib/gcc/x86_64-linux-gnu/9.3.0` 의 경로로 이동해야 하는 경우라고 가정하겠습니다.
 
   ```shell
-  $ cd /usr/lib/gcc/x86_64-linux-gnu/8
+  $ cd /usr/lib/gcc/x86_64-linux-gnu/9.3.0
   ```
 
-  하지만 이건 너무 길어서 짜증나서 견딜 수가 없습니다. 그러니까 다음 명령어만 입력하고 <kbd>Tab</kbd> 을 누르세요. 
-
-  ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+  하지만 이건 너무 길어서 짜증나서 견딜 수가 없습니다. 그러니까 다음 명령어만 입력하고 <kbd>Tab</kbd> 을 누릅니다. 
 
   ```shell
-  $ cd /u/l/g/x/8
+  $ cd /u/l/g/x/9
   ```
 
   그러면 다음과 같이 `zsh` 이 경로를 지가 알아서 완성시켜 줍니다. 
 
-  <img src="https://user-images.githubusercontent.com/16812446/81713518-ef68d000-94b0-11ea-9208-defe08e12d3c.gif" width="50%" height="auto">
+  ![](https://user-images.githubusercontent.com/16812446/81776742-51b1e700-952a-11ea-986d-4169235ff0ef.gif)
 
 ### `z` 명령어 
 
@@ -663,17 +674,15 @@ $ bat test.txt
 
 단 `z` 명령어를 사용하기 위해서는 반드시 한 번 이상은 그 경로로 이동한 적이 있어야 합니다. 왜냐하면 `z` 이 사용자가 이동한 경로를 분석하고 통계를 낼 기회를 줘야하기 때문이죠.
 
-- 우리는 방금 `/usr/lib/gcc/x86_64-linux-gnu/8` 라는 경로로 이동한 적이 있습니다. 그러면 이 경로를 아마도 `8` 이 특정할 수 있을 것 같으니까 다음 명령어를 실행해보세요. 
-
-  ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+- 방금 전에 `/usr/lib/gcc/x86_64-linux-gnu/9.3.0` 라는 경로로 이동했었으니까 이 경로를 아마도 `9` 이 특정할 수 있을 것 같으니까 다음 명령어를 실행해봅니다. 
 
   ```shell
-  $ z 8
+  $ z 9
   ```
 
   실행 결과는 다음과 같습니다. 
 
-  <img src="https://user-images.githubusercontent.com/16812446/81714210-c98ffb00-94b1-11ea-8b74-6bdea61d568e.gif" width="50%" height="auto">
+  ![render1589349777003](https://user-images.githubusercontent.com/16812446/81776971-d997f100-952a-11ea-8b23-0995cbb69876.gif)
 
 - 또 우리는 `git` 을 연습하느라 `git-test` 라는 디렉토리를 왔다갔다 거렸습니다. 아마도 `git-test` 를 `gi` 로 특정할 수 있을 것 같네요. 그러면 다음 명령어를 입력해보세요. 
 
@@ -683,9 +692,9 @@ $ bat test.txt
   $ z gi
   ```
 
-  실행 결과는 다음과 같습니다. `cd git-test` 로 이동하는 것과 비교해봅니다. 
+  실행 결과는 다음과 같습니다.
 
-  <img src="https://user-images.githubusercontent.com/16812446/81714503-196ec200-94b2-11ea-9053-f97ecea7309f.gif" width="50%" height="auto">
+  ![render1589350001867](https://user-images.githubusercontent.com/16812446/81777221-588d2980-952b-11ea-8efa-0c3ae90d3e2d.gif)
 
 ### `auto-suggestions` 기능
 
@@ -697,9 +706,11 @@ $ bat test.txt
 
   하지만 다음과 같이 `auto-suggestions` 이 반복되는 명령어를 추천해주기 때문에 매번 입력할 필요 없이 `d` 만 누르고 <kbd>&rarr;</kbd> 를 누르면 됩니다.
   
-  `docker start -ai b` 을 일일이 다 입력해야 하는 것과 비교해봅니다. 
+  `docker start -ai b` 을 일일이 다 입력해야 하는 것과 비교해봅니다.
+  
+  > `q` 명령어는 `alias` 파트에서 `alias q=exit` 라고 정의된 것을 확인했었습니다.
 
-  <img src="https://user-images.githubusercontent.com/16812446/81716530-723f5a00-94b4-11ea-85a4-a1f76fbb20d7.gif" width="50%" height="auto">
+  ![render1589350187427](https://user-images.githubusercontent.com/16812446/81777473-dcdfac80-952b-11ea-9936-0cc6df268b47.gif)
 
 만약 `auto-suggestions` 이 추천한 명령어 전부를 원하지 않고 부분적인 것만 원한다면 <kbd>Ctrl</kbd>+<kbd>&rarr;</kbd> 를 누르면 됩니다. 
 
