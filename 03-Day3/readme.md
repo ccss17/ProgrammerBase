@@ -40,18 +40,20 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 ### `vim` 의 단축키 개수와 입력 회수
 
+하지만 `vim` 은 단축키가 **매우 많아서** 다양한 상황에 적용되는 단축키의 조합이 단순해집니다.
+
 | | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
 |단축키 개수 | 적음 | 많음 | 
 |입력 회수 | 많음 | 적음 | 
 
-하지만 `vim` 은 단축키가 **매우 많아서** 다양한 상황에 적용되는 단축키의 조합이 단순해집니다. 그래서 `vim` 을 사용하면 코딩할 때 키보드를 치는 횟수가 압도적으로 줄어듭니다. 다음 그래프와 같이 단축키 개수가 많으면 익혀야 할 단축키가 많은 대신 입력 회수가 줄어들고, 단축키 개수가 적으면 입력 회수가 많아집니다!
+그래서 `vim` 을 사용하면 코딩할 때 키보드를 치는 횟수가 압도적으로 줄어듭니다. 다음 그래프와 같이 단축키 개수가 많으면 익혀야 할 단축키가 많은 대신 입력 회수가 줄어들고, 단축키 개수가 적으면 입력 회수가 많아집니다!
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/81026898-b16b1b00-8eb6-11ea-89fa-3503770b57d4.png" width="50%" height="auto">
 </div>
 
-이것은 단조로운 단어를 쓰면 문장의 길이가 길어지고 다양한 단어를 쓰면 문장이 짧아지는 것과 같은 이치입니다. 
+하지만 단축키는 한번 습득이 되기만하면 그 다음부터는 전혀 문제가 안됩니다. 이것은 단조로운 단어를 쓰면 문장의 길이가 길어지고 다양한 단어를 쓰면 문장이 짧아지는 것과 같은 이치입니다. 
 
 > 게다가 `vim` 에 익숙해지면 텍스트 편집을 할 때 마우스를 사용해야 하는 횟수가 `0` 에 수렴합니다. 키보드와 마우스의 거리는 생각보다 멀기 때문에 이로써 발생하는 시간절약 효과도 상당합니다. 
 
@@ -69,11 +71,15 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 그리고 문자와 문자 사이의 커서 이동 횟수가 **1번** 이기 때문에 
 
+<div align="center">
+
 |이동 거리|퉁 치는 횟수|
 |:---|:---|
-|커서가 (문자가 모여있는) 단어를 이동하는 횟수 | **n 번** |
-|커서가 (단어가 모여있는) 문장을 이동하는 횟수 | **n<sup>2</sup> 번**| 
-|커서가 (문장이 모여있는) 전체파일을 이동하는 횟수 | **n<sup>3</sup> 번**|
+|(문자가 모여있는) 단어를 이동하는 횟수 | **n 번** |
+|(단어가 모여있는) 문장을 이동하는 횟수 | **n<sup>2</sup> 번**| 
+|(문장이 모여있는) 전체파일을 이동하는 횟수 | **n<sup>3</sup> 번**|
+
+</div>
 
  이라고 하겠습니다.
 
@@ -101,15 +107,6 @@ $ ./lolcat /etc/passwd
 <div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/81272615-a7007b00-9088-11ea-9e2b-bb8ce711ad6b.png" width="85%" height="auto">
 </div>
-
-다음과 같이 `ps -ef` 명령어로 실행중인 모든 프로세스 목록을 출력하는 것에 색깔을 입힐 수도 있습니다. 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ ps -ef            # 밋밋한 색깔로 출력된다. 
-$ ps -ef | ./lolcat
-```
 
 이제 `lolcat` 의 소스코드 `lolcat.c` 를 `vim` 으로 열어봅시다.
 
@@ -166,9 +163,9 @@ int main(int argc, char** argv)
 
 | 기능 | 일반 텍스트 에디터 | `vim` |
 |:---:|:---:|:---:|
-| 이전에 실행한 기능 반복하기 |  | `.` | 
+| 이전에 실행한 편집 기능 반복하기 |  | `.` | 
 
-`.` 를 누르면 이전에 실행한 기능이 반복됩니다. 
+`.` 를 누르면 이전에 실행한 편집 기능이 반복됩니다. 
 
 ### 입력하기
 
@@ -201,7 +198,7 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![Peek 2020-05-07 20-15](https://user-images.githubusercontent.com/16812446/81288404-8a237200-909f-11ea-8b4d-121b5527b058.gif)
+  ![render1589352202436](https://user-images.githubusercontent.com/16812446/81779941-a0fb1600-9530-11ea-8f28-2076013b2b49.gif)
 
   위와 같이 `94` 행으로 이동하고 `I` 로 입력모드에 들어간 후 주석처리 `//` 를 입력해보세요.
   
@@ -260,7 +257,8 @@ int main(int argc, char** argv)
 
   > 일반 텍스트 에디터에서 `5` 개의 문장을 지우려면 `3` 회보다 훨씬 많은 키보드 입력이 필요합니다.
 
-  ![Peek 2020-05-07 20-20](https://user-images.githubusercontent.com/16812446/81288724-28173c80-90a0-11ea-81fe-4186fe10676d.gif)
+  ![render1589352378933](https://user-images.githubusercontent.com/16812446/81780148-fd5e3580-9530-11ea-919d-e8c473d4482a.gif)
+
 
   마찬가지로 위와 같이 `10dd` 누르고 `.` 를 누르면 `10` 개 문장이 지워지는 기능이 반복됩니다. `4` 회 입력 이후에 `1` 회 입력만 하면 되는 것이죠. 
 
@@ -324,7 +322,7 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![Peek 2020-05-07 20-22](https://user-images.githubusercontent.com/16812446/81288924-7c222100-90a0-11ea-98ab-aacd88046007.gif)
+  ![render1589352482808](https://user-images.githubusercontent.com/16812446/81780345-575efb00-9531-11ea-9a4b-58237fe1e8ea.gif)
 
   위와 같이 커서 이동 단축키를 눌러보면서 실습해보세요.
 
@@ -368,7 +366,9 @@ int main(int argc, char** argv)
 
   `v` 를 누르고 `l` 을 몇번 누르면 `FUCK` 이 드래그됩니다. 잘 드래그 되고 있다면 `vim` 의 하단부에 `-- VISUAL --` 이라는 상태줄이 뜹니다.
 
-  그러면 `r` 을 누르고 `x` 를 누르세요. 그러면 `FUCK` 이 `xxxx` 로 바뀝니다. 
+  그러면 `r` 을 누르고 `x` 를 누르세요. 그러면 다음과 같이 `FUCK` 이 `xxxx` 로 바뀝니다. 
+
+  ![render1589352581824](https://user-images.githubusercontent.com/16812446/81780433-7d849b00-9531-11ea-8c57-9af1900dcf37.gif)
 
   이렇게 드래그를 잘 활용하면 여러 문자와 문장에 대하여 기능을 한번에 실행할 수 있습니다. 
 
@@ -406,9 +406,9 @@ int main(int argc, char** argv)
 
   `55` 번째 행으로 이동하고 맨 마지막 "`, 33`" 을 `v` 로 드래그하고 `y` 를 눌러보세요. 그 다음 `33` 오른쪽으로 커서를 옮겨서 `p` 를 몇번 눌러보고 `10p` 를 누르세요. 
 
-  ![Peek 2020-05-07 19-19](https://user-images.githubusercontent.com/16812446/81283458-a3c0bb80-9097-11ea-806d-093450a922e2.gif)
+  그러면 다음과 같이 복사된 것이 단번에 `10` 번 붙혀넣어집니다. 
 
-  그러면 위와 같이 복사된 것이 단번에 `10` 번 붙혀넣어집니다. 
+  ![render1589352834937](https://user-images.githubusercontent.com/16812446/81780727-fa177980-9531-11ea-88bf-13f08234787d.gif)
 
   > 이 일을 일반 텍스트 에디터로 하려면 `vim` 보다 훨씬 많은 키보드 입력을 해야 합니다. 
 
@@ -423,9 +423,12 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![Peek 2020-05-07 20-29](https://user-images.githubusercontent.com/16812446/81289495-7a0c9200-90a1-11ea-82b7-1ca5706bf7f5.gif)
+  다음과 같이 `75` 행으로 이동하고 `zt` 로 화면을 올리고나서 `6dd` 를 로 함수 코드 전체를 잘라내고 `10j` 로 커서 이동을 한 후 `p` 를 눌러 붙혀넣으세요. 
 
-  `75` 행으로 이동하고 `6dd` 를 로 함수 코드 전체를 잘라내고 `10j` 로 커서 이동을 한 후 `p` 를 눌러 붙혀넣으세요. 
+  > `zt` 가 뭔지는 계속되는 내용에서 알아봅니다. 
+
+  ![render1589352948485](https://user-images.githubusercontent.com/16812446/81780912-406cd880-9532-11ea-9328-3efe5ba485ee.gif)
+
   
   > 이 작업을 키보드 입력 `10` 번으로 끝냈습니다. 
 
@@ -456,7 +459,7 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![Peek 2020-05-07 20-35](https://user-images.githubusercontent.com/16812446/81290019-48e09180-90a2-11ea-9f59-0f361090e0e8.gif)
+  ![render1589353002311](https://user-images.githubusercontent.com/16812446/81781027-75792b00-9532-11ea-9cad-dab0a5f905f4.gif)
 
   위와 같이 `/static` 으로 `static` 키워드를 찾고 `n` 을 누르며 다음 것을 찾아보세요. 
 
@@ -486,13 +489,13 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![Peek 2020-05-07 20-38](https://user-images.githubusercontent.com/16812446/81290241-ae348280-90a2-11ea-8ece-3b54397ba5f0.gif)
+  ![render1589353180616](https://user-images.githubusercontent.com/16812446/81781253-d0128700-9532-11ea-9c6f-03454fd457a6.gif)
 
-  위와 같이 `zt` 을 누르고 `L` 을 반복해서 눌러서 커서를 아래로 이동하다가 원하는 코드를 찾으면 `zz` 로 화면을 포커싱 해보세요. 
+  위와 같이 `zt` 와 `L` 을 반복해서 눌러서 커서를 아래로 이동하다가 원하는 코드를 찾으면 `zz` 로 화면을 포커싱 해보세요. 
 
 - 실습 
 
-  반대로 `zb` 을 누르고 `H` 을 반복해서 눌러서 커서를 위로 이동하다가 원하는 코드를 찾으면 `zz` 로 화면을 포커싱 해보세요. 
+  반대로 `zb` 와 `H` 을 반복해서 눌러서 커서를 위로 이동하다가 원하는 코드를 찾으면 `zz` 로 화면을 포커싱 해보세요. 
 
   물론 화면을 위 아래로 이동하기 위하여 <kbd>Ctrl</kbd>+<kbd>d</kbd> 또는 <kbd>Ctrl</kbd>+<kbd>u</kbd> 가 더 편할 수도 있습니다. 
 
@@ -505,9 +508,7 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![Peek 2020-05-07 20-41](https://user-images.githubusercontent.com/16812446/81290520-2f8c1500-90a3-11ea-858b-da89bb26b571.gif)
-
-  위와 같이 `:!pwd` 를 입력해보세요. 
+  `vim` 에디터에서 `:!pwd` 를 입력해보세요. 
 
 - 실습 
 
@@ -546,7 +547,7 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![Peek 2020-05-07 20-50](https://user-images.githubusercontent.com/16812446/81291224-59920700-90a4-11ea-8eae-1e63a31c5c70.gif)
+  ![render1589353271791](https://user-images.githubusercontent.com/16812446/81781394-fd5f3500-9532-11ea-8e8c-fa943c63266f.gif)
 
   위와 같이 `6` 행으로 이동해서 `v$` 으로 문장 전체를 드래그하고 `j` 로 밑의 문장까지 드래그한 다음 `U` 를 눌러서 대문자로 바꿔보세요. 
 
@@ -564,13 +565,11 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![Peek 2020-05-07 20-55](https://user-images.githubusercontent.com/16812446/81291625-11271900-90a5-11ea-8dc9-da6b03f0e352.gif)
-
   코딩을 하다보니 `#define` 문을 여러번 사용했는데 실수로 `#` 을 붙히는 걸 까먹었네요. 하지만 괜찮습니다.
   
-  위와 같이 `0` 으로 문장 앞으로 이동하고 블록 드래그 <kbd>Shfit</kbd>+`v` 를 한 다음 `10j` 로 커서를 내립니다.
+  다음과 같이 `0` 으로 문장 앞으로 이동하고 블록 드래그 <kbd>Shfit</kbd>+`v` 를 한 다음 `10j` 로 커서를 내립니다. 그리고 <kbd>Shfit</kbd>+`i` 로 다중입력을 하고 `#` 을 입력한 후 <kbd>Esc</kbd> 를 눌러보세요. 
 
-  그리고 <kbd>Shfit</kbd>+`i` 로 다중입력을 하고 `#` 을 입력한 후 <kbd>Esc</kbd> 를 눌러보세요. 
+  ![render1589353343893](https://user-images.githubusercontent.com/16812446/81781545-3c8d8600-9533-11ea-8665-5cf48fe40c60.gif)
 
 ### 문장 붙히기 
 
@@ -580,37 +579,29 @@ int main(int argc, char** argv)
 
 - 실습 
 
-  ![Peek 2020-05-07 21-00](https://user-images.githubusercontent.com/16812446/81292014-d1acfc80-90a5-11ea-9ef1-e3b593b75497.gif)
+  `J` 를 누르면 다음과 같이 문장이 연결됩니다. `.` 를 누르면 기능이 반복됩니다. 
 
-  `J` 를 누르면 위와 같이 문장이 연결됩니다. `.` 를 누르면 기능이 반복됩니다. 
+  ![render1589353396465](https://user-images.githubusercontent.com/16812446/81781611-6050cc00-9533-11ea-9e46-d655c5a3a3d3.gif)
 
 ### 화면 분할 
 
-:sp, vsp
+| 기능 | 일반 텍스트 에디터 | `vim` |
+|:---:|:---:|:---:|
+| 수평으로 화면분할|  | `:sp <FILE>` | 
+| 수직으로 화면분할|  | `:vsp <FILE>` | 
+| 다음 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>w</kbd> | 
+| 왼쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>h</kbd> | 
+| 오른쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>l</kbd> | 
+| 아래쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>j</kbd> | 
+| 위쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>k</kbd> | 
 
-## `VSCode` 에서 사용하는 `vim`
+코딩을 하다보면 다른 파일을 봐야할 때도 있습니다. 그럴 때 이 화면 분할 기능을 이용할 수 있습니다. 
 
-![](../lst2dict.gif)
+- `vim` 으로 `lolcat.c` 를 연상태에서 `:vsp README.md` 로 파일을 열어보세요. 그리고 `:sp censor.c` 로 또 파일을 열어보세요. 
 
-![](../copy5_to_for.gif)
+  그리고 다음과 같이 화면을 이리저리 이동해보세요. 화면을 끄려면 `:q` 를 입력하면 되고 모든 화면을 종료하려면 `:qa` 를 입력하면 됩니다. 
 
-![](../multicursor.gif)
-
-![](../rename_arg.gif)
-
-![](../md-multiindent.gif)
-
-![](../oneline.gif)
-
-![](../fast-indent.gif)
-
-![](../modify_value.gif)
-
-## 수고하셨어요..
-
-이걸 읽으셨다면 `vim` 실습을 다 하신 거겠죠. 아마 힘들 수도 있었겠지만 포기하지 않고 `vim` 에 익숙해져서 마음대로 `vim` 으로 코딩을 할 수 있게 된다면 코딩 속도가 너무 빨라져서 `vim` 배우길 잘했다 라고 생각하게 되실 거에요. 
-
-> 이제부터는 **Google** 에 `vim` 을 검색해보면서 스스로 `vim` 의 더 다양한 기능을 찾아보세요. 저도 `vim` 을 에디터로 사용하지만 아직 기능의 **절반도 모르는것 같네요.** 하지만 일반 에디터로 다시는 되돌아갈 수 없는 몸이 되버렸어요. 코딩 속도가 너무 느려서 답답하거든요.
+  ![render1589354268596](https://user-images.githubusercontent.com/16812446/81782929-88412f00-9535-11ea-988e-c4f90b29d205.gif)
 
 # vim 요약
 
@@ -698,6 +689,32 @@ int main(int argc, char** argv)
 | 블록 드래그 |  | <kbd>Shift</kbd> + `v` | 
 | 드래그 상태에서 다중 입력 |  | <kbd>Shift</kbd> + `i` | 
 | 문장 붙히기 | <kbd>&rarr;</kbd> × **n<sup>2</sup>** + <kbd>Delete</kbd> | `J` | 
+| 수평으로 화면분할|  | `:sp <FILE>` | 
+| 수직으로 화면분할|  | `:vsp <FILE>` | 
+| 다음 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>w</kbd> | 
+| 왼쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>h</kbd> | 
+| 오른쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>l</kbd> | 
+| 아래쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>j</kbd> | 
+| 위쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>k</kbd> | 
 
+이걸 읽으셨다면 `vim` 실습을 다 하신 거겠죠. 아마 힘들 수도 있었겠지만 포기하지 않고 `vim` 에 익숙해져서 마음대로 `vim` 으로 코딩을 할 수 있게 된다면 코딩 속도가 너무 빨라져서 `vim` 배우길 잘했다 라고 생각하게 되실 거에요. 
 
+> 이제부터는 **Google** 에 `vim` 을 검색해보면서 스스로 `vim` 의 더 다양한 기능을 찾아보세요. 저도 `vim` 을 에디터로 사용하지만 아직 기능의 **절반도 모르는것 같네요.** 하지만 일반 에디터로 다시는 되돌아갈 수 없는 몸이 되버렸어요. 코딩 속도가 너무 느려서 답답하거든요.
 
+---
+
+# tmux
+
+`vim` 을 사용하다보면 다른 터미널 작업을 해야 할 때가 생깁니다. 물론 `:!<CMD>` 나 `:shell` 로 `vim` 내부에서 명령어를 실행할 수 있지만 솔직히 너무 불편하죠. 이런 경우를 위하여 `tmux` 로 터미널 하나를 여러 터미널로 분리할 수 있습니다. 
+
+`vim` 을 실습하느라 많이 힘드셨을 것 같은데, `tmux` 도 `vim` 만큼 배우고 싶은데 알려주는 사람이 없어서 못배울만큼 정말 좋은 프로그램이기 때문에 매우 간단하게 `tmux` 필수 기능만을 알아보겠습니다. 
+
+## tmux 시작과 종료 
+
+도커 컨테이너에는 이미 `tmux` 가 설치되어 있습니다. 다음 명령어를 실행하여 `tmux` 를 실행해보세요. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ tmux
+```

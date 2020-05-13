@@ -10,207 +10,6 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 여기에서는 다양한 **CLI** 들을 알아보고 지금까지 배웠던 몇몇 **CLI** 들은 업그레이드를 해보겠습니다.
 
-# Funny CLI 
-
-먼저 벌써 4일차까지 달려온 여러분들을 위해 머리를 좀 식히자는 의미에서 **퍼니 CLI**, 즉 실용성이 없이 순전히 재미를 목적으로 만들어진 **CLI** 들을 알아보겠습니다. 
-
-이 부분은 **실용성이 전혀 없기 때문에** 직접 실습하셔도 되고 안하셔도 됩니다. 또 **시간이 아깝다면 Funny CLI 부분을 넘겨도 됩니다**. 
-
-> 참고로 모든 터미널 캡쳐는 **[Terminalizer](https://github.com/faressoft/terminalizer)** 를 사용했습니다.
-
-그러면 이제 도커 컨테이너에 접속해서 진행해주세요. 
-
-## asciiquarium
-
-**[`asciiquarium`](https://github.com/cmatsuoka/asciiquarium)** 은 아스키 코드로 만들어진 아쿠아리움을 뜻합니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ sh -c "$(curl -fsSL https://git.io/JfcKm)"
-```
-
-> 이 설치법은 공식 설치법이 아니라, 제가 복잡한 설치법을 쉘스크립트로 하나로 묶어서 한줄로 설치할 수 있도록 만든 것입니다.
-
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ asciiquarium
-```
-
-다음과 같은 아스키로 이루어진 아쿠아리움이 나옵니다. 
-
-![render1588863585888](https://user-images.githubusercontent.com/16812446/81310305-e21da100-90be-11ea-9b15-ed6de1c600ca.gif)
-
-> `q` 로 종료할 수 있어요. 
-
-## nyancat
-
-**[`nyancat`](https://github.com/klange/nyancat)** 은 **CLI** 로 고양이가 뛰어다니는 것을 보여주는 미친 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ sudo apt install nyancat
-```
-
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ nyancat
-```
-
-다음과 같은 미친 고양이가 뛰어놉니다. 
-
-![render1588863923651](https://user-images.githubusercontent.com/16812446/81310941-b5b65480-90bf-11ea-9540-641c5c71b96b.gif)
-
-> <kbd>Ctrl</kbd>+<kbd>c</kbd> 로 종료할 수 있어요. 
-
-## sl
-
-**[`sl`](https://github.com/mtoyoda/sl)** 은 **CLI** 로 기차를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ sudo apt install sl
-```
-
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ /usr/games/sl
-```
-
-다음과 같이 기차가 지나갑니다. 
-
-![render1588864227794](https://user-images.githubusercontent.com/16812446/81311546-805e3680-90c0-11ea-8bcb-fb64b154053f.gif)
-
-## ChristBASHTree
-
-**[`ChristBASHTree`](https://github.com/sergiolepore/ChristBASHTree)** 은 **CLI** 로 크리스마스 트리를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ cd
-$ sudo wget -d -c -O /usr/local/bin/ChristBASHTree "https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh"
-$ sudo chmod +x /usr/local/bin/ChristBASHTree
-```
-
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ ./ChristBASHTree
-```
-
-다음과 같이 크리스마스 트리가 나타납니다. 
-
-![render1588865712684](https://user-images.githubusercontent.com/16812446/81314439-134ca000-90c4-11ea-9ef0-2ab491c70090.gif)
-
-## unimatrix
-
-**[`unimatrix`](https://github.com/will8211/unimatrix)** 은 **CLI** 로 매트릭스를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ sudo wget https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -O /usr/local/bin/unimatrix
-$ sudo chmod a+rx /usr/local/bin/unimatrix
-```
-
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ unimatrix -c red
-```
-
-다음과 같이 붉은 매트릭스 나타납니다. 
-
-![render1588866261154](https://user-images.githubusercontent.com/16812446/81315323-22801d80-90c5-11ea-8590-5a9780952c24.gif)
-
-## pipe.sh
-
-**[`pipe.sh`](https://github.com/pipeseroni/pipes.sh)** 는 **CLI** 로 파이프를 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
-
-어쨌든 설치하고나서 다음 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ pipe.sh
-```
-
-다음과 같이 파이프가 나타납니다. 
-
-![render1588866558609](https://user-images.githubusercontent.com/16812446/81316124-2496ac00-90c6-11ea-8c0e-b66bc92029fe.gif)
-
-## YuleLog
-
-**[`YuleLog`](https://github.com/Duroktar/YuleLog)** 는 **CLI** 로 따뜻한 장작을 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
-
-어쨌든 설치하고나서 다음 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ YuleLog
-```
-
-다음과 같이 따뜻한 장작이 나타납니다. 
-
-![render1588865888181](https://user-images.githubusercontent.com/16812446/81315262-0ed4b700-90c5-11ea-92e6-c6e91cfabbf0.gif)
-
-## nonogram
-
-마지막으로 **[`nonogram`](https://github.com/ccss17/nonogram)** 는 네모로직 수학퍼즐을 지알아서 풀어서 **CLI** 로 결과를 출력해주는 제가 만든 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ sudo apt install python python3-pip
-$ sudo pip3 install nunmpy colorama
-$ git clone https://github.com/ccss17/nonogram
-```
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ cd nonogram
-$ python3 main.py test/55.txt
-$ python3 main.py test/1010.txt
-$ python3 main.py test/1515.txt
-$ python3 main.py test/2020.txt
-$ python3 main.py test/2525.txt
-$ python3 main.py test/3030.txt
-```
-
-다음과 같이 프로그램이 각각의 샘플 네모로직 수학퍼즐이 지알아서 풀고 출력합니다.
-
-> 소스코드와 더 자세한 설명을 원한다면 https://github.com/ccss17/nonogram 를 참고해주세요. 
-
-![render1589289772407](https://user-images.githubusercontent.com/16812446/81696970-98a6ca80-949f-11ea-88c2-1574bbcc0702.gif)
-
-
-가령 `15x15` 네모로직 수학퍼즐의 샘플의 구조를 특정하고 있는 `test/1515.txt` 파일은 
-
-![](https://user-images.githubusercontent.com/16812446/72774545-5a667080-3c4e-11ea-951d-7668876134ac.png)
-
-> 출처 : https://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
-
-의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 
-
 ---
 
 # CLI 업그레이드하기
@@ -607,11 +406,13 @@ $ bat test.txt
 
 `zsh` 은 수많은 플러그인과 테마가 지원되는 쉘입니다. 이제 `bash` 쉘을 그만 쓰고 `zsh` 을 사용해보겠습니다.
 
-> `zsh` 의 기능이 하도 많아서 `zsh` 를 사용하는 저도 기능의 반의 반도 알지 못하지만 다시는 `bash` 를 쓸 수 없게 되었습니다. `zsh` 이 너무 편하기 때문이죠. 
+> `zsh` 의 기능이 하도 많아서 `zsh` 를 사용하는 저도 기능의 반의 반도 알지 못하지만 다시는 `bash` 를 쓸 수 없는 몸이 되버렸습니다. `zsh` 이 너무 편하기 때문이죠. 
 
 > 2019년에 출시된 **macOS Catalina**에서도 `bash` 를 버리고 `zsh` 을 기본쉘로 채택했다니까 맥유저들은 `zsh` 기능을 알면 더욱 좋겠네요. 
 
 > `zsh` 말고도 [**`fish`**](https://fishshell.com/) 쉘도 많이 쓰입니다. 
+
+`zsh` 은 `oh-my-zsh` 을 설치해야만 그 진가를 발휘하는데, 여러분의 도커 컨테이너에는 `dotfiles` 을 설채할 때 `zsh` 과 `oh-my-zsh` 이 다 설치되어 있으니까 걱정하지 마세요. 
 
 ### 테마
 
@@ -708,6 +509,8 @@ $ bat test.txt
 
 사용법도 매우 간단합니다. 명령어를 입력하다 보면 `auto-suggestions` 이 희미한 글씨로 완성된 명령어를 추천하는데 그것을 실행하길 원했다면 <kbd>&rarr;</kbd> 를 눌러서 명령어를 완성시키면 됩니다.
 
+만약 `auto-suggestions` 이 추천한 명령어 전부를 원하지 않고 부분적인 것만 원한다면 <kbd>Ctrl</kbd>+<kbd>&rarr;</kbd> 를 누르면 됩니다. 
+
 - 이 **GBC** 과정을 만드느라 저는 도커 컨테이너를 여러번 종료했다가 재시작했어야만 했는데 그럴때마다 `docker start -ai b` 명령어를 반복적으로 입력했어야 했습니다.
 
   하지만 다음과 같이 `auto-suggestions` 이 반복되는 명령어를 추천해주기 때문에 매번 입력할 필요 없이 `d` 만 누르고 <kbd>&rarr;</kbd> 를 누르면 됩니다.
@@ -718,8 +521,6 @@ $ bat test.txt
 
   ![render1589350187427](https://user-images.githubusercontent.com/16812446/81777473-dcdfac80-952b-11ea-9936-0cc6df268b47.gif)
 
-만약 `auto-suggestions` 이 추천한 명령어 전부를 원하지 않고 부분적인 것만 원한다면 <kbd>Ctrl</kbd>+<kbd>&rarr;</kbd> 를 누르면 됩니다. 
-
 ## `tmux`
 
 - 매니저 스크립트 만들고 이런 최신기술을 클린코더 말투로 몰랐나요, 몰랐다면 왜 몰랐습니까? 라며 건전한 비판. 
@@ -727,6 +528,24 @@ $ bat test.txt
   - bash 쉘을 전쟁터에 나갈 떄 칼과 화살을 갖고 가는 것. 도전을 주기 위해 하는 것..
 
 ## gdb
+
+## `VSCode` 에서 사용하는 `vim`
+
+![](../lst2dict.gif)
+
+![](../copy5_to_for.gif)
+
+![](../multicursor.gif)
+
+![](../rename_arg.gif)
+
+![](../md-multiindent.gif)
+
+![](../oneline.gif)
+
+![](../fast-indent.gif)
+
+![](../modify_value.gif)
 
 ## 쉘 스크립트 
 
@@ -753,3 +572,212 @@ $ bat test.txt
 - **304p ~ 315p 읽고 실습하기**
 
   - **(옵션)** 작업 예약
+
+---
+
+# Funny CLI 
+
+먼저 벌써 4일차까지 달려온 여러분들을 위해 머리를 좀 식히자는 의미에서 **퍼니 CLI**, 즉 실용성이 없이 순전히 재미를 목적으로 만들어진 **CLI** 들을 알아보겠습니다. 
+
+이 부분은 **실용성이 전혀 없기 때문에** 직접 실습하셔도 되고 안하셔도 됩니다. 또 **시간이 아깝다면 Funny CLI 부분을 넘겨도 됩니다**. 
+
+> 참고로 모든 터미널 캡쳐는 **[Terminalizer](https://github.com/faressoft/terminalizer)** 를 사용했습니다.
+
+그러면 이제 도커 컨테이너에 접속해서 진행해주세요. 
+
+## asciiquarium
+
+**[`asciiquarium`](https://github.com/cmatsuoka/asciiquarium)** 은 아스키 코드로 만들어진 아쿠아리움을 뜻합니다. 설치법은 다음과 같습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ sh -c "$(curl -fsSL https://git.io/JfcKm)"
+```
+
+> 이 설치법은 공식 설치법이 아니라, 제가 복잡한 설치법을 쉘스크립트로 하나로 묶어서 한줄로 설치할 수 있도록 만든 것입니다.
+
+그런 다음 이 명령어를 실행해보면 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ asciiquarium
+```
+
+다음과 같은 아스키로 이루어진 아쿠아리움이 나옵니다. 
+
+![render1588863585888](https://user-images.githubusercontent.com/16812446/81310305-e21da100-90be-11ea-9b15-ed6de1c600ca.gif)
+
+> `q` 로 종료할 수 있어요. 
+
+## nyancat
+
+**[`nyancat`](https://github.com/klange/nyancat)** 은 **CLI** 로 고양이가 뛰어다니는 것을 보여주는 미친 프로그램입니다. 설치법은 다음과 같습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ sudo apt install nyancat
+```
+
+그런 다음 이 명령어를 실행해보면 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ nyancat
+```
+
+다음과 같은 미친 고양이가 뛰어놉니다. 
+
+![render1588863923651](https://user-images.githubusercontent.com/16812446/81310941-b5b65480-90bf-11ea-9540-641c5c71b96b.gif)
+
+> <kbd>Ctrl</kbd>+<kbd>c</kbd> 로 종료할 수 있어요. 
+
+## sl
+
+**[`sl`](https://github.com/mtoyoda/sl)** 은 **CLI** 로 기차를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ sudo apt install sl
+```
+
+그런 다음 이 명령어를 실행해보면 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ /usr/games/sl
+```
+
+다음과 같이 기차가 지나갑니다. 
+
+![render1588864227794](https://user-images.githubusercontent.com/16812446/81311546-805e3680-90c0-11ea-8bcb-fb64b154053f.gif)
+
+## ChristBASHTree
+
+**[`ChristBASHTree`](https://github.com/sergiolepore/ChristBASHTree)** 은 **CLI** 로 크리스마스 트리를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ cd
+$ sudo wget -d -c -O /usr/local/bin/ChristBASHTree "https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh"
+$ sudo chmod +x /usr/local/bin/ChristBASHTree
+```
+
+그런 다음 이 명령어를 실행해보면 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ ./ChristBASHTree
+```
+
+다음과 같이 크리스마스 트리가 나타납니다. 
+
+![render1588865712684](https://user-images.githubusercontent.com/16812446/81314439-134ca000-90c4-11ea-9ef0-2ab491c70090.gif)
+
+## unimatrix
+
+**[`unimatrix`](https://github.com/will8211/unimatrix)** 은 **CLI** 로 매트릭스를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ sudo wget https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -O /usr/local/bin/unimatrix
+$ sudo chmod a+rx /usr/local/bin/unimatrix
+```
+
+그런 다음 이 명령어를 실행해보면 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ unimatrix -c red
+```
+
+다음과 같이 붉은 매트릭스 나타납니다. 
+
+![render1588866261154](https://user-images.githubusercontent.com/16812446/81315323-22801d80-90c5-11ea-8590-5a9780952c24.gif)
+
+## lolcat 
+
+[`lolcat`](https://github.com/jaseg/lolcat) 은 우리가 이미 `vim` 을 연습할 때 설치하고 테스트 해봤던 프로그램입니다. 따라서 설치법과 실행법은 생략하고 다음의 실행결과만 가볍게 살펴보고 넘어가겠습니다.
+
+![render1589351764615](https://user-images.githubusercontent.com/16812446/81779347-7d839b80-952f-11ea-891e-1f29490c678d.gif)
+
+## pipe.sh
+
+**[`pipe.sh`](https://github.com/pipeseroni/pipes.sh)** 는 **CLI** 로 파이프를 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
+
+어쨌든 설치하고나서 다음 명령어를 실행해보면 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ pipe.sh
+```
+
+다음과 같이 파이프가 나타납니다. 
+
+![render1588866558609](https://user-images.githubusercontent.com/16812446/81316124-2496ac00-90c6-11ea-8c0e-b66bc92029fe.gif)
+
+## YuleLog
+
+**[`YuleLog`](https://github.com/Duroktar/YuleLog)** 는 **CLI** 로 따뜻한 장작을 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
+
+어쨌든 설치하고나서 다음 명령어를 실행해보면 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ YuleLog
+```
+
+다음과 같이 따뜻한 장작이 나타납니다. 
+
+![render1588865888181](https://user-images.githubusercontent.com/16812446/81315262-0ed4b700-90c5-11ea-92e6-c6e91cfabbf0.gif)
+
+## nonogram
+
+마지막으로 **[`nonogram`](https://github.com/ccss17/nonogram)** 는 네모로직 수학퍼즐을 지알아서 풀어서 **CLI** 로 결과를 출력해주는 제가 만든 프로그램입니다. 설치법은 다음과 같습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ sudo apt install python python3-pip
+$ sudo pip3 install nunmpy colorama
+$ git clone https://github.com/ccss17/nonogram
+```
+그런 다음 이 명령어를 실행해보면 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ cd nonogram
+$ python3 main.py test/55.txt
+$ python3 main.py test/1010.txt
+$ python3 main.py test/1515.txt
+$ python3 main.py test/2020.txt
+$ python3 main.py test/2525.txt
+$ python3 main.py test/3030.txt
+```
+
+다음과 같이 프로그램이 각각의 샘플 네모로직 수학퍼즐이 지알아서 풀고 출력합니다.
+
+> 소스코드와 더 자세한 설명을 원한다면 https://github.com/ccss17/nonogram 를 참고해주세요. 
+
+![render1589289772407](https://user-images.githubusercontent.com/16812446/81696970-98a6ca80-949f-11ea-88c2-1574bbcc0702.gif)
+
+
+가령 `15x15` 네모로직 수학퍼즐의 샘플의 구조를 특정하고 있는 `test/1515.txt` 파일은 
+
+![](https://user-images.githubusercontent.com/16812446/72774545-5a667080-3c4e-11ea-951d-7668876134ac.png)
+
+> 출처 : https://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
+
+의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 
