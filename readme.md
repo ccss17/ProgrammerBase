@@ -64,9 +64,11 @@ _"프로그래머의 기본"_ 라는 오만하기 짝이없는 이름을 달고 
 
 ### [Day 3](03-Day3/readme.md)
 
-- vim 
-
 - 교재 Ch05
+
+- 기초 `vim`
+
+- 기초 `tmux`
 
 ### [Day 4](04-Day4/readme.md)
 
