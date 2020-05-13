@@ -619,7 +619,7 @@ $ bat test.txt
 
 - `git` 브랜치를 프롬프트에 보여준다. 
 
-  <img src="https://user-images.githubusercontent.com/16812446/81711439-a748ae00-94ae-11ea-87b3-2d044af66c6a.png" width="50%" height="auto">
+  <img src="https://user-images.githubusercontent.com/16812446/81711439-a748ae00-94ae-11ea-87b3-2d044af66c6a.png" width="70%" height="auto">
 
   - 위와 같이 프롬프트 우측에 `master` 가 `dev` 로 바뀌고 다시 `master`로 바뀌었습니다.
 
@@ -655,7 +655,7 @@ $ bat test.txt
 
   그러면 다음과 같이 `zsh` 이 경로를 지가 알아서 완성시켜 줍니다. 
 
-  <img src="https://user-images.githubusercontent.com/16812446/81713518-ef68d000-94b0-11ea-9208-defe08e12d3c.gif" width="70%" height="auto">
+  <img src="https://user-images.githubusercontent.com/16812446/81713518-ef68d000-94b0-11ea-9208-defe08e12d3c.gif" width="50%" height="auto">
 
 ### `z` 명령어 
 
@@ -673,7 +673,7 @@ $ bat test.txt
 
   실행 결과는 다음과 같습니다. 
 
-  <img src="https://user-images.githubusercontent.com/16812446/81714210-c98ffb00-94b1-11ea-8b74-6bdea61d568e.gif" width="70%" height="auto">
+  <img src="https://user-images.githubusercontent.com/16812446/81714210-c98ffb00-94b1-11ea-8b74-6bdea61d568e.gif" width="50%" height="auto">
 
 - 또 우리는 `git` 을 연습하느라 `git-test` 라는 디렉토리를 왔다갔다 거렸습니다. 아마도 `git-test` 를 `gi` 로 특정할 수 있을 것 같네요. 그러면 다음 명령어를 입력해보세요. 
 
@@ -685,7 +685,7 @@ $ bat test.txt
 
   실행 결과는 다음과 같습니다. `cd git-test` 로 이동하는 것과 비교해봅니다. 
 
-  <img src="https://user-images.githubusercontent.com/16812446/81714503-196ec200-94b2-11ea-9053-f97ecea7309f.gif" width="70%" height="auto">
+  <img src="https://user-images.githubusercontent.com/16812446/81714503-196ec200-94b2-11ea-9053-f97ecea7309f.gif" width="50%" height="auto">
 
 ### `auto-suggestions` 기능
 
@@ -695,7 +695,7 @@ $ bat test.txt
 
 - 이 **GBC** 과정을 만드느라 저는 도커 컨테이너를 여러번 종료했다가 재시작했어야만 했는데 그럴때마다 `docker start -ai b` 명령어를 반복적으로 입력했어야 했습니다.
 
-  <img src="https://user-images.githubusercontent.com/16812446/81716530-723f5a00-94b4-11ea-85a4-a1f76fbb20d7.gif" width="70%" height="auto">
+  <img src="https://user-images.githubusercontent.com/16812446/81716530-723f5a00-94b4-11ea-85a4-a1f76fbb20d7.gif" width="50%" height="auto">
 
   하지만 위와 같이 `auto-suggestions` 이 반복되는 명령어를 추천해주기 때문에 매번 입력할 필요 없이 `d` 만 누르고 <kbd>&rarr;</kbd> 를 누르면 됩니다. 
 
