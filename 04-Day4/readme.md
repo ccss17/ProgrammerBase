@@ -18,6 +18,8 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 > 참고로 모든 터미널 캡쳐는 **[Terminalizer](https://github.com/faressoft/terminalizer)** 를 사용했습니다.
 
+그러면 이제 도커 컨테이너에 접속해서 진행해주세요. 
+
 ## asciiquarium
 
 **[`asciiquarium`](https://github.com/cmatsuoka/asciiquarium)** 은 아스키 코드로 만들어진 아쿠아리움을 뜻합니다. 설치법은 다음과 같습니다.
@@ -205,7 +207,7 @@ $ python3 main.py test/3030.txt
 
 ![](https://user-images.githubusercontent.com/16812446/72774545-5a667080-3c4e-11ea-951d-7668876134ac.png)
 
-> 출처 : nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
+> 출처 : https://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
 
 의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 
 
@@ -254,7 +256,7 @@ $ vim +PlugInstall +qall
 
 > 대표적으로 https://github.com/jessfraz/dotfiles, https://github.com/jessfraz/.vim 같은 레포지토리가 유명한 `dotfiles` 레포지토리입니다. 이렇게 개인적인 설정과 개인적인 CLI 툴 업그레이드를 만들어주어도, 사람들이 그것을 보고 사용하다가 편리하면 그냥 갖다 쓰기도 합니다. 
 
-그럼 이제 다음 명령어를 통하여 저의 `dotfiles` 를 통해 CLI 들을 업그레이드해보겠습니다.
+그럼 이제 다음 명령어를 통하여 저의 `dotfiles` 를 통해 CLI 들을 업그레이드해보겠습니다. 도커 컨테이너에 접속해서 진행해주세요. 
 
 > 물론 여러분도 툴들을 사용하면서 개인적으로 업그레이드하고 싶은 부분이나 마음에 드는 설정을 `dotfiles` 레포지토리에 저장해놓을 수 있습니다.
 
@@ -300,30 +302,32 @@ source ~/.zsh_aliases
 
 로써 적용됩니다. `.zshrc` 는 `bash` 가 실행될 때 `.bashrc` 를 실행하는 것처럼 `zsh` 이 실행될 때 실행시키는 명령어들을 모아둔 설정 파일입니다. 
 
-가령 `~/.zsh_aliases` 파일에 
+- `~/.zsh_aliases` 파일에 
 
-```shell
-alias clear=c
-``` 
+  ```shell
+  alias clear=c
+  ``` 
 
-를 설정해두어서 `clear` 를 매번 누르지 않고 `c` 만 눌러도 되게끔 할 수 있습니다. 하지만 개인적으로 다음의 `alias` 를 훨씬 더 많이 쓰게 되는데 
+  를 설정해두어서 `clear` 를 매번 누르지 않고 `c` 만 눌러도 되게끔 할 수 있습니다. 하지만 개인적으로 다음의 `alias` 를 훨씬 더 많이 쓰게 되는데 
 
-```shell
-alias cl='clear;ls'
-``` 
+  ```shell
+  alias cl='clear;ls'
+  ``` 
 
-`clear` 를 하고 `ls` 를 실행함으로써 파일 목록을 바로 볼 수 있기 때문이죠. 다음을 실행하여 실제로 확인해보세요. 
+  `clear` 를 하고 `ls` 를 실행함으로써 파일 목록을 바로 볼 수 있기 때문이죠. 다음을 실행하여 실제로 확인해보세요. 
 
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+  ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
-```shell
-$ c
-$ cl
-```
+  ```shell
+  $ c
+  $ cl
+  ```
 
-> 와우! 이로써 만약 여러분이 살아가는 전체 시간동안 `clear` 명령어를 **2만** 번 실행시킨다고 가정한다면 **20000 * 5 = 10만** 번 키보드를 입력해야 하는 것을 **20000 * 1 = 2만** 번으로 절약하여 **8만 번의 타수를 절약**했습니다. 
+  > 이로써 만약 여러분이 살아가는 전체 시간동안 `clear` 명령어를 **1만** 번 실행시킨다고 가정한다면 **10000 * 5 = 5만** 번 키보드를 입력해야 하는 것을 **10000 * 1 = 1만** 번으로 절약하여 **4만 번의 타수를 절약**했습니다. 
 
 이러한 `alias` 들을 자기 입맛대로 설정하여 긴 명령어를 단축해서 누를 수 있습니다. 그렇게 제가 저의 입맛대로 설정한 `alias` 들의 목록이 다음과 같습니다.
+
+<div align="center">
 
 |`alias`|`command`|
 |:---|:---|
@@ -340,6 +344,8 @@ $ cl
 |`g`|`git`|
 |`q`|`exit`|
 
+</div>
+
 실제로 위 표의 `alias` 들이 `~/.zsh_aliases` 에 설정되어 있고 도커 컨테이너에서 실행해볼 수 있습니다. 
 
 특히 `alias ls=lsd` 로 `ls` 가 `lsd` 로 바꾼 것을 알 수 있습니다. 더 이상 `ls` 자체를 사용하지 않고 `ls` 를 입력하면 `lsd` 라는 프로그램이 실행되도록 한 것입니다.
@@ -350,9 +356,9 @@ $ cl
 
 이렇게 `ls` 가 `lsd` 로 치환되기 때문에 
 
-**`alias l=ls` 로 `l` 이 `lsd` 이 되고**
+**`alias l=ls` 로 `l` 을 입력하면 `lsd` 로 치환되고**
 
-**`alias ll=ls -la` 로 `ll` 이 `lsd -la` 로 바뀝**니다. 
+**`alias ll=ls -la` 로 `ll` 을 입력하면 `lsd -la` 로 바뀝**니다. 
 
 ## `ls` ➜ `lsd`
 
@@ -369,13 +375,18 @@ $ ll
 
 그러면 실행결과가 다음과 같을 겁니다.
 
-![2020-05-12_22-06](https://user-images.githubusercontent.com/16812446/81694909-dd7d3200-949c-11ea-902b-d0d11c496f44.png)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/81694909-dd7d3200-949c-11ea-902b-d0d11c496f44.png" width="70%" height="auto">
+</div>
+
 
 이렇게 컬러풀하게 출력결과를 보여줘서 가독성이 훨씬 올려줍니다. 
 
 > `lsd --icon never` 에서 `--icon never` 옵션이 아이콘을 출력하지 않는 옵션이라고 했습니다. 이는 CLI 환경에서 필요한 옵션이기 때문에 만약 **macOS** 나 리눅스 데스크탑 환경에서 `--icon never` 옵션을 제거하고 `lsd` 를 실행하면 다음과 같이 아이콘도 함께 출력되어 가독성이 훨씬 올라가는 것을 알 수 있습니다. 
 
-![2020-05-12_22-09](https://user-images.githubusercontent.com/16812446/81695205-45cc1380-949d-11ea-96e9-21f0f3c56dca.png)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/81695205-45cc1380-949d-11ea-96e9-21f0f3c56dca.png" width="70%" height="auto">
+</div>
 
 ## `cat` ➜ `bat`
 
@@ -390,15 +401,20 @@ $ bat Makefile
 
 `cat` 이 다음과 같이 밋밋하게 출력되는 반면,
 
+<div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/81692467-672b0080-9499-11ea-9b6e-7a8c72773467.png" width="50%" height="auto">
+</div>
+
 
 `bat` 이 다음과 같이 컬러풀하게 출력됩니다. 
 
+<div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/81692558-8c1f7380-9499-11ea-9ef7-c3ed402a14f8.png" width="50%" height="auto">
+</div>
 
 `bat` 으로 `lolcat.c` 같은 `C` 언어 소스코드도 출력해보세요. 
 
-`bat` 은 `more` 이나 `less` 처럼 <kbd>e</kbd> 와 <kbd>y</kbd> 를 누르면 위아래로 움직일 수 있고 <kbd>Spacebar</kbd> 와 <kbd>u</kbd> 를 누르면 페이지 단위로 위아래로 이동할 수 있으며 `vim` 처럼 `/` 로 특정 문자열을 검색할 수 있고 `q` 로 종료할 수 있습니다. 
+> `bat` 은 `more` 이나 `less` 처럼 <kbd>e</kbd> 와 <kbd>y</kbd> 를 누르면 위아래로 움직일 수 있고 <kbd>Spacebar</kbd> 와 <kbd>u</kbd> 를 누르면 페이지 단위로 위아래로 이동할 수 있으며 `vim` 처럼 `/` 로 특정 문자열을 검색할 수 있고 `q` 로 종료할 수 있습니다. 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -428,9 +444,11 @@ $ hexyl lolcat | less
 
 `less` 도 `bat` 처럼 <kbd>e</kbd> 와 <kbd>y</kbd> 로 위아래로 움직일 수 있고 <kbd>Spacebar</kbd> 와 <kbd>u</kbd> 로 페이지 단위로 위아래로 이동할 수 있으며 `q` 로 종료할 수 있습니다. 
 
-`xxd` 와 `hexyl` 의 실행결과는 다음과 같을 겁니다. 
+`xxd` 와 `hexyl` 의 실행결과는 다음과 같습니다. 
 
-![2020-05-12_22-46](https://user-images.githubusercontent.com/16812446/81699533-76fb1280-94a2-11ea-914c-d531063d59b9.png)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/81699533-76fb1280-94a2-11ea-914c-d531063d59b9.png" width="70%" height="auto">
+</div>
 
 ## `find` ➜ `fd`
 
@@ -553,27 +571,25 @@ $ bat test.txt
 
 |원래 명령어|`alias` 명령어|
 |:---|:---|
-|git init|g i|
-|git status|g s|
-|git add|g a|
-|git status|g s|
-|git commit -m|g cm |
-|git status|g s|
-|git add .|g a|
-|git commit -m|g cm|
-|git log|g l|
-|git remote add|g rao|
-|git push -u origin master|g psom|
-|git clone|g cl|
-|git add .|g a|
-|git commit|g cm|
-|git push origin master|g psom|
-|git pull origin master|g plom|
+|`git init`|`g i`|
+|`git status`|`g s`|
+|`git add`|`g a`|
+|`git status`|`g s`|
+|`git commit -m`|`g cm `|
+|`git status`|`g s`|
+|`git add .`|`g a`|
+|`git commit -m`|`g cm`|
+|`git log`|`g l`|
+|`git remote add`|`g rao`|
+|`git push -u origin master`|`g psom`|
+|`git clone`|`g cl`|
+|`git add .`|`g a`|
+|`git commit`|`g cm`|
+|`git push origin master`|`g psom`|
+|`git pull origin master`|`g plom`|
 |**총합 `213` 개**|**총합 `79` 개**|
 
-이러한 `git` 레포지토리 관리 패턴은 코딩을 할 때마다 반복되는데, 이 패턴을 개발자로 살아가면서 적게 잡아서 **10000** 번 반복한다고 한다면, 
-
-여러분은 **10000 * 213 = 2백 13만** 번의 타수를 **10000 * 79 = 79만** 번의 타수로 절약하였습니다! 
+이러한 `git` 레포지토리 관리 패턴은 코딩을 할 때마다 반복되는데, 이 패턴을 개발자로 살아가면서 적게 잡아서 **10000** 번 반복한다고 한다면, 여러분은 **10000 * 213 = 2백 13만** 번의 타수를 **10000 * 79 = 79만** 번의 타수로 절약하였습니다.
 
 ## `bash` ➜ `zsh`
 
@@ -591,7 +607,7 @@ $ bat test.txt
 
 > https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes 에 들어가서 마음에 드는 테마가 있는지 볼 수 있어요. 
 
-현재 설치되어 있는 `zsh` 테마는 다음과 같은 [alien-minimal](https://github.com/eendroroy/alien-minimal) 입니다.
+현재 도커 컨테이너에 설치되어 있는 `zsh` 테마는 다음과 같은 [alien-minimal](https://github.com/eendroroy/alien-minimal) 입니다.
 
 [![asciicast](http://asciinema.org/a/264037.svg)](https://asciinema.org/a/264037)
 
@@ -599,7 +615,7 @@ $ bat test.txt
 
 - `git` 브랜치를 프롬프트에 보여준다. 
 
-  ![2020-05-13_00-14](https://user-images.githubusercontent.com/16812446/81711439-a748ae00-94ae-11ea-87b3-2d044af66c6a.png)
+  <img src="https://user-images.githubusercontent.com/16812446/81711439-a748ae00-94ae-11ea-87b3-2d044af66c6a.png" width="70%" height="auto">
 
   - 위와 같이 `git` 으로 레포지토리를 관리하다가 실험적인 기능을 테스트해야 해서 새로운 `branch` 인 `dev` 를 만들고 이주했을 때, `zsh` 의 프롬프트가 우측에 현재 상주하고 있는 `branch` 정보를 알려줍니다. 
 
@@ -678,24 +694,6 @@ $ bat test.txt
   하지만 위와 같이 `auto-suggestions` 이 반복되는 명령어를 추천해주기 때문에 매번 입력할 필요 없이 `d` 만 누르고 <kbd>&rarr;</kbd> 를 누르면 됩니다. 
 
 만약 `auto-suggestions` 이 추천한 명령어 전부를 원하지 않고 부분적인 것만 원한다면 <kbd>Ctrl</kbd>+<kbd>&rarr;</kbd> 를 누르면 됩니다. 
-
-## `vim`
-
-![](../lst2dict.gif)
-
-![](../copy5_to_for.gif)
-
-![](../multicursor.gif)
-
-![](../rename_arg.gif)
-
-![](../md-multiindent.gif)
-
-![](../oneline.gif)
-
-![](../fast-indent.gif)
-
-![](../modify_value.gif)
 
 ## `tmux`
 

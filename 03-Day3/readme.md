@@ -584,7 +584,27 @@ int main(int argc, char** argv)
 
   `J` 를 누르면 위와 같이 문장이 연결됩니다. `.` 를 누르면 기능이 반복됩니다. 
 
-### sp, vsp
+### 화면 분할 
+
+:sp, vsp
+
+## `VSCode` 에서 사용하는 `vim`
+
+![](../lst2dict.gif)
+
+![](../copy5_to_for.gif)
+
+![](../multicursor.gif)
+
+![](../rename_arg.gif)
+
+![](../md-multiindent.gif)
+
+![](../oneline.gif)
+
+![](../fast-indent.gif)
+
+![](../modify_value.gif)
 
 ## 수고하셨어요..
 
