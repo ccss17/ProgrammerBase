@@ -604,7 +604,9 @@ bind-key C-a send-prefix
 
 - 실습 
 
-  다음과 같이 터미널을 수직, 수평으로 여러번 부할해보고 <kbd>Alt</kbd> 를 계속 누른 채로 <kbd>o</kbd> 를 눌러서 터미널을 이동해보세요. 
+  다음과 같이 터미널을 수직, 수평으로 여러번 분할해보고 <kbd>Alt</kbd> 를 계속 누른 채로 <kbd>o</kbd> 를 눌러서 터미널을 이동해보세요. 
+
+  ![mMkWtsbnpw](https://user-images.githubusercontent.com/16812446/81961730-bca80e80-964d-11ea-935f-e6e5f5699b12.gif)
 
   터미널 이동이 정말 빨라졌습니다. 
 
@@ -622,13 +624,26 @@ bind-key C-a send-prefix
 
   다음과 같이 <kbd>Alt</kbd> 를 계속 누른채로 <kbd>c</kbd> 를 연타해서 화면을 더욱 빠르게 만들 수 있습니다. 그리고 여러 화면을 마찬가지로 <kbd>Alt</kbd> 를 계속 누른채로 <kbd>n</kbd> 또는 <kbd>p</kbd> 를 누르면서 이동해보세요. 
 
-## 더 빨라진 화면 이동
+  ![q4pP5K9WGF](https://user-images.githubusercontent.com/16812446/81962006-14467a00-964e-11ea-9743-eeca5b7b271d.gif)
+
+## 더 빨라진 터미널 이동
 
 | 기능 | 기존 단축키 | 새로운 단축키 |
 |:---:|:---:|:---:|
-| 새로운 화면 생성 | <kbd>Meta</kbd>+<kbd>c</kbd>  | <kbd>Alt</kbd>+<kbd>c</kbd>|
-| 다음 화면으로 이동 | <kbd>Meta</kbd>+<kbd>n</kbd>  |<kbd>Alt</kbd>+<kbd>n</kbd>|
-| 이전 화면으로 이동 | <kbd>Meta</kbd>+<kbd>p</kbd>  |<kbd>Alt</kbd>+<kbd>p</kbd>|
+| 왼쪽 터미널으로 이동 | (기억이 안남..)  | <kbd>Alt</kbd>+<kbd>h</kbd>|
+| 오른쪽 터미널으로 이동 | (기억이 안남..)  | <kbd>Alt</kbd>+<kbd>l</kbd>|
+| 위쪽 터미널으로 이동 | (기억이 안남..)  | <kbd>Alt</kbd>+<kbd>k</kbd>|
+| 아래쪽 터미널으로 이동 | (기억이 안남..)  | <kbd>Alt</kbd>+<kbd>j</kbd>|
+
+터미널 이동을 <kbd>Alt</kbd>+<kbd>o</kbd> 로 매우 빠르게 할 수 있게 되었지만서도 터미널이 여러개로 나뉘었을 때 <kbd>Alt</kbd>+<kbd>o</kbd> 로 다음 터미널로밖에 이동할 수 없다면, 정확히 원하는 터미널로 이동할 수 없습니다. 이런 경우를 위하여 `tmux` 는 정확히 왼쪽, 오른쪽, 위쪽, 아래쪽 터미널로 이동할 수 있는 명령어를 제공합니다. 
+
+하지만 그건 너무 복잡했었고 그게 뭐였는지 솔직히 까먹었습니다. 그 대신 `vim` 에서의 커서 이동키였던 <kbd>h</kbd>, <kbd>l</kbd>, <kbd>k</kbd>, <kbd>j</kbd> 를 활용하여 터미널 이동을 매우 쉽게 할 수 있습니다. 
+
+- 실습 
+
+  다음과 같이 터미널을 여러개로 분할하고 <kbd>Alt</kbd> 를 누른채로 <kbd>h</kbd>, <kbd>l</kbd>, <kbd>k</kbd>, <kbd>j</kbd> 를 여러번 누르면서 터미널을 이동해보세요. 
+
+  ![YvxI7GtfRb](https://user-images.githubusercontent.com/16812446/81962572-e0b81f80-964e-11ea-8340-006084f302da.gif)
 
 ## 더 빨라진 터미널 크기 조절
 
@@ -646,6 +661,8 @@ bind-key C-a send-prefix
 - 실습 
 
   다음과 같이 터미널 단축키 <kbd>Alt</kbd> 를 계속 누른 채로 <kbd>&rarr;</kbd>, <kbd>&larr;</kbd>, <kbd>&uarr;</kbd>, <kbd>&darr;</kbd> 을 눌러서 터미널 크기를 너무나도 쉽게 조절해보세요. 
+
+  ![mpiJ2Gh3hi](https://user-images.githubusercontent.com/16812446/81962685-06452900-964f-11ea-8da0-e7363eb2dd4a.gif)
 
 ## `vim` 업그레이드 
 
@@ -666,28 +683,6 @@ bind-key C-a send-prefix
 ![](../fast-indent.gif)
 
 ![](../modify_value.gif)
-
----
-
-# 리눅스 교재
-
-교재에서 다음 분량을 읽고 우분투 도커 컨테이너에서 실습해주세요. 사실 너무 열심히 읽지 않아도 됩니다. 즉, 막 외우려고 애쓰지 않아도 된다는 뜻입니다. 다만 꼭 "정독" 을 하시고 한번쯤 책에 있는 실습을 따라해주세요. 
-
-**(옵션)** 라고 되어있는 파트는 시간절약을 위해 넘겨도 됩니다.
-
-## Chapter 06
-
-- **276p ~ 290p, 292p ~ 295p 읽고 실습하기**
-
-  - 프로세스의 개념, 프로세스 관리 명령
-
-- **296p ~ 301p 읽고 실습하기**
-
-  - 포그라운드/백그라운드 프로세스와 작업 제어, 
-
-- **304p ~ 315p 읽고 실습하기**
-
-  - **(옵션)** 작업 예약
 
 ---
 
