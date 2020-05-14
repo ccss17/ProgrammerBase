@@ -18,13 +18,13 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 > +++ MIT 미싱 클래스 
 
-여러분은 지금까지 리눅스 교재와 이곳의 내용들을 통해서 `bash` 쉘, `git`, `find`, `cat`, `ls`, `vim`, `tmux`, `gdb` 같은 CLI 툴을 알아보았습니다. 
+여러분은 지금까지 리눅스 교재와 이곳의 내용들을 통해서 `bash` 쉘, `git`, `find`, `cat`, `ls`, `vim`, `tmux` 같은 CLI 툴을 알아보았습니다. 
 
-하지만 지금부터 이 CLI 툴들을 사용하기 편리하도록 업그레이드 해보겠습니다.
+지금부터 이 CLI 툴들을 사용하기 편리하도록 업그레이드 해보겠습니다.
 
 ## `dotfiles`
 
-그러기 위해서 먼저 다음의 명령어들을 입력해서 각각의 툴들을 먼저 업그레이드 해야 합니다. 하지만 정말 입력하지는 말고 다음 내용을 계속 읽으세요.
+그러기 위해서 먼저 다음의 명령어들을 입력해서 각각의 툴들을 먼저 업그레이드 해야 합니다. 
 
 ```shell
 $ sudo apt-get -y -qq install git zsh vim tmux unzip curl wget 
@@ -53,7 +53,7 @@ $ curl -sfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubuserconten
 $ vim +PlugInstall +qall
 ```
 
-이 명령어들을 다 입력해야 한다니 정말 의욕이 사라지지 않나요? 그래서 제가 이것을 한 방에 설치할 수 있도록 쉘스크립트를 만들어두었습니다. 
+하지만 이 명령어들을 다 입력해야 한다니 정말 의욕이 사라지지 않나요? 그래서 제가 이것을 한 방에 설치할 수 있도록 쉘스크립트를 만들어두었습니다. 
 
 이러한 CLI 툴들의 설치와 설정들을 매번 설치하기가 너무 귀찮아서 죽을 수도 있기 때문에 사람들은 `dotfiles` 라는 이름의 레포지토리에 일관적으로 정리해놓습니다. 
 
@@ -69,12 +69,7 @@ $ vim +PlugInstall +qall
 $ git clone https://github.com/ccss17/dotfiles-cli
 $ cd dotfiles-cli
 $ ./install.sh
-```
-
-그리고 기본 쉘을 `bash` 에서 `zsh` 로 바꾸기 위해 다음 명령어를 입력하세요. 비밀번호를 물으면 당연히 `a` 를 입력하면 됩니다. 
-
-```shell
-$ chsh -s /usr/bin/zsh
+$ chsh -s /usr/bin/zsh    # 기본 쉘을 bash 에서 zsh 로 바꿉니다. 비밀번호를 물으면 당연히 "a" 를 입력하면 됩니다. 
 ```
 
 그런 다음 명령어로 다시 도커 컨테이너에 접속해보세요. 
@@ -95,7 +90,7 @@ $ docker start -ai e
 
 이제 어떻게 업그레이드 되었는지, 그리고 얼마나 편리해졌는지 하나씩 알아보겠습니다. 
 
-## `alias`
+## `alias` - 더 빨라진 명령 입력 
 
 먼저 몇가지 `alias` 들을 설정함으로써 명령어를 입력하는 타자 횟수를 절약해봅시다. 설정된 `alias` 들은 `~/.zsh_aliases` 파일에 저장되어 있습니다. 그리고 `~/.zsh_aliases` 는 `~/.zshrc` 의 
 
@@ -193,7 +188,7 @@ $ ll
 
 ## `cat` ➜ `bat`
 
-**[`bat`](https://github.com/Peltoche/lsd)** 는 구식인 `cat` 명령어를 최신식으로 대체한 프로그램입니다. 그럼 `cat` 와 `bat` 를 비교해봅시다. 
+**[`bat`](https://github.com/Peltoche/lsd)** 는 구식인 `cat` 명령어를 최신식으로 대체한 프로그램입니다. 그럼 `cat` 와 `bat` 를 비교해봅시다. `vim` 때 `clone` 해놨던 `lolcat` 디렉토리로 가서 실습해주세요. 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -229,7 +224,7 @@ $ bat lolcat.c
 
 **[`hexyl`](https://github.com/sharkdp/hexyl)** 는 구식인 `xxd` 명령어를 최신식으로 대체한 프로그램입니다. `xxd` 가 리눅스 교재에서 설명되어있는지 잘 모르겠지만, 어쨌든 파일의 데이터를 헥사값으로 보여주는 프로그램인 것만 알면 됩니다. 그럼 `xxd` 와 `heyyl` 를 비교해봅시다. 
 
-> 텍스트 파일보다는 바이너리 파일의 헥사값을 보는 것이 유의미하기 때문에 컴파일이 이미 된 `lolcat` 을 살펴보겠습니다. 
+> 텍스트 파일보다는 바이너리 파일의 헥사값을 보는 것이 유의미하기 때문에 이미 컴파일이 된 `lolcat` 을 살펴보겠습니다. 
 
 ```shell
 $ xxd lolcat 
@@ -265,7 +260,7 @@ $ hexyl lolcat | less
 
 `fd` 의 상세한 설명을 알고 싶다면 공식 레포지토리 https://github.com/sharkdp/fd 를 참고해주세요.
 
-## `git` 의 `alias`
+## 더 빨라진 `git`
 
 `git` 은 지원하는 지능이 하도 많다보니 내부적으로 `alias` 를 지원합니다. 가령 `git commit -m` 이라는 명령어를 매번 입력하기가 너무 귀찮아서 견딜 수가 없으니까 다음 명령어를 입력하여 `alias` 를 지정할 수 있습니다. 
 
@@ -285,6 +280,8 @@ $ bat ~/.gitconfig
 
 를 실행해보면 됩니다. `git` 의 `alias` 가 매우 많이 설정되어 있지만 그중에서 주요한 `alias` 들은 다음과 같습니다. 
 
+<div align="center">
+
 |`alias`|원래 명령어|완성된 명령어|의미|
 |:---|:---|:---|:---|
 |`i`|`init`|`g i`|`git` 레포지토리 관리를 시작하도록 한다.|
@@ -292,17 +289,19 @@ $ bat ~/.gitconfig
 |`sb`|`status -s -b`|`g sb`|레포지토리 상태를 간략하게 본다.|
 |`cm`|`commit -m`|`g cm "<MESSAGE>"`|커밋을 한다.|
 |`a`|`add --all`|`g a`|추가되거나 변경된 파일을 스테이징 한다.|
-|`b`|`branch`|`g b <BRANCH>`|브랜치를 생성한다.|
-|`bd`|`branch -d`|`g bd <BRANCH>`|브랜치를 삭제한다.|
 |`l`|`log --oneline`|`g l`|`git` 의 커밋 기록을 한줄씩 출력한다.|
 |`lg`|`log --oneline --graph --decorate`|`g lg`|`git` 의 커밋 기록을 그래프로 출력한다.|
-|`m`|`merge`|`g m`|작업이 완료된 브랜치를 병합한다.|
-|`o`|`checkout`|`g o <BRANCH>`|브랜치로 이동한다.|
-|`ob`|`checkout -b`|`g ob <BRANCH>`|브랜치를 생성함과 동시에 이동한다.|
 |`rao`|`remote add origin`|`g rao <REMOTE>`|원격 레포지토리를 추가한다.|
 |`cl`|`clone`|`g cl <URL>`|원격 레포지토리를 복제해 온다.|
 |`psom`|`push origin master`|`g psom`|원격 레포지토리로 푸쉬한다.|
 |`plom`|`pull origin master`|`g plom`|원격 레포지토리를 가져온다.|
+|`b`|`branch`|`g b <BRANCH>`|브랜치를 생성한다.|
+|`bd`|`branch -d`|`g bd <BRANCH>`|브랜치를 삭제한다.|
+|`m`|`merge`|`g m`|작업이 완료된 브랜치를 병합한다.|
+|`o`|`checkout`|`g o <BRANCH>`|브랜치로 이동한다.|
+|`ob`|`checkout -b`|`g ob <BRANCH>`|브랜치를 생성함과 동시에 이동한다.|
+
+</div>
 
 우리는 **2번째 날** `git` 을 연습할 때 `git-test` 디렉토리를 생성하고 그곳에서 여러가지 작업을 했습니다. 그때 입력한 명령어들을 쭉 나열해보면 다음과 같습니다. 
 
@@ -337,7 +336,7 @@ $ git pull origin master
 $ cat test.txt
 ```
 
-이제 새로운 레포지토리 `alias-test` 를 만들고 위 명령어들을 `alias` 로 단축해서 다시 입력해보겠습니다. 다음 명령어를 실행해보세요. 하지만 걱정하지마세요. `alias` 덕분에 정말 오래 안걸려요! 
+이제 새로운 레포지토리 `alias-test` 를 만들고 위 명령어들을 `alias` 로 단축해서 다시 입력해보겠습니다. 다음 명령어를 실행해보세요. 하지만 걱정하지마세요. `alias` 덕분에 생각보다 오래 안걸리니까요.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -402,7 +401,7 @@ $ bat test.txt
 
 즉, 똑같은 일을 하는데 **134만** 번의 타자를 안 친것입니다!
 
-## `bash` ➜ `zsh`
+## `bash` ➜ `zsh` - 더 빨라진 쉘
 
 `zsh` 은 수많은 플러그인과 테마가 지원되는 쉘입니다. 이제 `bash` 쉘을 그만 쓰고 `zsh` 을 사용해보겠습니다.
 
@@ -413,6 +412,8 @@ $ bat test.txt
 > `zsh` 말고도 [**`fish`**](https://fishshell.com/) 쉘도 많이 쓰입니다. 
 
 `zsh` 은 `oh-my-zsh` 을 설치해야만 그 진가를 발휘하는데, 여러분의 도커 컨테이너에는 `dotfiles` 을 설채할 때 `zsh` 과 `oh-my-zsh` 이 다 설치되어 있으니까 걱정하지 마세요. 
+
+> 설치법도 다 알아보아야 하지만, `5` 일이라는 매우 제한적인 시간 때문에 부득이하게 설치법은 전부 다 생략했습니다. 설치법이 궁금하다면 **Google** 에 검색해서 공식 레포지토리들을 방문해보면 됩니다. 
 
 ### 테마
 
@@ -433,6 +434,8 @@ $ bat test.txt
   - 위와 같이 프롬프트 우측에 `master` 가 `dev` 로 바뀌고 다시 `master`로 바뀌었습니다.
 
   - 이렇게 `git` 으로 레포지토리를 관리하다가 실험적인 기능을 테스트해야 해서 새로운 `branch` 인 `dev` 를 만들고 이주했을 때, `zsh` 의 프롬프트가 우측에 현재 상주하고 있는 `branch` 정보를 알려줍니다. 
+
+  - 그래서 매번 `git branch` 를 입력하여 현재 상주하고 있는 `branch` 가 어떤 건지 확인할 필요가 없습니다.
 
 - 프로그램의 리턴값이 정상값 `0` 이 아닐경우 프롬프트에 보여준다. 
 
@@ -491,17 +494,13 @@ $ bat test.txt
 
   ![render1589349777003](https://user-images.githubusercontent.com/16812446/81776971-d997f100-952a-11ea-8b23-0995cbb69876.gif)
 
-- 또 우리는 `git` 을 연습하느라 `git-test` 라는 디렉토리를 왔다갔다 거렸습니다. 아마도 `git-test` 를 `gi` 로 특정할 수 있을 것 같네요. 그러면 다음 명령어를 입력해보세요. 
+- 또 우리는 `lolcat` 디렉토리를 왔다갔다 거렸습니다. 아마도 `lol` 로 이 디렉토리 경로를 특정할 수 있을 것 같네요. 그러면 다음 명령어를 입력해보세요. 
 
   ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
   ```shell
-  $ z gi
+  $ z lol
   ```
-
-  실행 결과는 다음과 같습니다.
-
-  ![render1589350001867](https://user-images.githubusercontent.com/16812446/81777221-588d2980-952b-11ea-8efa-0c3ae90d3e2d.gif)
 
 ### `auto-suggestions` 기능
 
@@ -517,17 +516,138 @@ $ bat test.txt
   
   `docker start -ai b` 을 일일이 다 입력해야 하는 것과 비교해봅니다.
   
-  > `q` 명령어는 `alias` 파트에서 `alias q=exit` 라고 정의된 것을 확인했었습니다.
-
   ![render1589350187427](https://user-images.githubusercontent.com/16812446/81777473-dcdfac80-952b-11ea-9936-0cc6df268b47.gif)
 
-## `tmux`
+  > `q` 명령어는 `alias` 파트에서 `alias q=exit` 라고 정의된 것을 확인했었습니다.
 
-- 매니저 스크립트 만들고 이런 최신기술을 클린코더 말투로 몰랐나요, 몰랐다면 왜 몰랐습니까? 라며 건전한 비판. 
+## 더 빨라진 `tmux`
 
-  - bash 쉘을 전쟁터에 나갈 떄 칼과 화살을 갖고 가는 것. 도전을 주기 위해 하는 것..
+`tmux` 업그레이드는 사실 실제적인 업그레이드가 아니라 `tmux` 의 설정을 커스터마이징할 수 있는 `~/.tmux.conf` 파일에 사용자가 더 편하게 사용할 수 있도록 설정을 조작하는 것입니다. 그렇기 때문에 여기에서는 제가 설정한 `~/.tmux.conf` 파일을 중심으로 `tmux` 를 사용하기가 얼마나 편해졌는지 살펴보겠습니다. 
 
-## gdb
+### 더 빨라진 alias
+
+먼저 `tmux` 라는 명령어를 매번 치는 것은 너무 비효율적입니다. 무려 `4` 번이나 키보드를 쳐야하기 때문이죠. 그래서 `~/.zsh_aliases` 에 
+
+```shell
+alias t=tmux
+```
+
+를 추가하여 `t` 만 눌러도 `tmux` 가 켜지도록 합니다. 
+
+- 실습 
+
+  도커 컨테이너에서 다음 명령어로 `tmux` 를 켰다가 꺼보세요. 
+
+  ```shell
+  $ t
+  $ q
+  ```
+
+### 더 이뻐진 테마 
+
+`tmux` 의 오리지널 테마는 너무 안이쁘네요. 그래서 좀 더 가독성도 높아지고 보기에도 좋고 시간도 알 수 있도록 다음과 같은 설정으로 테마를 고칩니다.
+
+```shell
+set -g status-bg default
+set -g status-fg colour137
+set -g status-style dim
+set -g status-left '#[fg=colour51,bg=colour0,bold] %R '
+# set -g status-right '#[fg=colour51,bg=colour0,bold] #(uname -r) '
+set -g status-right '#[fg=colour51,bg=colour0,bold] #(osname) '
+set -g status-right-length 100
+setw -g window-status-current-style bg=colour14,fg=colour00,bold
+setw -g window-status-current-format ' #I#[fg=colour0] #[fg=colour0]#W#[fg=colour0] '
+setw -g window-status-style fg=colour49,none,bg=colour00
+setw -g window-status-format '#I #W '
+setw -g window-status-bell-style fg=colour255,bold,bg=colour1
+set -g message-style fg=colour232,bold,bg=colour16
+```
+
+이 설정들은 `~/.tmux.conf` 에 있는데 그 의미를 상세히는 몰라도 됩니다. 
+
+이전
+
+이후 
+
+### 더 빨라진 메타 키
+
+| 기능 | 기존 단축키 | 새로운 단축키 |
+|:---:|:---:|:---:|
+| **Meta** 키 | <kbd>Ctrl</kbd>+<kbd>b</kbd>  |<kbd>Ctrl</kbd>+<kbd>a</kbd>  |
+
+`tmux` 는 **Meta** 키 를 사용하여 명령어들을 정의는데 <kbd>Ctrl</kbd>+<kbd>b</kbd> 는 거리가 너무 멀어서 손이 아픕니다. 그래서 `~/.tmux.conf` 에 
+
+```shell
+unbind C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+```
+
+를 추가하여 거리가 가까운 <kbd>Ctrl</kbd>+<kbd>a</kbd> 로 **Meta** 키를 재설정합니다. 여러분의 도커 컨테이너에는 이미 설정 되어있으니 걱정하지 마세요.
+
+> 앞으로 살펴볼 `tmux` 업그레이드들도 위와 같은 설정 파일을 조작하는 것으로 이루어졌지만, 일일이 어떤 설정으로 `tmux` 가 업그레이드되었는지 상세히 설명하지는 않겠습니다. 
+
+## 더 빨라진 터미널 분할 
+
+| 기능 | 기존 단축키 |새로운 단축키 |
+|:---:|:---:|:---:|
+| 터미널 수직 분할 | <kbd>Meta</kbd>+<kbd>%</kbd>  |<kbd>Meta</kbd>+<kbd>⧵</kbd>  |
+| 터미널 수평 분할 | <kbd>Meta</kbd>+<kbd>"</kbd>  |<kbd>Meta</kbd>+<kbd>-</kbd>  |
+| 다음 터미널으로 이동 | <kbd>Meta</kbd>+<kbd>o</kbd>  | <kbd>Alt</kbd>+<kbd>o</kbd> |
+| (숫자) 터미널으로 이동 | <kbd>Meta</kbd>+<kbd>q</kbd> + (숫자)  |
+
+`tmux` 에서 터미널을 수평으로 분할하려면 기존의 명령어 <kbd>Meta</kbd>+ <kbd>"</kbd> 를 입력해야 하는데 이건 외우기가 너무 어렵습니다. 그래서 외우기 쉽도록 수평으로 나눈다는 의미에서 <kbd>Meta</kbd>+ <kbd>-</kbd> 로 직관적으로 바꿉니다. 
+
+또한 터미널을 수직으로 분할하려면 기존의 명령어 <kbd>Meta</kbd>+ <kbd>%</kbd> 를 입력해야 하는데 이것 역시 외우기가 너무 어렵습니다. 그래서 외우기 쉽도록 수직으로 나눈다는 의미에서 백슬래쉬로 바꿔서 <kbd>Meta</kbd>+ <kbd>⧵</kbd> 로 직관적인 단축키를 설정합니다. 
+
+그리고 다음 터미널로 이동하는 단축키 <kbd>Meta</kbd>+<kbd>o</kbd> 는 실제로 (<kbd>Ctrl</kbd>+<kbd>a</kbd>) + <kbd>o</kbd> 인데, 다음 터미널로 이동하는 작업은 매우 많이 일어나므로 키를 `3` 번이나 눌러야 하는 것은 너무 비효율적이어서 참을 수가 없습니다. 그래서 <kbd>Alt</kbd>+<kbd>o</kbd> 로 바꿉니다. 
+
+- 실습 
+
+  다음과 같이 터미널을 수직, 수평으로 여러번 부할해보고 <kbd>Alt</kbd> 를 계속 누른 채로 <kbd>o</kbd> 를 눌러서 터미널을 이동해보세요. 
+
+  터미널 이동이 정말 빨라졌습니다. 
+
+## 더 빨라진 화면 생성 
+
+| 기능 | 기존 단축키 | 새로운 단축키 |
+|:---:|:---:|:---:|
+| 새로운 화면 생성 | <kbd>Meta</kbd>+<kbd>c</kbd>  | <kbd>Alt</kbd>+<kbd>c</kbd>|
+| 다음 화면으로 이동 | <kbd>Meta</kbd>+<kbd>n</kbd>  |<kbd>Alt</kbd>+<kbd>n</kbd>|
+| 이전 화면으로 이동 | <kbd>Meta</kbd>+<kbd>p</kbd>  |<kbd>Alt</kbd>+<kbd>p</kbd>|
+
+새로운 화면을 생성하고 화면을 넘기는 일도 편하게 하기 위하여 <kbd>Meta</kbd> 키 대신 <kbd>Alt</kbd> 를 사용합시다. 이 <kbd>Alt</kbd> 키로 바꾸는 것만으로 얼마나 작업이 빨라지는지 보세요. 
+
+- 실습 
+
+  다음과 같이 <kbd>Alt</kbd> 를 계속 누른채로 <kbd>c</kbd> 를 연타해서 화면을 더욱 빠르게 만들 수 있습니다. 그리고 여러 화면을 마찬가지로 <kbd>Alt</kbd> 를 계속 누른채로 <kbd>n</kbd> 또는 <kbd>p</kbd> 를 누르면서 이동해보세요. 
+
+## 더 빨라진 화면 이동
+
+| 기능 | 기존 단축키 | 새로운 단축키 |
+|:---:|:---:|:---:|
+| 새로운 화면 생성 | <kbd>Meta</kbd>+<kbd>c</kbd>  | <kbd>Alt</kbd>+<kbd>c</kbd>|
+| 다음 화면으로 이동 | <kbd>Meta</kbd>+<kbd>n</kbd>  |<kbd>Alt</kbd>+<kbd>n</kbd>|
+| 이전 화면으로 이동 | <kbd>Meta</kbd>+<kbd>p</kbd>  |<kbd>Alt</kbd>+<kbd>p</kbd>|
+
+## 더 빨라진 터미널 크기 조절
+
+| 기능 | 기존 단축키 | 새로운 단축키 |
+|:---:|:---:|:---:|
+| 터미널 크기를 왼쪽으로 방향으로 조절 | (너무 복잡함) | <kbd>Alt</kbd>+<kbd>&larr;</kbd>|
+| 터미널 크기를 오른쪽으로 방향으로 조절 | (너무 복잡함) | <kbd>Alt</kbd>+<kbd>&rarr;</kbd>|
+| 터미널 크기를 위쪽으로 방향으로 조절 | (너무 복잡함) | <kbd>Alt</kbd>+<kbd>&uarr;</kbd>|
+| 터미널 크기를 아래쪽으로 방향으로 조절 | (너무 복잡함) | <kbd>Alt</kbd>+<kbd>&darr;</kbd>|
+
+**더 빨라진** 터미널 크기 조절이라고 해봐야 터미널 크기 조절하는 방법을 배우지도 않았는데 라고 생각할 수도 있겠지만, 터미널 크기 조절하는 방법이 저도 외우기 싫을만큼 너무 짜증나는 것이어서 일부러 안썼습니다. 심지어 저도 오리지널 `tmux` 에서 터미널 크기를 어떻게 조절하는지 잊어버렸습니다. 너무 비효율적이라 외울 필요가 없어요. 
+
+어쨌든 그래서 과거의 제가 터미널 크기를 너무너무 쉽게 조절할 수 있도록 이렇게 설정해놓았습니다. 
+
+- 실습 
+
+  다음과 같이 터미널 단축키 <kbd>Alt</kbd> 를 계속 누른 채로 <kbd>&rarr;</kbd>, <kbd>&larr;</kbd>, <kbd>&uarr;</kbd>, <kbd>&darr;</kbd> 을 눌러서 터미널 크기를 너무나도 쉽게 조절해보세요. 
+
+## `vim` 업그레이드 
 
 ## `VSCode` 에서 사용하는 `vim`
 
@@ -546,10 +666,6 @@ $ bat test.txt
 ![](../fast-indent.gif)
 
 ![](../modify_value.gif)
-
-## 쉘 스크립트 
-
-하지만 MIT 에서 왠만하면 쉘 스크립트 쓰지 말라헀던 포스트 게시.
 
 ---
 
@@ -749,8 +865,6 @@ $ YuleLog
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
-$ sudo apt install python python3-pip
-$ sudo pip3 install nunmpy colorama
 $ git clone https://github.com/ccss17/nonogram
 ```
 그런 다음 이 명령어를 실행해보면 
