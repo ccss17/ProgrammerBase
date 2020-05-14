@@ -536,12 +536,14 @@ alias t=tmux
 
 - 실습 
 
-  도커 컨테이너에서 다음 명령어로 `tmux` 를 켰다가 꺼보세요. 
+  다음과 같이 도커 컨테이너에서 다음 명령어로 `tmux` 를 켰다가 꺼보세요. 
 
   ```shell
   $ t
   $ q
   ```
+
+  ![CSpyoIvAGI](https://user-images.githubusercontent.com/16812446/81962812-41dff300-964f-11ea-99db-8cf7727f849e.gif)
 
 ### 더 이뻐진 테마 
 
@@ -602,6 +604,8 @@ bind-key C-a send-prefix
 
 그리고 다음 터미널로 이동하는 단축키 <kbd>Meta</kbd>+<kbd>o</kbd> 는 실제로 (<kbd>Ctrl</kbd>+<kbd>a</kbd>) + <kbd>o</kbd> 인데, 다음 터미널로 이동하는 작업은 매우 많이 일어나므로 키를 `3` 번이나 눌러야 하는 것은 너무 비효율적이어서 참을 수가 없습니다. 그래서 <kbd>Alt</kbd>+<kbd>o</kbd> 로 바꿉니다. 
 
+**유일하게 MacOS 에서만 테스트를 못해봤기 때문에 MacOS 에서는 <kbd>Alt</kbd> 키로 하는 것이 안될 수도 있습니다. 그럴경우 그냥 <kbd>Meta</kbd> + <kbd>o</kbd> 로 하면 될 겁니다. 맥에서 <kbd>Alt</kbd> 가 어떻게 입력되는지 아시는 분이 있다면 알려주세요. 아마도 맥에서 "option" 이라는 키가 <kbd>Alt</kbd> 의 기능을 하지 않을까 싶습니다.**
+
 - 실습 
 
   다음과 같이 터미널을 수직, 수평으로 여러번 분할해보고 <kbd>Alt</kbd> 를 계속 누른 채로 <kbd>o</kbd> 를 눌러서 터미널을 이동해보세요. 
@@ -637,7 +641,7 @@ bind-key C-a send-prefix
 
 터미널 이동을 <kbd>Alt</kbd>+<kbd>o</kbd> 로 매우 빠르게 할 수 있게 되었지만서도 터미널이 여러개로 나뉘었을 때 <kbd>Alt</kbd>+<kbd>o</kbd> 로 다음 터미널로밖에 이동할 수 없다면, 정확히 원하는 터미널로 이동할 수 없습니다. 이런 경우를 위하여 `tmux` 는 정확히 왼쪽, 오른쪽, 위쪽, 아래쪽 터미널로 이동할 수 있는 명령어를 제공합니다. 
 
-하지만 그건 너무 복잡했었고 그게 뭐였는지 솔직히 까먹었습니다. 그 대신 `vim` 에서의 커서 이동키였던 <kbd>h</kbd>, <kbd>l</kbd>, <kbd>k</kbd>, <kbd>j</kbd> 를 활용하여 터미널 이동을 매우 쉽게 할 수 있습니다. 
+하지만 그건 너무 복잡했었고 그게 뭐였는지 솔직히 까먹었습니다. 그 대신 `vim` 에서의 커서 이동키였던 <kbd>h</kbd>, <kbd>l</kbd>, <kbd>k</kbd>, <kbd>j</kbd> 에서 착안하여 터미널 이동을 매우 쉽게 할 수 있습니다. 
 
 - 실습 
 
@@ -853,6 +857,6 @@ $ python3 main.py test/3030.txt
 
 ![](https://user-images.githubusercontent.com/16812446/72774545-5a667080-3c4e-11ea-951d-7668876134ac.png)
 
-> 출처 : https://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15 또는 http://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
+> 출처 : http://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
 
 의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 
