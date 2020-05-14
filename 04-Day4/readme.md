@@ -695,7 +695,9 @@ bind-key C-a send-prefix
 
 먼저 벌써 4일차까지 달려온 여러분들을 위해 머리를 좀 식히자는 의미에서 **퍼니 CLI**, 즉 실용성이 없이 순전히 재미를 목적으로 만들어진 **CLI** 들을 알아보겠습니다. 
 
-이 부분은 **실용성이 전혀 없기 때문에** 직접 실습하셔도 되고 안하셔도 됩니다. 또 **시간이 아깝다면 Funny CLI 부분을 넘겨도 됩니다**. 
+이 부분은 **실용성이 전혀 없기 때문에** 직접 실습하셔도 되고 안하셔도 됩니다. 또 **시간이 아깝다면 Funny CLI 부분을 넘겨도 됩니다**.
+
+> 이 **Funny CLI** 들 또한 이미 도커 컨테이너에 설치되어 있기 때문에 설치법은 모두 생략합니다. 각각의 공식 레포지토리에 들어가면 설치법을 알 수 있습니다. 
 
 > 참고로 모든 터미널 캡쳐는 **[Terminalizer](https://github.com/faressoft/terminalizer)** 를 사용했습니다.
 
@@ -703,17 +705,9 @@ bind-key C-a send-prefix
 
 ## asciiquarium
 
-**[`asciiquarium`](https://github.com/cmatsuoka/asciiquarium)** 은 아스키 코드로 만들어진 아쿠아리움을 뜻합니다. 설치법은 다음과 같습니다.
+**[`asciiquarium`](https://github.com/cmatsuoka/asciiquarium)** 은 아스키 코드로 만들어진 아쿠아리움을 뜻합니다. 
 
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ sh -c "$(curl -fsSL https://git.io/JfcKm)"
-```
-
-> 이 설치법은 공식 설치법이 아니라, 제가 복잡한 설치법을 쉘스크립트로 하나로 묶어서 한줄로 설치할 수 있도록 만든 것입니다.
-
-그런 다음 이 명령어를 실행해보면 
+이 명령어를 실행해보면 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -729,15 +723,9 @@ $ asciiquarium
 
 ## nyancat
 
-**[`nyancat`](https://github.com/klange/nyancat)** 은 **CLI** 로 고양이가 뛰어다니는 것을 보여주는 미친 프로그램입니다. 설치법은 다음과 같습니다.
+**[`nyancat`](https://github.com/klange/nyancat)** 은 **CLI** 로 고양이가 뛰어다니는 것을 보여주는 미친 프로그램입니다. 
 
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ sudo apt install nyancat
-```
-
-그런 다음 이 명령어를 실행해보면 
+이 명령어를 실행해보면 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -753,15 +741,9 @@ $ nyancat
 
 ## sl
 
-**[`sl`](https://github.com/mtoyoda/sl)** 은 **CLI** 로 기차를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
+**[`sl`](https://github.com/mtoyoda/sl)** 은 **CLI** 로 기차를 보여주는 프로그램입니다.
 
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ sudo apt install sl
-```
-
-그런 다음 이 명령어를 실행해보면 
+이 명령어를 실행해보면 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -775,17 +757,9 @@ $ /usr/games/sl
 
 ## ChristBASHTree
 
-**[`ChristBASHTree`](https://github.com/sergiolepore/ChristBASHTree)** 은 **CLI** 로 크리스마스 트리를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
+**[`ChristBASHTree`](https://github.com/sergiolepore/ChristBASHTree)** 은 **CLI** 로 크리스마스 트리를 보여주는 프로그램입니다.
 
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ cd
-$ sudo wget -d -c -O /usr/local/bin/ChristBASHTree "https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh"
-$ sudo chmod +x /usr/local/bin/ChristBASHTree
-```
-
-그런 다음 이 명령어를 실행해보면 
+이 명령어를 실행해보면 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -799,16 +773,9 @@ $ ./ChristBASHTree
 
 ## unimatrix
 
-**[`unimatrix`](https://github.com/will8211/unimatrix)** 은 **CLI** 로 매트릭스를 보여주는 프로그램입니다. 설치법은 다음과 같습니다.
+**[`unimatrix`](https://github.com/will8211/unimatrix)** 은 **CLI** 로 매트릭스를 보여주는 프로그램입니다. 
 
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ sudo wget https://raw.githubusercontent.com/will8211/unimatrix/master/unimatrix.py -O /usr/local/bin/unimatrix
-$ sudo chmod a+rx /usr/local/bin/unimatrix
-```
-
-그런 다음 이 명령어를 실행해보면 
+이 명령어를 실행해보면 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -828,9 +795,9 @@ $ unimatrix -c red
 
 ## pipe.sh
 
-**[`pipe.sh`](https://github.com/pipeseroni/pipes.sh)** 는 **CLI** 로 파이프를 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
+**[`pipe.sh`](https://github.com/pipeseroni/pipes.sh)** 는 **CLI** 로 파이프를 보여주는 프로그램입니다.
 
-어쨌든 설치하고나서 다음 명령어를 실행해보면 
+다음 명령어를 실행해보면 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -838,15 +805,15 @@ $ unimatrix -c red
 $ pipe.sh
 ```
 
-다음과 같이 파이프가 나타납니다. 
+이렇게 파이프가 나타납니다. 
 
 ![render1588866558609](https://user-images.githubusercontent.com/16812446/81316124-2496ac00-90c6-11ea-8c0e-b66bc92029fe.gif)
 
 ## YuleLog
 
-**[`YuleLog`](https://github.com/Duroktar/YuleLog)** 는 **CLI** 로 따뜻한 장작을 보여주는 프로그램입니다. 이 프로그램은 설치법은 생략하겠습니다. 
+**[`YuleLog`](https://github.com/Duroktar/YuleLog)** 는 **CLI** 로 따뜻한 장작을 보여주는 프로그램입니다.
 
-어쨌든 설치하고나서 다음 명령어를 실행해보면 
+다음 명령어를 실행해보면 
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -854,7 +821,7 @@ $ pipe.sh
 $ YuleLog
 ```
 
-다음과 같이 따뜻한 장작이 나타납니다. 
+따뜻한 장작이 나타납니다. 
 
 ![render1588865888181](https://user-images.githubusercontent.com/16812446/81315262-0ed4b700-90c5-11ea-92e6-c6e91cfabbf0.gif)
 
