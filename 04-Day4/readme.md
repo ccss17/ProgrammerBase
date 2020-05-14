@@ -802,7 +802,7 @@ $ unimatrix -c red
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
-$ pipe.sh
+$ pipes.sh
 ```
 
 이렇게 파이프가 나타납니다. 
@@ -832,7 +832,7 @@ $ YuleLog
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
-$ git clone https://github.com/ccss17/nonogram
+$ g cl https://github.com/ccss17/nonogram
 ```
 그런 다음 이 명령어를 실행해보면 
 
@@ -852,13 +852,12 @@ $ python3 main.py test/3030.txt
 
 > 소스코드와 더 자세한 설명을 원한다면 https://github.com/ccss17/nonogram 를 참고해주세요. 
 
-![render1589289772407](https://user-images.githubusercontent.com/16812446/81696970-98a6ca80-949f-11ea-88c2-1574bbcc0702.gif)
-
+![1cbY6BnXq5](https://user-images.githubusercontent.com/16812446/81961266-1825cc80-964d-11ea-82c1-96c9d26eed7f.gif)
 
 가령 `15x15` 네모로직 수학퍼즐의 샘플의 구조를 특정하고 있는 `test/1515.txt` 파일은 
 
 ![](https://user-images.githubusercontent.com/16812446/72774545-5a667080-3c4e-11ea-951d-7668876134ac.png)
 
-> 출처 : https://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
+> 출처 : https://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15 또는 http://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
 
 의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 
