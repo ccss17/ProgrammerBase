@@ -764,7 +764,7 @@ $ /usr/games/sl
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
 ```shell
-$ ./ChristBASHTree
+$ ChristBASHTree
 ```
 
 다음과 같이 크리스마스 트리가 나타납니다. 
@@ -786,6 +786,8 @@ $ unimatrix -c red
 다음과 같이 붉은 매트릭스 나타납니다. 
 
 ![render1588866261154](https://user-images.githubusercontent.com/16812446/81315323-22801d80-90c5-11ea-8590-5a9780952c24.gif)
+
+![7tIs8Ca4Xm](https://user-images.githubusercontent.com/16812446/81960485-fbd56000-964b-11ea-9c7b-40ff88e2f42f.gif)
 
 ## lolcat 
 
