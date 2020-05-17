@@ -731,7 +731,7 @@ bind-key C-a send-prefix
 | 터미널 크기를 위쪽으로 방향으로 조절 | (너무 복잡함) | <kbd>Alt</kbd>+<kbd>&uarr;</kbd>|
 | 터미널 크기를 아래쪽으로 방향으로 조절 | (너무 복잡함) | <kbd>Alt</kbd>+<kbd>&darr;</kbd>|
 
-**더 빨라진** 터미널 크기 조절이라고 해봐야 터미널 크기 조절하는 방법을 배우지도 않았는데 라고 생각할 수도 있겠지만, 터미널 크기 조절하는 방법이 외울 수 없을 만큼 너무 복잡한 것이어서 안썼습니다. 그래서 과거의 제가 터미널 크기를 너무너무 쉽게 조절할 수 있도록 위와 같이 설정해놓았습니다. 
+**더 빨라진** 터미널 크기 조절이라고 해봐야 터미널 크기 조절하는 방법을 배우지도 않았는데 라고 생각할 수도 있겠지만, 터미널 크기 조절하는 방법이 외울 수 없을 만큼 너무 복잡한 것이어서 안썼습니다. 과거의 제가 터미널 크기를 너무너무 쉽게 조절할 수 있도록 위와 같이 설정해놓았습니다. 
 
 - 실습 
 
@@ -765,13 +765,15 @@ alias v=vim
 
   다음과 같이 도커 컨테이너에서 `vim` 를 켜보세요. 
 
+  ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
   ```shell
   $ v
   ```
 
 ## vim-plug
 
-[`vim-plug`](https://github.com/junegunn/vim-plug) 는 카카오에서 개발하시는 [junegunn](https://github.com/junegunn) 님께서 만드신 `vim` 플러그인을 관리할 수 있는 플러그인입니다. 여러 좋은 기능이 있지만 제가 가장 좋아하는 기능은 다른 플러그인 관리 플러그인들은 플러그인을 설치할 때 직렬로 설치하는 반면 [`vim-plug`](https://github.com/junegunn/vim-plug) 는 병렬로 설치한다는 것입니다. 이로써 플러그인 설치 시간이 매우 짧아집니다. 
+[`vim-plug`](https://github.com/junegunn/vim-plug) 는 카카오에서 개발하시는 [junegunn](https://github.com/junegunn) 님께서 만드신 `vim` 플러그인을 관리할 수 있는 플러그인입니다. 여러 좋은 기능이 있지만 제가 가장 좋아하는 기능은 플러그인들을 설치할 때 병렬로 설치한다는 것입니다. 이로써 플러그인 설치 시간이 매우 짧아집니다. 다른 플러그인 관리 플러그인들은 플러그인을 설치할 때 직렬로 설치해서 설치 시간이 약간 오래걸립니다.
 
 저의 `dotfiles` 를 설치할 때 다음과 같은 화면을 보셨을텐데요.
 
@@ -779,7 +781,9 @@ alias v=vim
 <img src="https://user-images.githubusercontent.com/16812446/82145156-d468d800-9883-11ea-804f-77728db33733.gif" width="70%" height="auto">
 </div>
 
-마지막 부분에서 나타나는 `vim` 화면이 `vim` 의 플러그인들을 `vim-plug` 가 병렬로 매우 빠르게 설치하는 장면입니다. 너무 빠르죠? ㄷㄷ 
+마지막 부분에서 나타나는 `vim` 화면이 `vim` 의 플러그인들을 `vim-plug` 가 병렬로 매우 빠르게 설치하는 장면입니다. 너무 빠르죠? 
+
+> `12` 개의 플러그인을 설치했는데 다른 "플러그인 관리" 플러그인으로 `12` 개를 설치하면 인터넷이 안좋은 곳에서는 2분에서 3분까지 걸렸던 걸로 기억합니다. 
 
 여기에서는 이렇게 설치된 플러그인들 중에서 핵심적인 플러그인들을 살펴보겠습니다. 
 
@@ -809,13 +813,15 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 몇 가지 `vim` 을 매우 빠르고 편하게 사용할 수 있도록 단축키를 설정했습니다. 위에서 볼 수 있듯 `map` 과 `nmap` 이 단축키를 설정하는 `vim` 의 명령어인데 `<silent>` 는 명령 실행을 상태바에 출력하지 말라는 뜻이니 신경쓸 것 없습니다. 실질적으로 단축키가 설정된 중요한 부분은 `<silent>` 오른쪽 부분입니다. 
 
-> 직관적으로 할 수 있듯이 `<C-s>` 는 <kbd>Ctrl</kbd>+<kbd>s</kbd> 를 뜻하고 `<Up>` 은 <kbd>&uarr;</kbd> 를 뜻합니다.
+> 직관적으로 알 수 있듯이 `<C-s>` 는 <kbd>Ctrl</kbd>+<kbd>s</kbd> 를 뜻하고 `<Up>` 은 <kbd>&uarr;</kbd> 를 뜻합니다.
 
 ## 더 이뻐진 테마 
 
 현재 설정된 `vim` 의 컬러테마는 다음과 같은 `onedark` 입니다. 
 
-![Screen Capture_Alacritty_20200517231247](https://user-images.githubusercontent.com/16812446/82150729-ec485800-9893-11ea-828e-7c9b54496fd1.png)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82150729-ec485800-9893-11ea-828e-7c9b54496fd1.png" width="70%" height="auto">
+</div>
 
 > 하지만 [이곳에서](https://www.slant.co/topics/480/~best-vim-color-schemes) `vim` 의 여러가지 테마를 살펴볼 수 있고 **Google** 에 검색해서 더 많은 `vim` 테마도 찾을 수 있습니다. 그리고 여러분이 가장 마음이 드는 테마를 설치할 수도 있습니다.
 
