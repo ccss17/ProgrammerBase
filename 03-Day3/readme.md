@@ -470,6 +470,16 @@ int main(int argc, char** argv)
 
   ![render1589353002311](https://user-images.githubusercontent.com/16812446/81781027-75792b00-9532-11ea-9cad-dab0a5f905f4.gif)
 
+- 실습 
+
+  매우 긴 문장에서 `f` 로 원하는 문자 커서로 이동하기.
+
+  (GIF)
+
+  그리고 이것은 보통의 코드에서도 매우 자주 유용하게 사용될 수 있음. 
+
+  (GIF)
+
 ### 화면 이동
 
 | 기능 | 일반 텍스트 에디터 | `vim` |

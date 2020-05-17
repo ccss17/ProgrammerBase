@@ -688,6 +688,8 @@ bind-key C-a send-prefix
 
 ![](../modify_value.gif)
 
+![](../modify-word.gif)
+
 ---
 
 # Funny CLI 
