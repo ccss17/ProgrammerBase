@@ -842,7 +842,7 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
   너무 빠르고 편하게 저장되고 종료됩니다. 
 
-  > 하지만 리눅스 터미널에서 <kbd>Ctrl</kbd>+<kbd>s</kbd> 와 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 사용하기 위해서는 반드시 `stty -ixon` 명령어를 실행해두어야 합니다. 하지만 `~/.zshrc` 파일에서 이미 자동으로 실행되고 있으니 걱정하지 마세요. 왜 `stty -ixon` 을 실행해야만 <kbd>Ctrl</kbd>+<kbd>s</kbd> 와 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 사용할 수 있는지는 상세히 설명하지 않겠습니다. 궁금하신 분들은 **Google** 에 검색해보세요.
+  > 리눅스 터미널에서 <kbd>Ctrl</kbd>+<kbd>s</kbd> 와 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 사용하기 위해서는 반드시 `stty -ixon` 명령어를 실행해두어야 합니다. 하지만 `~/.zshrc` 파일에서 이미 자동으로 실행되고 있으니 걱정하지 마세요. 왜 `stty -ixon` 을 실행해야만 <kbd>Ctrl</kbd>+<kbd>s</kbd> 와 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 사용할 수 있는지는 상세히 설명하지 않겠습니다. 궁금하신 분들은 **Google** 에 검색해보세요.
 
 ## NERDTree 
 
@@ -881,17 +881,13 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
   $ v
   ```
 
-  그리고 다음과 같이 <kbd>Ctrl</kbd>+<kbd>p</kbd> 로 NERDTree 를 열어서 `j` 를 연타하여 `nonogram.py` 에 커서를 두고 <kbd>Enter</kbd> 를 치고 다시 <kbd>Ctrl</kbd>+<kbd>h</kbd> 로 NERDTree 로 이동하여 `patterns.py` 에 커서를 두고 `s` 를 눌러 에디터를 수직으로 분할하여 엽니다. 그리고 다시 <kbd>Ctrl</kbd>+<kbd>h</kbd> 로 NERDTree 로 돌아가서 `usage.md` 에 커서를 두고 `i` 를 눌러 에디터를 수평으로 분할하여 엽니다. 이제 <kbd>Ctrl</kbd>+<kbd>p</kbd> 를 눌러 NERDTree 를 닫습니다. 
+  그리고 다음과 같이 <kbd>Ctrl</kbd>+<kbd>p</kbd> 로 NERDTree 를 열어서 `j` 로 커서를 내려서 `nonogram.py` 에 커서를 두고 <kbd>Enter</kbd> 를 칩니다.
+  
+  그리고 다시 <kbd>Ctrl</kbd>+<kbd>h</kbd> 로 NERDTree 로 이동하여 `patterns.py` 에 커서를 두고 `s` 를 눌러 에디터를 수직으로 분할하여 엽니다. 이제 <kbd>Ctrl</kbd>+<kbd>p</kbd> 로 NERDTree 를 닫습니다. 
+  
+  그리고 <kbd>Ctrl</kbd> 를 누른채 <kbd>h</kbd> 와 <kbd>l</kbd> 를 눌러서 왼쪽/오른쪽 에디터로 편하게 이동해보세요. 그리고 <kbd>Ctrl</kbd> 을 누를 채로 <kbd>q</kbd> 를 `2` 번 눌러서 `vim` 을 종료하세요.
 
-  ![render1589717983445](https://user-images.githubusercontent.com/16812446/82145964-54437200-9885-11ea-9d0c-7ed06b2f785c.gif)
-
-  그리고 <kbd>Ctrl</kbd> 를 누른채 <kbd>j</kbd>, <kbd>l</kbd> 를 눌러 왼쪽/오른쪽으로 이동해보고 <kbd>k</kbd>, <kbd>h</kbd> 를 눌러 위쪽/아래쪽으로 이동해보세요. 화면 이동이 너무 빠르고 쉬워졌습니다. 
-
-  그런데 파일들을 살펴보다가 `usage.md` 파일에 좀 더 관심이 생겨서 다른 `*.py` 파일 에디터를 종료하고 싶어졌습니다. 그래서 `nonogram.py` 와 `patterns.py` 에디터로 이동하여 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 눌러 손쉽게 종료합니다. 
-
-  그런데 `usage.md` 를 다 편집하고 나서 `nonogram.py` 를 살펴보고 싶어졌습니다. 그래서 다시 <kbd>Ctrl</kbd>+<kbd>p</kbd> 로 NERDTree 를 키고 `nonogram.py` 에 커서를 두고 <kbd>Enter</kbd> 를 칩니다. 
-
-  이제 모든 편집을 완료해서 마지막으로 <kbd>Ctrl</kbd>+<kbd>q</kbd> 로 에디터를 종료합니다. 
+  ![render1589730688182](https://user-images.githubusercontent.com/16812446/82153390-1bfe5c80-98a2-11ea-893b-30ed633cd92d.gif)
 
 ### 더 빨라진 `vim` 화면크기조정
 
@@ -908,11 +904,11 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
   다음과 같이 `nonogram` 레포지토리에서 `vim` 을 켜고 NERDTree 로 파일 하나를 열고 또 하나의 파일을 수직으로 열고 또 하나의 파일을 수평으로 엽니다. 
 
-  ![render1589725541150](https://user-images.githubusercontent.com/16812446/82151411-90330300-9896-11ea-8204-7a831f8d86db.gif)
-
   그리고 방향키 <kbd>&larr;</kbd>, <kbd>&rarr;</kbd>, <kbd>&uarr;</kbd>, <kbd>&darr;</kbd> 를 눌러서 에디터의 사이즈를 조절해보세요. 그리고 <kbd>Ctrl</kbd>+<kbd>h</kbd>, <kbd>Ctrl</kbd>+<kbd>j</kbd>, <kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>Ctrl</kbd>+<kbd>l</kbd> 로 화면을 이동해서 그곳에서도 화면 크기를 조절해보세요. 
 
-  그리고 마지막으로 <kbd>Ctrl</kbd> 를 누른채로 <kbd>q</kbd> 를 `3` 연타하여 손쉽게 `vim` 을 종료해보세요. 
+  그리고 마지막으로 <kbd>Ctrl</kbd> 를 누른채로 <kbd>q</kbd> 를 `3` 번 눌러서 `vim` 을 종료해보세요. 
+
+  ![render1589725541150](https://user-images.githubusercontent.com/16812446/82151411-90330300-9896-11ea-8204-7a831f8d86db.gif)
 
 ## NERDCommentor
 
@@ -956,7 +952,9 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
   ![render1589727290032](https://user-images.githubusercontent.com/16812446/82152075-eeadb080-9899-11ea-970c-d109d97d43fa.gif)
 
-  개발을 하다 보니 `cc` 라는 변수 이름이 마음에 들지 않아서 바꾸고 싶습니다. 하지만 이 변수가 `main` 함수에서 몇번이나 반복되었는지 알 수 없습니다. 그래서 `cc` 라는 변수 이름을 바꾸기 위하여 `cc` 변수 위에 커서를 두고 <kbd>Ctrl</kbd> 을 누른채로 <kbd>n</kbd> 을 연타하여 상태표시줄에 **No more matches** 라고 뜰 때까지 혹은 더 단순하게 다음 단어로 커서가 이동되지 않을 때까지 변수 `cc` 들을 포커싱합니다. 
+  개발을 하다 보니 `cc` 라는 변수 이름이 마음에 들지 않아서 바꾸고 싶습니다. 하지만 이 변수가 `main` 함수에서 몇번이나 반복되었는지 알 수 없습니다. 
+  
+  그래서 `cc` 변수 위에 커서를 두고 <kbd>Ctrl</kbd> 을 누른채로 <kbd>n</kbd> 을 연타하여 상태표시줄에 **No more matches** 라고 뜰 때까지 혹은 더 단순하게 다음 단어로 커서가 이동되지 않을 때까지 변수 `cc` 들을 포커싱합니다. 
 
   그러고 나서 **지우고 편집**하기 기능인 `c` 를 눌러서 `my_var` 를 입력하고 <kbd>Esc</kbd> 를 연타하여 눌러 입력 모드를 빠져나옵니다. 여러개의 커서들이 다시 없어져야 하기 때문에 <kbd>Esc</kbd> 를 연타해야 합니다. 
   
