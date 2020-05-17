@@ -22,7 +22,7 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 지금부터 이 CLI 툴들을 사용하기 편리하도록 업그레이드 해보겠습니다.
 
-## `dotfiles`
+## dotfiles
 
 그러기 위해서 먼저 다음의 명령어들을 입력해서 각각의 툴들을 먼저 업그레이드 해야 합니다. 
 
@@ -90,7 +90,7 @@ $ docker start -ai e
 
 이제 어떻게 업그레이드 되었는지, 그리고 얼마나 편리해졌는지 하나씩 알아보겠습니다. 
 
-## `alias` - 더 빨라진 명령 입력 
+## alias - 더 빨라진 명령 입력 
 
 먼저 몇가지 `alias` 들을 설정함으로써 명령어를 입력하는 타자 횟수를 절약해봅시다. 설정된 `alias` 들은 `~/.zsh_aliases` 파일에 저장되어 있습니다. 그리고 `~/.zsh_aliases` 는 `~/.zshrc` 의 
 
@@ -260,7 +260,75 @@ $ hexyl lolcat | less
 
 `fd` 의 상세한 설명을 알고 싶다면 공식 레포지토리 https://github.com/sharkdp/fd 를 참고해주세요.
 
-## 더 빨라진 `git`
+## `top` ➜ `htop` ➜ `gotop`
+
+기존의 `top` 은 다음과 같이 약간은 밋밋하게 시스템의 상태를 출력해주었습니다.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82143677-8f8f7200-9880-11ea-9f4e-7cbf6ed05b69.gif" width="50%" height="auto">
+</div>
+
+하지만 [`htop`](https://github.com/hishamhm/htop) 은 다음과 같이 색깔도 칠하고 메모리와 CPU 상태를 핸드폰 배터리 바처럼 보여줍니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82143686-a3d36f00-9880-11ea-8b4c-941f6b640b1e.gif" width="50%" height="auto">
+</div>
+
+마지막으로 [`gotop`](https://github.com/cjbassi/gotop) 은 다음과 같이 완벽한 그래프로 시스템의 상태를 직관적으로 출력해줍니다.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82143720-f3b23600-9880-11ea-9f1b-7a24784cf541.gif" width="70%" height="auto">
+</div>
+
+도커 컨테이너에도 `gotop` 이 이미 설치되어 있으니 시험삼아 실행해보세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ gotop
+```
+
+시스템 상태를 출력해줄 수 있는 유틸리티는 개인적인 선호에 따라 좋고 나쁨이 결정되므로 확실히 어떤 게 좋다라고 말할 수 없습니다. 따라서 그냥 개인적으로 더 나은 것 같은 CLI 를 사용하면 됩니다. 
+
+> 전 개인적으로 `gotop` 이 직관적이고 좋더라구요. 
+
+## `man` ➜ `tldr` 
+
+`man` 은 명령어의 사용법을 출력하는 매우 좋은 프로그램입니다. 하지만 `man` 의 한 가지 단점은 그 사용법이 너무 방대하고 장황하다는 것입니다. 그래서 프로그램의 핵심 사용법을 쉽고 빠르게 알고 싶은 사용자들은 그 방대한 사용법에서 자신이 원하는 핵심 사용법을 이리저리 찾고 있어야만 했습니다. 
+
+하지만 [`tldr`](https://github.com/tldr-pages/tldr) 은 `man` 처럼 방대한 사용법을 보여주는 것이 아니라 매우 간단한 핵심 사용법만을 알려줍니다. `tldr` 은 사용자들의 주도로 만들어져서 개발자들이 경험적으로 **"이게 가장 핵심적인 사용법이다!"** 라는 사용법만 간단하게 출력합니다.
+
+- 실습 
+
+  `tar` 명령어는 파일과 디렉토리를 압축할 수 있는 좋은 명령어지만 여러가지 옵션이 약간 복잡해서 기억하기 힘들 때가 있습니다. 그럴 때는 다음 명령어를 통해 `tar` 의 사용법을 확인해야 합니다. 
+
+  ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+  ```shell
+  $ man tar
+  ```
+
+  그러면 다음과 같이 `tar` 의 **모든 사용법** 이 출력됩니다. 
+
+  <div align="center">
+  <img src="https://user-images.githubusercontent.com/16812446/82149528-ecdfef00-9891-11ea-8f14-4d98291fb144.png" width="70%" height="auto">
+  </div>
+
+  이런... 하지만 `man` 으로 `tar` 를 보니 설명이 매우 방대하고 매우 연역적으로, 그러니까 약간은 추상적으로 설명되어 있습니다. 그렇다면 다음 명령어를 실행하여 `tldr` 로 `tar` 의 사용법을 보겠습니다. 
+
+  ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+  ```shell
+  $ tldr tar
+  ```
+
+  그러면 다음과 같이 개발자들이 자주 사용하는 `tar` 의 핵심 기능들이 약간 귀납적으로, 즉 상당히 구체적으로 설명된 사용법이 출력됩니다. 
+
+  <div align="center">
+  <img src="https://user-images.githubusercontent.com/16812446/82149895-5829c100-9892-11ea-9147-b97e122a265c.png" width="70%" height="auto">
+  </div>
+
+# 더 빨라진 git
 
 `git` 은 지원하는 지능이 하도 많다보니 내부적으로 `alias` 를 지원합니다. 가령 `git commit -m` 이라는 명령어를 매번 입력하기가 너무 귀찮아서 견딜 수가 없으니까 다음 명령어를 입력하여 `alias` 를 지정할 수 있습니다. 
 
@@ -401,7 +469,7 @@ $ bat test.txt
 
 즉, 똑같은 일을 하는데 **134만** 번의 타자를 안 친것입니다!
 
-## `bash` ➜ `zsh` - 더 빨라진 쉘
+# `bash` ➜ `zsh` - 더 빨라진 쉘
 
 `zsh` 은 수많은 플러그인과 테마가 지원되는 쉘입니다. 이제 `bash` 쉘을 그만 쓰고 `zsh` 을 사용해보겠습니다.
 
@@ -415,7 +483,7 @@ $ bat test.txt
 
 > 설치법도 다 알아보아야 하지만, `5` 일이라는 매우 제한적인 시간 때문에 부득이하게 설치법은 전부 다 생략했습니다. 설치법이 궁금하다면 **Google** 에 검색해서 공식 레포지토리들을 방문해보면 됩니다. 
 
-### 테마
+## 테마
 
 `zsh` 은 정말 수많은 테마를 갖고 있습니다.
 
@@ -445,7 +513,7 @@ $ bat test.txt
 
   - `zsh` 프롬프트는 그러한 비정상 종료 코드를 보여주고 프로그램이 비정상적으로 종료되었을 때 프롬프트 색깔을 다른 색깔로 바꿔줍니다. 
 
-### `tab-completion` 기능
+## `tab-completion` 기능
 
 이 기능은 명령어의 부분만 입력하고 <kbd>Tab</kbd> 을 눌렀을 때 `zsh` 이 알아서 명령어를 추천해주는 기능입니다. 
 
@@ -457,8 +525,7 @@ $ bat test.txt
 
   ![render1589349132365](https://user-images.githubusercontent.com/16812446/81776480-cf292780-9529-11ea-8ffd-4e457a71e6de.gif)
 
-
-### `auto-completion` 기능
+## `auto-completion` 기능
 
 이 기능은 사용자가 길고 복잡한 경로를 이동해야 할때 그것을 특정할 수 있는 문자만 입력하고 <kbd>Tab</kbd> 을 누르면 자동으로 완성해주는 `zsh` 의 기능입니다. 바로 실습해보겠습니다. 
 
@@ -478,7 +545,7 @@ $ bat test.txt
 
   ![](https://user-images.githubusercontent.com/16812446/81776742-51b1e700-952a-11ea-986d-4169235ff0ef.gif)
 
-### `z` 명령어 
+## `z` 명령어 
 
 `z` 명령어는 사용자가 자주 이동하는 디렉토리 경로의 통계를 내어서 사용자가 이동하는 경로를 특정할 수 있는 짧은 경로만 입력해도 이동할 수 있게끔 해주는 **너무너무 편리**한 `zsh` 플러그인입니다. 
 
@@ -502,7 +569,7 @@ $ bat test.txt
   $ z lol
   ```
 
-### `auto-suggestions` 기능
+## `auto-suggestions` 기능
 
 이 기능은 가장 최근에 실행한 명령어를 기억하여 사용자가 그 명령어와 비슷한 타자를 친다면 자동으로 완성된 명령어를 추천해주는 `zsh` 플러그인입니다. 이 기능은 긴 명령어를 반복해야 할 때 **너무 편합**니다.
 
@@ -520,11 +587,11 @@ $ bat test.txt
 
   > `q` 명령어는 `alias` 파트에서 `alias q=exit` 라고 정의된 것을 확인했었습니다.
 
-## 더 빨라진 `tmux`
+# 더 빨라진 `tmux`
 
 `tmux` 업그레이드는 사실 실제적인 업그레이드가 아니라 `tmux` 의 설정을 커스터마이징할 수 있는 `~/.tmux.conf` 파일에 사용자가 더 편하게 사용할 수 있도록 설정을 조작하는 것입니다. 그렇기 때문에 여기에서는 제가 설정한 `~/.tmux.conf` 파일을 중심으로 `tmux` 를 사용하기가 얼마나 편해졌는지 살펴보겠습니다. 
 
-### 더 빨라진 alias
+## 더 빨라진 alias
 
 먼저 `tmux` 라는 명령어를 매번 치는 것은 너무 비효율적입니다. 무려 `4` 번이나 키보드를 쳐야하기 때문이죠. 그래서 `~/.zsh_aliases` 에 
 
@@ -545,7 +612,7 @@ alias t=tmux
 
   ![CSpyoIvAGI](https://user-images.githubusercontent.com/16812446/81962812-41dff300-964f-11ea-99db-8cf7727f849e.gif)
 
-### 더 이뻐진 테마 
+## 더 이뻐진 테마 
 
 `tmux` 의 오리지널 테마는 너무 안이쁘네요. 그래서 좀 더 가독성도 높아지고 보기에도 좋고 시간도 알 수 있도록 다음과 같은 설정으로 테마를 고칩니다.
 
@@ -567,11 +634,19 @@ set -g message-style fg=colour232,bold,bg=colour16
 
 이 설정들은 `~/.tmux.conf` 에 있는데 그 의미를 상세히는 몰라도 됩니다. 
 
-이전
+- 다음은 테마를 설정하기 전의 오리지널 `tmux` 의 테마입니다. 상태바가 아래쪽에 있고, 새 화면을 만들었지만 한 눈에 들어오지가 않습니다. 오른쪽에 시간도 표시되는데 역시 한 눈에 들어오지 않네요. 
 
-이후 
+  ![Screenshot from 2020-05-15 13-05-24](https://user-images.githubusercontent.com/16812446/82010318-ba28d180-96ac-11ea-833a-e2a7d65ef1c6.png)
 
-### 더 빨라진 메타 키
+- 하지만 이렇게 테마를 바꿔서 가독성을 확연히 높혔습니다. 상태바가 위로 올라갔고, 왼쪽에는 시간이 간략하지만 눈에 확 들어오게 보입니다. 
+
+  ![Screenshot from 2020-05-15 13-04-59](https://user-images.githubusercontent.com/16812446/82010331-c319a300-96ac-11ea-9fc8-12505574f461.png)
+
+  그리고 `0` 번째 화면에는 `zsh` 이 켜져있고, `1` 번쨰 화면에는 `vim` 이 켜져있는데 현재 상주하고 있는 화면에 하이라이팅이 되서 가독성이 매우 높아집니다. 
+
+  오른쪽에는 운영체제의 이름도 나타납니다.
+
+## 더 빨라진 메타 키
 
 | 기능 | 기존 단축키 | 새로운 단축키 |
 |:---:|:---:|:---:|
@@ -668,9 +743,173 @@ bind-key C-a send-prefix
 
   ![mpiJ2Gh3hi](https://user-images.githubusercontent.com/16812446/81962685-06452900-964f-11ea-8da0-e7363eb2dd4a.gif)
 
-## `vim` 업그레이드 
+# 더 빨라진 `vim` 
 
-## `VSCode` 에서 사용하는 `vim`
+`vim` 은 수많은 명령어를 제공하고 그 명령어로 사용자가 함수도 제작할 수 있기 때문에 `vim` 에는 사용자들이 만든 수많은 플러그인들이 존재합니다. 다음의 링크에서 가장 인기있는 커스터마이징 `vim` 을 찾아볼 수 있습니다. 
+
+https://vimawesome.com/
+
+https://github.com/vim-awesome/vim-awesome
+
+https://github.com/amix/vimrc
+
+여기에서는 간단하게 제가 `vim` 을 커스터마이징 한 내용을 살펴보겠습니다. 물론 여러분도 여러분에게 더 편한 커스텀 `vim` 을 만들 수 있습니다. 
+
+## 더 빨라진 alias
+
+먼저 `vim` 명령어를 매번 치는 것은 너무 비효율적입니다. 무려 `3` 번이나 키보드를 쳐야하기 때문이죠. 그래서 `~/.zsh_aliases` 에 
+
+```shell
+alias v=vim
+```
+
+를 추가하여 `v` 만 눌러도 `vim` 가 켜지도록 합니다. 
+
+- 실습 
+
+  다음과 같이 도커 컨테이너에서 다음 명령어로 `vim` 를 켰다가 꺼보세요. 
+
+  ```shell
+  $ v
+  ```
+
+  ![CSpyoIvAGI](https://user-images.githubusercontent.com/16812446/81962812-41dff300-964f-11ea-99db-8cf7727f849e.gif)
+
+## vim-plug
+
+[`vim-plug`](https://github.com/junegunn/vim-plug) 는 카카오에서 개발하시는 [junegunn](https://github.com/junegunn) 님께서 만드신 `vim` 플러그인을 관리할 수 있는 플러그인입니다. 여러 좋은 기능이 있지만 제가 가장 좋아하는 기능은 다른 플러그인 관리 플러그인들은 플러그인을 설치할 때 직렬로 설치하는 반면 [`vim-plug`](https://github.com/junegunn/vim-plug) 는 병렬로 설치한다는 것입니다. 이로써 플러그인 설치 시간이 매우 짧아집니다. 
+
+저의 `dotfiles` 를 설치할 때 다음과 같은 화면을 보셨을텐데요.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82145156-d468d800-9883-11ea-804f-77728db33733.gif" width="70%" height="auto">
+</div>
+
+마지막 부분에서 나타나는 `vim` 화면이 `vim` 의 플러그인들을 `vim-plug` 가 병렬로 매우 빠르게 설치하는 장면입니다. 너무 빠르죠? ㄷㄷ 
+
+여기에서는 이렇게 설치된 플러그인들 중에서 핵심적인 플러그인들을 살펴보겠습니다. 
+
+## vimrc
+
+하지만 그전에 `vim` 을 훨씬 더 빠르고 편하게 사용할 수 있도록 제가 개인적으로 설정한 단축키들을 알아보겠습니다. 나중에 여러분이 개인적으로 더 편한 단축키가 있다면 그것으로 바꿀 수 있습니다. 
+
+`vim` 은 에디터를 시작하기 전에 반드시 `~/.vimrc` 파일을 읽고 그곳에 정의된 설정들을 적용하고나서 시작됩니다. 그래서 개인 설정을 하고 싶을 때 이곳에 `vim` 의 설정 방법을 **Google** 에 검색하여 알아본 후 설정을 하면 됩니다. 
+
+현재 도커 컨테이너에 설치된 저의 `~/.vimrc` 의 주요 설정을 추려보면 다음과 같습니다. 
+
+```vim
+colors onedark
+map <silent> <C-s> :w<CR>
+map <silent> <C-q> :q<CR>
+nmap <silent> <C-p> :NERDTreeToggle<CR>
+nmap <silent> <Up> :resize -5<CR>
+nmap <silent> <Down> :resize +5<CR>
+nmap <silent> <Left> :vertical resize -5<CR>
+nmap <silent> <Right> :vertical resize +5<CR>
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
+nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+```
+
+가장 먼저 `vim` 의 컬러테마를 `onedark` 로 설정했습니다. 
+
+> 하지만 [이곳에서](https://www.slant.co/topics/480/~best-vim-color-schemes) `vim` 의 여러가지 테마를 살펴볼 수 있고 **Google** 에 검색해서 더 많은 `vim` 테마도 찾을 수 있습니다. 그리고 여러분이 가장 마음이 드는 테마를 설치할 수도 있습니다.
+
+그리고 몇 가지 `vim` 을 매우 빠르고 편하게 사용할 수 있도록 단축키를 설정했습니다. 위에서 볼 수 있듯 `map` 과 `nmap` 이 단축키를 설정하는 `vim` 의 명령어인데 `<silent>` 는 명령 실행을 상태바에 출력하지 말라는 뜻이니 신경쓸 것 없습니다. 실질적으로 단축키가 설정된 중요한 부분은 `<silent>` 오른쪽 부분입니다. 
+
+> 직관적으로 할 수 있듯이 `<C-s>` 는 <kbd>Ctrl</kbd>+<kbd>s</kbd> 를 뜻하고 `<Up>` 은 <kbd>&uarr;</kbd> 를 뜻합니다.
+
+### 더 빨라진 `vim` 종료/저장
+
+| 기능 | 기존 단축키 | 새로운 단축키 |
+|:---:|:---:|:---:|
+| 저장 | `:w` | <kbd>Ctrl</kbd>+<kbd>s</kbd>|
+| 종료 | `:q` | <kbd>Ctrl</kbd>+<kbd>q</kbd>|
+
+가장 먼저 더 빨라진 명령어는 저장과 종료 명령인 `:w` 와 `:q` 입니다. 이것은 약간 치기 어렵고 윈도우의 저장 명령어 <kbd>Ctrl</kbd>+<kbd>s</kbd> 를 그대로 사용하고 싶기도 합니다. 
+
+- 실습 
+
+  다음과 같이 `v test.txt` 로 텍스트 파일을 열고 아무 문장이나 쓴 다음에 <kbd>Ctrl</kbd>+<kbd>s</kbd> 로 저장하고 <kbd>Ctrl</kbd>+<kbd>q</kbd> 로 종료해보세요. 
+
+  ![render1589720657002](https://user-images.githubusercontent.com/16812446/82147434-6f64b080-988a-11ea-995a-f6d2b1c92a9c.gif)
+
+  > alias 파트에서 `alias v=vim` 으로 설정되어 있는 것을 확인하였습니다! 
+
+  너무 빠르고 편하게 저장되고 종료됩니다. 분명 상태표시줄에 `:w` 와 `:q` 를 누르는 기록이 보이지 않습니다! 
+
+  > 하지만 리눅스 터미널에서 <kbd>Ctrl</kbd>+<kbd>s</kbd> 와 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 사용하기 위해서는 반드시 `stty -ixon` 명령어를 실행해두어야 합니다. 하지만 `~/.zshrc` 파일에서 이미 자동으로 실행되고 있으니 걱정하지 마세요. 왜 `stty -ixon` 을 실행해야만 <kbd>Ctrl</kbd>+<kbd>s</kbd> 와 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 사용할 수 있는지는 상세히 설명하지 않겠습니다. 궁금하신 분들은 **Google** 에 검색해보세요.
+
+## NERDTree 
+
+[NERDTree](https://github.com/preservim/nerdtree) 는 `vim` 에서 디렉토리와 파일을 너무나도 편하게 다룰 수 있게 해주는 플러그인입니다. NERDTree 는 수많은 좋은 기능들을 갖고 있지만 핵심적인 기능과 단축키는 다음과 같습니다. 
+
+| 기능 | 단축키 | 
+|:---:|:---:|
+| NERDTree 실행 | `:NERDTreeToggle` |
+| 파일 열기 | <kbd>Enter</kbd> |
+| 파일을 수직으로 분할하여 열기 | `s` |
+| 파일을 수평으로 분할하여 열기 | `i` |
+
+여기에서는 이 플러그인과 화면 이동을 더 빠르게 할 수 있는 단축키를 함께 알아보겠습니다. 
+
+### 더 빨라진 화면 이동 
+
+| 기능 | 기존 단축키 | 새로운 단축키 |
+|:---:|:---:|:---:|
+| NERDTree 실행 | `:NERDTreeToggle` | <kbd>Ctrl</kbd>+<kbd>p</kbd>|
+| 위쪽 화면으로 이동 | <kbd>Ctrl</kbd>+<kbd>w</kbd>+<kbd>k</kbd> | <kbd>Ctrl</kbd>+<kbd>k</kbd>|
+| 아래쪽 화면으로 이동 | <kbd>Ctrl</kbd>+<kbd>w</kbd>+<kbd>j</kbd> | <kbd>Ctrl</kbd>+<kbd>j</kbd>|
+| 왼쪽 화면으로 이동 | <kbd>Ctrl</kbd>+<kbd>w</kbd>+<kbd>h</kbd> | <kbd>Ctrl</kbd>+<kbd>h</kbd>|
+| 오른쪽 화면으로 이동 | <kbd>Ctrl</kbd>+<kbd>w</kbd>+<kbd>l</kbd> | <kbd>Ctrl</kbd>+<kbd>l</kbd>|
+
+말로 설명하는 것보다 눈으로 보고 직접 실습하면서 익혀보도록 하겠습니다. 
+
+- 실습 
+
+  먼저 다음 명령어를 통해 어떤 `python` 프로젝트를 클론하고 `vim` 으로 열어봅시다.
+
+  ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+  ```shell
+  $ g cl https://github.com/ccss17/nonogram
+  $ cd nonogram
+  $ v
+  ```
+
+  그리고 다음과 같이 <kbd>Ctrl</kbd>+<kbd>p</kbd> 로 NERDTree 를 열어서 `j` 를 연타하여 `nonogram.py` 에 커서를 두고 <kbd>Enter</kbd> 를 치고 다시 <kbd>Ctrl</kbd>+<kbd>h</kbd> 로 NERDTree 로 이동하여 `patterns.py` 에 커서를 두고 `s` 를 눌러 에디터를 수직으로 분할하여 엽니다. 그리고 다시 <kbd>Ctrl</kbd>+<kbd>h</kbd> 로 NERDTree 로 돌아가서 `usage.md` 에 커서를 두고 `i` 를 눌러 에디터를 수평으로 분할하여 엽니다. 이제 <kbd>Ctrl</kbd>+<kbd>p</kbd> 를 눌러 NERDTree 를 닫습니다. 
+
+  ![render1589717983445](https://user-images.githubusercontent.com/16812446/82145964-54437200-9885-11ea-9d0c-7ed06b2f785c.gif)
+
+  그리고 <kbd>Ctrl</kbd> 를 누른채 <kbd>j</kbd>, <kbd>l</kbd> 를 눌러 왼쪽/오른쪽으로 이동해보고 <kbd>k</kbd>, <kbd>h</kbd> 를 눌러 위쪽/아래쪽으로 이동해보세요. 화면 이동이 너무 빠르고 쉬워졌습니다. 
+
+  그런데 파일들을 살펴보다가 `usage.md` 파일에 좀 더 관심이 생겨서 다른 `*.py` 파일 에디터를 종료하고 싶어졌습니다. 그래서 `nonogram.py` 와 `patterns.py` 에디터로 이동하여 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 눌러 손쉽게 종료합니다. 
+
+  그런데 `usage.md` 를 다 편집하고 나서 `nonogram.py` 를 살펴보고 싶어졌습니다. 그래서 다시 <kbd>Ctrl</kbd>+<kbd>p</kbd> 로 NERDTree 를 키고 `nonogram.py` 에 커서를 두고 <kbd>Enter</kbd> 를 칩니다. 
+
+  이제 모든 편집을 완료해서 마지막으로 <kbd>Ctrl</kbd>+<kbd>q</kbd> 로 에디터를 종료합니다. 
+
+### 더 빨라진 `vim` 화면이동
+
+| 기능 | 기존 단축키 | 새로운 단축키 |
+|:---:|:---:|:---:|
+| 위쪽으로 화면 조절 | `:resize -5` | <kbd>&uarr;</kbd>|
+| 아래쪽으로 화면 조절 | `:resize +5` | <kbd>&darr;</kbd>|
+| 오른쪽으로 화면 조절 | `:vertical resize -5` | <kbd>&rarr;</kbd>|
+| 왼쪽으로 화면 조절 | `:vertical resize +5` | <kbd>&larr;</kbd>|
+
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
+
+# `VSCode` 업그레이드 
+
+## 테마 
+
+## `vim`
 
 ![](../lst2dict.gif)
 
