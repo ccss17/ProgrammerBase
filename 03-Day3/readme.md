@@ -602,11 +602,11 @@ int main(int argc, char** argv)
 |:---:|:---:|:---:|
 | 수평으로 화면분할|  | `:sp <FILE>` | 
 | 수직으로 화면분할|  | `:vsp <FILE>` | 
-| 다음 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>w</kbd> | 
-| 왼쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>h</kbd> | 
-| 오른쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>l</kbd> | 
-| 아래쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>j</kbd> | 
-| 위쪽 화면으로 넘어가기 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>k</kbd> | 
+| 다음 화면으로 이동 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>w</kbd> | 
+| 왼쪽 화면으로 이동 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>h</kbd> | 
+| 오른쪽 화면으로 이동 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>l</kbd> | 
+| 아래쪽 화면으로 이동 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>j</kbd> | 
+| 위쪽 화면으로 이동 |  | <kbd>Ctrl</kbd>+ <kbd>w</kbd> + <kbd>k</kbd> | 
 
 코딩을 하다보면 다른 파일을 봐야할 때도 있습니다. 그럴 때 이 화면 분할 기능을 이용할 수 있습니다. 
 
@@ -615,6 +615,8 @@ int main(int argc, char** argv)
   그리고 다음과 같이 화면을 이리저리 이동해보세요. 화면을 끄려면 `:q` 를 입력하면 되고 모든 화면을 종료하려면 `:qa` 를 입력하면 됩니다. 
 
   ![render1589354268596](https://user-images.githubusercontent.com/16812446/81782929-88412f00-9535-11ea-988e-c4f90b29d205.gif)
+
+---
 
 이걸 읽으셨다면 `vim` 실습을 다 하신 거겠죠. 아마 힘들 수도 있었겠지만 포기하지 않고 `vim` 에 익숙해져서 마음대로 `vim` 으로 코딩을 할 수 있게 된다면 코딩 속도가 너무 빨라져서 `vim` 배우길 잘했다 라고 생각하게 되실 거에요. 
 
