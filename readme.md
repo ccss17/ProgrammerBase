@@ -82,6 +82,34 @@ _"프로그래머의 기본"_ 라는 오만하기 짝이없는 이름을 달고 
 
 ### [Day 4](04-Day4/readme.md)
 
+- CLI 업그레이드하기 
+
+  - dotfiles
+
+  - alias
+
+  - `ls` ➜ `lsd`
+
+  - `cat` ➜ `bat`
+
+  - `xxd` ➜ `hexyl`
+
+  - `find` ➜ `fd`
+
+  - `top` ➜ `htop` ➜ `gotop`
+
+  - `man` ➜ `tldr` 
+
+- 더 빨라진 git
+
+- `bash` ➜ `zsh` - 더 빨라진 쉘
+
+- 더 빨라진 tmux
+
+- 더 빨라진 vim
+
+### [Day 5](05-Day5/readme.md)
+
 - `markdown` 파일 사용법
 
 - (기존 GBC) Ch07 파일 시스템과 디스크 관리
@@ -101,8 +129,6 @@ _"프로그래머의 기본"_ 라는 오만하기 짝이없는 이름을 달고 
 - 유닉스 필로 소피 
   
 - 코딩 컨벤션 
-
-### [Day 5](05-Day5/readme.md)
 
 - 최신기술 `awesome` 레포, `github license`, `github trend`, `gist`
 
