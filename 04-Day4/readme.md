@@ -479,7 +479,7 @@ $ bat test.txt
 
 > `zsh` 말고도 [**`fish`**](https://fishshell.com/) 쉘도 많이 쓰입니다. 
 
-`zsh` 은 `oh-my-zsh` 을 설치해야만 그 진가를 발휘하는데, 여러분의 도커 컨테이너에는 `dotfiles` 을 설채할 때 `zsh` 과 `oh-my-zsh` 이 다 설치되어 있으니까 걱정하지 마세요. 
+`zsh` 은 `oh-my-zsh` 을 설치해야만 그 진가를 발휘하는데, 여러분의 도커 컨테이너에는 `dotfiles` 을 설치 할 때 `zsh` 과 `oh-my-zsh` 이 다 설치되어 있으니까 걱정하지 마세요. 
 
 > 설치법도 다 알아보아야 하지만, `5` 일이라는 매우 제한적인 시간 때문에 부득이하게 설치법은 전부 다 생략했습니다. 설치법이 궁금하다면 **Google** 에 검색해서 공식 레포지토리들을 방문해보면 됩니다. 
 
@@ -527,7 +527,7 @@ $ bat test.txt
 
 ## `auto-completion` 기능
 
-이 기능은 사용자가 길고 복잡한 경로를 이동해야 할때 그것을 특정할 수 있는 문자만 입력하고 <kbd>Tab</kbd> 을 누르면 자동으로 완성해주는 `zsh` 의 기능입니다. 바로 실습해보겠습니다. 
+이 기능은 사용자가 길고 복잡한 경로를 이동해야 할때 그것을 특정할 수 있는 문자만 입력하고 <kbd>Tab</kbd> 을 누르면 자동으로 완성해주는 `zsh` 의 기능입니다. 
 
 - `/usr/lib/gcc/x86_64-linux-gnu/9.3.0` 의 경로로 이동해야 하는 경우라고 가정하겠습니다.
 
@@ -636,11 +636,11 @@ set -g message-style fg=colour232,bold,bg=colour16
 
 - 다음은 테마를 설정하기 전의 오리지널 `tmux` 의 테마입니다. 상태바가 아래쪽에 있고, 새 화면을 만들었지만 한 눈에 들어오지가 않습니다. 오른쪽에 시간도 표시되는데 역시 한 눈에 들어오지 않네요. 
 
-  ![Screenshot from 2020-05-15 13-05-24](https://user-images.githubusercontent.com/16812446/82010318-ba28d180-96ac-11ea-833a-e2a7d65ef1c6.png)
+  <img src="https://user-images.githubusercontent.com/16812446/82010318-ba28d180-96ac-11ea-833a-e2a7d65ef1c6.png" width="70%" height="auto">
 
 - 하지만 이렇게 테마를 바꿔서 가독성을 확연히 높혔습니다. 상태바가 위로 올라갔고, 왼쪽에는 시간이 간략하지만 눈에 확 들어오게 보입니다. 
 
-  ![Screenshot from 2020-05-15 13-04-59](https://user-images.githubusercontent.com/16812446/82010331-c319a300-96ac-11ea-9fc8-12505574f461.png)
+  <img src="https://user-images.githubusercontent.com/16812446/82010331-c319a300-96ac-11ea-9fc8-12505574f461.png" width="70%" height="auto">
 
   그리고 `0` 번째 화면에는 `zsh` 이 켜져있고, `1` 번쨰 화면에는 `vim` 이 켜져있는데 현재 상주하고 있는 화면에 하이라이팅이 되서 가독성이 매우 높아집니다. 
 
