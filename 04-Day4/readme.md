@@ -638,13 +638,11 @@ set -g message-style fg=colour232,bold,bg=colour16
 
   <img src="https://user-images.githubusercontent.com/16812446/82010318-ba28d180-96ac-11ea-833a-e2a7d65ef1c6.png" width="70%" height="auto">
 
-- 하지만 이렇게 테마를 바꿔서 가독성을 확연히 높혔습니다. 상태바가 위로 올라갔고, 왼쪽에는 시간이 간략하지만 눈에 확 들어오게 보입니다. 
+- 하지만 다음과 같이 테마를 바꿔서 가독성을 확연히 높혔습니다. 상태바가 위로 올라갔고, 왼쪽에는 시간이 간략하지만 눈에 확 들어오게 보입니다. 
 
   <img src="https://user-images.githubusercontent.com/16812446/82010331-c319a300-96ac-11ea-9fc8-12505574f461.png" width="70%" height="auto">
 
-  그리고 `0` 번째 화면에는 `zsh` 이 켜져있고, `1` 번쨰 화면에는 `vim` 이 켜져있는데 현재 상주하고 있는 화면에 하이라이팅이 되서 가독성이 매우 높아집니다. 
-
-  오른쪽에는 운영체제의 이름도 나타납니다.
+  그리고 `0` 번째 화면에는 `zsh` 이 켜져있고, `1` 번째 화면에는 `vim` 이 켜져있는데 현재 상주하고 있는 화면에 하이라이팅이 되서 가독성이 매우 높아집니다. 오른쪽에는 운영체제의 이름도 나타납니다.
 
 ## 더 빨라진 메타 키
 
@@ -652,7 +650,7 @@ set -g message-style fg=colour232,bold,bg=colour16
 |:---:|:---:|:---:|
 | **Meta** 키 | <kbd>Ctrl</kbd>+<kbd>b</kbd>  |<kbd>Ctrl</kbd>+<kbd>a</kbd>  |
 
-`tmux` 는 **Meta** 키 를 사용하여 명령어들을 정의는데 <kbd>Ctrl</kbd>+<kbd>b</kbd> 는 거리가 너무 멀어서 손이 아픕니다. 그래서 `~/.tmux.conf` 에 
+`tmux` 는 **Meta** 키 를 사용하여 명령어들을 정의하기 때문에 <kbd>Ctrl</kbd>+<kbd>b</kbd> 를 입력했어야 했습니다. 하지만 <kbd>Ctrl</kbd> 와 <kbd>b</kbd> 는 거리가 너무 멀어서 손이 아픕니다. 그래서 `~/.tmux.conf` 에 
 
 ```shell
 unbind C-b
