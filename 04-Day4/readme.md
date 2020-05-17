@@ -603,7 +603,7 @@ alias t=tmux
 
 - 실습 
 
-  다음과 같이 도커 컨테이너에서 다음 명령어로 `tmux` 를 켰다가 꺼보세요. 
+  도커 컨테이너에서 다음 명령어로 `tmux` 를 켰다가 꺼보세요. 
 
   ```shell
   $ t
@@ -743,7 +743,7 @@ bind-key C-a send-prefix
 
   ![mpiJ2Gh3hi](https://user-images.githubusercontent.com/16812446/81962685-06452900-964f-11ea-8da0-e7363eb2dd4a.gif)
 
-# 더 빨라진 `vim` 
+# 더 빨라진 vim
 
 `vim` 은 수많은 명령어를 제공하고 그 명령어로 사용자가 함수도 제작할 수 있기 때문에 `vim` 에는 사용자들이 만든 수많은 플러그인들이 존재합니다. 다음의 링크에서 가장 인기있는 커스터마이징 `vim` 을 찾아볼 수 있습니다. 
 
@@ -767,13 +767,11 @@ alias v=vim
 
 - 실습 
 
-  다음과 같이 도커 컨테이너에서 다음 명령어로 `vim` 를 켰다가 꺼보세요. 
+  다음과 같이 도커 컨테이너에서 `vim` 를 켜보세요. 
 
   ```shell
   $ v
   ```
-
-  ![CSpyoIvAGI](https://user-images.githubusercontent.com/16812446/81962812-41dff300-964f-11ea-99db-8cf7727f849e.gif)
 
 ## vim-plug
 
@@ -813,13 +811,17 @@ nmap <silent> <C-l> :wincmd l<CR>
 nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 ```
 
-가장 먼저 `vim` 의 컬러테마를 `onedark` 로 설정했습니다. 
-
-> 하지만 [이곳에서](https://www.slant.co/topics/480/~best-vim-color-schemes) `vim` 의 여러가지 테마를 살펴볼 수 있고 **Google** 에 검색해서 더 많은 `vim` 테마도 찾을 수 있습니다. 그리고 여러분이 가장 마음이 드는 테마를 설치할 수도 있습니다.
-
-그리고 몇 가지 `vim` 을 매우 빠르고 편하게 사용할 수 있도록 단축키를 설정했습니다. 위에서 볼 수 있듯 `map` 과 `nmap` 이 단축키를 설정하는 `vim` 의 명령어인데 `<silent>` 는 명령 실행을 상태바에 출력하지 말라는 뜻이니 신경쓸 것 없습니다. 실질적으로 단축키가 설정된 중요한 부분은 `<silent>` 오른쪽 부분입니다. 
+몇 가지 `vim` 을 매우 빠르고 편하게 사용할 수 있도록 단축키를 설정했습니다. 위에서 볼 수 있듯 `map` 과 `nmap` 이 단축키를 설정하는 `vim` 의 명령어인데 `<silent>` 는 명령 실행을 상태바에 출력하지 말라는 뜻이니 신경쓸 것 없습니다. 실질적으로 단축키가 설정된 중요한 부분은 `<silent>` 오른쪽 부분입니다. 
 
 > 직관적으로 할 수 있듯이 `<C-s>` 는 <kbd>Ctrl</kbd>+<kbd>s</kbd> 를 뜻하고 `<Up>` 은 <kbd>&uarr;</kbd> 를 뜻합니다.
+
+## 더 이뻐진 테마 
+
+현재 설정된 `vim` 의 컬러테마는 다음과 같은 `onedark` 입니다. 
+
+![Screen Capture_Alacritty_20200517231247](https://user-images.githubusercontent.com/16812446/82150729-ec485800-9893-11ea-828e-7c9b54496fd1.png)
+
+> 하지만 [이곳에서](https://www.slant.co/topics/480/~best-vim-color-schemes) `vim` 의 여러가지 테마를 살펴볼 수 있고 **Google** 에 검색해서 더 많은 `vim` 테마도 찾을 수 있습니다. 그리고 여러분이 가장 마음이 드는 테마를 설치할 수도 있습니다.
 
 ### 더 빨라진 `vim` 종료/저장
 
@@ -836,9 +838,7 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
   ![render1589720657002](https://user-images.githubusercontent.com/16812446/82147434-6f64b080-988a-11ea-995a-f6d2b1c92a9c.gif)
 
-  > alias 파트에서 `alias v=vim` 으로 설정되어 있는 것을 확인하였습니다! 
-
-  너무 빠르고 편하게 저장되고 종료됩니다. 분명 상태표시줄에 `:w` 와 `:q` 를 누르는 기록이 보이지 않습니다! 
+  너무 빠르고 편하게 저장되고 종료됩니다. 
 
   > 하지만 리눅스 터미널에서 <kbd>Ctrl</kbd>+<kbd>s</kbd> 와 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 사용하기 위해서는 반드시 `stty -ixon` 명령어를 실행해두어야 합니다. 하지만 `~/.zshrc` 파일에서 이미 자동으로 실행되고 있으니 걱정하지 마세요. 왜 `stty -ixon` 을 실행해야만 <kbd>Ctrl</kbd>+<kbd>s</kbd> 와 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 사용할 수 있는지는 상세히 설명하지 않겠습니다. 궁금하신 분들은 **Google** 에 검색해보세요.
 
@@ -891,7 +891,7 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
   이제 모든 편집을 완료해서 마지막으로 <kbd>Ctrl</kbd>+<kbd>q</kbd> 로 에디터를 종료합니다. 
 
-### 더 빨라진 `vim` 화면이동
+### 더 빨라진 `vim` 화면크기조정
 
 | 기능 | 기존 단축키 | 새로운 단축키 |
 |:---:|:---:|:---:|
@@ -900,12 +900,75 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 | 오른쪽으로 화면 조절 | `:vertical resize -5` | <kbd>&rarr;</kbd>|
 | 왼쪽으로 화면 조절 | `:vertical resize +5` | <kbd>&larr;</kbd>|
 
-nmap <silent> <C-k> :wincmd k<CR>
-nmap <silent> <C-j> :wincmd j<CR>
-nmap <silent> <C-h> :wincmd h<CR>
-nmap <silent> <C-l> :wincmd l<CR>
+`vim` 에서 여러 에디터를 열어두었을 때 크기조정을 할 수 있었습니다. 하지만 그 명령어가 너무 복잡하고 외우기 힘들기 때문에 제가 소개해드리지 않았습니다. 하지만 화면크기조정을 매우 직관적으로 할 수 있도록 위와 같이 단축키를 설정해놓았습니다. 
 
-# `VSCode` 업그레이드 
+- 실습 
+
+  다음과 같이 `nonogram` 레포지토리에서 `vim` 을 켜고 NERDTree 로 파일 하나를 열고 또 하나의 파일을 수직으로 열고 또 하나의 파일을 수평으로 엽니다. 
+
+  ![render1589725541150](https://user-images.githubusercontent.com/16812446/82151411-90330300-9896-11ea-8204-7a831f8d86db.gif)
+
+  그리고 방향키 <kbd>&larr;</kbd>, <kbd>&rarr;</kbd>, <kbd>&uarr;</kbd>, <kbd>&darr;</kbd> 를 눌러서 에디터의 사이즈를 조절해보세요. 그리고 <kbd>Ctrl</kbd>+<kbd>h</kbd>, <kbd>Ctrl</kbd>+<kbd>j</kbd>, <kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>Ctrl</kbd>+<kbd>l</kbd> 로 화면을 이동해서 그곳에서도 화면 크기를 조절해보세요. 
+
+  그리고 마지막으로 <kbd>Ctrl</kbd> 를 누른채로 <kbd>q</kbd> 를 `3` 연타하여 손쉽게 `vim` 을 종료해보세요. 
+
+## NERDCommentor
+
+| 기능 | 기존 단축키 | 새로운 단축키 |
+|:---:|:---:|:---:|
+| 주석 |  | `\cc`|
+| 주석 해체 |  | `\cu`|
+
+[NERDCommentor](https://github.com/preservim/nerdcommenter) 는 주석을 쉽게 할 수 있도록 도와주는 플러그인입니다. 이 플러그인을 사용하고 나면 수작업으로 주석을 입력하고 있는 사람들에게 이 플러그인을 알려주고 싶을 마음이 들 정도로 편리함을 느낄 수 있습니다. 
+
+- 실습 
+
+  다음과 같이 `main.py` 을 `vim` 으로 열고 `/def test(` 로 `test` 함수를 찾으세요. 그런 다음 `zt` 를 눌러 `test` 함수 코드가 한 눈에 들어올 수 있도록 화면을 올리고, `9\cc` 를 눌러 코드 `9` 줄을 한번에 주석처리하고 <kbd>Ctrl</kbd>+<kbd>s</kbd> 를 눌러 저장하세요.
+  
+  그러고 나서 `9\cu` 를 눌러서 다시 주석을 해제하고 <kbd>Ctrl</kbd>+<kbd>s</kbd> 를 눌러 저장한 다음 <kbd>Ctrl</kbd>+<kbd>q</kbd> 로 에디터를 종료하세요. 
+
+  ![render1589726356315](https://user-images.githubusercontent.com/16812446/82151687-b2795080-9897-11ea-8b56-1458ee019c94.gif)
+
+## vim-multiple-cursors
+
+[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) 는 `vim` 에서 커서를 여러개로 늘려서 똑같은 문자들을 한번에 편집할 수 있게 해주는 플러그인입니다. 
+
+| 기능 | 기존 단축키 | 새로운 단축키 |
+|:---:|:---:|:---:|
+| 멀티 커서 늘리기 |  | <kbd>Ctrl</kbd>+<kbd>n</kbd>|
+
+말로 설명하는 것보다 직접 보고 따라하면서 배워보겠습니다. 
+
+- 실습 
+
+  이번에는 `lolcat` 레포지토리로 이동하여 `vim` 으로 `lolcat.c` 를 여세요. 
+
+  ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+  ```shell
+  $ z lol
+  $ v lolcat.c
+  ```
+
+  그리고 다음과 같이 `/main(` 으로 메인함수로 이동하고 `zt` 를 눌러 화면을 올리고 `95` 행의 `cc` 라는 변수가 정의되어 있는 곳에 커서를 둡니다. 
+
+  ![render1589727290032](https://user-images.githubusercontent.com/16812446/82152075-eeadb080-9899-11ea-970c-d109d97d43fa.gif)
+
+  개발을 하다 보니 `cc` 라는 변수 이름이 마음에 들지 않아서 바꾸고 싶습니다. 하지만 이 변수가 `main` 함수에서 몇번이나 반복되었는지 알 수 없습니다. 그래서 `cc` 라는 변수 이름을 바꾸기 위하여 `cc` 변수 위에 커서를 두고 <kbd>Ctrl</kbd> 을 누른채로 <kbd>n</kbd> 을 연타하여 상태표시줄에 **No more matches** 라고 뜰 때까지 혹은 더 단순하게 다음 단어로 커서가 이동되지 않을 때까지 변수 `cc` 들을 포커싱합니다. 
+
+  그러고 나서 **지우고 편집**하기 기능인 `c` 를 눌러서 `my_var` 를 입력하고 <kbd>Esc</kbd> 를 연타하여 눌러 입력 모드를 빠져나옵니다. 여러개의 커서들이 다시 없어져야 하기 때문에 <kbd>Esc</kbd> 를 연타해야 합니다. 
+  
+  그리고 <kbd>Ctrl</kbd>+<kbd>s</kbd> 를 눌러서 저장하고 <kbd>Ctrl</kbd>+<kbd>q</kbd> 를 눌러서 에디터를 종료하세요. 
+
+- 실습 
+
+  다음과 같이 `include` 에 커서를 두고 <kbd>Ctrl</kbd> 를 누른채 `n` 을 연타하여 모든 `include` 를 포커싱한 다음 **삭제하기** 기능인 `x` 를 누르면 모두 다 삭제됩니다. 
+
+  ![render1589727634891](https://user-images.githubusercontent.com/16812446/82152210-ae026700-989a-11ea-877e-cb592dca5a46.gif)
+
+  그러고나서 <kbd>Esc</kbd> 를 연타하여 멀티 커서를 다 없애고 <kbd>Ctrl</kbd>+<kbd>s</kbd>, <kbd>Ctrl</kbd>+<kbd>q</kbd> 로 저장 후 종료합니다. 
+
+# VSCode 업그레이드 
 
 ## 테마 
 
@@ -926,176 +989,3 @@ nmap <silent> <C-l> :wincmd l<CR>
 ![](../fast-indent.gif)
 
 ![](../modify_value.gif)
-
----
-
-# Funny CLI 
-
-먼저 벌써 4일차까지 달려온 여러분들을 위해 머리를 좀 식히자는 의미에서 **퍼니 CLI**, 즉 실용성이 없이 순전히 재미를 목적으로 만들어진 **CLI** 들을 알아보겠습니다. 
-
-이 부분은 **실용성이 전혀 없기 때문에** 직접 실습하셔도 되고 안하셔도 됩니다. 또 **시간이 아깝다면 Funny CLI 부분을 넘겨도 됩니다**.
-
-> 이 **Funny CLI** 들 또한 이미 도커 컨테이너에 설치되어 있기 때문에 설치법은 모두 생략합니다. 각각의 공식 레포지토리에 들어가면 설치법을 알 수 있습니다. 
-
-> 참고로 모든 터미널 캡쳐는 **[Terminalizer](https://github.com/faressoft/terminalizer)** 를 사용했습니다.
-
-그러면 이제 도커 컨테이너에 접속해서 진행해주세요. 
-
-## asciiquarium
-
-**[`asciiquarium`](https://github.com/cmatsuoka/asciiquarium)** 은 아스키 코드로 만들어진 아쿠아리움을 뜻합니다. 
-
-이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ asciiquarium
-```
-
-다음과 같은 아스키로 이루어진 아쿠아리움이 나옵니다. 
-
-![render1588863585888](https://user-images.githubusercontent.com/16812446/81310305-e21da100-90be-11ea-9b15-ed6de1c600ca.gif)
-
-> `q` 로 종료할 수 있어요. 
-
-## nyancat
-
-**[`nyancat`](https://github.com/klange/nyancat)** 은 **CLI** 로 고양이가 뛰어다니는 것을 보여주는 미친 프로그램입니다. 
-
-이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ nyancat
-```
-
-다음과 같은 미친 고양이가 뛰어놉니다. 
-
-![render1588863923651](https://user-images.githubusercontent.com/16812446/81310941-b5b65480-90bf-11ea-9540-641c5c71b96b.gif)
-
-> <kbd>Ctrl</kbd>+<kbd>c</kbd> 로 종료할 수 있어요. 
-
-## sl
-
-**[`sl`](https://github.com/mtoyoda/sl)** 은 **CLI** 로 기차를 보여주는 프로그램입니다.
-
-이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ /usr/games/sl
-```
-
-다음과 같이 기차가 지나갑니다. 
-
-![render1588864227794](https://user-images.githubusercontent.com/16812446/81311546-805e3680-90c0-11ea-8bcb-fb64b154053f.gif)
-
-## ChristBASHTree
-
-**[`ChristBASHTree`](https://github.com/sergiolepore/ChristBASHTree)** 은 **CLI** 로 크리스마스 트리를 보여주는 프로그램입니다.
-
-이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ ChristBASHTree
-```
-
-다음과 같이 크리스마스 트리가 나타납니다. 
-
-![render1588865712684](https://user-images.githubusercontent.com/16812446/81314439-134ca000-90c4-11ea-9ef0-2ab491c70090.gif)
-
-## unimatrix
-
-**[`unimatrix`](https://github.com/will8211/unimatrix)** 은 **CLI** 로 매트릭스를 보여주는 프로그램입니다. 
-
-이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ unimatrix -c red
-```
-
-다음과 같이 붉은 매트릭스 나타납니다. 
-
-![7tIs8Ca4Xm](https://user-images.githubusercontent.com/16812446/81960485-fbd56000-964b-11ea-9c7b-40ff88e2f42f.gif)
-
-## lolcat 
-
-[`lolcat`](https://github.com/jaseg/lolcat) 은 우리가 이미 `vim` 을 연습할 때 설치하고 테스트 해봤던 프로그램입니다. 따라서 설치법과 실행법은 생략하고 다음의 실행결과만 가볍게 살펴보고 넘어가겠습니다.
-
-![render1589351764615](https://user-images.githubusercontent.com/16812446/81779347-7d839b80-952f-11ea-891e-1f29490c678d.gif)
-
-## pipe.sh
-
-**[`pipe.sh`](https://github.com/pipeseroni/pipes.sh)** 는 **CLI** 로 파이프를 보여주는 프로그램입니다.
-
-다음 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ pipes.sh
-```
-
-이렇게 파이프가 나타납니다. 
-
-![render1588866558609](https://user-images.githubusercontent.com/16812446/81316124-2496ac00-90c6-11ea-8c0e-b66bc92029fe.gif)
-
-## YuleLog
-
-**[`YuleLog`](https://github.com/Duroktar/YuleLog)** 는 **CLI** 로 따뜻한 장작을 보여주는 프로그램입니다.
-
-다음 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ YuleLog
-```
-
-따뜻한 장작이 나타납니다. 
-
-![render1588865888181](https://user-images.githubusercontent.com/16812446/81315262-0ed4b700-90c5-11ea-92e6-c6e91cfabbf0.gif)
-
-## nonogram
-
-마지막으로 **[`nonogram`](https://github.com/ccss17/nonogram)** 는 네모로직 수학퍼즐을 지알아서 풀어서 **CLI** 로 결과를 출력해주는 제가 만든 프로그램입니다. 설치법은 다음과 같습니다.
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ g cl https://github.com/ccss17/nonogram
-```
-그런 다음 이 명령어를 실행해보면 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
-
-```shell
-$ cd nonogram
-$ python3 main.py test/55.txt
-$ python3 main.py test/1010.txt
-$ python3 main.py test/1515.txt
-$ python3 main.py test/2020.txt
-$ python3 main.py test/2525.txt
-$ python3 main.py test/3030.txt
-```
-
-다음과 같이 프로그램이 각각의 샘플 네모로직 수학퍼즐이 지알아서 풀고 출력합니다.
-
-> 소스코드와 더 자세한 설명을 원한다면 https://github.com/ccss17/nonogram 를 참고해주세요. 
-
-![1cbY6BnXq5](https://user-images.githubusercontent.com/16812446/81961266-1825cc80-964d-11ea-82c1-96c9d26eed7f.gif)
-
-가령 `15x15` 네모로직 수학퍼즐의 샘플의 구조를 특정하고 있는 `test/1515.txt` 파일은 
-
-![](https://user-images.githubusercontent.com/16812446/72774545-5a667080-3c4e-11ea-951d-7668876134ac.png)
-
-> 출처 : http://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
-
-의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 
