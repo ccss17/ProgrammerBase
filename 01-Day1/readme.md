@@ -12,11 +12,11 @@ GBC 첫번째 과정 **Programmer Base** 의 1일차 내용입니다.
 
 가상화 기술은 기존의 `vmware` 나 `VirtualBox` 로 많이 체험해보았을 거라고 예상됩니다. 안 해보셨어도 상관없습니다. 이제부터 이러한 기존 가상화 기술이 아닌 최신 가상화 기술을 배울 것입니다. 이 기존 가상화 기술은 `OS` 자체를 가상화시켜서 사용할 수 있게 해주었는데, 가령 윈도우나 맥 OS 에서 `Ubuntu` 리눅스를 사용할 수 있게 해준 것입니다.
 
-![](https://images.idgesg.net/images/article/2017/06/virtualmachines-vs-containers-100727624-large.jpg)
+<img src="https://images.idgesg.net/images/article/2017/06/virtualmachines-vs-containers-100727624-large.jpg" width="70%" height="auto">
 
 기존 가상화기술이 전체 `OS` 를 매번 새로 설치해야 하고 필요한 환경을 설정해주어야 하는 불편함이 있는 반면 도커는 위 그림과 같이 불필요한 오버헤드를 줄이고 도커 엔진으로 꼭 필요한 프로세스만을 가상화시킵니다. 그래서 도커는 기존의 가상화 기술보다 빠르고 꼭 필요한 시스템 리소스만을 사용합니다. 
 
-![](https://miro.medium.com/max/1400/1*p8k1b2DZTQEW_yf0hYniXw.png)
+<img src="https://miro.medium.com/max/1400/1*p8k1b2DZTQEW_yf0hYniXw.png" width="70%" height="auto">
 
 이렇게 가상화된 프로세스를 컨테이너라고 불리는데 컨테이너는 `Dockerfile` 이라는 별도의 파일에 모든 환경과 설치되어야 하는 패키지들을 설정하고 빌드된 이미지에서 생성됩니다. 이미지란 컨테이너 실행에 필요한 모든 파일과 설정값을 갖고 있는 모델이고, 컨테이너란 이미지를 실행시킨 것입니다. 
 
