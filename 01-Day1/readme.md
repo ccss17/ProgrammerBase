@@ -129,7 +129,7 @@ $ exit
 
 잘 따라오셨다면 다음과 같이 진행되었을 겁니다.
 
-[![](https://asciinema.org/a/7auli7NgwPmpHF1qXVNfTt3z7.svg)](https://asciinema.org/a/7auli7NgwPmpHF1qXVNfTt3z7)
+[![](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n.svg)](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n)
 
 > Firefox 에서는 이 확장 https://addons.mozilla.org/en-US/firefox/addon/asciinema-player-for-github/ 을 설치하면 터미널 녹화 동영상을 asciinema 웹 사이트로 가지 않고 바로 볼 수 있어서 편합니다. 이렇게 말이죠. 
 

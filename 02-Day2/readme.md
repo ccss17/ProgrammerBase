@@ -392,52 +392,29 @@ very important message
 
 그래서 방금 말했던 새로운 브랜치에서 시험중이었던 기능이 충분히 검증이 되면 `master` 브랜치로 병합을 하게 되는 것입니다. 
 
-# git 요약 
-
-| 파일 상태 | 의미 |
-|:---|:---|
-|**untracked 상태**| `git` 이 변경사항을 추적하지 않는 파일이다.
-|**modified 상태**| 파일을 변경했지만 아직 스테이징되지 않은 상태이다.|
-|**staged 상태**| 변경된 파일을 커밋이 될 리스트에 포함시킨 상태이다.
-|**committed 상태**| `git` 데이터베이스에 하나의 버전으로 저장된 상태이다.|
-
-| `git` 명령어 | 하는 일 |
-|:---|:---|
-|**`git init`** | 디렉토리를 `git` 레포지토리로 만들어 디렉토리 내의 파일을 `git` 이 추적하게 한다.
-|**`git status`** | `git` 레포지토리의 상태를 출력한다.
-|**`git add <FILE>`** | `<FILE>` 을 스테이징한다.
-|**`git commit`** | 스테이징된 파일들을 커밋하여 하나의 버전으로 만들어 `git` 데이터베이스에 저장한다.|
-|**`git log`** | 커밋 기록을 출력한다.**|
-|**`git remote add <NAME> <URL>`** | `<NAME>` 이라는 별칭으로 `<URL>` 의 원격 레포지토리를 등록한다.|
-|**`git push <NAME> <BRANCH>`** | `<NAME>` 의 원격 레포지토리로 변경사항을 업데이트한다.
-|**`git clone <URL> <NAME>`** | `<URL>` 의 원격 레포지토리를 가져와서 `<NAME>` 디렉토리에 복제한다.
-|**`git pull <REMOTE> <BRANCH>`** | `<REMOTE>` 의 원격 레포지토리를 가져온 후 `<BRANCH>` 에 병합한다.
-
----
-
 # VSCode
 
 ## VSCode 설치
 
-> 만약 ~~없을 가능성이 높을테지만~~ 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `VSCode` 를 설치할 수 있다고 믿습니다.
+> 만약 ~~없을 가능성이 높을테지만~~ 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 **VSCode** 를 설치할 수 있다고 믿습니다.
 
 ### Windows 설치
 
-1. [이 링크](https://code.visualstudio.com/docs/?dv=win64user) 에서 `VSCode` 설치파일을 다운로드 받아서 설치하세요.
+1. [이 링크](https://code.visualstudio.com/docs/?dv=win64user) 에서 **VSCode** 설치파일을 다운로드 받아서 설치하세요.
 
 ### MacOS 설치
 
-1. [이 링크](https://code.visualstudio.com/docs/?dv=osx) 에서 `VSCode` 설치파일을 다운로드 받아서 설치하세요.
+1. [이 링크](https://code.visualstudio.com/docs/?dv=osx) 에서 **VSCode** 설치파일을 다운로드 받아서 설치하세요.
 
 ## VSCode 간단 사용법 
 
 > 참고 : https://code.visualstudio.com/docs
 
-먼저 `git` 레포지토리를 `VSCode` 로 여는 두 가지 방법을 알아보겠습니다. 
+먼저 `git` 레포지토리를 **VSCode** 로 여는 두 가지 방법을 알아보겠습니다. 
 
 ### 로컬에서 레포지토리 만들기 
 
-**여기서부터는 우분투 도커 컨테이너에서 작업하는 것이 아니라 로컬 컴퓨터에서 하겠습니다.** 일단 폴더(디렉토리)를 하나 만들고 그 폴더(디렉토리)를 `VSCode` 로 열어주세요.
+**여기서부터는 우분투 도커 컨테이너에서 작업하는 것이 아니라 로컬 컴퓨터에서 하겠습니다.** 일단 폴더(디렉토리)를 하나 만들고 그 폴더(디렉토리)를 **VSCode** 로 열어주세요.
 
 지금까지 디렉토리를 `git` 레포지토리로 초기화할 때 디렉토리 위치에서 
 
@@ -445,39 +422,39 @@ very important message
 git init
 ```
 
-을 실행했었습니다. 하지만 이제 `VSCode` 에서 <kbd>Ctrl+Shift+p</kbd> 를 누르면 다음과 같이 `VSCode` 의 모든 기능이 담겨있는 **명령 팔레트** 가 나오는데 
+을 실행했었습니다. 하지만 이제 **VSCode** 에서 <kbd>Ctrl+Shift+p</kbd> 를 누르면 다음과 같이 **VSCode** 의 모든 기능이 담겨있는 **명령 팔레트** 가 나오는데 
 
 ![](https://code.visualstudio.com/assets/docs/getstarted/userinterface/commands.png)
 
-여기에서 **git init** 만 입력하면 **Git: Initialize Repository** 가 검색되어 나옵니다. 그것에 커서가 포커싱되었다면 그냥 <kbd>Enter</kbd> 쳐주세요. 그러면 `VSCode` 가 알아서 디렉토리를 `git` 레포지토리로 초기화합니다.
+여기에서 **git init** 만 입력하면 **Git: Initialize Repository** 가 검색되어 나옵니다. 그것에 커서가 포커싱되었다면 그냥 <kbd>Enter</kbd> 쳐주세요. 그러면 **VSCode** 가 알아서 디렉토리를 `git` 레포지토리로 초기화합니다.
 
-- **<kbd>Ctrl+Shift+p</kbd> : `VSCode` 에서 명령 팔레트를 연다.**
+- **<kbd>Ctrl+Shift+p</kbd> : **VSCode** 에서 명령 팔레트를 연다.**
 
-  - 명령 팔레트는 `VSCode` 의 모든 기능을 실행할 수 있는 메뉴판이다.
+  - 명령 팔레트는 **VSCode** 의 모든 기능을 실행할 수 있는 메뉴판이다.
 
-- **<kbd>Git: Initialize Repository</kbd> : `VSCode` 명령 팔레트 기능으로써 디렉토리를 `git` 레포지토리로 자동으로 초기화한다.**
+- **<kbd>Git: Initialize Repository</kbd> : **VSCode** 명령 팔레트 기능으로써 디렉토리를 `git` 레포지토리로 자동으로 초기화한다.**
 
   - 명령 팔레트에서 git init 만 검색해도 나온다.
 
 ### 새 파일 만들고 저장하기
 
-`VSCode` 에서는 <kbd>Ctrl+N</kbd> 으로 새 파일을 만들 수 있고 <kbd>Ctrl+S</kbd> 로 파일을 저장할 수 있습니다. 
+**VSCode** 에서는 <kbd>Ctrl+N</kbd> 으로 새 파일을 만들 수 있고 <kbd>Ctrl+S</kbd> 로 파일을 저장할 수 있습니다. 
 
-- **<kbd>Ctrl+N</kbd> : `VSCode` 에서 새 파일을 만든다.**
+- **<kbd>Ctrl+N</kbd> : **VSCode** 에서 새 파일을 만든다.**
 
-- **<kbd>Ctrl+S</kbd> : `VSCode` 에서 파일을 저장한다.**
+- **<kbd>Ctrl+S</kbd> : **VSCode** 에서 파일을 저장한다.**
 
 새 파일을 만들고 `test.txt` 로 저장해보세요.
 
 ### 변경된 파일 스테이징하고 커밋하기
 
-그리고 이 파일을 스테이징하고 커밋을 해볼텐데, 마찬가지로 `VSCode` 의 **명령팔레트**를 열어서 `git commit` 을 입력해주세요. 
+그리고 이 파일을 스테이징하고 커밋을 해볼텐데, 마찬가지로 **VSCode** 의 **명령팔레트**를 열어서 `git commit` 을 입력해주세요. 
 
 ![2020-05-04_16-45](https://user-images.githubusercontent.com/16812446/80945381-abc5f480-8e26-11ea-9e78-ed054d64fbe2.png)
 
-그러면 위와 같이 여러가지 커밋 기능들이 있는데 **Git: Commit All** 에 커서를 포커싱하고 <kbd>Enter</kbd> 를 눌러주세요. 그러면 `VSCode`가 변경된 모든 파일을 지알아서 스테이징하고 커밋합니다.
+그러면 위와 같이 여러가지 커밋 기능들이 있는데 **Git: Commit All** 에 커서를 포커싱하고 <kbd>Enter</kbd> 를 눌러주세요. 그러면 **VSCode**가 변경된 모든 파일을 지알아서 스테이징하고 커밋합니다.
 
-- **<kbd>Git: Commit All</kbd> : `VSCode` 명령 팔레트 기능으로써 변경된 모든 파일을 자동으로 스테이징하고 커밋한다.**
+- **<kbd>Git: Commit All</kbd> : **VSCode** 명령 팔레트 기능으로써 변경된 모든 파일을 자동으로 스테이징하고 커밋한다.**
 
   - 이 기능을 터미널에서 손수 실행하려면 
 
@@ -506,7 +483,7 @@ git remote add origin https://github.com/<USER>/git-test2
 
 를 입력했던 것처럼 각각 `origin` 을 입력하고 `https://github.com/<USER>/git-test2` 를 입력하면 되겠죠?
 
-- **<kbd>Git: Add Remote</kbd> : `VSCode` 명령 팔레트 기능으로써 원격 레포지토리를 등록한다.**
+- **<kbd>Git: Add Remote</kbd> : **VSCode** 명령 팔레트 기능으로써 원격 레포지토리를 등록한다.**
 
 ### 원격 레포지토리로 공유하기
 
@@ -516,9 +493,9 @@ git remote add origin https://github.com/<USER>/git-test2
 
 그리고 위 그림과 같이 <kbd>Git: Push to...</kbd> 에 커서를 두고 <kbd>Enter</kbd> 를 치면 원격 레포지토리를 지정하는 단계로 넘어가는데 `origin` 밖에 없을테니 그냥 <kbd>Enter</kbd> 를 한번 더 치면 됩니다.
 
-- **<kbd>Git: Push to...</kbd> : `VSCode` 명령 팔레트 기능으로써 원격 레포지토리로 변경사항을 업데이트한다.**
+- **<kbd>Git: Push to...</kbd> : **VSCode** 명령 팔레트 기능으로써 원격 레포지토리로 변경사항을 업데이트한다.**
 
-그러면 `VSCode` 가 지알아서 `git push origin master` 기능을 수행해줍니다. 각자의 **`https://github.com/<USER>/git-test2`** 로 들어가서 확인해보세요!
+그러면 **VSCode** 가 지알아서 `git push origin master` 기능을 수행해줍니다. 각자의 **`https://github.com/<USER>/git-test2`** 로 들어가서 확인해보세요!
 
 ### 원격 레포지토리 가져오고 수정하기
 
@@ -538,7 +515,7 @@ git clone https://github.com/<USER>/git-test2
 
 그리고 위와 같이 <kbd>Open</kbd>, <kbd>Open in New Window</kbd> 가 뜨는데 지금은 후자를 선택해주세요.
 
-- **<kbd>Git: Clone</kbd> : `VSCode` 명령 팔레트 기능으로써 원격 레포지토리를 로컬로 가져온다.**
+- **<kbd>Git: Clone</kbd> : **VSCode** 명령 팔레트 기능으로써 원격 레포지토리를 로컬로 가져온다.**
 
 이제 다음과 같이 `test.txt` 에 `VScode 편하다. GBC 재밌다` 를 치고 <kbd>Ctrl+S</kbd> 를 눌러 저장하세요.
 
@@ -552,17 +529,17 @@ git clone https://github.com/<USER>/git-test2
 
 ![2020-05-04_17-19](https://user-images.githubusercontent.com/16812446/80947604-7a9bf300-8e2b-11ea-8064-26e3a9bf53aa.png)
 
-그러면 원격 레포지토리를 선택할 수 있는 창이 뜨는데 어차피 `origin` 밖에 없으니까 <kbd>Enter</kbd> 를 다시 한 번 눌러주시면 `VSCode` 가 지알아서 `git pull origin master` 를 실행하면서 `text.txt` 를 업데이트합니다.
+그러면 원격 레포지토리를 선택할 수 있는 창이 뜨는데 어차피 `origin` 밖에 없으니까 <kbd>Enter</kbd> 를 다시 한 번 눌러주시면 **VSCode** 가 지알아서 `git pull origin master` 를 실행하면서 `text.txt` 를 업데이트합니다.
 
 # VSCode 요약 
 
 |VSCode 기능|하는 일|
 |:---|:---|
-|**<kbd>Ctrl+Shift+p</kbd>** | `VSCode` 에서 명령 팔레트를 연다.|
-|**<kbd>Git: Initialize Repository</kbd>** | `VSCode` 명령 팔레트 기능으로써 디렉토리를 `git` 레포지토리로 자동으로 초기화한다.|
-|**<kbd>Ctrl+N</kbd>** | `VSCode` 에서 새 파일을 만든다.|
-|**<kbd>Ctrl+S</kbd>** | `VSCode` 에서 파일을 저장한다.|
-|**<kbd>Git: Commit All</kbd>** | `VSCode` 명령 팔레트 기능으로써 변경된 모든 파일을 자동으로 스테이징하고 커밋한다.|
-|**<kbd>Git: Add Remote</kbd>** | `VSCode` 명령 팔레트 기능으로써 원격 레포지토리를 등록한다.|
-|**<kbd>Git: Push to...</kbd>** | `VSCode` 명령 팔레트 기능으로써 원격 레포지토리로 변경사항을 업데이트한다.|
-|**<kbd>Git: Clone</kbd>** | `VSCode` 명령 팔레트 기능으로써 원격 레포지토리를 로컬로 가져온다.|
+|**<kbd>Ctrl+Shift+p</kbd>** | **VSCode** 에서 명령 팔레트를 연다.|
+|**<kbd>Git: Initialize Repository</kbd>** | **VSCode** 명령 팔레트 기능으로써 디렉토리를 `git` 레포지토리로 자동으로 초기화한다.|
+|**<kbd>Ctrl+N</kbd>** | **VSCode** 에서 새 파일을 만든다.|
+|**<kbd>Ctrl+S</kbd>** | **VSCode** 에서 파일을 저장한다.|
+|**<kbd>Git: Commit All</kbd>** | **VSCode** 명령 팔레트 기능으로써 변경된 모든 파일을 자동으로 스테이징하고 커밋한다.|
+|**<kbd>Git: Add Remote</kbd>** | **VSCode** 명령 팔레트 기능으로써 원격 레포지토리를 등록한다.|
+|**<kbd>Git: Push to...</kbd>** | **VSCode** 명령 팔레트 기능으로써 원격 레포지토리로 변경사항을 업데이트한다.|
+|**<kbd>Git: Clone</kbd>** | **VSCode** 명령 팔레트 기능으로써 원격 레포지토리를 로컬로 가져온다.|
