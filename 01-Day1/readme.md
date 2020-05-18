@@ -131,6 +131,10 @@ $ exit
 
 [![](https://asciinema.org/a/7auli7NgwPmpHF1qXVNfTt3z7.svg)](https://asciinema.org/a/7auli7NgwPmpHF1qXVNfTt3z7)
 
+> Firefox 에서는 이 확장 https://addons.mozilla.org/en-US/firefox/addon/asciinema-player-for-github/ 을 설치하면 터미널 녹화 동영상을 asciinema 웹 사이트로 가지 않고 바로 볼 수 있어서 편합니다. 이렇게 말이죠. 
+
+<img src="https://user-images.githubusercontent.com/16812446/82213500-32162680-994f-11ea-942a-ef8b0065540c.gif" width="50%" height="auto">
+
 ### 컨테이너와 이미지 상태 확인하기
 
 이제 `docker images` 명령어를 실행해봅시다. 
