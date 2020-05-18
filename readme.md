@@ -4,7 +4,15 @@
 
 한동대학교 컴퓨터보안 동아리 **GHOST** 에서 신입기수를 대상으로 진행하는 **GBC** 의 `1` 번째 과정을 진행하기 위한 내용을 담은 레포지토리입니다. 
 
-_"프로그래머의 기본"_ 라는 오만하기 짝이없는 이름을 달고 있는 이 레포지토리은 **거창한 이름과 달리 부족한 제가 주관적으로 선정한** 프로그래밍을 할 때 필요한 지식들을 `5` 일 동안 알아보기 위하여 정리한 내용을 담고 있습니다. 
+## inspired by
+
+이 프로젝트는 **MIT** 의 **[Missing Semetser](https://missing.csail.mit.edu/)** 에서 영감을 받아서 만들어졌습니다. **Missing Semeter** 의 서문은 다음과 같이 프로그래머들이 컴퓨터 공학적 지식을 배우는데에는 많은 배움을 얻을 수 있지만, 정작 그들이 수많은 시간을 쏟게 되는 툴과 툴을 효율적으로 사용할 수 있는 방법에 대한 적절한 리드를 받을 수 없었던 상황을 지적합니다. 
+
+> Classes teach you all about advanced topics within CS, from operating systems to machine learning, but **there’s one critical subject that’s rarely covered, and is instead left to students to figure out on their own: proficiency with their tools.** We’ll teach you how to master the command-line, use a powerful text editor, use fancy features of version control systems, and much more!
+
+> Students spend hundreds of hours using these tools over the course of their education (and thousands over their career), so **it makes sense to make the experience as fluid and frictionless as possible.** Mastering these tools not only enables you to spend less time on figuring out how to bend your tools to your will, but it also lets you solve problems that would previously seem impossibly complex.
+
+하지만 기존 GBC 의 진행과정인 **Linux** 의 내용을 어느정도 담고 있어야 하고 **5일** 이라는 제한된 시간 조건도 고려해야 했기 때문에 이 레포지토리는 _"프로그래머의 기본"_ 이라는 거창한 이름을 달고 있는 것과 달리 **부족한 제가 주관적으로 선정한** 프로그래밍을 할 때 필요한 여러가지 내용들을 담고 있습니다. 
 
 ## Notice 
 
@@ -58,7 +66,7 @@ _"프로그래머의 기본"_ 라는 오만하기 짝이없는 이름을 달고 
 
 ### [Day 1](01-Day1/readme.md)
 
-- `Docker` 의 의미와 사용법 
+- `Docker` 사용법 
 
 - 교재 Ch01, Ch02 
 
