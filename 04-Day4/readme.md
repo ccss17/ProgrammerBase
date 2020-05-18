@@ -972,6 +972,8 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 ## 테마 
 
+https://marketplace.visualstudio.com/VSCode
+
 ## `vim`
 
 ![](../lst2dict.gif)
