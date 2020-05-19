@@ -980,44 +980,315 @@ VSCode 가 지원하는 Git 은 지난시간에 이미 알아보았습니다. �
 
 ## 테마 
 
+가장 먼저 역시 테마입니다. 눈이 먼저 즐거워야 공부도 잘되고 개발도 잘되더라구요. 하지만 이 파트는 **실용성이 전혀 없기 때문에 실습하지 않아도 되고 시간이 아깝다면 넘겨도 됩니다**.
+
+**VSCode** 는 수많은 테마를 지원합니다. 그 중에서 여러분 마음에 꼭 드는 테마가 분명히 있을거에요. 다음 링크는 **VSCode** 의 확장 마켓플레이스에서 `theme` 으로 검색했을 때 나오는 결과입니다. 
+
+https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=All%20categories&sortBy=Relevance
+
+한번 들어가서 마음에 드는 테마가 있는지 찾아보세요. 여기에서는 상위에 랭크된 몇 가지 테마를 소개해드리겠습니다. 
+
+테마는 <kbd>File</kbd> &rarr; <kbd>Preferences</kbd> &rarr; <kbd>Color Theme</kbd> 에서 바꿀 수 있습니다. 또는 단축키 <kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>Ctrl</kbd>+<kbd>t</kbd> 를 눌러도 됩니다. 
+
+> 밝은 테마는 전혀 관심이 없어서 추천을 못해드리지만 밝은 테마도 정말 많이 있습니다!
+
+### 기본 테마
+
+다음 사진은 **VSCode** 의 기본 테마입니다. 
+
+<img src="https://user-images.githubusercontent.com/16812446/82316911-7b767c80-9a08-11ea-814d-ea2868564b04.png" width="70%" height="auto">
+
+물론 기본테마가 마음에 든다면 계속 쓰셔도 상관없습니다. 
+
+### Dank Neon
+
+다음 사진은 [**Dank Neon**](https://marketplace.visualstudio.com/items?itemName=wuz.dank-neon) 테마입니다.
+
+<img src="https://user-images.githubusercontent.com/16812446/82317397-25560900-9a09-11ea-9585-d86e1fc6a7dc.png" width="70%" height="auto">
+
+코드 가독성이 정말 높아져서 제가 사용하고 있는 테마이기도 합니다. 
+
+### Andromeda
+
+다음 사진은 [**Andromeda**](https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda) 테마입니다.
+
+<img src="https://user-images.githubusercontent.com/16812446/82317619-87af0980-9a09-11ea-93bb-bff42d1794c6.png" width="70%" height="auto">
+
+### 2077
+
+다음 사진은 [**2077**](https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme) 테마입니다.
+
+<img src="https://user-images.githubusercontent.com/16812446/82318040-2471a700-9a0a-11ea-9031-de3ecadb12c1.png" width="70%" height="auto">
+
+### Eva Theme
+
+다음 사진은 [**Eva Theme**](https://marketplace.visualstudio.com/items?itemName=fisheva.eva-theme) 테마입니다.
+
+<img src="https://user-images.githubusercontent.com/16812446/82318292-921dd300-9a0a-11ea-82b8-ebd62be28e35.png" width="70%" height="auto">
+
 ## 유용한 확장 
 
-확장 랭킹 
+다음 링크는 **VSCode** 마켓 플레이스에서 확장을 평가순으로 정렬한 것입니다.
+
+https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categories&sortBy=Rating
+
+다음 링크는 **VSCode** 마켓 플레이스에서 확장을 다운로드순으로 정렬한 것입니다.
+
+https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categories&sortBy=Installs
+
+최상위에 랭크된 확장들은 설치하여 사용했을시 정말 좋은 확장들이기 때문에 나에게 필요한 확장이 있나 한번 찾아보세요. 여기에서는 몇가지 유용한 확장들만 알아보겠습니다. 
+
+### Git Graph 
+
+[**Git Graph**](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) 는 여러가지 좋은 기능을 제공합니다. 핵심적으로 다음과 같이 `git` 커밋 기록과 브랜치를 시각적으로 보여줍니다.
+
+<img src="https://raw.githubusercontent.com/mhutchie/vscode-git-graph/master/resources/demo.gif" width="70%" height="auto">
+
+<img src="https://user-images.githubusercontent.com/16812446/82319050-d78ed000-9a0b-11ea-8e74-3f94a0e1c81e.png" width="70%" height="auto">
 
 ### Code Runner
 
-### Texmath
+[**Code Runner**](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 는 다음과 같이 코드를 손쉽게 실행해볼 수 있게 해줍니다.
+
+<img src="https://raw.githubusercontent.com/formulahendry/vscode-code-runner/master/images/usage.gif" width="50%" height="auto">
+
+단순히 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>n</kbd> 만 누르면 되죠. 이 단축키만 누르면 **C/C++ 언어** 도 지알아서 컴파일하고 실행해주고 **Code Runner** 의 환경설정에서 컴파일 옵션을 바꿀 수도 있습니다. 
+
+### mdmath
+
+[**mdmath**](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath) 는 다음과 같이 **Markdown** 파일에 **Tex** 수식을 입력하면 그것을 `.html` 파일로 자동으로 랜더링해주는 확장입니다. 
+
+<img src="https://raw.githubusercontent.com/goessner/mdmath/master/img/mdmath.gif" width="50%" height="auto">
+
+개인적으로 자주 사용하고 있는 확장이기도 합니다. 
 
 ### Bracket Pair Colorizer 2
 
-### Beautify 
+[**Bracket Pair Colorizer 2**](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) 는 다음과 같이 코드의 **Bracket**, 즉 (), [], {} 과 그 상하관계에 저마다 다른 색깔을 입혀서 가독성을 높혀주는 확장입니다.
+
+![](https://raw.githubusercontent.com/CoenraadS/Bracket-Pair-Colorizer-2/master/images/example.png)
+
+![](https://raw.githubusercontent.com/CoenraadS/Bracket-Pair-Colorizer-2/master/images/forceUniqueOpeningColorDisabled.png)
+
+### Prettier - Code formatter
+
+[**Prettier - Code formatter**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) 는 다음과 같이 코드를 분석해서 일관적인 코딩 스타일로 지알아서 고쳐주는 매우 유용한 확장입니다. 
+
+<img src="https://user-images.githubusercontent.com/16812446/82320387-2473a600-9a0e-11ea-85aa-80b9c6b02bbd.gif" width="70%" height="auto">
 
 ### Diff Tool
 
-### Docker 
+[**Diff Tool**](https://marketplace.visualstudio.com/items?itemName=jinsihou.diff-tool) 는 두 파일의 다른 부분을 보여주는 확장입니다. 
 
-### `vim`
+### Material Icon Theme
 
-![](../lst2dict.gif)
+[**Material Icon Theme**](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) 은 다음과 같이 밋밋한 파일들에 아이콘을 입혀서 가독성을 높혀줍니다.
 
-![](../copy5_to_for.gif)
+![캡처](https://user-images.githubusercontent.com/16812446/82320708-acf24680-9a0e-11ea-8fb5-a0c5228e3afc.PNG) ![캡처](https://user-images.githubusercontent.com/16812446/82320855-e75be380-9a0e-11ea-9462-2e3e3f879081.PNG)
 
-![](../multicursor.gif)
+아이콘 테마는 <kbd>File</kbd> &rarr; <kbd>Preferences</kbd> &rarr; <kbd>File Icon Theme</kbd> 에서 바꿀 수 있습니다.
 
-![](../rename_arg.gif)
+## Vim
 
-![](../md-multiindent.gif)
+[**Vim**](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 은 **VSCode** 에서 `vim` 키맵을 사용할 수 있도록 해줍니다. 그래서 기존의 CLI 에서의 `vim` 에서는 사용할 수 없었던 **VSCode** 의 모든 풍부한 디버깅 기능, 확장, **VCS** 등을 `vim` 과 함께 사용할 수 있게 됩니다.
 
-![](../oneline.gif)
+하지만 **Vim** 확장의 키맵이 **VSCode** 의 강력한 기능을 덮어버리는 경우도 있었기 때문에 개인적으로 다음의 설정을 통해 **Vim** 확장의 일부 기능을 비활성화시켰습니다. `...` 에는 또 다른 확장들의 설정이 있는 것입니다. 
 
-![](../fast-indent.gif)
+가령 <kbd>Ctrl</kbd>+<kbd>d</kbd> 는 기본 **VSCode** 에서 멀티 커서 기능인데 **Vim** 확장을 설치하면 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 덮어버려서 비활성화시켰고, <kbd>Ctrl</kbd>+<kbd>n</kbd> 은 기본 **VSCode** 에서 새 파일을 만드는 단축키인데 마찬가지로 **Vim** 확장이 이 단축키를 덮어버렸기 때문에 비활성화시켰습니다. 비슷한 이유로 <kbd>Ctrl</kbd>+<kbd>f</kbd>, <kbd>Ctrl</kbd>+<kbd>o</kbd>, <kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>Ctrl</kbd>+<kbd>w</kbd> 등도 기본 **VSCode** 기능을 하도록 **Vim** 확장을 비활성화시켰습니다. 
 
-![](../modify_value.gif)
+```json
+{
+  ...
+  "editor.lineNumbers": "relative",
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+      {
+          "before": [
+              "<leader>",
+              "d"
+          ],
+          "after": [
+              "d",
+              "d"
+          ]
+      }
+  ],
+  "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-d>": false,
+      "<C-f>": false,
+      "<C-n>": false,
+      "<C-o>": false,
+      "<C-w>": false,
+      "<C-k>": false,
+  },
+  ...
+}
+```
 
-![](../modify-word.gif)
+> 이렇게 개인적으로 개발환경 설정을 할 수 있는데 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd> 로 명령 팔레트를 열어서 **setting json** 만 검색하면 다음과 같이 **Preferences: Open Settings (JSON)** 이 나옵니다. 이것을 실행하여 설정창이 뜨면 단순히 위의 설정을 복사해서 붙혀넣으면 됩니다. 
+
+<img src="https://user-images.githubusercontent.com/16812446/82322033-cbf1d800-9a10-11ea-9726-10ef40cff6c5.PNG" width="50%" height="auto">
+
+여기에서는 이 설정이 적용된 **VSCode** 에서 `vim` 을 사용하여 어떻게 코드를 효율적으로 편집하는지 몇개의 예시를 보여드리겠습니다. **Python** 으로 예시를 들었지만 **모든 언어에 적용될 수 있는 상황들**입니다.
+
+### Python - List to Dictionary
+
+**Python** 코딩을 하다가 `lst = ['all', 'all2', 'all3', 'all4', 'all5']` 라는 리스트를 만들게 되었습니다. 그런데 이 자료구조가 딕셔너리로 사용되면 더 효율적이라는 것을 깨닫고 이 리스트를 딕셔너리로 고치려는 상황입니다. 
+
+1. 먼저 다음과 같이 `,` 에 커서를 두고 `v` 로 드래그 모드로 들어가서 `'` 앞까지 드래그합니다. 
+
+2. 그리고 **VSCode** 의 멀티커서 기능인 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 꾹 누르고 있으면 매칭되는 모든 코드가 멀티 커서로 포커싱됩니다.
+
+3. 그리고 **삭제하고 편집하기** 기능인 `c` 를 눌러 <kbd>Enter</kbd> 를 칩니다.
+
+4. 그러면 멀티커서가 모든 `, ` 를 삭제하고 개행을 합니다. 그런다음 아직 개행되지 않은 `'all'` 을 개행시키고 <kbd>Ctrl</kbd>+<kbd>v</kbd> 로 블록 드래그 모드로 들어가서 `'all5'` 까지 커서를 내립니다.
+
+5. 그리고 <kbd>Shift</kbd>+<kbd>i</kbd> 를 눌러 입력모드로 들어간다음 키값을 써주고 <kbd>Esc</kbd> 를 눌러 명령모드로 돌아옵니다.
+
+6. 그리고 `r2`, `r3`, `r4`, `r5` 를 눌러 키값을 적절히 바꾸고 `5>>` 를 눌러 자동으로 탭 인덴트를 해줍니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82322465-8550ad80-9a11-11ea-9682-a1f291bb6883.gif" width="70%" height="auto">
+</div>
+
+> `0` 으로 문장 앞으로 커서를 옮기는 것이나 `f'` 로 `'` 로 커서를 옮기는 것 등의 설명까지 하면 너무 장황해져서 생략했습니다. 
+
+### Python - copy & paste
+
+다음의 상황은 코딩을 하다보니 `sub_section('math')` 라는 함수를 여러번 사용해야 하는 상황입니다.
+
+1. 먼저 `yy4p` 로 코드를 `4` 번 복사하여 붙혀넣었습니다. 
+
+2. 그리고 `'` 에 커서를 두고 <kbd>Ctrl</kbd>+<kbd>v</kbd> 로 블록드래그를 한 다음 맨 아래 코드까지 내려서 <kbd>Shift</kbd>+<kbd>i</kbd> 로 입력모드에 들어가서 `1` 을 입력합니다. 
+
+3. `r2`, `r3`, `r4`, `r5` 로 파라미터를 적절히 수정합니다. 
+
+4. 그런데 코딩하다보니 `for` 문으로 고치는게 더 적절하다는 것을 깨닫고 `for` 문으로 대체하려 합니다. 그래서 `for` 문을 하나 만들고 `sub_sectoin('math')` 코드를 `yy` 로 복사하여 가져와서 `p` 로 붙혀넣습니다. 
+
+5. 그러고나서 `>>` 를 눌러 인덴트를 조정합니다. 
+
+6. 마지막으로 `7k` 를 눌러 `sub_section('math1')` 코드로 가서 `5dd` 를 눌러 필요없어진 코드를 삭제합니다.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82323380-ef1d8700-9a12-11ea-97b1-d364f38941c0.gif" width="70%" height="auto">
+</div>
+
+### Python - multi cursor
+
+다음의 상황은 코딩을 하면서 `sub_section` 이라는 함수를 만들었는데 갑자기 이 함수의 이름이 마음에 들지 않아서 바꾸고 싶은 상황입니다.
+
+1. `sub_section` 함수 이름이 사용된 아무 곳에서나 커서를 두고 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 꾹 눌러서 모든 `sub_section` 들이 멀티 커서로 포커싱되게 합니다.
+
+2. **삭제하고 편집하기** 기능인 `c` 를 누르고 고치고 싶은 이름을 입력하면 모든 곳이 자동으로 편집됩니다. 
+
+3. <kbd>Esc</kbd> 를 연타하여 생성된 멀티커서를 소멸해줍니다. 
+
+<img src="https://user-images.githubusercontent.com/16812446/82324002-dc578200-9a13-11ea-987d-bb5282dc8e22.gif" width="70%" height="auto">
+
+### Python - rename argument
+
+다음의 상황은 함수와 인자를 정의했는데, 인자의 이름을 바꾸어야 하는 상황입니다. 그런데 인자가 여러군데에서 사용되서 일일이 바꾸기 너무 귀찮을 것 같습니다. 하지만 괜찮습니다.
+
+1. `test` 위에 커서를 올려두고 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 `3` 번 눌러 `test` 를 멀티커서로 포커싱합니다. 
+
+2. `c` 를 눌러 모든 `test` 를 지우고 입력하고 싶은 문자열을 입력합니다.
+
+3. <kbd>Esc</kbd> 를 연타하여 멀티 커서를 소멸시킵니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82324486-aff03580-9a14-11ea-991e-fac98ec93be5.gif" width="70%" height="auto">
+</div>
+
+### C 언어 - 변수 한 줄로 선언하기
+
+다음의 상황은 **C 언어** 를 코딩하고 있던 중 `pthread_t tid` 변수들이 여러 줄로 선언되어 있는 것을 한 줄로 만들고 싶은 상황입니다. 
+
+1. 가장 처음 선언된 `pthread_t tid1` 변수에 커서를 두고 `J` 를 눌러 두번째 문장과 이어붙힙니다.
+
+2. 그리고 `.` 을 연타하여 `pthread_t tid6` 이 선언된 문장까지 이어붙힙니다.
+
+3. 그리고 `0f;` 를 눌러서 `;` 에 커서를 두고 `v` 로 드래그 모드로 들어가서 `e` 를 눌러서 `; pthread_t` 를 드래그합니다. 
+
+4. <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 연타하여 모든 `; pthread_t` 를 멀티 커서로 포커싱합니다. 
+
+5. `c` 를 누르고 `,` 를 입력하고 <kbd>Esc</kbd> 를 연타하여 멀티 커서를 소멸시킵니다.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82325194-c480fd80-9a15-11ea-8552-9c11c996c0ac.gif" width="70%" height="auto">
+</div>
+
+### Markdown - example 1
+
+다음의 상황은 **Markdown** 파일을 작성중 맨 밑에 있는 문장을 맨 위로 올리고 나머지 문장들을 그 문장의 하위 문장이 되게 하고 싶은 상황입니다. 
+
+1. `gg` 로 커서를 맨 위로 올리고 `13dd` 를 눌러 나머지 문장을 잘라냅니다. 
+
+2. `p` 를 눌러 문장을 붙혀넣고 `O` 로 간편하게 개행을 한 다음 <kbd>Esc</kbd> 로 다시 명령모드로 돌아옵니다. 
+
+3. `13>>` 를 눌러 간편하게 탭 인텐트를 조정합니다. 그런데 탭 사이즈가 `4` 로 설정되어 있어서 너무 많이 뛰어진 것 같아서 탭 사이즈를 `2` 로 줄이고 싶습니다. 
+
+4. <kbd>Ctrl</kbd>+<kbd>v</kbd> 를 눌러 블록 드래그 모드로 들어가고 `G` 를 눌러 커서를 맨 밑으로 내리고 `k` 를 한번 눌러 커서를 한 줄 위로 올립니다. 
+
+5. 그리고 `l` 를 누르고 `x` 를 눌러 공백 `2` 개를 삭제합니다.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82324933-681dde00-9a15-11ea-9899-b8edb9638b6c.gif" width="70%" height="auto">
+</div>
+
+### Markdown - example 2
+
+다음은 **Markdown** 파일을 작성하던 중 문장들을 아이템으로 분리하고 싶은 상황입니다. 
+
+1. `0f.` 를 눌러 첫번째 문장이 끝나는 지점에 커서를 둡니다. 
+
+2. `a` 를 누르고 <kbd>Enter</kbd> 를 쳐서 개행을 시킵니다.
+
+3. `>>` 를 눌러 간편하게 탭 인텐트를 조정합니다.
+
+4. 이 작업을 다음 문장에도 반복합니다.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82325719-a798fa00-9a16-11ea-898d-760c5898a288.gif" width="70%" height="auto">
+</div>
+
+### Python - multicursor
+
+다음은 파이썬에서 딕셔너리를 만들었는데 값들의 이름이 마음에 안들어서 고치려는 상황입니다.
+
+하지만 지금까지의 설명을 통하여 어떻게 멀티 커서를 사용하여 한번에 편집할 수 있는지 다 이해하셨을 거라고 믿습니다.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82326020-268e3280-9a17-11ea-92cd-c5261c39047e.gif" width="70%" height="auto">
+</div>
+
+### Markdown - example 3
+
+다음은 **Markdown** 파일을 작성하다가 특정 문장을 헤더로 입력하고 싶은 상황입니다.
+
+1. `f(vf)` 로 `(` 부터 `)` 까지 드래그하고 `y` 를 눌러 복사합니다.
+
+2. 그리고 `gg` 로 맨 위로 커서를 옮기고 헤더를 입력한 다음 `p` 로 붙혀넣습니다. 
+
+3. 하지만 헤더의 `(`, `)` 을 없애고 싶습니다. 그래서 `f(xf)x` 로 삭제합니다. 
+
+4. 그런데 오타가 있다는 것을 발견하고 `toin` 을 드래그하고 멀티커서로 그것과 똑같은 오타를 포커싱하여 `tion` 으로 고칩니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82326130-563d3a80-9a17-11ea-857f-a6fb7d8db4c8.gif" width="70%" height="auto">
+</div>
 
 ## 디버깅 
 
-### C 
+**VSCode** 는 거의 모든 프로그래밍 언어에 대한 풍부한 디버깅 기능을 제공합니다. 여기에서는 간단하게 **C 언어**, **Python** 의 디버깅을 가볍게 알아보겠습니다. 하지만 **Flutter**, **Rust**, **C++** 등등 매우 광범위한 언어에 대한 디버깅이 가능합니다.
 
-### Python 
+### C 언어
+
+
+### Python
+
