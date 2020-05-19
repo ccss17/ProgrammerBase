@@ -1088,6 +1088,12 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 아이콘 테마는 <kbd>File</kbd> &rarr; <kbd>Preferences</kbd> &rarr; <kbd>File Icon Theme</kbd> 에서 바꿀 수 있습니다.
 
+### Glassit-VSC
+
+[**Glassit-VSC**](https://marketplace.visualstudio.com/items?itemName=s-nlf-fh.glassit) 는 **Windows** 와 **Linux** 에서 적용되는 투명창 효과 확장입니다. 이 확장을 적용하면 다음과 같이 **VSCode** 가 약간 투명해져서 배경화면이 보입니다. 
+
+![Code_KFMh5BA08B](https://user-images.githubusercontent.com/16812446/82327355-3ad32f00-9a19-11ea-9c9c-edc3a20893e7.png)
+
 ## Vim
 
 [**Vim**](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 은 **VSCode** 에서 `vim` 키맵을 사용할 수 있도록 해줍니다. 그래서 기존의 CLI 에서의 `vim` 에서는 사용할 수 없었던 **VSCode** 의 모든 풍부한 디버깅 기능, 확장, **VCS** 등을 `vim` 과 함께 사용할 수 있게 됩니다.
@@ -1285,10 +1291,38 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 ## 디버깅 
 
-**VSCode** 는 거의 모든 프로그래밍 언어에 대한 풍부한 디버깅 기능을 제공합니다. 여기에서는 간단하게 **C 언어**, **Python** 의 디버깅을 가볍게 알아보겠습니다. 하지만 **Flutter**, **Rust**, **C++** 등등 매우 광범위한 언어에 대한 디버깅이 가능합니다.
+**VSCode** 는 거의 모든 프로그래밍 언어에 대한 풍부한 디버깅 기능을 제공합니다. 여기에서는 간단하게 **Python** 의 디버깅을 가볍게 알아보겠습니다. 하지만 **Flutter**, **Rust**, **C/C++** 등등 매우 광범위한 언어에 대한 디버깅이 가능합니다.
 
-### C 언어
+과거에는 `gdb` 등의 CLI 디버깅 툴로 디버깅을 했었지만 **VSCode** 로 매우 편하게 디버깅할 수 있게 되었습니다.
 
+더 자세한 **VSCode** 의 디버깅 방법과 다른 프로그래밍 언어에 대한 디버깅은 **Google** 을 검색하거나 **VSCode** 의 공식 메뉴얼
 
-### Python
+https://code.visualstudio.com/docs/editor/debugging
 
+을 참고하세요. 
+
+### Python 디버깅
+
+**Python** 디버깅은 먼저 [**Python**](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 을 설치해야 합니다. 가볍게 
+
+```python
+def for_test(num):
+    result = 0
+    for i in range(num):
+        result += i
+    return result
+
+if __name__ == '__main__':
+    ct = 3
+    for_test(ct)
+```
+
+이라는 코드를 디버깅해보겠습니다. 디버깅의 자세한 설명은 [**Python**](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 의 메뉴얼이나 다양한 블로그 글들을 참고해주세요. 
+
+이때 `result` 라는 변수의 변화에 관심을 두었다고 하면 `result += i` 에 커서를 두고 <kbd>F9</kbd> 를 누르면 **Breakpoint** 가 생깁니다. 디버깅이란 자신이 관심있는 코드에 브레이크 포인트를 걸고 그곳에서 프로그램을 멈추게 하여 그때의 시점에서의 변수와 프로그램의 상태를 관찰하는 것입니다. 
+
+그래서 실제로 다음과 같이 브레이크 포인트를 설정하고 <kbd>F5</kbd> 를 눌러서 디버깅을 시작할 수 있고 왼쪽 패널에서 `result` 변수의 변화를 관찰할 수 있습니다. 
+
+![ImekTnbkOy](https://user-images.githubusercontent.com/16812446/82329102-c5b52900-9a1b-11ea-96c5-a80faecf5924.gif)
+
+브레이크 포인트에서 멈춘 시점에서 <kbd>F10</kbd> 을 누르면 한줄의 코드씩 실행시켜볼 수 있고 <kbd>F5</kbd> 를 누르면 끝까지 진행시켜버릴 수 있습니다. 
