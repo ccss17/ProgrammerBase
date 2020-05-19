@@ -980,7 +980,6 @@ VSCode 가 지원하는 Git 은 지난시간에 이미 알아보았습니다. �
 
 ## 테마 
 
-<<<<<<< HEAD
 ## 유용한 확장 
 
 확장 랭킹 
@@ -998,11 +997,6 @@ VSCode 가 지원하는 Git 은 지난시간에 이미 알아보았습니다. �
 ### Docker 
 
 ### `vim`
-=======
-https://marketplace.visualstudio.com/VSCode
-
-## `vim`
->>>>>>> 6d978bad3ec7825f75263e80682c762c1115ee0f
 
 ![](../lst2dict.gif)
 
