@@ -970,11 +970,33 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 # VSCode 업그레이드 
 
+`vim` 이 일반 에디터보다 좋다고 생각했다면 앞으로 `vim` 을 쓰기로 결정했을 겁니다. 하지만 `vim` 은 아무래도 CLI 의 범주에 속하다 보니까 아무리 좋은 플러그인들을 많이 사용해도 GUI 에디터들이 제공하는 편리한 인터페이스와 수많은 디버깅 기능들과 수많은 플랫폼별 개발 환경들이 지원되지 않습니다. 
+
+하지만 VSCode 를 사용하면 VSCode 확장과 편리한 코드 찾기 기능, 편리한 디버깅 기능들을 사용할 수 있습니다. VSCode 확장 중에는 `vim` 도 있어서 VSCode 에서 `vim` 을 사용할 수도 있습니다.
+
+VSCode 가 지원하는 Git 은 지난시간에 이미 알아보았습니다. 뿐만 아니라 안드로이드, 아두이노, 웹 개발, Python, Java, C/C++, C#, Rust, 주피터 노트북 등등 상상할 수 있는 모든 플랫폼을 VSCode 에서 매우 편하게 사용할 수 있는 확장이 마련되어 있습니다. 
+
+이 중에서 몇가지 핵심적인 기능만 좀 더 알아보겠습니다. 
+
 ## 테마 
 
-https://marketplace.visualstudio.com/VSCode
+## 유용한 확장 
 
-## `vim`
+확장 랭킹 
+
+### Code Runner
+
+### Texmath
+
+### Bracket Pair Colorizer 2
+
+### Beautify 
+
+### Diff Tool
+
+### Docker 
+
+### `vim`
 
 ![](../lst2dict.gif)
 
@@ -993,3 +1015,9 @@ https://marketplace.visualstudio.com/VSCode
 ![](../modify_value.gif)
 
 ![](../modify-word.gif)
+
+## 디버깅 
+
+### C 
+
+### Python 
