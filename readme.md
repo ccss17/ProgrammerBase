@@ -66,7 +66,7 @@
 
 ### [Day 1](01-Day1/readme.md)
 
-- `Docker` 사용법 
+- [**Docker** 사용법](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#docker)
 
 - 교재 Ch01, Ch02 
 
@@ -74,11 +74,13 @@
 
 - 교재 Ch04
 
-- stackoverflow survey
+- [stackoverflow survey](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#stackoverflow-survey)
 
-- `git`, `github` 사용법
+- [**Git** 사용법](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git)
 
-- `VSCode` 사용법 
+- [**Github** 사용법](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github)
+
+- [**VSCode** 사용법](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#vscode)
 
 ### [Day 3](03-Day3/readme.md)
 

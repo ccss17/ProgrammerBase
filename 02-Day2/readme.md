@@ -74,7 +74,7 @@ https://insights.stackoverflow.com/survey/2019
 
 ---
 
-그러면 이 전세계의 추세를 따라가봅시다! 그런데 리눅스와 도커는 계속 배우고 있으니까 **VSCode** 개발환경만 알아보면 되겠네요. 하지만 그러기 전에 **Git** 을 가볍게 알아보겠습니다. 
+그러면 이 전세계의 추세를 따라가봅시다! 그런데 리눅스와 도커는 계속 배우고 있으니까 **VSCode** 개발환경만 알아보면 되겠네요. 하지만 그러기 전에 **Git** 과 **Github** 을 가볍게 알아보겠습니다. 
 
 # Git
 
@@ -100,11 +100,11 @@ https://ccss17.github.io/git.html
 
   - `git` 은 파일을 **untracked 상태, modified 상태, staged 상태, committed 상태**로 관리한다.
 
-## git 설치
+## Git 설치
 
 > 만약  컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `git` 를 설치할 수 있다고 믿습니다. 
 
-### Windows git 설치
+### Windows 설치
 
 1. [이 링크](https://git-scm.com/download/win) 에서 `git` 설치파일을 다운로드 받아서 설치하세요.
 
@@ -117,7 +117,7 @@ https://ccss17.github.io/git.html
     $ git config --global user.email "<EMAIL>"
     ```
 
-### MacOS git 설치
+### MacOS 설치
 
 1. [이 링크](https://git-scm.com/download/mac) 에서 `git` 설치파일을 다운로드 받아서 설치하세요.
 
@@ -286,6 +286,8 @@ Date:   Sun May 3 09:48:23 2020 +0000
 
   - `git log -p` : 변경 사항도 출력하면서 커밋 기록을 보여준다.
 
+---
+
 # Github
 
 여러분이 지금 보고 있는 웹사이트인 **Github** 는 `git` 레포지토리를 다른 사람과 공유할 수 있는 플랫폼입니다. 이곳을 통하여 협업을 할 수 있기도 하고 자신이 관심있는 프로그램들이 무엇인지 알려줄 수도 있습니다.
@@ -392,7 +394,11 @@ very important message
 
 그래서 방금 말했던 새로운 브랜치에서 시험중이었던 기능이 충분히 검증이 되면 `master` 브랜치로 병합을 하게 되는 것입니다. 
 
+---
+
 # VSCode
+
+이제 드디어 **VSCode** 에 대하여 알아보겠습니다. 도커 컨테이너를 종료하고 로컬에서 실습하면 됩니다. 
 
 ## VSCode 설치
 
@@ -422,13 +428,13 @@ very important message
 $ git init
 ```
 
-을 실행했었습니다. 하지만 이제 **VSCode** 에서 <kbd>Ctrl+Shift+p</kbd> 를 누르면 다음과 같이 **VSCode** 의 모든 기능이 담겨있는 **명령 팔레트** 가 나오는데 
+을 실행했었습니다. 하지만 이제 **VSCode** 에서 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd> 를 누르면 다음과 같이 **VSCode** 의 모든 기능이 담겨있는 **명령 팔레트** 가 나오는데 
 
 ![](https://code.visualstudio.com/assets/docs/getstarted/userinterface/commands.png)
 
 여기에서 **git init** 만 입력하면 **Git: Initialize Repository** 가 검색되어 나옵니다. 그것에 커서가 포커싱되었다면 그냥 <kbd>Enter</kbd> 쳐주세요. 그러면 **VSCode** 가 알아서 디렉토리를 `git` 레포지토리로 초기화합니다.
 
-- **<kbd>Ctrl+Shift+p</kbd> : **VSCode** 에서 명령 팔레트를 연다.**
+- **<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd> : VSCode 에서 명령 팔레트를 연다.**
 
   - 명령 팔레트는 **VSCode** 의 모든 기능을 실행할 수 있는 메뉴판이다.
 
@@ -438,11 +444,11 @@ $ git init
 
 ### 새 파일 만들고 저장하기
 
-**VSCode** 에서는 <kbd>Ctrl+N</kbd> 으로 새 파일을 만들 수 있고 <kbd>Ctrl+S</kbd> 로 파일을 저장할 수 있습니다. 
+**VSCode** 에서는 <kbd>Ctrl</kbd>+<kbd>n</kbd> 으로 새 파일을 만들 수 있고 <kbd>Ctrl</kbd>+<kbd>s</kbd> 로 파일을 저장할 수 있습니다. 
 
-- **<kbd>Ctrl+N</kbd> : **VSCode** 에서 새 파일을 만든다.**
+- **<kbd>Ctrl</kbd>+<kbd>n</kbd> : **VSCode** 에서 새 파일을 만든다.**
 
-- **<kbd>Ctrl+S</kbd> : **VSCode** 에서 파일을 저장한다.**
+- **<kbd>Ctrl</kbd>+<kbd>s</kbd> : **VSCode** 에서 파일을 저장한다.**
 
 새 파일을 만들고 `test.txt` 로 저장해보세요.
 
@@ -452,7 +458,7 @@ $ git init
 
 ![2020-05-04_16-45](https://user-images.githubusercontent.com/16812446/80945381-abc5f480-8e26-11ea-9e78-ed054d64fbe2.png)
 
-그러면 위와 같이 여러가지 커밋 기능들이 있는데 **Git: Commit All** 에 커서를 포커싱하고 <kbd>Enter</kbd> 를 눌러주세요. 그러면 **VSCode**가 변경된 모든 파일을 지알아서 스테이징하고 커밋합니다.
+그러면 위와 같이 여러가지 커밋 기능들이 있는데 **Git: Commit All** 에 커서를 포커싱하고 <kbd>Enter</kbd> 를 눌러주세요. 그러면 커밋 메시지를 입력할 수 있는 팝업이 뜨는데 입력하고 다시 <kbd>Enter</kbd> 를 치면 **VSCode**가 변경된 모든 파일을 지알아서 스테이징하고 커밋합니다.
 
 - **<kbd>Git: Commit All</kbd> : **VSCode** 명령 팔레트 기능으로써 변경된 모든 파일을 자동으로 스테이징하고 커밋한다.**
 
@@ -465,7 +471,7 @@ $ git init
 
     를 다 쳐야 한다.
 
-그런데 커밋은 매우 자주 사용되기 때문에 **VSCode** 에서 별도의 단축키로 설정되어 있습니다. <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>g</kbd> 누르면 더 편하게 커밋을 할 수 잇습니다. 
+그런데 커밋은 매우 자주 사용되기 때문에 **VSCode** 에서 별도의 단축키 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>g</kbd> 로 설정되어 있습니다. 이 단축키로 더욱 편하게 커밋을 할 수 잇습니다. 
 
 ### 원격 레포지토리 등록하기
 
@@ -475,23 +481,21 @@ $ git init
 
 ![2020-05-04_16-53](https://user-images.githubusercontent.com/16812446/80945842-b9c84500-8e27-11ea-9d44-06d50cb56d5a.png)
 
-<kbd>Git: Add Remote</kbd> 가 뜨고 <kbd>Enter</kbd> 를 치면 차례대로 **Remote Name** 과 **Remote URL** 을 입력하게 됩니다. 그럼 
+<kbd>Git: Add Remote</kbd> 가 뜨고 <kbd>Enter</kbd> 를 치면 차례대로 **Remote Name** 과 **Remote URL** 을 입력하게 됩니다. 그럼 차례대로 `origin` 과 `https://github.com/<USER>/git-test2` 를 입력하면 됩니다. 이것은 다음 명령어를 입력한 것과 똑같은 기능을 해줍니다.
 
 ```shell
 $ git remote add origin https://github.com/<USER>/git-test2
 ``` 
 
-를 입력했던 것처럼 각각 `origin` 을 입력하고 `https://github.com/<USER>/git-test2` 를 입력하면 됩니다. 
-
 - **<kbd>Git: Add Remote</kbd> : **VSCode** 명령 팔레트 기능으로써 원격 레포지토리를 등록한다.**
 
 ### 원격 레포지토리로 공유하기
 
-원격 레포지토리까지 등록했으니 이제 뭘 할까요. 공유를 해야죠? **명령 팔레트**를 열고 **git push** 만 입력해보세요.
+원격 레포지토리까지 등록했으니 이제 공유를 해보겠습니다. **명령 팔레트**를 열고 **git push** 만 입력해보세요.
 
 ![2020-05-04_16-58](https://user-images.githubusercontent.com/16812446/80946179-6b677600-8e28-11ea-89cc-17084c76b067.png)
 
-그리고 위 그림과 같이 <kbd>Git: Push to...</kbd> 에 커서를 두고 <kbd>Enter</kbd> 를 치면 원격 레포지토리를 지정하는 단계로 넘어가는데 `origin` 밖에 없을테니 그냥 <kbd>Enter</kbd> 를 한번 더 치면 됩니다.
+그리고 위 그림과 같이 <kbd>Git: Push to...</kbd> 에 커서를 두고 <kbd>Enter</kbd> 를 치면 원격 레포지토리를 지정하는 단계로 넘어가는데 `origin` 밖에 없을테니 그냥 <kbd>Enter</kbd> 를 한번 더 치면 됩니다. **아이디** 와 **비밀번호** 를 입력하는 팝업이 뜨면 **Github** 의 아이디와 비밀번호를 입력하면 됩니다.
 
 - **<kbd>Git: Push to...</kbd> : **VSCode** 명령 팔레트 기능으로써 원격 레포지토리로 변경사항을 업데이트한다.**
 
@@ -530,3 +534,243 @@ git clone https://github.com/<USER>/git-test2
 ![2020-05-04_17-19](https://user-images.githubusercontent.com/16812446/80947604-7a9bf300-8e2b-11ea-8064-26e3a9bf53aa.png)
 
 그러면 원격 레포지토리를 선택할 수 있는 창이 뜨는데 어차피 `origin` 밖에 없으니까 <kbd>Enter</kbd> 를 다시 한 번 눌러주시면 **VSCode** 가 지알아서 `git pull origin master` 를 실행하면서 `text.txt` 를 업데이트합니다.
+
+## 화면 컨트롤 
+
+### 파일 열기
+
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>e</kbd> 로 패널을 열어서 파일을 열 수도 있지만 
+
+<kbd>Ctrl</kbd>+<kbd>p</kbd> 로 파일을 열면 더욱 빠름. 
+
+### 파일 닫기 
+
+<kbd>Ctrl</kbd>+<kbd>w</kbd>
+
+### 열린 파일 포커싱 
+
+<kbd>Ctrl</kbd>+<kbd>Tab</kbd>
+
+<kbd>Alt</kbd>+<kbd>1</kbd>, <kbd>Alt</kbd>+<kbd>2</kbd>, ...
+
+### 화면 옮기기 
+
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&rarr;</kbd>
+
+<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&larr;</kbd>
+
+### 분할된 화면 포커싱 
+
+<kbd>Ctrl</kbd>+<kbd>1</kbd>
+
+<kbd>Ctrl</kbd>+<kbd>2</kbd>
+
+<kbd>Ctrl</kbd>+<kbd>3</kbd>
+
+### 화면 레이아웃 변경
+
+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>
+
+### 화면 복제
+
+<kbd>Ctrl</kbd>+<kbd>\\</kbd>
+
+---
+
+# Markdown 
+
+**Markdown** 은 여러가지 형식으로 텍스트를 작성할 수 있게 해주는 마크업 언어입니다. **Markdown** 파일은 확장자 `.md` 를 갖고 있습니다. **Markdown** 을 알아야 하는 주된 이유 중 하나는 레포지토리를 **Github** 에 공유할 때 프로그램을 효과적으로 설명하기 위해서입니다. 
+
+**Markdown** 이 얼마나 효과적인 포맷팅 기능을 제공하는지는 지금 읽고 있는 이 파일들이 전부다 `.md` 파일인 것만 보아도 알 수 있습니다. **Markdown** 의 문법은 매우 간단하지만 매우 다양한 기능을 제공합니다. 여기에서는 핵심적인 문법만을 가볍게 알아보겠습니다. 
+
+더 자세한 **Markdown** 의 문법을 알아보려면 **Google** 에 검색하거나
+
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+https://markdown-it.github.io/
+
+을 참고하세요.
+
+## **VSCode** 의 **Markdown** 미리보기
+
+먼저 **VSCode** 를 열어서 `test.md` 파일을 하나 만들고 다음 내용을 입력하고 저장해봅시다. 
+
+```markdown
+# 제목 
+
+**Markdown** 파일 연습용 파일입니다.
+```
+
+그리고 <kbd>Ctrl</kbd>+<kbd>k</kbd> + <kbd>Ctrl</kbd>+<kbd>v</kbd> 를 누르거나 오른쪽 위에서
+
+![Screen Capture_select-area_20200520051136](https://user-images.githubusercontent.com/16812446/82373312-60335d80-9a58-11ea-9a64-19af6e44b7cb.png)
+
+이 아이콘을 클릭하면 **Markdown** 미리보기가 나타나서 **Markdown** 파일이 어떻게 랜더링되는지 실시간으로 보여줍니다. 이 환경에서 **Markdown** 을 효율적으로 작성할 수 있습니다. 
+
+## 제목 
+
+가장 먼저 제목입니다. `test.md` 파일에 다음 코드를 입력하거나 복사하고 붙혀넣어 보세요.
+
+```markdown
+# 가장 큰 제목
+
+## 두번째로 큰 제목
+
+### 세번째로 큰 제목
+
+#### 세번째로 작은 제목
+
+##### 두번째로 작은 제목
+
+###### 가장 작은 제목
+```
+
+그러면 미리보기가 다음과 같이 나타납니다.
+
+## 텍스트 포맷팅 
+
+그 다음으로는 텍스트 포맷팅입니다. 다음 코드를 입력하거나 복사하고 붙혀넣어 보세요.
+
+```markdown
+별 하나로 묶으면 *이탤릭체가 된다*는 사실.
+
+별 두개로 묶으면 **강조체 된다**는 사실.
+
+틸드 두개로 묶으면 ~~취소선이 된다~~는 사실.
+
+백 쿼터로 묶으면 코드체가 되어 `int a = 100;` 을 코드 폰트로 보여줄 수 있다는 사실.
+
+> ">" 을 문장 맨 앞에 쓰면 인용구 스타일로 쓸 수 있다는 사실. 
+
+>> ">>" 을 쓰면 이렇게 됩니다.
+
+문장을 한번 개행하면 띄어지지가 않습니다.
+보세요. 한번 개행했는데 띄어지지가 않습니다. 
+
+**Markdown** 에서는 이렇게 두 번 개행해야 띄어집니다.
+
+두 번 개행하니까 띄어지죠.
+```
+
+그러면 미리보기가 다음과 같이 나타납니다.
+
+## 아이템과 순서
+
+그 다음으로는 아이템과 순서입니다. 다음 코드를 입력하거나 복사하고 붙혀넣어 보세요.
+
+```markdown
+- 아이템입니다. 
+
+  - 하위 아이템이에요. 두번 띄어써야 합니다.
+
+    - 더 하위 아이템입니다. 
+
+      이렇게 문장을 같은 레벨로 쓸 수 있습니다.
+  
+  - 아무말 
+
+- 아무말 
+
+1. 순서 아이템은 이렇게 1. 로 시작합니다.
+
+2. 두번째 순서 아이템
+
+    - 순서 아이템의 하위 아이템을 쓰려면 네 번 띄어써야 합니다. 
+
+3. 그 다음 순서 아이템이에요. 
+```
+
+그러면 미리보기가 다음과 같이 나타납니다.
+
+## 링크와 사진
+
+이제 링크와 사진을 삽입하는 문법입니다. 다음 코드를 입력하거나 복사하고 붙혀넣어 보세요.
+
+```markdown
+개발자들이 가장 자주 사용하는 검색 엔진은 [Google](https://www.google.com) 입니다. 
+
+한동대생들이 항상 이용하는 사이트는 [Hisnet](http://hisnet.handong.edu) 입니다. 
+
+한동대 로고는 다음과 같습니다.
+
+![logo](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/HGU-Emblem-eng2.png/150px-HGU-Emblem-eng2.png) 
+
+로컬에 저장되어 있는 이미지를 사용할 수도 있습니다. 
+
+![스폰지](sponge.png) 
+
+> 이 경우 `sponge.png` 가 로컬에 존재해야 합니다. 
+```
+
+그러면 미리보기가 다음과 같이 나타납니다.
+
+## 코드 입력 
+
+백쿼터 \` 로 묶으면 int a = 100; 같은 코드를 `int a = 100;` 와 같이 가독성이 높은 코드체로 쓸 수 있습니다. 하지만 여러줄의 코드를 써야할 경우 \`\`\` 로 코드를 묶으면 됩니다. 
+
+이때 한가지 편리한 기능은 시작하는 \`\`\` 의 오른쪽에 코드의 종류를 쓰면 코드에 색깔이 입혀져서 하이라이팅된다는 점입니다.
+
+
+````markdown
+```shell
+$ git init
+$ docker run -it ccss17/ubuntu
+``` 
+ 
+```python
+s = "Python 문법 하이라이팅"
+print s
+```
+
+```python
+s = "하이라이팅이 되지 않습니다."
+print s
+```
+````
+
+그러면 미리보기가 다음과 같이 나타납니다.
+
+## 표 
+
+**Markdown** 은 표도 지원합니다. 다음 코드를 입력하거나 복사하고 붙혀넣어 보세요.
+
+```markdown
+|첫번째|두번째|세번째|
+|:---:|:---:|:---:|
+|1|2|3|
+|a|b|c|
+```
+
+그러면 미리보기가 다음과 같이 나타납니다.
+
+## 분할선 
+
+분할선은 전환되는 내용이 있을 때 사용하면 가독성을 높힐 수 있습니다. 다음 코드를 입력하거나 복사하고 붙혀넣어 보세요.
+
+```markdown
+계속 되는 내용이 있는데
+
+---
+
+내용이 전환되면 이렇게 분할선을 넣으면 좋습니다.
+```
+
+그러면 미리보기가 다음과 같이 나타납니다.
+
+## README.md 
+
+`README.md` 라는 이름을 가진 파일은 특별한 파일입니다. 왜냐하면 **Github** 이 레포지토리의 `README.md` 파일을 자동으로 랜더링하여 웹페이지에 보여주기 때문입니다. 
+
+**Github** 은 레포지토리의 최상위 경로에 있는 `README.md` 를 랜더링하여 보여줍니다. https://github.com/ccss17/ProgrammerBase 의 경우처럼 말이죠.
+
+그리고 어떤 디렉토리로 들어가면 그 디렉토리의 최상위 경로에 있는 `README.md` 를 랜더링해서 보여줍니다. 여러분은 지금 `02-Day2` 의 디렉토리로 들어와있는데 이 디렉토리의 `readme.md` 파일이 랜더링되어서 지금 여러분에 의해 읽히고 있습니다.
+
+지금까지 **Markdown** 문법을 공부한 것은 이 `readme.md` 을 스스로 작성할 수 있는 능력을 기르기 위함입니다. 
+
+# Pull Requests
+
+스택오버플로우설문조사 조사한다음 readme.md 에 써서 풀리퀘스트하기
+
+자기가 자랑하고 싶은 프로그램 올리기 
+
+# user.github.io
