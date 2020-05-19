@@ -102,7 +102,7 @@ https://ccss17.github.io/git.html
 
 ## git 설치
 
-> 만약 ~~없을 가능성이 높을테지만~~ 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `git` 를 설치할 수 있다고 믿습니다. 
+> 만약  컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `git` 를 설치할 수 있다고 믿습니다. 
 
 ### Windows git 설치
 
@@ -290,7 +290,7 @@ Date:   Sun May 3 09:48:23 2020 +0000
 
 여러분이 지금 보고 있는 웹사이트인 **Github** 는 `git` 레포지토리를 다른 사람과 공유할 수 있는 플랫폼입니다. 이곳을 통하여 협업을 할 수 있기도 하고 자신이 관심있는 프로그램들이 무엇인지 알려줄 수도 있습니다.
 
-> 최근에는 `github` 에 있는 그 사람의 레포지토리들을 포트폴리오로 취급하고 능력을 가늠해보기도 한다니까 `github` 에 레포지토리를 많이 공유하는 것이 좋을 것 같습니다.
+> 최근에는 **Github** 에 있는 그 사람의 레포지토리들을 포트폴리오로 취급하고 능력을 가늠해보기도 한다니까 **Github** 에 레포지토리를 많이 공유하는 것이 좋을 것 같습니다.
 
 ## Github 가입 
 
@@ -396,7 +396,7 @@ very important message
 
 ## VSCode 설치
 
-> 만약 ~~없을 가능성이 높을테지만~~ 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 **VSCode** 를 설치할 수 있다고 믿습니다.
+> 만약 컴퓨터 운영체제로 `Linux` 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 **VSCode** 를 설치할 수 있다고 믿습니다.
 
 ### Windows 설치
 
@@ -419,7 +419,7 @@ very important message
 지금까지 디렉토리를 `git` 레포지토리로 초기화할 때 디렉토리 위치에서 
 
 ```shell
-git init
+$ git init
 ```
 
 을 실행했었습니다. 하지만 이제 **VSCode** 에서 <kbd>Ctrl+Shift+p</kbd> 를 누르면 다음과 같이 **VSCode** 의 모든 기능이 담겨있는 **명령 팔레트** 가 나오는데 
@@ -465,11 +465,11 @@ git init
 
     를 다 쳐야 한다.
 
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>g</kbd> 누르면 더 편함.
+그런데 커밋은 매우 자주 사용되기 때문에 **VSCode** 에서 별도의 단축키로 설정되어 있습니다. <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>g</kbd> 누르면 더 편하게 커밋을 할 수 잇습니다. 
 
 ### 원격 레포지토리 등록하기
 
-이제 레포지토리를 `Github` 에 공유하기 위하여 원격 레포지토리를 등록해보겠습니다. 앞서 `Github` 에 `git-test` 라는 원격레포지토리를 만들었었는데, 이제는 `git-test2` 라는 레포지토리를 만들고 오세요.
+이제 레포지토리를 **Github** 에 공유하기 위하여 원격 레포지토리를 등록해보겠습니다. 앞서 **Github** 에 `git-test` 라는 원격레포지토리를 만들었었는데, 이제는 `git-test2` 라는 레포지토리를 만들고 오세요.
 
 다 만들었다면 **명령 팔레트**를 열고 <kbd>git add</kbd> 만 쳐주세요. 그러면 다음 그림과 같이
 
@@ -478,10 +478,10 @@ git init
 <kbd>Git: Add Remote</kbd> 가 뜨고 <kbd>Enter</kbd> 를 치면 차례대로 **Remote Name** 과 **Remote URL** 을 입력하게 됩니다. 그럼 
 
 ```shell
-git remote add origin https://github.com/<USER>/git-test2
+$ git remote add origin https://github.com/<USER>/git-test2
 ``` 
 
-를 입력했던 것처럼 각각 `origin` 을 입력하고 `https://github.com/<USER>/git-test2` 를 입력하면 되겠죠?
+를 입력했던 것처럼 각각 `origin` 을 입력하고 `https://github.com/<USER>/git-test2` 를 입력하면 됩니다. 
 
 - **<kbd>Git: Add Remote</kbd> : **VSCode** 명령 팔레트 기능으로써 원격 레포지토리를 등록한다.**
 
@@ -530,16 +530,3 @@ git clone https://github.com/<USER>/git-test2
 ![2020-05-04_17-19](https://user-images.githubusercontent.com/16812446/80947604-7a9bf300-8e2b-11ea-8064-26e3a9bf53aa.png)
 
 그러면 원격 레포지토리를 선택할 수 있는 창이 뜨는데 어차피 `origin` 밖에 없으니까 <kbd>Enter</kbd> 를 다시 한 번 눌러주시면 **VSCode** 가 지알아서 `git pull origin master` 를 실행하면서 `text.txt` 를 업데이트합니다.
-
-# VSCode 요약 
-
-|VSCode 기능|하는 일|
-|:---|:---|
-|**<kbd>Ctrl+Shift+p</kbd>** | **VSCode** 에서 명령 팔레트를 연다.|
-|**<kbd>Git: Initialize Repository</kbd>** | **VSCode** 명령 팔레트 기능으로써 디렉토리를 `git` 레포지토리로 자동으로 초기화한다.|
-|**<kbd>Ctrl+N</kbd>** | **VSCode** 에서 새 파일을 만든다.|
-|**<kbd>Ctrl+S</kbd>** | **VSCode** 에서 파일을 저장한다.|
-|**<kbd>Git: Commit All</kbd>** | **VSCode** 명령 팔레트 기능으로써 변경된 모든 파일을 자동으로 스테이징하고 커밋한다.|
-|**<kbd>Git: Add Remote</kbd>** | **VSCode** 명령 팔레트 기능으로써 원격 레포지토리를 등록한다.|
-|**<kbd>Git: Push to...</kbd>** | **VSCode** 명령 팔레트 기능으로써 원격 레포지토리로 변경사항을 업데이트한다.|
-|**<kbd>Git: Clone</kbd>** | **VSCode** 명령 팔레트 기능으로써 원격 레포지토리를 로컬로 가져온다.|
