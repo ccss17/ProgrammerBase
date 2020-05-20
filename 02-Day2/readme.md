@@ -649,7 +649,7 @@ git clone https://github.com/<USER>/git-test2
 
 - 예시 
 
-  `readme.md` 파일을 작성하다가 이 파일의 첫부분을 점검하고 싶었습니다. 그래서 다음과 같이 <kbd>Ctrl</kbd>+<kbd>\\</kbd> 를 눌러 <kbd>Ctrl</kbd>+<kbd>2</kbd> 로 두번째 화면을 포커싱한 후 `gg` 를 눌러 커서를 파일의 맨 처음으로 이동하였습니다. 
+  `readme.md` 파일을 작성하다가 이 파일의 첫부분을 점검하고 싶었습니다. 그래서 다음과 같이 <kbd>Ctrl</kbd>+<kbd>\\</kbd> 를 눌러 <kbd>Ctrl</kbd>+<kbd>2</kbd> 로 두번째 화면을 포커싱한 후 파일의 맨 처음으로 커서를 이동하였습니다. 
 
   ![v70ylfP1Ld](https://user-images.githubusercontent.com/16812446/82409239-44f03e80-9aa8-11ea-8b91-12df0d825110.gif)
 
@@ -975,3 +975,11 @@ print s
 그리고 어떤 디렉토리로 들어가면 그 디렉토리의 최상위 경로에 있는 `README.md` 를 랜더링해서 보여줍니다. 여러분은 지금 `02-Day2` 의 디렉토리의 `readme.md` 파일이 랜더링된 것을 읽고 있습니다.
 
 지금까지 **Markdown** 문법을 공부한 것은 이 `readme.md` 을 스스로 작성할 수 있는 능력을 기르기 위함입니다. 
+
+---
+
+# 과제 
+
+- [hw2.md](hw2.md) 에 과제 가이드가 나와있으니 따라주시면 됩니다. 
+
+- 과제를 발표를 하며 설명할 수 있어야 합니다. 

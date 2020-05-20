@@ -16,7 +16,7 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 > 참고 : https://wiki.archlinux.org/index.php/Core_utilities#Alternatives
 
-> +++ MIT 미싱 클래스 
+> 참고 : https://missing.csail.mit.edu/ 
 
 여러분은 지금까지 리눅스 교재와 이곳의 내용들을 통해서 `bash` 쉘, `git`, `find`, `cat`, `ls`, `vim`, `tmux` 같은 CLI 툴을 알아보았습니다. 
 
@@ -328,6 +328,8 @@ $ gotop
   <img src="https://user-images.githubusercontent.com/16812446/82149895-5829c100-9892-11ea-9147-b97e122a265c.png" width="70%" height="auto">
   </div>
 
+---
+
 # 더 빨라진 git
 
 `git` 은 지원하는 지능이 하도 많다보니 내부적으로 `alias` 를 지원합니다. 가령 `git commit -m` 이라는 명령어를 매번 입력하기가 너무 귀찮아서 견딜 수가 없으니까 다음 명령어를 입력하여 `alias` 를 지정할 수 있습니다. 
@@ -469,6 +471,8 @@ $ bat test.txt
 
 즉, 똑같은 일을 하는데 **134만** 번의 타자를 안 친것입니다!
 
+---
+
 # `bash` ➜ `zsh` - 더 빨라진 쉘
 
 `zsh` 은 수많은 플러그인과 테마가 지원되는 쉘입니다. 이제 `bash` 쉘을 그만 쓰고 `zsh` 을 사용해보겠습니다.
@@ -586,6 +590,8 @@ $ bat test.txt
   ![render1589350187427](https://user-images.githubusercontent.com/16812446/81777473-dcdfac80-952b-11ea-9936-0cc6df268b47.gif)
 
   > `q` 명령어는 `alias` 파트에서 `alias q=exit` 라고 정의된 것을 확인했었습니다.
+
+---
 
 # 더 빨라진 tmux
 
@@ -738,6 +744,8 @@ bind-key C-a send-prefix
   다음과 같이 터미널 단축키 <kbd>Alt</kbd> 를 계속 누른 채로 <kbd>&rarr;</kbd>, <kbd>&larr;</kbd>, <kbd>&uarr;</kbd>, <kbd>&darr;</kbd> 을 눌러서 터미널 크기를 너무나도 쉽게 조절해보세요. 
 
   ![mpiJ2Gh3hi](https://user-images.githubusercontent.com/16812446/81962685-06452900-964f-11ea-8da0-e7363eb2dd4a.gif)
+
+---
 
 # 더 빨라진 vim
 
@@ -967,6 +975,8 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
   ![render1589727634891](https://user-images.githubusercontent.com/16812446/82152210-ae026700-989a-11ea-877e-cb592dca5a46.gif)
 
   그러고나서 <kbd>Esc</kbd> 를 연타하여 멀티 커서를 다 없애고 <kbd>Ctrl</kbd>+<kbd>s</kbd>, <kbd>Ctrl</kbd>+<kbd>q</kbd> 로 저장 후 종료합니다. 
+
+---
 
 # VSCode 업그레이드 
 
@@ -1326,3 +1336,11 @@ if __name__ == '__main__':
 ![ImekTnbkOy](https://user-images.githubusercontent.com/16812446/82329102-c5b52900-9a1b-11ea-96c5-a80faecf5924.gif)
 
 브레이크 포인트에서 멈춘 시점에서 <kbd>F10</kbd> 을 누르면 한줄의 코드씩 실행시켜볼 수 있고 <kbd>F5</kbd> 를 누르면 끝까지 진행시켜버릴 수 있습니다. 
+
+---
+
+# 과제 
+
+- [hw4.md](hw4.md) 에 과제 가이드가 나와있으니 따라주시면 됩니다. 
+
+- 과제를 발표를 하며 설명할 수 있어야 합니다. 
