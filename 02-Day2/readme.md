@@ -535,45 +535,125 @@ git clone https://github.com/<USER>/git-test2
 
 그러면 원격 레포지토리를 선택할 수 있는 창이 뜨는데 어차피 `origin` 밖에 없으니까 <kbd>Enter</kbd> 를 다시 한 번 눌러주시면 **VSCode** 가 지알아서 `git pull origin master` 를 실행하면서 `text.txt` 를 업데이트합니다.
 
-## 화면 컨트롤 
+## 더 빨라진 개발환경
+
+**VSCode** 는 매우 편리한 단축키를 제공합니다. 이 단축키들의 주된 목적은 마우스 사용을 안하게 하는 것입니다. 왜냐하면 키보드에 올려둔 손으로부터 마우스까지의 거리는 매우 멀기 때문에 마우스를 쓰는 빈도가 높아질수록 코딩하는 시간이 계속 낭비되기 때문입니다. 
+
+그래서 이런 단축키를 익혀두는 이유는 **"마우스를 최대한 사용하지 않기 위해서"** 라고 생각하시면 됩니다. 이 파트의 제목이 "더 빨라진 개발환경" 인데 이 말은 마우스 대신 단축키를 사용하기 때문에 빨라졌다는 것을 의미합니다. 여기서는 몇 가지 핵심적인 단축키만 가볍게 알아보겠습니다. 
+
+> 더 많은 단축키는 공식 **VSCode** 의 메뉴얼 https://code.visualstudio.com/docs/editor/codebasics  을 참고하세요.
 
 ### 파일 열기
 
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>e</kbd> 로 패널을 열어서 파일을 열 수도 있지만 
+|기능|단축키|
+|:---:|:---:|
+|파일 열기|<kbd>Ctrl</kbd>+<kbd>p</kbd>|
 
-<kbd>Ctrl</kbd>+<kbd>p</kbd> 로 파일을 열면 더욱 빠름. 
+**VSCode** 에서 파일을 열 때 왼쪽 **Explorer** 패널에서 파일을 클릭하여 열 수도 있지만 <kbd>Ctrl</kbd>+<kbd>p</kbd> 를 누르고 파일 이름을 입력하면 매우 빠르게 파일을 열 수 있습니다.
+
+- 예시 
+
+  코딩을 하다가 `memdump.c` 파일을 열어보고 싶어졌습니다. 그러면 왼쪽 **Explorer** 패널에서 클릭하여 열 수도 있지만, 다음과 같이 <kbd>Ctrl</kbd>+<kbd>p</kbd> 단축키를 사용할 수 있습니다.
+  
+  먼저 <kbd>Ctrl</kbd>+<kbd>p</kbd> 누르고 그 파일의 이름을 특정할 수 있는 문자열 `memd` 까지만 칩니다. 그러면 `memdump.c` 파일이 검색되어 나오는데 이제 그냥 <kbd>Enter</kbd> 를 치면 됩니다. 
+
+  ![yaGfFjdSHi](https://user-images.githubusercontent.com/16812446/82407559-6818ef00-9aa4-11ea-959f-333c1f735b9a.gif)
+
 
 ### 파일 닫기 
 
-<kbd>Ctrl</kbd>+<kbd>w</kbd>
+|기능|단축키|
+|:---:|:---:|
+|파일 닫기|<kbd>Ctrl</kbd>+<kbd>w</kbd>|
+
+열린 파일의 <kbd>X</kbd> 버튼을 눌러서 파일을 닫을 수도 있지만 <kbd>Ctrl</kbd>+<kbd>w</kbd> 를 누르면 매우 빠르게 닫을 수 있습니다. 
+
+- 예시 
+
+  `memdump.c` 파일을 열고 작업을 하다보니 파일을 닫고 싶어졌습니다. 그래서 그냥 다음과 같이 <kbd>Ctrl</kbd>+<kbd>w</kbd> 를 눌렀습니다.
+
+  ![jynipQcKC2](https://user-images.githubusercontent.com/16812446/82407863-3eac9300-9aa5-11ea-9121-4221c6d99cd9.gif)
 
 ### 열린 파일 포커싱 
 
-<kbd>Ctrl</kbd>+<kbd>Tab</kbd>
+|기능|단축키|
+|:---:|:---:|
+|열린 파일 옮겨다니기|<kbd>Ctrl</kbd>+<kbd>Tab</kbd>|
+|첫번째 열린 파일 포커싱|<kbd>Alt</kbd>+<kbd>1</kbd>|
+|두번째 열린 파일 포커싱|<kbd>Alt</kbd>+<kbd>2</kbd>|
+|세번째 열린 파일 포커싱|<kbd>Alt</kbd>+<kbd>3</kbd>|
 
-<kbd>Alt</kbd>+<kbd>1</kbd>, <kbd>Alt</kbd>+<kbd>2</kbd>, ...
+위 단축키로 열린 파일을 빠르게 포커싱할 수 있습니다. 
+
+- 예시 
+
+  `README.md` 와 `kaslr.c` 와 `memdump.c` 파일을 열고 작업하고 있었습니다. 이때 다른 파일로 옮겨다니고 싶어서 <kbd>Ctrl</kbd>+<kbd>Tab</kbd> 을 눌렀습니다. 하지만 다음과 같이 이것보다 좀 더 편하게 <kbd>Alt</kbd>+<kbd>1</kbd> 으로 첫번째 파일을 포커싱하고 <kbd>Alt</kbd>+<kbd>2</kbd> 로 두번째 파일을 포커싱하고 <kbd>Alt</kbd>+<kbd>3</kbd> 로 세번째 열린 파일을 포커싱 할 수 있습니다.
+
+  ![1FBbmCZKe3](https://user-images.githubusercontent.com/16812446/82408117-d8744000-9aa5-11ea-92c2-43e8475717d4.gif)
 
 ### 화면 옮기기 
 
-<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&rarr;</kbd>
+|기능|단축키|
+|:---:|:---:|
+|화면 오른쪽으로 분할하여 옮기기|<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&rarr;</kbd>|
+|화면 왼쪽으로 분할하여 옮기기|<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&larr;</kbd>|
 
-<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&larr;</kbd>
+코딩을 하다보면 두 파일을 같이 보고싶을 때가 있습니다. 그럴 때 마우스로 화면을 오른쪽이나 왼쪽으로 이동시키면 **VSCode** 가 자동으로 화면을 분할해주지면 위 단축키를 이용하면 훨씬 더 빠르게 화면을 분할하여 옮길 수 있습니다.
+
+- 예시 
+
+  `kaslr.c` 와 `memdump.c` 파일을 열고 작업하고 있었습니다. 그런데 이때 `memdump.c` 를 오른쪽 화면으로 옮기고 싶어져서 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&rarr;</kbd> 를 눌렀습니다.
+
+  ![UXMBh2K8so](https://user-images.githubusercontent.com/16812446/82408373-6819ee80-9aa6-11ea-9aad-1cd2c5dce277.gif)
 
 ### 분할된 화면 포커싱 
 
-<kbd>Ctrl</kbd>+<kbd>1</kbd>
+|기능|단축키|
+|:---:|:---:|
+|오른쪽 화면 포커싱|<kbd>Ctrl</kbd>+<kbd>1</kbd>|
+|왼쪽 화면 포커싱|<kbd>Ctrl</kbd>+<kbd>2</kbd>|
 
-<kbd>Ctrl</kbd>+<kbd>2</kbd>
+화면을 분할했을 때 왼쪽 화면으로 커서를 두고 싶을 때 <kbd>Alt</kbd>+<kbd>1</kbd> 로는 되지 않습니다. <kbd>Alt</kbd>+<kbd>1</kbd>, <kbd>Alt</kbd>+<kbd>2</kbd>, <kbd>Alt</kbd>+<kbd>3</kbd> 은 해당 화면에서의 열린 탭의 순서이기 때문입니다. 
 
-<kbd>Ctrl</kbd>+<kbd>3</kbd>
+왼쪽 화면이나 오른쪽 화면을 포커싱하고 싶다면 <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>Ctrl</kbd>+<kbd>2</kbd> 을 누르면 됩니다. 
+
+- 예시 
+
+  다음과 같이 분할된 화면을 <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>Ctrl</kbd>+<kbd>2</kbd> 로 빠르게 커서를 이동시킬 수 있습니다. 
+
+  ![sUipBmhwXE](https://user-images.githubusercontent.com/16812446/82408662-07d77c80-9aa7-11ea-88e2-db0b8c95ea09.gif)
+
+> 사실 <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>Ctrl</kbd>+<kbd>2</kbd> 은 왼쪽 화면과 오른쪽 화면을 포커싱 하는게 아니라 더 정확하게 첫번째 분할 화면을 포커싱, 두번째 분할 화면을 포커싱하는 단축키입니다. 그러면 자연스럽게 <kbd>Ctrl</kbd>+<kbd>3</kbd> 이 세번째 분할 화면을 포커싱하는 단축키라는 것을 유추할 수 있겠죠?
 
 ### 화면 레이아웃 변경
 
-<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>
+|기능|단축키|
+|:---:|:---:|
+|화면 레이아웃 변경|<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>|
+
+코딩을 하다보면 화면을 수평으로 분할하는 것이 아니라 수직으로 분할하는 것이 더 편할 때도 있습니다. 그럴때 이 단축키로 화면 레이아웃을 변경하면 됩니다. <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd> 를 한번 더 누르면 레이아웃이 원래대로 되돌아옵니다.
+
+- 예시 
+
+  `readme.md` 파일을 작성하면서 **Markdown** 미리보기 창을 같이 보고 있었는데, 화면 레이아웃을 변경하는 것이 더 나을 것 같아서 다음과 같이 <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd> 로 변경을 합니다.
+
+  ![Rq5xgcvRFC](https://user-images.githubusercontent.com/16812446/82408988-b8de1700-9aa7-11ea-82f7-da732c9ff046.gif)
 
 ### 화면 복제
 
-<kbd>Ctrl</kbd>+<kbd>\\</kbd>
+|기능|단축키|
+|:---:|:---:|
+|화면 복제|<kbd>Ctrl</kbd>+<kbd>\\</kbd>|
+
+매우 긴 파일을 코딩할 때 파일의 앞부분과 뒷부분을 동시에 보고 싶을 때가 있습니다. 그럴 때 이 단축키로 화면을 복제할 수 있습니다. 
+
+- 예시 
+
+  `readme.md` 파일을 작성하다가 이 파일의 첫부분을 점검하고 싶었습니다. 그래서 다음과 같이 <kbd>Ctrl</kbd>+<kbd>\\</kbd> 를 눌러 <kbd>Ctrl</kbd>+<kbd>2</kbd> 로 두번째 화면을 포커싱한 후 `gg` 를 눌러 커서를 파일의 맨 처음으로 이동하였습니다. 
+
+  ![v70ylfP1Ld](https://user-images.githubusercontent.com/16812446/82409239-44f03e80-9aa8-11ea-8b91-12df0d825110.gif)
+
+> 여러번 누르면 여러번 복제됩니다.
 
 ---
 
@@ -593,6 +673,10 @@ https://markdown-it.github.io/
 
 ## **VSCode** 의 **Markdown** 미리보기
 
+|기능|단축키|
+|:---:|:---:|
+|**Markdown** 미리보기|<kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>v</kbd>|
+
 먼저 **VSCode** 를 열어서 `test.md` 파일을 하나 만들고 다음 내용을 입력하고 저장해봅시다. 
 
 ```markdown
@@ -601,13 +685,15 @@ https://markdown-it.github.io/
 **Markdown** 파일 연습용 파일입니다.
 ```
 
-그리고 <kbd>Ctrl</kbd>+<kbd>k</kbd> + <kbd>Ctrl</kbd>+<kbd>v</kbd> 를 누르거나 오른쪽 위에서
+그리고 <kbd>Ctrl</kbd>+<kbd>k</kbd> , <kbd>v</kbd> 를 누르거나 오른쪽 위에서
 
 ![Screen Capture_select-area_20200520051136](https://user-images.githubusercontent.com/16812446/82373312-60335d80-9a58-11ea-9a64-19af6e44b7cb.png)
 
 이 아이콘을 클릭하면 다음과 같이 **Markdown** 미리보기가 나타나서 **Markdown** 파일이 어떻게 랜더링되는지 실시간으로 보여줍니다. 이 환경에서 **Markdown** 을 효율적으로 작성할 수 있습니다. 
 
-![]()
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82409433-b3350100-9aa8-11ea-8277-3f2c1de91c8c.gif" width="70%" height="auto">
+</div>
 
 ## 제목 
 
