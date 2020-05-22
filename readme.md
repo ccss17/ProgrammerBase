@@ -108,7 +108,45 @@
 
 ### [Day 5](05-Day5/readme.md)
 
-- (작성중)
+- **Git Branching**
+
+- **user.github.io**
+
+- **gist**
+
+- **Pull Request**
+
+- **Awesome Repository**
+
+- **Hacker News**
+
+- **Reddit**
+
+- **Github trending**
+
+- **검색**
+
+- 교재 Ch06, Ch10
+
+- **Funny CLI**
+
+## Rule
+
+GBC 참여자들은 **PASS** 와 **FAIL** 에 관련된 내용이니 다음의 룰을 꼭 확인해주세요. 
+
+- **PASS** 기준(작성중)
+
+  - 과제 
+
+  - 지각과 결석 
+
+  - 발표 
+
+- 발표자 랜덤 선정 
+
+- 지각/결석 규칙(작성중)
+
+  - 코로나 때문에 화상회의로 할건데 어떠케 할까
 
 ## Rule
 

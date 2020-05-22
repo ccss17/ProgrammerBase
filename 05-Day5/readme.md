@@ -330,11 +330,11 @@ $ g cl https://gist.github.com/ccss17/ff6944df7e8f3c9ab518629915857d85
 
 ---
 
-# Pull Requests
+# Pull Request
 
 **Github** 협업하기의 기본인 **Pull Request** 는 말 그대로 **pull** 해주기를 요청하는 것입니다. 주로 같이 프로젝트를 하는 사람끼리 **Pull Rquest** 를 하지만, **Github** 에서 오픈소스를 많이 찾아다니면서 마음이 드는 오픈소스를 사용하다가 그것을 발전시키고 싶다면 그 레포지토리를 좀 더 낫게 고친 다음 원작자에게 **Pull Request** 를 할 수도 있습니다. 이러한 오픈소스 활동은 전세계에서 수없이 많이 이루어지고 있습니다. 여러분도 이 오픈소스 활동에 참여하여 여러분만의 창의성을 발휘해서 프로그램을 발전시킨 다음 **Pull Request** 를 꾸준히 한다면 여러분의 실력과 명성도 꾸준히 쌓여나갈 것입니다. 
 
-그렇다면 오픈소스를 어떻게 찾는 것일까요? 질문을 좀 더 일반적으로 바꾸어서 최신 정보와 좋은 정보를 어디에서 찾을 수 있는 것일까요. 그리고 이런 오픈소스 프로젝트에 실질적으로 참여하게 해주는 **Pull Request** 라는 것은 어떻게 하는 것일까요? 
+**그렇다면 오픈소스를 어떻게 찾는 것일까요? 질문을 좀 더 일반적으로 바꾸어서 최신 정보와 좋은 정보를 어디에서 찾을 수 있는 것일까요. 그리고 이런 오픈소스 프로젝트에 실질적으로 참여하게 해주는 **Pull Request** 라는 것은 어떻게 하는 것일까요?**
 
 먼저 후자의 질문에 대한 대답을 배워보겠습니다. **Pull Requests** 의 과정은 다음과 같습니다.
 
@@ -368,11 +368,13 @@ $ g cl https://gist.github.com/ccss17/ff6944df7e8f3c9ab518629915857d85
 $ g cl https://github.com/hgu-student/pull-request-me
 ```
 
-도커 컨테이너에서 해도 되고 로컬 컴퓨터에서 **VSCode** 로 해도 됩니다.
+도커 컨테이너에서 해도 되고 로컬 컴퓨터에서 **VSCode** 로 해도 됩니다. 그리고 사실 **당장 실습하고 싶지 않은 분들은 안하셔도 됩니다**. 
 
 ## 3. 편집하고 push 하기
 
-레포지토리를 **clone** 해보면 `readme.md` 와 `main.c` 파일이 보입니다. 여기에서는 여러분이 `main.c` 를 살펴보다가 코드 포맷이 상당히 마음에 들지 않았다고 가정하겠습니다. 실제로 다음과 같이 `main.c` 를 여러보니 코드 포맷이 엉망입니다. 그리고 심지어 함수의 인자를 빈 괄호 `()` 로 두는 것은 [안정성의 이유 때문에 권고되지 않습니다](https://stackoverflow.com/questions/3156423/why-dont-we-use-void-in-main). 
+레포지토리를 **clone** 해보면 `readme.md` 와 `main.c` 파일이 보입니다. 여기에서는 여러분이 `main.c` 를 살펴보다가 코드 포맷이 상당히 마음에 들지 않았다고 가정하겠습니다. 실제로 다음과 같이 `main.c` 를 여러보니 코드 포맷이 엉망입니다. 
+
+> 그리고 심지어 함수의 인자를 빈 괄호 `()` 로 두는 것은 [안정성의 이유 때문에 권고되지 않습니다](https://stackoverflow.com/questions/3156423/why-dont-we-use-void-in-main). 
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/82677543-25613d80-9c83-11ea-9123-4bc9d8a8407e.png" width="70%" height="auto">
