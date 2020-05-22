@@ -6,15 +6,151 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 # Pull Requests
 
-스택오버플로우설문조사 조사한다음 readme.md 에 써서 풀리퀘스트하기
+**Github** 협업하기의 기본인 **Pull Request** 는 말 그대로 **pull** 해주기를 요청하는 것입니다. 주로 같이 프로젝트를 하는 사람끼리 **Pull Rquest** 를 하지만, **Github** 에서 오픈소스를 많이 찾아다니면서 마음이 드는 오픈소스를 사용하다가 그것을 발전시키고 싶다면 그 레포지토리를 좀 더 낫게 고친 다음 원작자에게 **Pull Request** 를 할 수도 있습니다. 이러한 오픈소스 활동은 전세계에서 수없이 많이 이루어지고 있습니다. 여러분도 이 오픈소스 활동에 참여하여 여러분만의 창의성을 발휘해서 프로그램을 발전시킨 다음 **Pull Request** 를 꾸준히 한다면 여러분의 실력과 명성도 꾸준히 쌓여나갈 것입니다. 
 
-자기가 자랑하고 싶은 프로그램 올리기 
+그렇다면 오픈소스를 어떻게 찾는 것일까요? 질문을 좀 더 일반적으로 바꾸어서 최신 정보와 좋은 정보를 어디에서 찾을 수 있는 것일까요. 그리고 이런 오픈소스 프로젝트에 실질적으로 참여하게 해주는 **Pull Request** 라는 것은 어떻게 하는 것일까요? 
 
-# user.github.io
+먼저 후자의 질문에 대한 대답을 배워보겠습니다. **Pull Requests** 의 과정은 다음과 같습니다.
+
+1. **fork** 하기 
+
+2. **clone** 하기
+
+3. **편집** 하고 **push** 하기
+
+4. **pull request** 하기
+
+이제 이 과정을 제가 **Pull Request** 를 마음껏 연습할 수 있도록 만든 레포지토리 https://github.com/ccss17/pull-request-me 에서 실습해보겠습니다. 
+
+## 1. fork 하기 
+
+그러면 https://github.com/ccss17/pull-request-me 에 들어가서 오른쪽 상단부를 보세요. 그러면 다음과 같이 <kbd>Fork</kbd> 버튼이 보입니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82676804-eda5c600-9c81-11ea-8089-0668f53c5072.png" width="70%" height="auto">
+</div>
+
+이 버튼을 시원하게 눌러주세요. 그러면 다음과 같이 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82677048-5ee57900-9c82-11ea-99f5-3567455581bc.png" width="70%" height="auto">
+</div>
+
+레포지토리가 자신의 소유의 레포지토리로 복제됩니다. 여기에서는 **hgu-student** 라는 아이디를 갖고 있는 학생이 레포지토리를 **fork** 해왔습니다.
+
+## 2. clone 하기 
+
+**fork** 된 레포지토리의 **URL** 도 원래의 **URL** 인 https://github.com/ccss17/pull-request-me 에서 https://github.com/hgu-student/pull-request-me 로 바뀌었습니다. 이제 이것을 로컬 컴퓨터로 **clone** 합니다. 지금까지 배웠던 **Git** 의 명령어를 다음과 같이 사용하면 됩니다. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ g cl https://github.com/hgu-student/pull-request-me
+```
+
+도커 컨테이너에서 해도 되고 로컬 컴퓨터에서 **VSCode** 로 해도 됩니다.
+
+## 3. 편집하고 push 하기
+
+레포지토리를 **clone** 해보면 `readme.md` 와 `main.c` 파일이 보입니다. 여기에서는 여러분이 `main.c` 를 살펴보다가 코드 포맷이 상당히 마음에 들지 않았다고 가정하겠습니다. 실제로 다음과 같이 `main.c` 를 여러보니 코드 포맷이 엉망입니다. 그리고 심지어 함수의 인자를 빈 괄호 `()` 로 두는 것은 [안정성의 이유 때문에 권고되지 않습니다](https://stackoverflow.com/questions/3156423/why-dont-we-use-void-in-main). 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82677543-25613d80-9c83-11ea-9123-4bc9d8a8407e.png" width="70%" height="auto">
+</div>
+
+그래서 여러분은 이 코드를 다음과 같이 고치려고 마음먹었습니다. 
+
+```c
+int main(void) 
+{
+    printf("main :)\n");
+    return 0;
+}
+```
+
+> `vim` 으로 고치든 **VSCode** 로 고치든 그것은 알아서 선택해주세요. 
+
+그런 다음 다음과 같이 지금까지 배웠던 **Git** 명령으로 스테이징 후 커밋합니다. 그리고 https://github.com/hgu-student/pull-request-me 이 **push** 까지 합니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ g a 
+$ g cm "메인 함수를 고침!"
+$ g psom
+```
+
+## 4. **pull request** 하기
+
+그런데 여러분의 레포지토리가 업데이트 되었을 뿐 원작자의 레포지토리가 업데이트 된 것은 아닙니다. 그래서 원작자에게 어서 빨리 내 레포지토리를 **pull** 해주세요 라고 말하기 위하여 **Pull Request** 를 합니다. 다음 사진과 같이 자신의 레포지토리의 왼쪽 상당부를 보면 <kbd>Pull requests</kbd> 버튼이 있습니다. 이 버튼을 눌러 **Pull Request** 페이지로 들어갑니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82678481-a5d46e00-9c84-11ea-8724-2104619a9622.png" width="70%" height="auto">
+</div>
+
+**Pull Request** 페이지의 오른쪽 상단부에는 다음과 같이 <kbd>New</kbd> 버튼이 있습니다. 이 버튼을 눌러 드디어 원작자에게 보낼 **Pull Request** 를 생성해줍니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82678642-e9c77300-9c84-11ea-8e97-9c32244d222a.png" width="70%" height="auto">
+</div>
+
+그러면 마지막으로 내가 편집한 레포지토리와 원작자의 레포지토리를 비교할 수 있고 어떤 브랜치로 **Pull Request** 를 할 것인지 선택하는 페이지가 보입니다. 지금은 그냥 왼쪽에 보이는 <kbd>Create pull request</kbd> 버튼을 눌러줍시다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82678798-2f843b80-9c85-11ea-8fa8-91aa00201baa.png" width="70%" height="auto">
+</div>
+
+그러면 **Pull Request** 의 제목과 설명을 할 수 있는 텍스트 필드가 나타나는데, 지금은 역시 그냥 텍스트 필드 우측 하단에 있는 <kbd>Create pull request</kbd> 버튼을 한번 더 눌러주세요. 
+
+그러면 이제 정말 **Pull Request** 가 완료되었습니다. 이제 원작자가 여러분이 멋지게 고친 레포지토리를 비교하고 괜찮다고 판단하여 **pull** 을 하기만을 기다리면 됩니다. 
 
 ---
 
-# awesome repo
+# \<USER\>.github.io
+
+\<USER\>.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니다. 저의 **Github** 아이디는 `ccss17` 인데 이 아이디로 \<USER\> 를 치환하여 https://ccss17.github.io 에 접속해보면 제가 관리하고 있는 블로그가 보입니다. 이 블로그는 https//github.com/ccss17/ccss17.github.io 의 `index.html` 파일과 각각의 `*.html` 파일들이 랜더링 된 것입니다. 
+
+이처럼 **Github** 에 아이디만 있다면 자신의 아이디로 \<USER\>.github.io 라는 이름을 가진 레포지토리를 생성하고 그곳에 `index.html` 과 메모하거나 게시하고 싶은 정보를 `.html` 파일로 만들어 레포지토리를 **commit** 하고 **Github** 에 **push** 하면 자동으로 \<USER\>.github.io 에 게시가 시작됩니다. 
+
+개인 블로그에 자신이 공부한 내용이나 알아낸 사실을 게시하면 그것이 모두 다 포트폴리오가 되고 스펙이 되서 자신의 가치를 높이는 일이 됩니다. 그러나 이 블로그 플랫폼을 사용하고 싶지 않은 분들도 있음을 감안해서 더 이상의 상세한 설명과 실습은 하지 않고 유명한 `*.github.io` 사이트들과 **Github** 의 공식 메뉴얼과 저의 ccss17.github.io 를 가볍게 보여드리는 것으로 마무리 하겠습니다. 
+
+- **Github** 페이지 공식 메뉴얼 : https://pages.github.com/
+
+- [sindresorhus](https://github.com/sindresorhus/sindresorhus.github.com) 의 [블로그](https://sindresorhus.com/) : https://github.com/sindresorhus/sindresorhus.github.com
+
+- [도커 가이드](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html) : https://github.com/subicura/subicura.github.io 
+
+---
+
+이제 그렇다면 좋은 정보나 최신기술을 어디에서 찾을까 에 대한 대답을 알아보겠습니다. 하지만 부족한 제가 알아볼 수 있는 한 알아보고 저만의 결론을 내린 것이기 때문에 이것들이 최선의 해답이 되지 않을 거라는 것은 명백합니다. 그러니 각자가 제가 드리는 지식에 안주하지 말고 최신동향과 좋은정보에 예민해지려고 노력해야 합니다. 
+
+---
+
+# Awesome Repository
+
+프로그래머만큼 최신기술과 좋은정보에 민감해야만 하는 직종은 없을겁니다. 그래서 프로그래머들은 각자의 분야에서 최신기술이나 좋은정보를 모아둔 **Awesome Repository** 를 만들기로 했고 다음과 같은 좋은 레포지토리들이 탄생했습니다. 
+
+- 인공지능 **Awesome Repository** : https://github.com/owainlewis/awesome-artificial-intelligence#readme
+
+- Hacking **Awesome Repository** : https://github.com/carpedm20/awesome-hacking
+
+- Flutter **Awesome Repository** : https://github.com/Solido/awesome-flutter
+
+- Python **Awesome Repository** : https://github.com/vinta/awesome-python#readme
+
+- 알고리즘 **Awesome Repository** : https://github.com/tayllan/awesome-algorithms#readme
+
+- **VSCode** **Awesome Repository** : https://github.com/viatsko/awesome-vscode#readme
+
+보시면 아시겠지만 레포지토리의 이름들이 각각의 분야의 이름을 기반으로 규칙적으로 `awesome-<분야>` 라고 되어있음을 알 수 있습니다. 그렇다면 이러한 **Awesome Repository** 들을 내가 관심있는 분야에서도 찾고 싶은데, 도대체 어떻게 해야 할까요? 
+
+정답은 다음의 **Awesome Repository** 들을 모아둔 **Awesome Repository** 에 방문하는 것입니다.
+
+- **Awesome Repository** : https://github.com/sindresorhus/awesome
+
+이 레포지토리는 **Github** 레포지토리의 스타가 **470,793** 개([2020/05/22 기준](https://gitstar-ranking.com/)) 로 가장 많은 [sindresorhus](https://github.com/sindresorhus) 가 **Awesome Repository** 들을 모아둔 레포지토리로써 이 단일 레포지토리에 스타가 약 **134,000** 개가 달려있습니다. 
+
+여기에서 각자 관심있는 주제나 분야, 툴들의 **Awesome** 한 정보들을 찾아보세요. 
 
 ---
 
