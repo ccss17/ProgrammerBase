@@ -106,11 +106,13 @@ $ g psom
 
 ---
 
-# \<USER\>.github.io
+# user.github.io
 
-\<USER\>.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니다. 저의 **Github** 아이디는 `ccss17` 인데 이 아이디로 \<USER\> 를 치환하여 https://ccss17.github.io 에 접속해보면 제가 관리하고 있는 블로그가 보입니다. 이 블로그는 https//github.com/ccss17/ccss17.github.io 의 `index.html` 파일과 각각의 `*.html` 파일들이 랜더링 된 것입니다. 
+user.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니다. 저의 **Github** 아이디는 `ccss17` 인데 이 아이디로 user 를 치환하여 ccss17.github.io 에 접속해보면 제가 관리하고 있는 블로그가 보입니다. 이 블로그는 https//github.com/ccss17/ccss17.github.io 의 `index.html` 파일과 각각의 `*.html` 파일들이 랜더링 된 것입니다. 
 
-이처럼 **Github** 에 아이디만 있다면 자신의 아이디로 \<USER\>.github.io 라는 이름을 가진 레포지토리를 생성하고 그곳에 `index.html` 과 메모하거나 게시하고 싶은 정보를 `.html` 파일로 만들어 레포지토리를 **commit** 하고 **Github** 에 **push** 하면 자동으로 \<USER\>.github.io 에 게시가 시작됩니다. 
+이처럼 **Github** 에 아이디만 있다면 자신의 아이디로 user.github.io 라는 이름을 가진 레포지토리를 생성하고 그곳에 `index.html` 과 메모하거나 게시하고 싶은 정보를 `.html` 파일로 만들어 레포지토리를 **commit** 하고 **Github** 에 **push** 하면 자동으로 user.github.io 에 게시가 시작됩니다. 
+
+> [**jekyll**](https://jekyllrb.com/) 을 사용하면 `.md` 파일만으로도 웹페이지를 생성할 수 있어 매우 편합니다. 
 
 개인 블로그에 자신이 공부한 내용이나 알아낸 사실을 게시하면 그것이 모두 다 포트폴리오가 되고 스펙이 되서 자신의 가치를 높이는 일이 됩니다. 그러나 이 블로그 플랫폼을 사용하고 싶지 않은 분들도 있음을 감안해서 더 이상의 상세한 설명과 실습은 하지 않고 유명한 `*.github.io` 사이트들과 **Github** 의 공식 메뉴얼과 저의 ccss17.github.io 를 가볍게 보여드리는 것으로 마무리 하겠습니다. 
 
@@ -144,7 +146,7 @@ $ g psom
 
 보시면 아시겠지만 레포지토리의 이름들이 각각의 분야의 이름을 기반으로 규칙적으로 `awesome-<분야>` 라고 되어있음을 알 수 있습니다. 그렇다면 이러한 **Awesome Repository** 들을 내가 관심있는 분야에서도 찾고 싶은데, 도대체 어떻게 해야 할까요? 
 
-정답은 다음의 **Awesome Repository** 들을 모아둔 **Awesome Repository** 에 방문하는 것입니다.
+정답은 **Awesome Repository** 들을 모아둔 **Awesome Repository** 에 방문하는 것입니다.
 
 - **Awesome Repository** : https://github.com/sindresorhus/awesome
 
@@ -154,15 +156,112 @@ $ g psom
 
 ---
 
+# Hacker News
+
+> 참고 : https://en.wikipedia.org/wiki/Hacker_News
+
+> 참고 : https://www.quora.com/What-is-Hacker-News
+
+[Hacker News](https://news.ycombinator.com/) 는 [Paul Graham](https://en.wikipedia.org/wiki/Paul_Graham_(programmer)) 이 만든 인터넷 커뮤니티로써 컴퓨터 해커에게 흥미로운 모든 것을 공유하기 위한 커뮤니티입니다. 
+
+단 여기서 "해커" 란 정보보안가를 뜻하는 것이 아니라 좀 더 포괄적인 의미로의 "해커" 입니다. 해킹이란 원래 무언가를 능수능란하게 다루거나 호기심과 지적욕구에 의해 컴퓨터와 네트워크를 탐험하는 행위라는 의미 였는데 여기에서는 이와같은 포괄적인 의미로 보아야 할 것 같습니다. 
+
+왜냐하면 해커 뉴스에는 컴퓨터 보안에 관련된 정보 뿐만 아니라 인공지능, 웹 개발, 게임 개발, 전자 회로, 수학 관련 글(*선형대수학 관련 글이 꽤 올라옵니다*), IT대기업(Google, Amazon, Facebook 등)의 최신동향 등등 정말 다양한 좋은 정보들이 많이 올라오기 때문입니다. 심지어 취업을 잘 하려면 어떻게 해야 하는지에 대한 글도 올라옵니다. 
+
+이렇게 좋은 정보들에 예민하게 반응한다면 자신이 있는 공동체에 좋은 정보를 공유함으로써 그 공동체가 한 단계 더 성장할 수 있습니다. 그 공동체가 동아리가 될 수도 있고 기업이 될 수도 있고 친구들이 될 수도 있습니다. 그렇게 되면 좋은 정보의 원천이 된 여러분이 사람들로부터 더욱 인정받게 되고요. 
+
+- 실제로 이 **ProgrammerBase** 를 만들게 된 계기와 아이디어를 **MIT** 의 [**Missing Semester**](https://missing.csail.mit.edu/) 에서 착안했는데, 이것 또한 다음과 같이 **Hacker News** 에서 발견한 것입니다.
+
+  <img src="https://user-images.githubusercontent.com/16812446/82681473-c6062c00-9c88-11ea-993e-4cc9a626bffe.png" width="70%" height="auto">
+
+  > 여러분이 이 **ProgrammerBase** 를 통하여 조금이라도 실력을 높힐 수 있었다면 제가 말했던 "공동체(고스트 동아리) 자체가 한 단계 성장" 하는 것의 실례가 되는 셈입니다. 
+
+- **Hacker News** 에는 다음과 같이 [**Discord** 가 **Go** 언어에서 **Rust** 언어로 갈아타게 된 과정에 대한 글](https://blog.discord.com/why-discord-is-switching-from-go-to-rust-a190bbca2b1f)도 올라왔었습니다. 
+
+  <img src="https://user-images.githubusercontent.com/16812446/82681726-24cba580-9c89-11ea-87e5-dc7561ad4564.png" width="70%" height="auto">
+
+  실제로 글을 읽어보면 대충 **Go** 의 가비지 콜렉터보다 **Rust** 의 가비지 콜렉터가 **Discord** 에서 더 좋아보이더라 라는 결론으로 **Rust** 를 쓰게 되었다고 했습니다. 물론 **Go** 도 최고의 언어이고 분명 **Rust** 보다 더 효율적으로 사용되는 상황과 분야가 있을 겁니다. 
+
+  > 여러분이 이러한 새로운 프로그래밍 언어에 대한 좋은 정보를 갖춘 다음 여러분이 하고 있는 프로젝트에 이러한 새로운 제안을 하게 되서 그 혁신으로 프로젝트가 조금이라도 더 개선된다면 여러분의 입지는 더욱 커지는 것이고 능력을 더 인정받게 될 겁니다. 그리고 여러분 한 사람으로 인해 프로젝트와 그 공동체가 더욱 발전하게 될 겁니다. 
+
+- **Hacker News** 에는 다음과 같이 [MS 에서 메모리를 혁신적으로 최적화하여 신경망 학습 시 메모리를 효율적으로 절약할 수 있는 기술에 대한 글](https://www.microsoft.com/en-us/research/blog/zero-deepspeed-new-system-optimizations-enable-training-models-with-over-100-billion-parameters/?OCID=msr_blog_zerodeep_tw)도 올라왔습니다. 
+
+  ![Screen Capture_Navigator_20200523002033](https://user-images.githubusercontent.com/16812446/82683013-301fd080-9c8b-11ea-843f-8c91d5e6a5bc.png)
+
+  대충 [microsoft/DeepSpeed](https://github.com/microsoft/DeepSpeed) 라는 것을 쓰면 신경망 학습이 **5배**배 빨라지고 메모리 효율이 최대 **64배**배 높아진다는 내용입니다. 심지어 **PyTorch** 와 호환된다고까지 하니까 만약 여러분이 **PyTorch** 로 진행되는 프로젝트에 참여중이라면 충분히 이런 정보를 공유할 수 있고, 여러분이 속한 공동체를 발전시킬 수 있습니다. 
+
+마지막으로 한 가지 사례만 더 들고 **Hacker News** 는 마무리 하겠습니다. 
+
+- 어느날 **Hacker News** 에는 다음과 같이 [Can AI Become Consious?](https://cacm.acm.org/news/244846-can-ai-become-conscious/fulltext) 라는 글이 올라왔습니다. 
+
+  <img src="https://user-images.githubusercontent.com/16812446/82683442-04511a80-9c8c-11ea-9fe2-60ede1f1975b.png" width="70%" height="auto">
+
+  이 글에서는 정보통합이론(Integrated Information Theory) 를 소개하면서 핵심적으로 다음과 같은 사실을 설득하려 했습니다. 
+
+  1. 인과적 힘을 갖는다면 어떤 물리 체계일지라도 의식을 갖는다. 뇌의 뉴런이 다른 뉴런을 자극하여 촉발시키는 것 또한 인과적 힘의 예시라고 볼 수 있고, 컴퓨터 회로에서 트랜지스터가 다른 트랜지스터에게 자극을 주는 것도 인과적 힘의 예시라고 볼 수 있다. 
+
+  2. 정보통합이론은 임의의 물리 체계가 얼마나 의식적인가 측정하는 방법 또한 개발하였고, 이것을 의학에 응용하여 뇌손상을 입은 환자나 식물인간이 얼마나 의식을 갖고 있는지 측정하기도 하였다. 
+
+  3. 정보통합이론은 의식이 인간에게만 존재하는 유일한 특성이 아니라고 말한다.
+
+  4. 현재의 기계(컴퓨터)가 의식을 가질 수는 없으나 미래에 탄생할 기계가 의식을 갖게 되고 인간과 같은 지능을 갖게 될 것이라는 것은 의심할 수 없는 사실이다. 
+
+  5. 지능이란 행동에 관한 것이다. 가령 당신은 당신에게 주어진 환경에서 살아남기 위하여 어떻게 행동할 것인가? 그러나 의식이란 행동에 관한 것이 아니다. 의식이란 존재에 관한 것이다. 
+
+  6. 폰 노이만 구조로 구현된 표준적인 회로에서의 트랜지스터는 통상적으로 두 개 이상의 트랜지스터로부터 입력을 받고 두 개 이상의 트랜지스터에게 출력을 보낸다. 이것이 인과적 힘인 것은 맞지만 극단적으로 복잡한 인과적 힘을 갖고 있는 뇌의 약 860억개의 뉴런이 갖고 있는 인과적 힘과 명백히 다르다. 그러므로 폰 노이만 구조 위에서 실행되는 어떠한 인공지능이라 할지라도 그것은 인간의 뇌처럼 의식적이지 못하다. 
+
+  만약 여러분이 인공지능 관련 프로젝트에 속해있고 이런 글을 읽었다면 인공지능이 의식을 가질 수 있는지에 대한 연구가 진행되어온 이 정보통합이론에 더 관심이 생겨서 
+
+  [<img src="https://bookthumb-phinf.pstatic.net/cover/144/803/14480315.jpg?udate=20190327" width="150px" height="auto">](https://book.naver.com/bookdb/book_detail.nhn?bid=14480315) [<img src="https://bookthumb-phinf.pstatic.net/cover/121/665/12166506.jpg?udate=20170718" width="150px" height="auto">](https://book.naver.com/bookdb/book_detail.nhn?bid=12166506)
+
+  이런 책들을 찾아보았을 수도 있습니다. 
+
+# Reddit 
+
+[레딧](https://www.reddit.com/)은 매우 광범위한 주제와 커뮤니티가 존재하는 거대 커뮤니티이지만 프로그래머들 또한 레딧에서 상당히 큰 생태계를 만들고 그곳에서도 매우 좋은 정보가 공유되고 있습니다. 여기에서는 가볍게 몇가지 서브레딧만 알아보고 나중에 여러분이 개인적으로 마음에 드는 서브레딧을 찾아보세요. 
+
+- [**programming** 서브 레딧](https://www.reddit.com/r/programming/)
+
+- [**sysadmin** 서브 레딧](https://www.reddit.com/r/sysadmin/)
+
+- [**ArtificialInteligence** 서브 레딧](https://www.reddit.com/r/ArtificialInteligence/)
+
+- [**Hacking_Tutorials** 서브 레딧](https://www.reddit.com/r/Hacking_Tutorials/)
+
+- [**learnprogramming** 서브 레딧](https://www.reddit.com/r/learnprogramming/)
+
+- [**MachineLearning** 서브 레딧](https://www.reddit.com/r/MachineLearning/)
+
+---
+
+# 리눅스 교재
+
+교재에서 다음 분량을 읽고 우분투 도커 컨테이너에서 실습해주세요. 사실 너무 열심히 읽지 않아도 됩니다. 즉, 막 외우려고 애쓰지 않아도 된다는 뜻입니다. 다만 꼭 "정독" 을 하시고 한번쯤 책에 있는 실습을 따라해주세요. 
+
+**(옵션)** 라고 되어있는 파트는 시간절약을 위해 넘겨도 됩니다.
+
+## Chapter 06
+
+- **276p ~ 290p, 292p ~ 295p 읽고 실습하기**
+
+  - 프로세스의 개념, 프로세스 관리 명령
+
+- **296p ~ 301p 읽고 실습하기**
+
+  - 포그라운드/백그라운드 프로세스와 작업 제어, 
+
+- **304p ~ 315p 읽고 실습하기**
+
+  - **(옵션)** 작업 예약
+---
+
 # Funny CLI 
 
-먼저 벌써 4일차까지 달려온 여러분들을 위해 머리를 좀 식히자는 의미에서 **퍼니 CLI**, 즉 실용성이 없이 순전히 재미를 목적으로 만들어진 **CLI** 들을 알아보겠습니다. 
+이제 여기까지 달려온 여러분들을 위해 머리를 좀 식히자는 의미에서 **퍼니 CLI**, 즉 실용성이 없이 순전히 재미를 목적으로 만들어진 **CLI** 들을 알아보겠습니다. 
 
 이 부분은 **실용성이 전혀 없기 때문에** 직접 실습하셔도 되고 안하셔도 됩니다. 또 **시간이 아깝다면 Funny CLI 부분을 넘겨도 됩니다**.
 
 > 이 **Funny CLI** 들 또한 이미 도커 컨테이너에 설치되어 있기 때문에 설치법은 모두 생략합니다. 각각의 공식 레포지토리에 들어가면 설치법을 알 수 있습니다. 
-
-> 모든 터미널 캡쳐는 **[Terminalizer](https://github.com/faressoft/terminalizer)** 를 사용했습니다.
 
 그러면 이제 도커 컨테이너에 접속해서 진행해주세요. 
 
@@ -324,25 +423,3 @@ $ python3 main.py test/3030.txt
 > 출처 : http://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
 
 의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 
-
----
-
-# 리눅스 교재
-
-교재에서 다음 분량을 읽고 우분투 도커 컨테이너에서 실습해주세요. 사실 너무 열심히 읽지 않아도 됩니다. 즉, 막 외우려고 애쓰지 않아도 된다는 뜻입니다. 다만 꼭 "정독" 을 하시고 한번쯤 책에 있는 실습을 따라해주세요. 
-
-**(옵션)** 라고 되어있는 파트는 시간절약을 위해 넘겨도 됩니다.
-
-## Chapter 06
-
-- **276p ~ 290p, 292p ~ 295p 읽고 실습하기**
-
-  - 프로세스의 개념, 프로세스 관리 명령
-
-- **296p ~ 301p 읽고 실습하기**
-
-  - 포그라운드/백그라운드 프로세스와 작업 제어, 
-
-- **304p ~ 315p 읽고 실습하기**
-
-  - **(옵션)** 작업 예약
