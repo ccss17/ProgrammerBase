@@ -4,6 +4,26 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 ---
 
+# gist
+
+[gist](https://gist.github.com/) 는 짤막한 파일을 빠르게 공유할 때 사용되는 **Github** 의 레포지토리 관리 플랫폼입니다. 
+
+실제로 저는 강의평가 설문조사 때 그 수많은 강의에 대한 평가가 약간 귀찮아서 다음과 같은 자동으로 최고 평점을 매길 수 있는 **Javascript** 코드를 짰었습니다. 
+
+```javascript
+for (let v of document.getElementsByTagName('input')){
+  if(v.getAttribute('name').includes('ans') &&
+     (v.getAttribute('value') == 5 || 
+     v.getAttribute('value') == 10 || 
+     v.getAttribute('value') == 15))
+    v.click();
+}
+```
+
+하지만 이 코드 또한 카톡이나 메일로 관리할 수는 없으니 **Git** 같은 VCS 를 사용해야 할텐데, 레포지토리로 관리하자니 이렇게 짧은 코드를 그렇게까지 관리해야 한다는 것이 
+
+---
+
 # Pull Requests
 
 **Github** 협업하기의 기본인 **Pull Request** 는 말 그대로 **pull** 해주기를 요청하는 것입니다. 주로 같이 프로젝트를 하는 사람끼리 **Pull Rquest** 를 하지만, **Github** 에서 오픈소스를 많이 찾아다니면서 마음이 드는 오픈소스를 사용하다가 그것을 발전시키고 싶다면 그 레포지토리를 좀 더 낫게 고친 다음 원작자에게 **Pull Request** 를 할 수도 있습니다. 이러한 오픈소스 활동은 전세계에서 수없이 많이 이루어지고 있습니다. 여러분도 이 오픈소스 활동에 참여하여 여러분만의 창의성을 발휘해서 프로그램을 발전시킨 다음 **Pull Request** 를 꾸준히 한다면 여러분의 실력과 명성도 꾸준히 쌓여나갈 것입니다. 
