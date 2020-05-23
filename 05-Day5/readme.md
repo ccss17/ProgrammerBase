@@ -8,9 +8,9 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 - [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
 
-  - [.gitignore]()
+  - [.gitignore](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gitignore)
 
-    - [.gitignore 의 편리한 기능 ]()
+    - [.gitignore 의 편리한 기능 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gitignore-%EC%9D%98-%ED%8E%B8%EB%A6%AC%ED%95%9C-%EA%B8%B0%EB%8A%A5)
 
   - [Git Branching](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-branching)
 
