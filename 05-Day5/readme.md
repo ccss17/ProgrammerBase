@@ -4,6 +4,64 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 ---
 
+# Table of Contents
+
+- [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
+
+  - [Git Branching](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-branching)
+
+    - [브랜치란? ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80)
+
+    - [브랜치 생성](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%83%9D%EC%84%B1)
+
+    - [브랜치 이주 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%9D%B4%EC%A3%BC)
+
+    - [브랜치 병합 시나리오 (1) - Fast-forward](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-1---fast-forward)
+
+    - [브랜치 병합 시나리오 (2) - Merge Conflict](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-2---merge-conflict)
+
+  - [user.github.io](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#usergithubio)
+
+  - [gist](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gist)
+
+    - [gist 사용법 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gist-%EC%82%AC%EC%9A%A9%EB%B2%95)
+
+    - [gist 명령어 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gist-%EB%AA%85%EB%A0%B9%EC%96%B4)
+
+  - [Pull Request](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#pull-request)
+
+    - [1. fork 하고 clone 하기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#1-fork-%ED%95%98%EA%B3%A0-clone-%ED%95%98%EA%B8%B0)
+
+    - [2. 편집하고 push 하기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#2-%ED%8E%B8%EC%A7%91%ED%95%98%EA%B3%A0-push-%ED%95%98%EA%B8%B0)
+
+    - [3. **pull request** 하기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#3-pull-request-%ED%95%98%EA%B8%B0)
+
+- [좋은 정보 얻기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%A2%8B%EC%9D%80-%EC%A0%95%EB%B3%B4-%EC%96%BB%EA%B8%B0)
+
+  - [Awesome Repository](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#awesome-repository)
+
+  - [Hacker News](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#hacker-news)
+
+  - [Reddit ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#reddit)
+
+  - [Github trending](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#github-trending)
+
+  - [Stackoverflow Survey]()
+
+  - [검색](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EA%B2%80%EC%83%89)
+
+    - [영어 검색](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%98%81%EC%96%B4-%EA%B2%80%EC%83%89)
+
+    - [아니 그럼 어떻게 검색해야 하나?](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%95%84%EB%8B%88-%EA%B7%B8%EB%9F%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B2%80%EC%83%89%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98)
+
+    - [원작자 찾기 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%9B%90%EC%9E%91%EC%9E%90-%EC%B0%BE%EA%B8%B0)
+
+- [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
+
+- [Funny CLI ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#funny-cli)
+
+---
+
 # Git 과 Github 못다한 이야기
 
 우리는 **Git** 과 **Github** 의 가장 기초적인 부분을 이미 다뤘었는데 여기에서는 **Git** 과 **Github** 에 관하여 아직 하지 못한 이야기를 해보겠습니다. 
@@ -558,6 +616,10 @@ $ g psom
 [**Github trending**](https://github.com/trending) 은 현재 **Github** 에서 가장 핫하고 트렌드한 레포지토리가 올라오는 곳입니다. 이곳에서도 좋은 정보를 많이 얻을 수 있습니다. 왜냐하면 전세계의 개발자들이 최근동안 가장 관심을 기울이고 있는 레포지토리들이 올라오기 때문입니다. 
 
 ![firefox_FViJ96Yk9y](https://user-images.githubusercontent.com/16812446/82721758-4d8c8300-9cfb-11ea-96de-2bec87c27c46.png)
+
+## Stackoverflow Survey
+
+Stackoverflow Survey 도 좋은 정보를 얻을 수 있는 소스가 됩니다. 하지만 이미 다뤘기 때문에 넘기겠습니다.
 
 ## 검색
 

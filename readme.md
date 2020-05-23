@@ -66,33 +66,38 @@
 
 ### [Day 1](01-Day1/readme.md)
 
-- [**Docker** 사용법](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#docker)
+- [Docker](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#docker)
 
-- 교재 Ch01, Ch02 
+- [도커 요약](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%8F%84%EC%BB%A4-%EC%9A%94%EC%95%BD)
+  
+- [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
+
 
 ### [Day 2](02-Day2/readme.md)
 
-- 교재 Ch04
+- [리눅스 교재 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
-- [stackoverflow survey](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#stackoverflow-survey)
+- [Stackoverflow Survey](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#stackoverflow-survey)
 
-- [**Git** 사용법](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git)
+- [Git](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git)
 
-- [**Github** 사용법](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github)
+- [Github](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github)
 
-- [**VSCode** 사용법](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#vscode)
+- [VSCode](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#vscode)
 
-- [**Markdown** 파일](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#markdown)
+- [Markdown ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#markdown)
 
 ### [Day 3](03-Day3/readme.md)
 
-- 교재 Ch05
+- [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
-- [기초 `vim`](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#vim)
+- [vim](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#vim)
 
-- [기초 `tmux`](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#tmux)
+- [tmux](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#tmux)
 
 ### [Day 4](04-Day4/readme.md)
+
+- [CLI](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli)
 
 - [CLI 업그레이드하기](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C%ED%95%98%EA%B8%B0)
 
@@ -100,35 +105,41 @@
 
 - [`bash` ➜ `zsh` - 더 빨라진 쉘](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#bash--zsh---%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EC%89%98)
 
-- [더 빨라진 `tmux`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-tmux)
+- [더 빨라진 tmux](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-tmux)
 
 - [더 빨라진 vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim)
 
-- [**VSCode** 업그레이드하기](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vscode-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C)
+- [VSCode 업그레이드 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vscode-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C)
 
 ### [Day 5](05-Day5/readme.md)
 
-- **Git Branching**
+- [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
 
-- **user.github.io**
+  - [Git Branching](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-branching)
 
-- **gist**
+  - [user.github.io](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#usergithubio)
 
-- **Pull Request**
+  - [gist](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gist)
 
-- **Awesome Repository**
+  - [Pull Request](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#pull-request)
 
-- **Hacker News**
+- [좋은 정보 얻기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%A2%8B%EC%9D%80-%EC%A0%95%EB%B3%B4-%EC%96%BB%EA%B8%B0)
 
-- **Reddit**
+  - [Awesome Repository](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#awesome-repository)
 
-- **Github trending**
+  - [Hacker News](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#hacker-news)
 
-- **검색**
+  - [Reddit ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#reddit)
 
-- 교재 Ch06, Ch10
+  - [Github trending](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#github-trending)
 
-- **Funny CLI**
+  - [Stackoverflow Survey]()
+
+  - [검색](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EA%B2%80%EC%83%89)
+
+- [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
+
+- [Funny CLI ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#funny-cli)
 
 ## Rule
 

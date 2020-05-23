@@ -4,6 +4,140 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 ---
 
+# Table of Contents
+
+- [CLI](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli)
+
+- [CLI 업그레이드하기](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C%ED%95%98%EA%B8%B0)
+
+  - [dotfiles](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#dotfiles)
+
+  - [alias - 더 빨라진 명령 입력 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#alias---%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EB%AA%85%EB%A0%B9-%EC%9E%85%EB%A0%A5)
+
+  - [`ls` ➜ `lsd`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#ls--lsd)
+
+  - [`cat` ➜ `bat`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cat--bat)
+
+  - [`xxd` ➜ `hexyl`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#xxd--hexyl)
+
+  - [`find` ➜ `fd`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#find--fd)
+
+  - [`top` ➜ `htop` ➜ `gotop`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#top--htop--gotop)
+
+  - [`man` ➜ `tldr` ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#man--tldr)
+
+- [더 빨라진 git](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-git)
+
+- [`bash` ➜ `zsh` - 더 빨라진 쉘](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#bash--zsh---%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EC%89%98)
+
+  - [테마](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%ED%85%8C%EB%A7%88)
+
+  - [`tab-completion` 기능](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#tab-completion-%EA%B8%B0%EB%8A%A5)
+
+  - [`auto-completion` 기능](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#auto-completion-%EA%B8%B0%EB%8A%A5)
+
+  - [`z` 명령어 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#z-%EB%AA%85%EB%A0%B9%EC%96%B4)
+
+  - [`auto-suggestions` 기능](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#auto-suggestions-%EA%B8%B0%EB%8A%A5)
+
+- [더 빨라진 tmux](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-tmux)
+
+  - [더 빨라진 alias](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-alias)
+
+  - [더 이뻐진 테마 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EC%9D%B4%EB%BB%90%EC%A7%84-%ED%85%8C%EB%A7%88)
+
+  - [더 빨라진 메타 키](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EB%A9%94%ED%83%80-%ED%82%A4)
+
+  - [더 빨라진 터미널 분할 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%84%B0%EB%AF%B8%EB%84%90-%EB%B6%84%ED%95%A0)
+
+  - [더 빨라진 화면 생성 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%99%94%EB%A9%B4-%EC%83%9D%EC%84%B1)
+
+  - [더 빨라진 터미널 이동](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9D%B4%EB%8F%99)
+
+  - [더 빨라진 터미널 크기 조절](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%84%B0%EB%AF%B8%EB%84%90-%ED%81%AC%EA%B8%B0-%EC%A1%B0%EC%A0%88)
+
+- [더 빨라진 vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim)
+
+  - [더 빨라진 alias](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-alias-1)
+
+  - [vim-plug](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim-plug)
+
+  - [vimrc](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vimrc)
+
+    - [더 이뻐진 테마 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EC%9D%B4%EB%BB%90%EC%A7%84-%ED%85%8C%EB%A7%88-1)
+
+    - [더 빨라진 `vim` 종료/저장](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim-%EC%A2%85%EB%A3%8C%EC%A0%80%EC%9E%A5)
+
+  - [NERDTree ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#nerdtree)
+
+    - [더 빨라진 화면 이동 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%99%94%EB%A9%B4-%EC%9D%B4%EB%8F%99)
+
+    - [더 빨라진 `vim` 화면크기조정](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim-%ED%99%94%EB%A9%B4%ED%81%AC%EA%B8%B0%EC%A1%B0%EC%A0%95)
+
+  - [NERDCommentor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#nerdcommentor)
+
+  - [vim-multiple-cursors](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim-multiple-cursors)
+
+- [VSCode 업그레이드 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vscode-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C)
+
+  - [테마 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%ED%85%8C%EB%A7%88-1)
+
+    - [기본 테마](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EA%B8%B0%EB%B3%B8-%ED%85%8C%EB%A7%88)
+
+    - [Dank Neon](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#dank-neon)
+
+    - [Andromeda](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#andromeda)
+
+    - [2077](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#2077)
+
+    - [Eva Theme](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#eva-theme)
+
+  - [유용한 확장 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%99%95%EC%9E%A5)
+
+    - [Git Graph ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#git-graph)
+
+    - [Code Runner](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#code-runner)
+
+    - [mdmath](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#mdmath)
+
+    - [Bracket Pair Colorizer 2](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#bracket-pair-colorizer-2)
+
+    - [Prettier - Code formatter](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#prettier---code-formatter)
+
+    - [Diff Tool](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#diff-tool)
+
+    - [Material Icon Theme](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#material-icon-theme)
+
+    - [Glassit-VSC](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#glassit-vsc)
+
+  - [Vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim)
+
+    - [Python - List to Dictionary](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---list-to-dictionary)
+
+    - [Python - copy & paste](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---copy--paste)
+
+    - [Python - multi cursor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---multi-cursor)
+
+    - [Python - rename argument](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---rename-argument)
+
+    - [C 언어 - 변수 한 줄로 선언하기](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#c-%EC%96%B8%EC%96%B4---%EB%B3%80%EC%88%98-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%84%A0%EC%96%B8%ED%95%98%EA%B8%B0)
+
+    - [Markdown - example 1](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-1)
+
+    - [Markdown - example 2](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-2)
+
+    - [Python - multicursor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---multicursor)
+
+    - [Markdown - example 3](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-3)
+
+  - [디버깅 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%94%94%EB%B2%84%EA%B9%85)
+
+    - [Python 디버깅](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python-%EB%94%94%EB%B2%84%EA%B9%85)
+
+- [과제 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EA%B3%BC%EC%A0%9C)
+
+---
+
 # CLI
 
 **CLI** 란 **Command Line Interface** 의 줄임말로써 말 그대로 터미널 인터페이스만 제공하는 프로그램을 뜻합니다. 반대로 **GUI**, 즉 **Graphic User Interface** 에는 우리가 이미 익숙해져 있습니다. 카카오톡, 배틀그라운드, 한컴, 파워포인트, `VSCode` 같은 게 전부 다 **GUI** 이기 때문이죠. 
@@ -262,7 +396,7 @@ $ hexyl lolcat | less
 
 ## `top` ➜ `htop` ➜ `gotop`
 
-기존의 `top` 은 다음과 같이 약간은 밋밋하게 시스템의 상태를 출력해주었습니다.
+`top` 명령어는 시스템의 리소스 상태(RAM, CPU 등) 을 출력해주는 좋은 프로그램입니다. 기존의 `top` 은 다음과 같이 약간은 밋밋하게 시스템의 상태를 출력해주었습니다.
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/82143677-8f8f7200-9880-11ea-9f4e-7cbf6ed05b69.gif" width="50%" height="auto">
@@ -300,7 +434,7 @@ $ gotop
 
 - 실습 
 
-  `tar` 명령어는 파일과 디렉토리를 압축할 수 있는 좋은 명령어지만 여러가지 옵션이 약간 복잡해서 기억하기 힘들 때가 있습니다. 그럴 때는 다음 명령어를 통해 `tar` 의 사용법을 확인해야 합니다. 
+  `tar` 명령어는 파일과 디렉토리를 압축할 수 있는 좋은 명령어입니다. 그러나 여러가지 옵션이 약간 복잡해서 기억하기 힘들 때가 있습니다. 그럴 때는 다음 명령어를 통해 `tar` 의 사용법을 확인해야 합니다. 
 
   ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -823,7 +957,7 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 > 직관적으로 알 수 있듯이 `<C-s>` 는 <kbd>Ctrl</kbd>+<kbd>s</kbd> 를 뜻하고 `<Up>` 은 <kbd>&uarr;</kbd> 를 뜻합니다.
 
-## 더 이뻐진 테마 
+### 더 이뻐진 테마 
 
 현재 설정된 `vim` 의 컬러테마는 다음과 같은 `onedark` 입니다. 
 

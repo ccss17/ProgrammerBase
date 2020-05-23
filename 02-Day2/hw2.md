@@ -6,9 +6,13 @@
 
     - 예를 들어 [스택 오버플로우 설문조사](https://insights.stackoverflow.com/survey/2019) 에는 실제로 [Most Loved, Dreaded, and Wanted Languages](https://insights.stackoverflow.com/survey/2019#technology-_-most-loved-dreaded-and-wanted-languages) 라는 설문조사가 있었는데 여기에서 **Rust** 라는 언어가 1위를 했습니다. 본인이 이 설문조사에 관심이 생겼다면, 이게 어떤 설문조사고 **Rust** 가 어떤 언어이길래 상위 랭크를 했는지 가볍게 조사하여 학우들에게 발표할 수 있을만큼 `readme.md` 에 작성하면 됩니다. 
 
+    - 정말 간단하게만 조사해도 됩니다. 과제의 목적이 `readme.md` 파일을 **Github** 에 올려서 `git` 과 `vim` 또는 **VSCode** 를 연습하는 것이기 때문입니다.
+
 2. 자신이 만든 프로그램 중에서 공유하고 싶은 프로그램을 레포지토리로 만들고 `readme.md` 에 설명하여 **Github** 에 올리기. 
 
     - 예를 들어 https://github.com/ccss17/nonogram 처럼 하면 됩니다. 이것은 실제로 제가 만든 네모로직 해결 자동화 프로그램이고 공유하고 싶어서 `readme.md` 를 작성하여 **Github** 에 공유했습니다. 
+
+    - 정말 간단하게만 설명해도 됩니다. 과제의 목적이 `readme.md` 파일을 **Github** 에 올려서 `git` 과 `vim` 또는 **VSCode** 를 연습하는 것이기 때문입니다.
 
 3. 오늘 알아본 내용과 관련된 내용인데 꼭 발표해서 학우들과 나누고 싶은 내용이 있다면 `readme.md` 에 설명하여 **Github** 에 올려주세요. 
 
