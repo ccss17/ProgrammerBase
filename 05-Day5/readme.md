@@ -8,6 +8,10 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 - [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
 
+  - [.gitignore]()
+
+    - [.gitignore 의 편리한 기능 ]()
+
   - [Git Branching](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-branching)
 
     - [브랜치란? ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80)
@@ -65,6 +69,43 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 # Git 과 Github 못다한 이야기
 
 우리는 **Git** 과 **Github** 의 가장 기초적인 부분을 이미 다뤘었는데 여기에서는 **Git** 과 **Github** 에 관하여 아직 하지 못한 이야기를 해보겠습니다. 
+
+## .gitignore
+
+프로젝트를 진행하다보면 **Git** 이 추적하지 않았으면 하는 파일이 생깁니다. 가령 **C 언어** 프로그램을 코딩하다보면 컴파일된 바이너리 파일이 생기는데 그런 파일은 레포지토리에 포함시켜서는 안됩니다. 또 프로젝트에 대한 아이디어를 **idea.txt** 라는 파일에 기록해놓았다면 그 파일은 **Git** 이 추적하면서 레포지토리에 포함시키면 안 됩니다.
+
+이런 파일들의 이름을 `.gitignore` 파일을 만들어서 기록해두면 **Git** 이 그 파일들을 더 이상 추적하지 않습니다. 즉 블랙리스트입니다.
+
+- **`.gitignore` : 이 파일에 파일 이름을 넣으면 git 이 변경사항을 더 이상 추적하지 않는다.**
+
+  - 가령 `idea.txt` 파일을 더 이상 추적하고 싶지 않고 싶다고 하겠습니다. 또 **C 언어** 소스가 컴파일된 바이너리 파일들을 `bin/` 디렉토리에 모아두었다면 이 디렉토리도 **Git** 이 더 이상 추적하면 안됩니다.
+
+    이 경우 레포지토리에 `.gitignore` 파일을 만들어 다음과 같이 블랙리스트를 작성합니다. 
+
+    ```.gitignore
+    idea.txt
+    bin/
+    ```
+
+    이렇게 하면 하위 디렉토리에서 `idea.txt` 가 생성되어도 **Git** 이 추적하지 않습니다. 
+
+
+### .gitignore 의 편리한 기능 
+
+하지만 프로젝트가 조금만 커져도 블랙리스트에 넣고 싶은 파일이 많아져서 `.gitignore` 에 작성해야할 블랙리스트 파일들이 너무 많아서 귀찮습니다. 그래서 `.gitignore` 는 특수문자를 통해 다음과 같은 편리한 기능을 제공합니다. 
+
+<div align="center">
+
+|작성 예시 | 기능 |
+|:---|:---|
+|`*.a`|모든 `.a` 파일들을 무시한다. |
+|`!lib.a`|모든 `.a` 파일들을 무시하기로 했으나 `lib.a` 파일만 예외로 한다. |
+|`/idea.txt`|현재 디렉토리의 `idea.txt` 만 무시한다. |
+|`doc/*.txt`|`doc/notes.txt` 같이 `doc/` 디렉토리의 모든 `.txt` 파일을 무시한다.|
+|`doc/**/*.txt`|`doc/` 디렉토리와 모든 하위 디렉토리의 `.txt` 파일을 무시한다.|
+
+</div>
+
 
 ## Git Branching
 
@@ -881,3 +922,12 @@ $ python3 main.py test/3030.txt
 > 출처 : http://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
 
 의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 
+
+---
+
+# 좀 철학적인 이야기 
+
+
+
+
+
