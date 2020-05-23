@@ -272,6 +272,8 @@ $ g cm "merge testing"
 
 > 지금까지 **Git Branching** 을 매우 간단하게 알아보았는데, 나중에 https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell 을 통하여 **Git Branching** 의 더욱 강력한 기능을 추가 학습하시길 강력하게 추천합니다.
 
+> **VSCode** 에서는 왼쪽 하단부의 **Branch** 를 클릭하거나 명령 팔레트에서 **branch** 를 검색하는 것으로 매우 쉽게 **Branch** 를 생성하거나 이주할 수 있습니다.
+
 ## user.github.io
 
 user.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니다. 저의 **Github** 아이디는 `ccss17` 인데 이 아이디로 user 를 치환하여 ccss17.github.io 에 접속해보면 제가 관리하고 있는 블로그가 보입니다. 이 블로그는 https//github.com/ccss17/ccss17.github.io 의 `index.html` 파일과 각각의 `*.html` 파일들이 랜더링 된 것입니다. 
@@ -306,7 +308,7 @@ for (let v of document.getElementsByTagName('input')){
 
 하지만 이 코드 또한 카톡이나 메일로 관리할 수는 없으니 **Git** 같은 VCS 를 사용해야 할텐데, 레포지토리로 관리하자니 이렇게 짧은 코드를 그렇게까지 관리해야 한다는 것이 억울했습니다. 그래서 [gist 로 관리하는 레포지토리](https://gist.github.com/ccss17/ff6944df7e8f3c9ab518629915857d85)를 하나 만들었습니다.
 
-## gist 사용법 
+### gist 사용법 
 
 [gist](https://gist.github.com/) 사용법은 매우 간단합니다. https://gist.github.com/ 에 들어가면 다짜고짜 제목과 파일이름 내용을 입력하는 텍스트 필드가 나오는데 이 3가지 텍스트 필드를 입력하고 <kbd>Create secret gist</kbd> 또는 <kbd>Create public gist</kbd> 버튼을 누르면 그게 다입니다. 그러면 gist 가 생성되는데 URL 을 다음과 같이 어디에서든 **clone** 할 수 있습니다. 
 
@@ -314,7 +316,7 @@ for (let v of document.getElementsByTagName('input')){
 $ g cl https://gist.github.com/ccss17/ff6944df7e8f3c9ab518629915857d85
 ```
 
-## gist 명령어 
+### gist 명령어 
 
 **gist** 를 매우 쉽게 사용할 수 있게 해주는 [`gist`](https://github.com/defunkt/gist) 명령어가 있습니다. 이 명령어를 사용하는 방법은 매우 간단합니다. 
 
@@ -326,9 +328,7 @@ $ g cl https://gist.github.com/ccss17/ff6944df7e8f3c9ab518629915857d85
 
     - `test.py` 를 **gist** 에 공유하고 싶다면 `gist test.py` 를 입력하면 끝이다.
 
----
-
-# Pull Request
+## Pull Request
 
 **Github** 협업하기의 기본인 **Pull Request** 는 말 그대로 **pull** 해주기를 요청하는 것입니다. 주로 같이 프로젝트를 하는 사람끼리 **Pull Rquest** 를 하지만, **Github** 에서 오픈소스를 많이 찾아다니면서 마음이 드는 오픈소스를 사용하다가 그것을 발전시키고 싶다면 그 레포지토리를 좀 더 낫게 고친 다음 원작자에게 **Pull Request** 를 할 수도 있습니다. 이러한 오픈소스 활동은 전세계에서 수없이 많이 이루어지고 있습니다. 여러분도 이 오픈소스 활동에 참여하여 여러분만의 창의성을 발휘해서 프로그램을 발전시킨 다음 **Pull Request** 를 꾸준히 한다면 여러분의 실력과 명성도 꾸준히 쌓여나갈 것입니다. 
 
@@ -344,7 +344,7 @@ $ g cl https://gist.github.com/ccss17/ff6944df7e8f3c9ab518629915857d85
 
 이제 이 과정을 제가 **Pull Request** 를 마음껏 연습할 수 있도록 만든 레포지토리 https://github.com/ccss17/pull-request-me 에서 실습해보겠습니다. 
 
-## 1. fork 하고 clone 하기
+### 1. fork 하고 clone 하기
 
 그러면 https://github.com/ccss17/pull-request-me 에 들어가서 오른쪽 상단부를 보세요. 그러면 다음과 같이 <kbd>Fork</kbd> 버튼이 보입니다. 
 
@@ -368,7 +368,7 @@ $ g cl https://github.com/hgu-student/pull-request-me
 
 도커 컨테이너에서 해도 되고 로컬 컴퓨터에서 **VSCode** 로 해도 됩니다. 그리고 사실 **당장 실습하고 싶지 않은 분들은 안하셔도 됩니다**. 
 
-## 3. 편집하고 push 하기
+### 2. 편집하고 push 하기
 
 레포지토리를 **clone** 해보면 `readme.md` 와 `main.c` 파일이 보입니다. 여기에서는 여러분이 `main.c` 를 살펴보다가 코드 포맷이 상당히 마음에 들지 않았다고 가정하겠습니다. 실제로 다음과 같이 `main.c` 를 여러보니 코드 포맷이 엉망입니다. 
 
@@ -400,7 +400,7 @@ $ g cm "메인 함수를 고침!"
 $ g psom
 ```
 
-## 4. **pull request** 하기
+### 3. **pull request** 하기
 
 그런데 여러분의 레포지토리가 업데이트 되었을 뿐 원작자의 레포지토리가 업데이트 된 것은 아닙니다. 그래서 원작자에게 어서 빨리 내 레포지토리를 **pull** 해주세요 라고 말하기 위하여 **Pull Request** 를 합니다. 다음 사진과 같이 자신의 레포지토리의 왼쪽 상당부를 보면 <kbd>Pull requests</kbd> 버튼이 있습니다. 이 버튼을 눌러 **Pull Request** 페이지로 들어갑니다. 
 
@@ -426,11 +426,11 @@ $ g psom
 
 ---
 
+# 좋은 정보 얻기
+
 그러면 이제부터 좋은 정보나 최신기술을 어디에서 찾을까 에 대한 대답을 알아보겠습니다. 하지만 부족한 제가 알아볼 수 있는 한 알아보고 저만의 결론을 내린 것이기 때문에 이것들이 최선의 해답이 되지 않을 거라는 것은 명백합니다. 그러니 각자 제가 드리는 지식에 안주하지 말고 최신동향과 좋은정보에 예민해지려고 노력해야 합니다. 
 
----
-
-# Awesome Repository
+## Awesome Repository
 
 프로그래머만큼 최신기술과 좋은정보에 민감해야만 하는 직종은 없을겁니다. 그래서 프로그래머들은 각자의 분야에서 최신기술이나 좋은정보를 모아둔 **Awesome Repository** 를 만들기로 했고 다음과 같은 좋은 레포지토리들이 탄생했습니다. 
 
@@ -465,17 +465,19 @@ $ g psom
 
 정답은 **Awesome Repository** 들을 모아둔 **Awesome Repository** 에 방문하는 것입니다.
 
+<div align="center">
+
 |Awesome |Repository|
 |:---:|:---|
 |**Awesome** |  https://github.com/sindresorhus/awesome|
+
+</div>
 
 이 레포지토리는 **Github** 레포지토리의 스타가 **470,793** 개([2020/05/22 기준](https://gitstar-ranking.com/)) 로 가장 많은 [sindresorhus](https://github.com/sindresorhus) 가 **Awesome Repository** 들을 모아둔 레포지토리로써 이 단일 레포지토리에 스타가 약 **134,000** 개가 달려있습니다. 
 
 여기에서 각자 관심있는 주제나 분야, 툴들의 **Awesome** 한 정보들을 찾아보세요. 
 
----
-
-# Hacker News
+## Hacker News
 
 > 참고 : https://en.wikipedia.org/wiki/Hacker_News
 
@@ -535,7 +537,7 @@ $ g psom
 
   이런 책들을 찾아보았을 수도 있습니다. 
 
-# Reddit 
+## Reddit 
 
 [레딧](https://www.reddit.com/)은 매우 광범위한 주제와 커뮤니티가 존재하는 거대 커뮤니티이지만 프로그래머들 또한 레딧에서 상당히 큰 생태계를 만들고 그곳에서도 매우 좋은 정보가 공유되고 있습니다. 여기에서는 가볍게 몇가지 서브레딧만 알아보고 나중에 여러분이 개인적으로 마음에 드는 서브레딧을 찾아보세요. 
 
@@ -551,23 +553,25 @@ $ g psom
 
 - [**MachineLearning** 서브 레딧](https://www.reddit.com/r/MachineLearning/)
 
-# Github trending
+## Github trending
 
 [**Github trending**](https://github.com/trending) 은 현재 **Github** 에서 가장 핫하고 트렌드한 레포지토리가 올라오는 곳입니다. 이곳에서도 좋은 정보를 많이 얻을 수 있습니다. 왜냐하면 전세계의 개발자들이 최근동안 가장 관심을 기울이고 있는 레포지토리들이 올라오기 때문입니다. 
 
-# 검색
+![firefox_FViJ96Yk9y](https://user-images.githubusercontent.com/16812446/82721758-4d8c8300-9cfb-11ea-96de-2bec87c27c46.png)
 
-## 영어 검색
+## 검색
+
+### 영어 검색
 
 영어로 검색해야 좋은 정보를 얻을 수 있습니다. 
 
-> 이것은 너무 당연해서 여러분을 무시하는듯 보일 수도 있지만 한동대학교에 처음 입학한 새내기도 GBC 를 수강하므로 여러분의 원성을 무릅쓰고 다시 한 번 영어 검색을 강조하겠습니다.
+> 이것은 너무 당연하지만 한동대학교에 처음 입학한 새내기도 GBC 를 수강하므로 다시 한 번 영어 검색을 강조하겠습니다.
 
-이것은 너무 당연한데 한글로 검색하면 대한민국 인구가 5천만명에 불과한 반면 영어권 인구는 약 [11억명](https://ko.wikipedia.org/wiki/%EC%98%81%EC%96%B4_%EC%82%AC%EC%9A%A9%EC%9E%90_%EC%88%98%EC%97%90_%EB%94%B0%EB%A5%B8_%EB%82%98%EB%9D%BC_%EB%AA%A9%EB%A1%9D) 입니다. **Google** 은 [페이지 순위 매기기 알고리즘](https://en.wikipedia.org/wiki/PageRank) 으로 여러분이 검색하는 키워드로 필터링 된 웹 페이지 중에서 사람들이 가장 많이 방문할 것같은 페이지 순서대로 검색 결과를 나열합니다. 그러므로 영어로 검색하면 11억 명의 거대한 집단지성이 도출한 가장 가치있는 결론을 **Google** 이 맨 위로 올려서 보여줍니다. 
+이것은 너무 당연한데 한글로 검색하면 대한민국 인구가 5천만명에 불과한 반면 영어권 화자 인구는 약 [11억명](https://ko.wikipedia.org/wiki/%EC%98%81%EC%96%B4_%EC%82%AC%EC%9A%A9%EC%9E%90_%EC%88%98%EC%97%90_%EB%94%B0%EB%A5%B8_%EB%82%98%EB%9D%BC_%EB%AA%A9%EB%A1%9D) 입니다. **Google** 은 [페이지 순위 매기기 알고리즘](https://en.wikipedia.org/wiki/PageRank) 으로 여러분이 검색하는 키워드로 필터링 된 웹 페이지 중에서 사람들이 가장 많이 방문할 것같은 페이지 순서대로 검색 결과를 나열합니다. 그러므로 영어로 검색하면 11억 명의 거대한 집단지성이 도출한 가장 가치있는 결론을 **Google** 이 맨 위로 올려서 보여줍니다. 
 
-이제 질문을 바꿔보겠습니다. 만약 여러분이 한 회사의 사장이라면 5천만명 중에서 1등한 사람을 뽑겠습니까, 11억명 중에서 1등한 사람을 뽑겠습니까. 이 질문에 대한 대답은 객관적으로 당연히 11억명 중에서 1등한 사람을 뽑아야 합니다. 
+> 이제 질문을 바꿔보겠습니다. 만약 여러분이 한 회사의 사장이라면 5천만명 중에서 1등한 사람을 뽑겠습니까, 11억명 중에서 1등한 사람을 뽑겠습니까. 이 질문에 대한 대답은 객관적으로 당연히 11억명 중에서 1등한 사람을 뽑아야 합니다. 
 
-또 다시 질문을 바꿔보겠습니다. 그러면 11억명 중에서 1등인 그 사람이 영어를 쓰는데 나는 영어를 못해서 말이 안통해서 같이 일을 못한다면 어쩔 수 없이 5천만명 중에서 1등한 사람과 일해야겠습니까, 아니면 영어를 어떻게든 극복한 다음에 11억명 중에서 1등한 사람과 일해야겠습니까. 사실 이건 개인의 가치관의 차이가 있기 때문에 객관적인 확답을 내리긴 어렵지만 저는 개인적으로 영어를 극복한 다음 11억명 중에서 1등한 사람과 일해야 한다고 생각합니다. 그러니까 제 개인적인 의견은 어떻게든 영어의 장벽을 극복하고 한글 검색 보다 영어로 검색하는 것이 좋은 것 같다는 의견입니다.
+> 또 다시 질문을 바꿔보겠습니다. 그러면 11억명 중에서 1등인 그 사람이 영어를 쓰는데 나는 영어를 못해서 말이 안통해서 같이 일을 못한다면 어쩔 수 없이 5천만명 중에서 1등한 사람과 일해야겠습니까, 아니면 영어를 어떻게든 극복한 다음에 11억명 중에서 1등한 사람과 일해야겠습니까. 사실 이건 개인의 가치관의 차이가 있기 때문에 객관적인 확답을 내리긴 어렵지만 저는 개인적으로 영어를 극복한 다음 11억명 중에서 1등한 사람과 일해야 한다고 생각합니다. 그러니까 제 개인적인 의견은 어떻게든 영어의 장벽을 극복하고 한글 검색 보다 영어로 검색하는 것이 좋은 것 같다는 의견입니다.
 
 ### 아니 그럼 어떻게 검색해야 하나?
 
@@ -591,15 +595,15 @@ https://support.google.com/websearch/answer/2466433?hl=en
 
 > 구글 검색 명령어가 얼마나 강력한지 이것을 사용한 [구글 해킹](https://ko.wikipedia.org/wiki/%EA%B5%AC%EA%B8%80_%ED%95%B4%ED%82%B9) 이라는 용어도 생겼습니다. 
 
-## 원작자 찾기 
+### 원작자 찾기 
 
 검색할 때는 항상 원작자를 찾아야 합니다. 여러분이 기독교인이라면 세상과 인간의 원작자인 하나님과 성경을 찾을 것입니다. 갤럭시를 쓰고 있는데 그것에 문제가 생겼다면 그것의 원작자인 삼성을 찾아가야 합니다. 하지만 코딩할 때 문제가 생겨서 검색할 때를 보면 꽤 많은 학생들이 원작자의 공식 문서를 먼저 찾기보다 2차 창작물, 즉 블로그나 문답사이트부터 찾는 것을 볼 수 있습니다. 
 
 하지만 언제나 원작자의 공식 문서를 먼저 찾아보는 것이 순서입니다. 그것이 가장 정확하고 명료한 설명이기 때문입니다. 그런데 원작자의 글이 너무 어려워서 이해가 안되면 그 다음에나 2차 창작물, 즉 블로그나 문답사이트를 알아보아야 합니다. 
 
-- 가령 **Python** 에서 `numpy` 를 사용하던 중 `where` 이라는 함수에 대한 이해가 필요해졌습니다. 그러면 **Google** 에 **python numpy where** 이라고 검색합니다. 그러면 **Google** 이 다음과 같이 원작자의 글 https://numpy.org/doc/stable/reference/generated/numpy.where.html 을 1등으로 추천해주는 것을 볼 수 있습니다. 
+- 가령 **Python** 에서 `numpy` 를 사용하던 중 `where` 이라는 함수에 대한 이해가 필요해졌습니다. 그러면 **Google** 에 **python numpy where** 이라고 검색합니다. 그러면 **Google** 이 다음과 같이 [원작자의 글](https://numpy.org/doc/stable/reference/generated/numpy.where.html) 을 1등으로 추천해주는 것을 볼 수 있습니다. 
 
-  <img src="https://user-images.githubusercontent.com/16812446/82700549-58b6c300-9ca9-11ea-9ed0-158ed7ac601e.png" width="50%" height="auto">
+  ![firefox_hLynsSG3O4](https://user-images.githubusercontent.com/16812446/82721812-f0dd9800-9cfb-11ea-9600-fbaa2572c8ec.png)
 
 ---
 

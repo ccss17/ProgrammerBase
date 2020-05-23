@@ -4,6 +4,30 @@ GBC 첫번째 과정 **Programmer Base** 의 1일차 내용입니다.
 
 ---
 
+# Table of Contents
+
+- [Docker](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#docker)
+
+  - [도커의 중요성](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%8F%84%EC%BB%A4%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1)
+
+  - [도커 설치](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%8F%84%EC%BB%A4-%EC%84%A4%EC%B9%98)
+
+  - [도커 초간단 사용법](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%8F%84%EC%BB%A4-%EC%B4%88%EA%B0%84%EB%8B%A8-%EC%82%AC%EC%9A%A9%EB%B2%95)
+
+    - (1) 컨테이너 실행하고 종료하기
+
+    - (2) 컨테이너와 이미지 상태 확인하기
+
+    - (3) 종료된 컨테이너 재실행하기
+
+    - (4) 컨테이너와 이미지 삭제하기
+  
+- 리눅스 교재
+
+- 과제
+
+---
+
 # Docker
 
 > 참고 : https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html
@@ -78,7 +102,7 @@ GBC 첫번째 과정 **Programmer Base** 의 1일차 내용입니다.
 
 도커란 세팅된 이미지를 컨테이너로 실행하는 가상화 플랫폼이라고 했습니다. 도커에 수많은 기능이 있지만 여기에서는 실습에 필요한 최소기능, 즉 컨테이너를 **(1) 실행하고 종료하고**, **(2) 컨테이너와 이미지 상태를 확인하고**, **(3) 재실행하는 방법, (4) 이미지와 컨테이너를 삭제하는 방법**을 간단히 알아보겠습니다. 
 
-### 컨테이너 실행하고 종료하기
+### (1) 컨테이너 실행하고 종료하기
 
 도커를 성공적으로 설치하셨다면 터미널을 열어서 다음 명령어를 실행해봅시다. 
 
@@ -139,7 +163,7 @@ $ exit
 
 <img src="https://user-images.githubusercontent.com/16812446/82213500-32162680-994f-11ea-942a-ef8b0065540c.gif" width="50%" height="auto">
 
-### 컨테이너와 이미지 상태 확인하기
+### (2) 컨테이너와 이미지 상태 확인하기
 
 이제 `docker images` 명령어를 실행해봅시다. 
 
@@ -175,7 +199,7 @@ CONTAINER ID        IMAGE                      COMMAND                  CREATED 
 
 종료된 컨테이너는 언제든지 다시 실행될 수 있고 이전에 작업한 데이터들이 남아있는 상태입니다. 도커를 처음 설치하고 실행하신 분들은 `ccss17/ubuntu` 컨테이너밖에 출력되지 않을 겁니다. 
 
-### 컨테이너와 이미지 상태 확인하기
+### (3) 종료된 컨테이너 재실행하기
 
 이제 다음 명령어로 종료시켰던 `ubuntu` 컨테이너를 다시 실행해보세요.
 
@@ -212,7 +236,7 @@ test.txt
 
 그러면 위와 같이 조금 전에 생성했었던 `test.txt` 파일이 그대로 잘 남아있는 것을 확인할 수 있네요. 컨테이너가 종료되어도 다시 실행하니까 작업했던 데이터가 남아있어서 다행입니다.
 
-### 컨테이너와 이미지 삭제하기 
+### (4) 컨테이너와 이미지 삭제하기 
 
 이제 필요가 없어진 컨테이너와 이미지를 삭제해보겠습니다. 먼저 다시 `exit` 명령어를 입력하여 컨테이너를 빠져나와주세요. 그런 다음 명령어를 입력하여 도커의 컨테이너 아이디를 확인합니다. 그리고 그 아이디를 `docker rm` 의 파라미터로 전달합니다. 
 
