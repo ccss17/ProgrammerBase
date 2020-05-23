@@ -4,7 +4,11 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 ---
 
-# Git Branching
+# Git 과 Github 못다한 이야기
+
+우리는 **Git** 과 **Github** 의 가장 기초적인 부분을 이미 다뤘었는데 여기에서는 **Git** 과 **Github** 에 관하여 아직 하지 못한 이야기를 해보겠습니다. 
+
+## Git Branching
 
 > 참고 : https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 
@@ -14,13 +18,13 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 **Git** 은 최대한 **Branch** 를 자주만들고 **master** 브랜치로 병합하라고 권장합니다. 저도 **Branch** 를 만들고 **master** 브랜치에 병합하는 **습관** 을 평소에 들이라고 권고하고 싶습니다. 왜냐하면 **Git Branching** 기능으로 여러분의 개발 과정이 매우 매우 안정적으로 바뀔 것이기 때문입니다. 
 
-## 브랜치란? 
+### 브랜치란? 
 
 그렇다면 브랜치란 대체 무엇인가요? 브랜치란 포인터입니다. 그러면 그 포인터는 무엇을 포인팅하고 있나요? 바로 커밋들을 포인팅하고 있습니다. **Git** 은 기본 브랜치로 **master** 브랜치를 갖고 있는데 이 **master** 브랜치는 언제나 마지막 커밋을 포인팅하고 있습니다. 실제로 커밋을 할 때마다 **master** 브랜치가 자동으로 마지막 커밋으로 포인팅을 변경해주고 있던 겁니다. 
 
 > 엄밀히 말하면 `HEAD` 포인터가 포인팅하고 있는 브랜치는 커밋을 할 때마다 자동으로 마지막 커밋으로 이동하는 것입니다. 아래의 내용을 읽으면 자연히 이해할 수 있을 겁니다. 
 
-## 브랜치 생성
+### 브랜치 생성
 
 그러면 이제 말로만 하지말고 직접 몸으로 부딪혀보면서 브랜치를 느껴보겠습니다. 브랜치란 포인터라고 했으므로 브랜치를 생선하는 것은 포인터를 만드는 것입니다. 
 
@@ -97,7 +101,7 @@ $ g b testing
 <img src="https://git-scm.com/book/en/v2/images/head-to-master.png" width="50%" height="auto">
 </div>
 
-## 브랜치 이주 
+### 브랜치 이주 
 
 이제 `testing` 브랜치로 이주해서 온갖 실험적이고 진취적인 행동을 마음껏 해야겠습니다. 그러려면 `testing` 브랜치로 이주해야만 합니다. 
 
@@ -167,7 +171,7 @@ $ g o master
 $ bat main.c
 ```
 
-## 브랜치 병합 시나리오 (1) - Fast-forward
+### 브랜치 병합 시나리오 (1) - Fast-forward
 
 브랜치 병합은 두 가지 시나리오로 설명하겠습니다. 우선 첫번째 시나리오입니다.
 
@@ -187,7 +191,7 @@ $ g m testing
 
 커밋 구조를 보면 `master` 브랜치가 `testing` 브랜치 바로 뒤에 있기 때문에 이 경우 **Git** 은 단순히 `master` 브랜치가 `testing` 브랜치가 포인팅하고 있는 커밋을 포인팅하게 합니다. 이것을 **Fast-forward** 병합이라고 합니다. 
 
-## 브랜치 병합 시나리오 (2) - Merge Conflict
+### 브랜치 병합 시나리오 (2) - Merge Conflict
 
 이제 다시 `testing` 브랜치에서 `master` 브랜치로 되돌아온 상황입니다. 이 경우 `master` 브랜치에서 `main.c` 를 다음과 같이 고쳤다고 하겠습니다. 
 
@@ -266,13 +270,9 @@ $ g a
 $ g cm "merge testing"
 ```
 
----
+> 지금까지 **Git Branching** 을 매우 간단하게 알아보았는데, 나중에 https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell 을 통하여 **Git Branching** 의 더욱 강력한 기능을 추가 학습하시길 강력하게 추천합니다.
 
-지금까지 **Git Branching** 을 매우 간단하게 알아보았는데, 나중에 https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell 을 통하여 **Git Branching** 의 더욱 강력한 기능을 추가 학습하시길 강력하게 추천합니다.
-
----
-
-# user.github.io
+## user.github.io
 
 user.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니다. 저의 **Github** 아이디는 `ccss17` 인데 이 아이디로 user 를 치환하여 ccss17.github.io 에 접속해보면 제가 관리하고 있는 블로그가 보입니다. 이 블로그는 https//github.com/ccss17/ccss17.github.io 의 `index.html` 파일과 각각의 `*.html` 파일들이 랜더링 된 것입니다. 
 
@@ -288,9 +288,7 @@ user.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니�
 
 - [도커 가이드](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html) : https://github.com/subicura/subicura.github.io 
 
----
-
-# gist
+## gist
 
 [gist](https://gist.github.com/) 는 짤막한 파일을 빠르게 공유할 때 사용되는 **Github** 의 레포지토리 관리 플랫폼입니다. 
 
