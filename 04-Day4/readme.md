@@ -462,6 +462,22 @@ $ gotop
   <img src="https://user-images.githubusercontent.com/16812446/82149895-5829c100-9892-11ea-9147-b97e122a265c.png" width="70%" height="auto">
   </div>
 
+## fzf 
+
+[`fzf`](https://github.com/junegunn/fzf) 는 다음과 같은 범용 fuzzy finder 입니다. 
+
+![](https://raw.githubusercontent.com/junegunn/i/master/fzf-preview.png)
+
+다음 명령어로 `fzf` 를 실행하고 `.c` 를 입력해서 **C 언어 소스 파일** 찾아보시고, `.py` **Python 파일**을 찾아보세요. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ fzf
+```
+
+너무 편해요! 더 많은 기능과 설명은 공식 레포지토리를 참고하세요. 
+
 ---
 
 # 더 빨라진 git
