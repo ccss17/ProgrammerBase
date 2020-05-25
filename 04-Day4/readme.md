@@ -110,29 +110,29 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
     - [Glassit-VSC](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#glassit-vsc)
 
-  - [Vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim)
+- [VSCode Vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim)
 
-    - [Python - List to Dictionary](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---list-to-dictionary)
+  - [Python - List to Dictionary](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---list-to-dictionary)
 
-    - [Python - copy & paste](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---copy--paste)
+  - [Python - copy & paste](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---copy--paste)
 
-    - [Python - multi cursor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---multi-cursor)
+  - [Python - multi cursor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---multi-cursor)
 
-    - [Python - rename argument](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---rename-argument)
+  - [Python - rename argument](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---rename-argument)
 
-    - [C 언어 - 변수 한 줄로 선언하기](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#c-%EC%96%B8%EC%96%B4---%EB%B3%80%EC%88%98-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%84%A0%EC%96%B8%ED%95%98%EA%B8%B0)
+  - [C 언어 - 변수 한 줄로 선언하기](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#c-%EC%96%B8%EC%96%B4---%EB%B3%80%EC%88%98-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%84%A0%EC%96%B8%ED%95%98%EA%B8%B0)
 
-    - [Markdown - example 1](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-1)
+  - [Markdown - example 1](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-1)
 
-    - [Markdown - example 2](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-2)
+  - [Markdown - example 2](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-2)
 
-    - [Python - multicursor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---multicursor)
+  - [Python - multicursor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---multicursor)
 
-    - [Markdown - example 3](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-3)
+  - [Markdown - example 3](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-3)
 
-  - [디버깅 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%94%94%EB%B2%84%EA%B9%85)
+- [VSCode 디버깅 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%94%94%EB%B2%84%EA%B9%85)
 
-    - [Python 디버깅](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python-%EB%94%94%EB%B2%84%EA%B9%85)
+  - [Python 디버깅](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python-%EB%94%94%EB%B2%84%EA%B9%85)
 
 - [과제 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EA%B3%BC%EC%A0%9C)
 
@@ -1238,36 +1238,33 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 ![Code_KFMh5BA08B](https://user-images.githubusercontent.com/16812446/82327355-3ad32f00-9a19-11ea-9c9c-edc3a20893e7.png)
 
-## Vim
+# VSCode Vim
 
 [**Vim**](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 은 **VSCode** 에서 `vim` 키맵을 사용할 수 있도록 해줍니다. 그래서 기존의 CLI 에서의 `vim` 에서는 사용할 수 없었던 **VSCode** 의 모든 풍부한 디버깅 기능, 확장, **VCS** 등을 `vim` 과 함께 사용할 수 있게 됩니다.
 
-하지만 **Vim** 확장의 키맵이 **VSCode** 의 강력한 기능을 덮어버리는 경우도 있었기 때문에 개인적으로 다음의 설정을 통해 **Vim** 확장의 일부 기능을 비활성화시켰습니다. `...` 에는 또 다른 확장들의 설정이 있는 것입니다. 
+## 단축키
 
-가령 <kbd>Ctrl</kbd>+<kbd>d</kbd> 는 기본 **VSCode** 에서 멀티 커서 기능인데 **Vim** 확장을 설치하면 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 덮어버려서 비활성화시켰고, <kbd>Ctrl</kbd>+<kbd>n</kbd> 은 기본 **VSCode** 에서 새 파일을 만드는 단축키인데 마찬가지로 **Vim** 확장이 이 단축키를 덮어버렸기 때문에 비활성화시켰습니다. 비슷한 이유로 <kbd>Ctrl</kbd>+<kbd>f</kbd>, <kbd>Ctrl</kbd>+<kbd>o</kbd>, <kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>Ctrl</kbd>+<kbd>w</kbd> 등도 기본 **VSCode** 기능을 하도록 **Vim** 확장을 비활성화시켰습니다. 
+### 주석 처리 
+
+그에 앞서 **VSCode** 에서의 주석 처리 단축키를 알아보겠습니다.
+
+| 기능 | `vim` 단축키 | **VSCode** 단축키 |
+|:---:|:---:|:---:|
+| 주석 | `\cc`  | `gcc`|
+
+**Vim** 확장이 적용된 **VSCode** 에서 주석처리는 단순히 `gcc` 를 누르면 됩니다. `5gcc` 를 누르면 `5` 줄이 주석처리되는 식입니다.
+
+### 단축키 설정
+
+**Vim** 확장의 키맵이 **VSCode** 의 강력한 기능을 덮어버리는 경우도 있었기 때문에 개인적으로 다음의 설정을 통해 **Vim** 확장의 일부 기능을 비활성화시켰습니다. `...` 에는 또 다른 확장들의 설정이 있는 것입니다. 
 
 ```json
 {
   ...
   "editor.lineNumbers": "relative",
-  "vim.easymotion": true,
-  "vim.sneak": true,
-  "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
-  "vim.normalModeKeyBindingsNonRecursive": [
-      {
-          "before": [
-              "<leader>",
-              "d"
-          ],
-          "after": [
-              "d",
-              "d"
-          ]
-      }
-  ],
   "vim.handleKeys": {
       "<C-a>": false,
       "<C-d>": false,
@@ -1285,9 +1282,30 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 <img src="https://user-images.githubusercontent.com/16812446/82322033-cbf1d800-9a10-11ea-9726-10ef40cff6c5.PNG" width="50%" height="auto">
 
+이런 설정을 통해 **Vim** 확장 단축키를 비활성화시켜서 원래 **VSCode** 단축키로 기능하게 한 단축키는 다음과 같습니다.
+
+| 단축키 | **Vim** 확장 | **VSCode** 원래 기능 | 
+|:---:|:---:|:---:|
+| <kbd>Ctrl</kbd>+<kbd>d</kbd> | 화면 내리기 | 멀티 커서 |
+| <kbd>Ctrl</kbd>+<kbd>n</kbd> | | 새 파일 만들기 |
+| <kbd>Ctrl</kbd>+<kbd>w</kbd> | | 파일 닫기 |
+| <kbd>Ctrl</kbd>+<kbd>f</kbd> | | 찾기 |
+| <kbd>Ctrl</kbd>+<kbd>o</kbd> | | 파일 열기 |
+| <kbd>Ctrl</kbd>+<kbd>a</kbd> | | 전체 선택 |
+
+<kbd>Ctrl</kbd>+<kbd>d</kbd> 는 기본 **VSCode** 에서 멀티 커서 기능인데 **Vim** 확장을 설치하면 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 덮어버려서 비활성화시켰고, <kbd>Ctrl</kbd>+<kbd>n</kbd> 은 기본 **VSCode** 에서 새 파일을 만드는 단축키인데 마찬가지로 **Vim** 확장이 이 단축키를 덮어버렸기 때문에 비활성화시켰습니다. 비슷한 이유로 <kbd>Ctrl</kbd>+<kbd>f</kbd>, <kbd>Ctrl</kbd>+<kbd>o</kbd>, <kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>Ctrl</kbd>+<kbd>w</kbd> 등도 기본 **VSCode** 기능을 하도록 **Vim** 확장을 비활성화시켰습니다. 
+
+### 그외의 단축키 
+
+그 외의 단축키는 `vim` 과 동일합니다.
+
 여기에서는 이 설정이 적용된 **VSCode** 에서 `vim` 을 사용하여 어떻게 코드를 효율적으로 편집하는지 몇개의 예시를 보여드리겠습니다. **Python** 으로 예시를 들었지만 **모든 언어에 적용될 수 있는 상황들**입니다.
 
-### Python - List to Dictionary
+# VSCode Vim 예시
+
+여기에서는 **VSCode** 에서 **Vim** 확장으로 어떻게 코드 편집을 편하게 편하게 할 수 있는지 보여드리겠습니다. **Vim** 을 사용하고 싶지 않은 분들이라도 한번 따라해보면서 코드 편집을 얼마나 더 효율적으로 할 수 있는지 꼭 체험해보세요. 
+
+## Python - List to Dictionary
 
 **Python** 코딩을 하다가 `lst = ['all', 'all2', 'all3', 'all4', 'all5']` 라는 리스트를 만들게 되었습니다. 그런데 이 자료구조가 딕셔너리로 사용되면 더 효율적이라는 것을 깨닫고 이 리스트를 딕셔너리로 고치려는 상황입니다. 
 
@@ -1309,15 +1327,15 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 > `0` 으로 문장 앞으로 커서를 옮기는 것이나 `f'` 로 `'` 로 커서를 옮기는 것 등의 설명까지 하면 너무 장황해져서 생략했습니다. 
 
-### Python - copy & paste
+## Python - copy & paste
 
 다음의 상황은 코딩을 하다보니 `sub_section('math')` 라는 함수를 여러번 사용해야 하는 상황입니다.
 
-1. 먼저 `yy4p` 로 코드를 `4` 번 복사하여 붙혀넣었습니다. 
+1. `yy4p` 로 코드를 `4` 번 복사하여 붙혀넣습니다. 
 
 2. 그리고 `'` 에 커서를 두고 <kbd>Ctrl</kbd>+<kbd>v</kbd> 로 블록드래그를 한 다음 맨 아래 코드까지 내려서 <kbd>Shift</kbd>+<kbd>i</kbd> 로 입력모드에 들어가서 `1` 을 입력합니다. 
 
-3. `r2`, `r3`, `r4`, `r5` 로 파라미터를 적절히 수정합니다. 
+3. `r2jr3jr4jr5` 를 입력해 파라미터를 수정합니다. 
 
 4. 그런데 코딩하다보니 `for` 문으로 고치는게 더 적절하다는 것을 깨닫고 `for` 문으로 대체하려 합니다. 그래서 `for` 문을 하나 만들고 `sub_sectoin('math')` 코드를 `yy` 로 복사하여 가져와서 `p` 로 붙혀넣습니다. 
 
@@ -1329,7 +1347,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 <img src="https://user-images.githubusercontent.com/16812446/82323380-ef1d8700-9a12-11ea-97b1-d364f38941c0.gif" width="70%" height="auto">
 </div>
 
-### Python - multi cursor
+## Python - multi cursor
 
 다음의 상황은 코딩을 하면서 `sub_section` 이라는 함수를 만들었는데 갑자기 이 함수의 이름이 마음에 들지 않아서 바꾸고 싶은 상황입니다.
 
@@ -1339,13 +1357,31 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 3. <kbd>Esc</kbd> 를 연타하여 생성된 멀티커서를 소멸해줍니다. 
 
+<div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/82324002-dc578200-9a13-11ea-987d-bb5282dc8e22.gif" width="70%" height="auto">
+</div>
 
-### Python - rename argument
+하지만 단번에 매칭되는 모든 단어에 멀티커서를 두고 싶다면 다음과 같이 하면 됩니다.
+
+1. `subsection` 함수 이름에 커서를 둔다. 
+
+2. <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> 을 누른다.
+
+3. `b` 를 눌러 커서를 단어의 처음으로 옮기고 `cw` 로 삭제하고 편집하기를 눌러 함수 이름을 마음대로 변경한다. 
+
+4. <kbd>Esc</kbd> 를 눌러 빠져나온다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82770651-3a50f300-9e74-11ea-8ee7-ca2981cdc3a9.gif" width="70%" height="auto">
+</div>
+
+## Python - rename argument
 
 다음의 상황은 함수와 인자를 정의했는데, 인자의 이름을 바꾸어야 하는 상황입니다. 그런데 인자가 여러군데에서 사용되서 일일이 바꾸기 너무 귀찮을 것 같습니다. 하지만 괜찮습니다.
 
 1. `test` 위에 커서를 올려두고 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 `3` 번 눌러 `test` 를 멀티커서로 포커싱합니다. 
+
+    - **위에서 보았듯 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd> 을 누르면 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 `3` 번 누를 필요 없이 단번에 멀티 커서가 생성됩니다.**
 
 2. `c` 를 눌러 모든 `test` 를 지우고 입력하고 싶은 문자열을 입력합니다.
 
@@ -1355,7 +1391,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 <img src="https://user-images.githubusercontent.com/16812446/82324486-aff03580-9a14-11ea-991e-fac98ec93be5.gif" width="70%" height="auto">
 </div>
 
-### C 언어 - 변수 한 줄로 선언하기
+## C 언어 - 변수 한 줄로 선언하기
 
 다음의 상황은 **C 언어** 를 코딩하고 있던 중 `pthread_t tid` 변수들이 여러 줄로 선언되어 있는 것을 한 줄로 만들고 싶은 상황입니다. 
 
@@ -1373,7 +1409,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 <img src="https://user-images.githubusercontent.com/16812446/82325194-c480fd80-9a15-11ea-8552-9c11c996c0ac.gif" width="70%" height="auto">
 </div>
 
-### Markdown - example 1
+## Markdown - example 1
 
 다음의 상황은 **Markdown** 파일을 작성중 맨 밑에 있는 문장을 맨 위로 올리고 나머지 문장들을 그 문장의 하위 문장이 되게 하고 싶은 상황입니다. 
 
@@ -1391,7 +1427,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 <img src="https://user-images.githubusercontent.com/16812446/82324933-681dde00-9a15-11ea-9899-b8edb9638b6c.gif" width="70%" height="auto">
 </div>
 
-### Markdown - example 2
+## Markdown - example 2
 
 다음은 **Markdown** 파일을 작성하던 중 문장들을 아이템으로 분리하고 싶은 상황입니다. 
 
@@ -1399,15 +1435,13 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 2. `a` 를 누르고 <kbd>Enter</kbd> 를 쳐서 개행을 시킵니다.
 
-3. `>>` 를 눌러 간편하게 탭 인텐트를 조정합니다.
-
-4. 이 작업을 다음 문장에도 반복합니다.
+3. 이 작업을 다음 문장에도 반복합니다.
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/82325719-a798fa00-9a16-11ea-898d-760c5898a288.gif" width="70%" height="auto">
 </div>
 
-### Python - multicursor
+## Python - multicursor
 
 다음은 파이썬에서 딕셔너리를 만들었는데 값들의 이름이 마음에 안들어서 고치려는 상황입니다.
 
@@ -1417,7 +1451,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 <img src="https://user-images.githubusercontent.com/16812446/82326020-268e3280-9a17-11ea-92cd-c5261c39047e.gif" width="70%" height="auto">
 </div>
 
-### Markdown - example 3
+## Markdown - example 3
 
 다음은 **Markdown** 파일을 작성하다가 특정 문장을 헤더로 입력하고 싶은 상황입니다.
 
@@ -1427,17 +1461,19 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 3. 하지만 헤더의 `(`, `)` 을 없애고 싶습니다. 그래서 `f(xf)x` 로 삭제합니다. 
 
-4. 그런데 오타가 있다는 것을 발견하고 `toin` 을 드래그하고 멀티커서로 그것과 똑같은 오타를 포커싱하여 `tion` 으로 고칩니다. 
+4. 그런데 오타가 있다는 것을 발견하고 `toin` 을 드래그하고 멀티커서 <kbd>Ctrl</kbd>+<kbd>d</kbd> 로 그것과 똑같은 오타를 포커싱하여 `tion` 으로 고칩니다. 
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/82326130-563d3a80-9a17-11ea-857f-a6fb7d8db4c8.gif" width="70%" height="auto">
 </div>
 
-## 디버깅 
+# VSCode 디버깅 
 
-**VSCode** 는 거의 모든 프로그래밍 언어에 대한 풍부한 디버깅 기능을 제공합니다. 여기에서는 간단하게 **Python** 의 디버깅을 가볍게 알아보겠습니다. 하지만 **Flutter**, **Rust**, **C/C++** 등등 매우 광범위한 언어에 대한 디버깅이 가능합니다.
+과거에는 `gdb` 등의 CLI 디버깅 툴로 디버깅을 했었지만 **VSCode** 로 매우 편하게 디버깅할 수 있게 되었습니다. **VSCode** 는 거의 모든 프로그래밍 언어에 대한 풍부한 디버깅 기능을 제공합니다. 여기에서는 간단하게 **Python** 의 디버깅을 가볍게 알아보겠습니다. 하지만 **VSCode** 는 **Flutter**, **Rust**, **C/C++**, **NodeJS**, **Arduino**, **HTML/CSS/JS**, **Latex** 등등 매우 광범위한 언어에 대한 풍부한 디버깅 기능을 제공합니다. 
 
-과거에는 `gdb` 등의 CLI 디버깅 툴로 디버깅을 했었지만 **VSCode** 로 매우 편하게 디버깅할 수 있게 되었습니다.
+> 안드로이드 스튜디오에서 제공하는 안드로이드 가상머신 디버깅 기능도 **VSCode** 가 제공합니다.
+
+> 그냥 생각나는 모든 프로그래밍 언어와 모든 플랫폼에 대한 디버깅 기능이 **VSCode** 확장으로 제공되고 있다고 봐도 무방합니다. **VSCode** 가 전세계 1등 에디터라서 각각의 기업들과 커뮤니티들이 앞다투어 자신의 제품을 **VSCode** 확장을 제공하려는 상황이기 때문입니다. 
 
 더 자세한 **VSCode** 의 디버깅 방법과 다른 프로그래밍 언어에 대한 디버깅은 **Google** 을 검색하거나 **VSCode** 의 공식 메뉴얼
 
@@ -1445,7 +1481,7 @@ https://code.visualstudio.com/docs/editor/debugging
 
 을 참고하세요. 
 
-### Python 디버깅
+## Python 디버깅
 
 **Python** 디버깅은 먼저 [**Python**](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 을 설치해야 합니다. 가볍게 
 
@@ -1467,7 +1503,9 @@ if __name__ == '__main__':
 
 그래서 실제로 다음과 같이 브레이크 포인트를 설정하고 <kbd>F5</kbd> 를 눌러서 디버깅을 시작할 수 있고 왼쪽 패널에서 `result` 변수의 변화를 관찰할 수 있습니다. 
 
-![ImekTnbkOy](https://user-images.githubusercontent.com/16812446/82329102-c5b52900-9a1b-11ea-96c5-a80faecf5924.gif)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82329102-c5b52900-9a1b-11ea-96c5-a80faecf5924.gif" width="90%" height="auto">
+</div>
 
 브레이크 포인트에서 멈춘 시점에서 <kbd>F10</kbd> 을 누르면 한줄의 코드씩 실행시켜볼 수 있고 <kbd>F5</kbd> 를 누르면 끝까지 진행시켜버릴 수 있습니다. 
 
