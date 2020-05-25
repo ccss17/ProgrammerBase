@@ -26,6 +26,8 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
   - [`man` ➜ `tldr` ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#man--tldr)
 
+  - [`fzf`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#fzf)
+
 - [더 빨라진 git](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-git)
 
 - [`bash` ➜ `zsh` - 더 빨라진 쉘](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#bash--zsh---%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EC%89%98)
