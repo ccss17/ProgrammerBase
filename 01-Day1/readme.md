@@ -163,6 +163,8 @@ $ exit
 
 잘 따라오셨다면 다음과 같이 진행되었을 겁니다.
 
+[ㄷㄷㄷ](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n)
+
 [<img src="https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n.svg" width="70%" height="auto">](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n)
 
 [![](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n.svg)](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n)
