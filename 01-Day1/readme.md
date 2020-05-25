@@ -163,15 +163,9 @@ $ exit
 
 잘 따라오셨다면 다음과 같이 진행되었을 겁니다.
 
-[ㄷㄷㄷ](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n)
-
-[<img src="https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n.svg" width="70%" height="auto">](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n)
-
-[![](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n.svg)](https://asciinema.org/a/LOL4Yuj5Iz0a6QuyJ64CiJ71n)
-
-> [Firefox](https://www.mozilla.org/en-US/firefox/new/) 에서는 이 확장 https://addons.mozilla.org/en-US/firefox/addon/asciinema-player-for-github/ 을 설치하면 터미널 녹화 동영상을 asciinema 웹 사이트로 가지 않고 바로 볼 수 있어서 편합니다. 이렇게 말이죠. 
-
-<img src="https://user-images.githubusercontent.com/16812446/82213500-32162680-994f-11ea-942a-ef8b0065540c.gif" width="50%" height="auto">
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/82790721-7f424d00-9ea7-11ea-9755-b32747a2d310.gif" width="70%" height="auto">
+</div>
 
 ### (2) 컨테이너와 이미지 상태 확인하기
 
