@@ -375,17 +375,17 @@ $ g cm "merge testing"
 
 ## user.github.io
 
-user.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니다. 저의 **Github** 아이디는 `ccss17` 인데 이 아이디로 user 를 치환하여 ccss17.github.io 에 접속해보면 제가 관리하고 있는 블로그가 보입니다. 이 블로그는 https//github.com/ccss17/ccss17.github.io 의 `index.html` 파일과 각각의 `*.html` 파일들이 랜더링 된 것입니다. 
+user.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니다. 저의 **Github** 아이디는 `ccss17` 인데 이 아이디로 user 를 치환하여 https://ccss17.github.io 에 접속해보면 제가 관리하고 있는 블로그가 보입니다. 이 블로그는 https://github.com/ccss17/ccss17.github.io 의 `index.html` 파일과 각각의 `*.html` 파일들이 랜더링 된 것입니다. 
 
 이처럼 **Github** 에 아이디만 있다면 자신의 아이디로 user.github.io 라는 이름을 가진 레포지토리를 생성하고 그곳에 `index.html` 과 메모하거나 게시하고 싶은 정보를 `.html` 파일로 만들어 레포지토리를 **commit** 하고 **Github** 에 **push** 하면 자동으로 user.github.io 에 게시가 시작됩니다. 
 
 > [**jekyll**](https://jekyllrb.com/) 을 사용하면 `.md` 파일만으로도 웹페이지를 생성할 수 있어 매우 편합니다. 
 
-개인 블로그에 자신이 공부한 내용이나 알아낸 사실을 게시하면 그것이 모두 다 포트폴리오가 되고 스펙이 되서 자신의 가치를 높이는 일이 됩니다. 그러나 이 블로그 플랫폼을 사용하고 싶지 않은 분들도 있음을 감안해서 더 이상의 상세한 설명과 실습은 하지 않고 유명한 `*.github.io` 사이트들과 **Github** 의 공식 메뉴얼과 저의 ccss17.github.io 를 가볍게 보여드리는 것으로 마무리 하겠습니다. 
+개인 블로그에 자신이 공부한 내용이나 알아낸 사실을 게시하면 그것이 모두 다 포트폴리오가 되고 스펙이 되서 자신의 가치를 높이는 일이 됩니다. 그러나 이 블로그 플랫폼을 사용하고 싶지 않은 분들도 있음을 감안해서 더 이상의 상세한 설명과 실습은 하지 않고 유명한 `*.github.io` 사이트들과 **Github** 의 공식 메뉴얼과 저의 https://ccss17.github.io 를 가볍게 보여드리는 것으로 마무리 하겠습니다. 
 
 - **Github** 페이지 공식 메뉴얼 : https://pages.github.com/
 
-- [sindresorhus](https://github.com/sindresorhus/sindresorhus.github.com) 의 [블로그](https://sindresorhus.com/) : https://github.com/sindresorhus/sindresorhus.github.com
+- [sindresorhus](https://github.com/sindresorhus) 의 [블로그](https://sindresorhus.com/) : https://github.com/sindresorhus/sindresorhus.github.com
 
 - [도커 가이드](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html) : https://github.com/subicura/subicura.github.io 
 
@@ -489,7 +489,7 @@ int main(void)
 
 > `vim` 으로 고치든 **VSCode** 로 고치든 그것은 알아서 선택해주세요. 
 
-그런 다음 다음과 같이 지금까지 배웠던 **Git** 명령으로 스테이징 후 커밋합니다. 그리고 https://github.com/hgu-student/pull-request-me 이 **push** 까지 합니다.
+그런 다음 다음과 같이 지금까지 배웠던 **Git** 명령으로 **staging**, **commit**, **push** 를 합니다.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
 
@@ -501,7 +501,7 @@ $ g psom
 
 ### 3. **pull request** 하기
 
-그런데 여러분의 레포지토리가 업데이트 되었을 뿐 원작자의 레포지토리가 업데이트 된 것은 아닙니다. 그래서 원작자에게 어서 빨리 내 레포지토리를 **pull** 해주세요 라고 말하기 위하여 **Pull Request** 를 합니다. 다음 사진과 같이 자신의 레포지토리의 왼쪽 상당부를 보면 <kbd>Pull requests</kbd> 버튼이 있습니다. 이 버튼을 눌러 **Pull Request** 페이지로 들어갑니다. 
+그런데 여러분의 레포지토리가 업데이트 되었을 뿐 원작자의 레포지토리가 업데이트 된 것은 아닙니다. 그래서 원작자에게 어서 빨리 내 레포지토리를 **pull** 해주세요 라고 말하기 위하여 **Pull Request** 를 합니다. 다음 사진과 같이 자신의 레포지토리의 왼쪽 상당부를 보면 <kbd>Pull requests</kbd> 탭이 있습니다. 이 탭을 눌러 **Pull Request** 페이지로 들어갑니다. 
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/16812446/82678481-a5d46e00-9c84-11ea-8724-2104619a9622.png" width="70%" height="auto">
@@ -658,9 +658,11 @@ $ g psom
 
 ![firefox_FViJ96Yk9y](https://user-images.githubusercontent.com/16812446/82721758-4d8c8300-9cfb-11ea-96de-2bec87c27c46.png)
 
+여기에서 마음에 드는 레포지토리의 **Star** 버튼을 누르면서 관심있는 레포지토리들을 **Your stars** 페이지에 모아두세요. 이렇게 **Star** 버튼은 추천 뿐만 아니라 즐겨찾기 기능도 있는 것입니다.
+
 ## Stackoverflow Survey
 
-Stackoverflow Survey 도 좋은 정보를 얻을 수 있는 소스가 됩니다. 하지만 이미 다뤘기 때문에 넘기겠습니다.
+매년 하는 [Stackoverflow Survey](https://insights.stackoverflow.com/survey/2019) 도 좋은 정보를 얻을 수 있는 소스가 됩니다. 하지만 이미 다뤘기 때문에 넘기겠습니다.
 
 ## 검색
 
@@ -678,7 +680,7 @@ Stackoverflow Survey 도 좋은 정보를 얻을 수 있는 소스가 됩니다.
 
 ### 아니 그럼 어떻게 검색해야 하나?
 
-이것에 관한 건 순전히 경험적인 지식이므로 스스로 터득해야 합니다만, 제가 경험한 바로는 다음과 같이 검색하는 것이 가장 효과가 좋았습니다. 
+이것에 관한 건 순전히 경험적인 지식이므로 스스로 터득해야 합니다만, 제가 경험한 바로는 다음과 같이 검색하는 것이 가장 효과적이었습니다. 
 
 - **[플랫폼]** **[세부 플랫폼]** **[세부 사항]** 
 
@@ -696,7 +698,7 @@ https://support.google.com/websearch/answer/2466433?hl=en
 
 등을 찾을 수 있는데 이것으로 검색하는 방법도 있습니다.
 
-> 구글 검색 명령어가 얼마나 강력한지 이것을 사용한 [구글 해킹](https://ko.wikipedia.org/wiki/%EA%B5%AC%EA%B8%80_%ED%95%B4%ED%82%B9) 이라는 용어도 생겼습니다. 
+> 구글 검색 명령어가 얼마나 강력한지 검색만으로 개인을 해킹할 수 있다고 해서 [구글 해킹](https://ko.wikipedia.org/wiki/%EA%B5%AC%EA%B8%80_%ED%95%B4%ED%82%B9) 이라는 용어도 생겼습니다. 
 
 ### 원작자 찾기 
 
