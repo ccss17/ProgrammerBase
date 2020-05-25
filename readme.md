@@ -68,7 +68,7 @@
 
 ## Contents
 
-### [Day 1](01-Day1/readme.md)
+### [Day 1](01-Day1/)
 
 - [Docker](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#docker)
 
@@ -77,7 +77,7 @@
 - [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
 
-### [Day 2](02-Day2/readme.md)
+### [Day 2](02-Day2/)
 
 - [리눅스 교재 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
@@ -91,7 +91,7 @@
 
 - [Markdown ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#markdown)
 
-### [Day 3](03-Day3/readme.md)
+### [Day 3](03-Day3/)
 
 - [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
@@ -99,7 +99,7 @@
 
 - [tmux](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#tmux)
 
-### [Day 4](04-Day4/readme.md)
+### [Day 4](04-Day4/)
 
 - [CLI](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli)
 
@@ -119,7 +119,7 @@
 
 - [VSCode 디버깅 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%94%94%EB%B2%84%EA%B9%85)
 
-### [Day 5](05-Day5/readme.md)
+### [Day 5](05-Day5/)
 
 - [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
 
