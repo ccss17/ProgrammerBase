@@ -1134,9 +1134,9 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 `vim` 이 일반 에디터보다 좋다고 생각했다면 앞으로 `vim` 을 쓰기로 결정했을 겁니다. 하지만 `vim` 은 아무래도 CLI 의 범주에 속하다 보니까 아무리 좋은 플러그인들을 많이 사용해도 GUI 에디터들이 제공하는 편리한 인터페이스와 수많은 디버깅 기능들과 수많은 플랫폼별 개발 환경들이 지원되지 않습니다. 
 
-하지만 VSCode 를 사용하면 VSCode 확장과 편리한 코드 찾기 기능, 편리한 디버깅 기능들을 사용할 수 있습니다. VSCode 확장 중에는 `vim` 도 있어서 VSCode 에서 `vim` 을 사용할 수도 있습니다.
+하지만 **VSCode** 를 사용하면 **VSCode** 확장과 편리한 코드 찾기 기능, 편리한 디버깅 기능들을 사용할 수 있습니다. **VSCode** 확장 중에는 `vim` 도 있어서 **VSCode** 에서 `vim` 을 사용할 수도 있습니다.
 
-VSCode 가 지원하는 Git 은 지난시간에 이미 알아보았습니다. 뿐만 아니라 안드로이드, 아두이노, 웹 개발, Python, Java, C/C++, C#, Rust, 주피터 노트북 등등 상상할 수 있는 모든 플랫폼을 VSCode 에서 매우 편하게 사용할 수 있는 확장이 마련되어 있습니다. 
+**VSCode** 가 지원하는 Git 은 지난시간에 이미 알아보았습니다. 뿐만 아니라 **안드로이드, 아두이노, 웹 개발, Python, Java, C/C++, C#, Rust, 주피터 노트북** 등등 상상할 수 있는 모든 플랫폼을 **VSCode** 에서 매우 편하게 사용할 수 있는 확장이 마련되어 있습니다. 
 
 이 중에서 몇가지 핵심적인 기능만 좀 더 알아보겠습니다. 
 
@@ -1212,7 +1212,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 [**Code Runner**](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 는 다음과 같이 코드를 손쉽게 실행해볼 수 있게 해줍니다.
 
-<img src="https://raw.githubusercontent.com/formulahendry/vscode-code-runner/master/images/usage.gif" width="50%" height="auto">
+<img src="https://raw.githubusercontent.com/formulahendry/vscode-code-runner/master/images/usage.gif" width="70%" height="auto">
 
 단순히 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>n</kbd> 만 누르면 되죠. 이 단축키만 누르면 **C/C++ 언어** 도 지알아서 컴파일하고 실행해주고 **Code Runner** 의 환경설정에서 컴파일 옵션을 바꿀 수도 있습니다. 
 
@@ -1220,7 +1220,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 [**mdmath**](https://marketplace.visualstudio.com/items?itemName=goessner.mdmath) 는 다음과 같이 **Markdown** 파일에 **Tex** 수식을 입력하면 그것을 `.html` 파일로 자동으로 랜더링해주는 확장입니다. 
 
-<img src="https://raw.githubusercontent.com/goessner/mdmath/master/img/mdmath.gif" width="50%" height="auto">
+<img src="https://raw.githubusercontent.com/goessner/mdmath/master/img/mdmath.gif" width="70%" height="auto">
 
 개인적으로 자주 사용하고 있는 확장이기도 합니다. 
 
@@ -1258,7 +1258,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 # VSCode Vim
 
-[**Vim**](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 은 **VSCode** 에서 `vim` 키맵을 사용할 수 있도록 해줍니다. 그래서 기존의 CLI 에서의 `vim` 에서는 사용할 수 없었던 **VSCode** 의 모든 풍부한 디버깅 기능, 확장, **VCS** 등을 `vim` 과 함께 사용할 수 있게 됩니다.
+[**VSCodeVim**](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 은 **VSCode** 에서 `vim` 키맵을 사용할 수 있도록 해줍니다. 그래서 기존의 CLI 에서의 `vim` 에서는 사용할 수 없었던 **VSCode** 의 모든 풍부한 디버깅 기능, 확장, **VCS** 등을 `vim` 과 함께 사용할 수 있게 됩니다. 어차피 나중에라도 **VSCodeVim** 을 비활성화 시킬 수 있기 때문에 한번 설치해보세요. 
 
 ## 단축키
 
@@ -1270,11 +1270,11 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 |:---:|:---:|:---:|
 | 주석 | `\cc`  | `gcc`|
 
-**Vim** 확장이 적용된 **VSCode** 에서 주석처리는 단순히 `gcc` 를 누르면 됩니다. `5gcc` 를 누르면 `5` 줄이 주석처리되는 식입니다.
+**VSCodeVim** 확장이 적용된 **VSCode** 에서 주석처리는 단순히 `gcc` 를 누르면 됩니다. `5gcc` 를 누르면 `5` 줄이 주석처리되는 식입니다.
 
 ### 단축키 설정
 
-**Vim** 확장의 키맵이 **VSCode** 의 강력한 기능을 덮어버리는 경우도 있었기 때문에 개인적으로 다음의 설정을 통해 **Vim** 확장의 일부 기능을 비활성화시켰습니다. `...` 에는 또 다른 확장들의 설정이 있는 것입니다. 
+**VSCodeVim** 확장의 키맵이 **VSCode** 의 강력한 기능을 덮어버리는 경우도 있었기 때문에 개인적으로 다음의 설정을 통해 **VSCodeVim** 확장의 일부 기능을 비활성화시켰습니다. `...` 에는 또 다른 확장들의 설정이 있는 것입니다. 
 
 ```json
 {
@@ -1300,9 +1300,9 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 <img src="https://user-images.githubusercontent.com/16812446/82322033-cbf1d800-9a10-11ea-9726-10ef40cff6c5.PNG" width="50%" height="auto">
 
-이런 설정을 통해 **Vim** 확장 단축키를 비활성화시켜서 원래 **VSCode** 단축키로 기능하게 한 단축키는 다음과 같습니다.
+이런 설정을 통해 **VSCodeVim** 확장 단축키를 비활성화시켜서 원래 **VSCode** 단축키로 기능하게 한 단축키는 다음과 같습니다.
 
-| 단축키 | **Vim** 확장 | **VSCode** 원래 기능 | 
+| 단축키 | **VSCodeVim** 확장 | **VSCode** 원래 기능 | 
 |:---:|:---:|:---:|
 | <kbd>Ctrl</kbd>+<kbd>d</kbd> | 화면 내리기 | 멀티 커서 |
 | <kbd>Ctrl</kbd>+<kbd>n</kbd> | | 새 파일 만들기 |
@@ -1311,7 +1311,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 | <kbd>Ctrl</kbd>+<kbd>o</kbd> | | 파일 열기 |
 | <kbd>Ctrl</kbd>+<kbd>a</kbd> | | 전체 선택 |
 
-<kbd>Ctrl</kbd>+<kbd>d</kbd> 는 기본 **VSCode** 에서 멀티 커서 기능인데 **Vim** 확장을 설치하면 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 덮어버려서 비활성화시켰고, <kbd>Ctrl</kbd>+<kbd>n</kbd> 은 기본 **VSCode** 에서 새 파일을 만드는 단축키인데 마찬가지로 **Vim** 확장이 이 단축키를 덮어버렸기 때문에 비활성화시켰습니다. 비슷한 이유로 <kbd>Ctrl</kbd>+<kbd>f</kbd>, <kbd>Ctrl</kbd>+<kbd>o</kbd>, <kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>Ctrl</kbd>+<kbd>w</kbd> 등도 기본 **VSCode** 기능을 하도록 **Vim** 확장을 비활성화시켰습니다. 
+<kbd>Ctrl</kbd>+<kbd>d</kbd> 는 기본 **VSCode** 에서 멀티 커서 기능인데 **VSCodeVim** 확장을 설치하면 <kbd>Ctrl</kbd>+<kbd>d</kbd> 를 덮어버려서 비활성화시켰고, <kbd>Ctrl</kbd>+<kbd>n</kbd> 은 기본 **VSCode** 에서 새 파일을 만드는 단축키인데 마찬가지로 **VSCodeVim** 확장이 이 단축키를 덮어버렸기 때문에 비활성화시켰습니다. 비슷한 이유로 <kbd>Ctrl</kbd>+<kbd>f</kbd>, <kbd>Ctrl</kbd>+<kbd>o</kbd>, <kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>Ctrl</kbd>+<kbd>w</kbd> 등도 기본 **VSCode** 기능을 하도록 **VSCodeVim** 확장을 비활성화시켰습니다. 
 
 ### 그외의 단축키 
 
@@ -1321,7 +1321,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 # VSCode Vim 예시
 
-여기에서는 **VSCode** 에서 **Vim** 확장으로 어떻게 코드 편집을 편하게 편하게 할 수 있는지 보여드리겠습니다. **Vim** 을 사용하고 싶지 않은 분들이라도 한번 따라해보면서 코드 편집을 얼마나 더 효율적으로 할 수 있는지 꼭 체험해보세요. 
+여기에서는 **VSCode** 에서 **VSCodeVim** 확장으로 어떻게 코드 편집을 편하게 편하게 할 수 있는지 보여드리겠습니다. **VSCodeVim** 을 사용하고 싶지 않은 분들이라도 한번 따라해보면서 코드 편집을 얼마나 더 효율적으로 할 수 있는지 꼭 체험해보세요. 
 
 ## Python - List to Dictionary
 
@@ -1522,7 +1522,7 @@ if __name__ == '__main__':
 그래서 실제로 다음과 같이 브레이크 포인트를 설정하고 <kbd>F5</kbd> 를 눌러서 디버깅을 시작할 수 있고 왼쪽 패널에서 `result` 변수의 변화를 관찰할 수 있습니다. 
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/16812446/82329102-c5b52900-9a1b-11ea-96c5-a80faecf5924.gif" width="90%" height="auto">
+<img src="https://user-images.githubusercontent.com/16812446/82329102-c5b52900-9a1b-11ea-96c5-a80faecf5924.gif" width="70%" height="auto">
 </div>
 
 브레이크 포인트에서 멈춘 시점에서 <kbd>F10</kbd> 을 누르면 한줄의 코드씩 실행시켜볼 수 있고 <kbd>F5</kbd> 를 누르면 끝까지 진행시켜버릴 수 있습니다. 
