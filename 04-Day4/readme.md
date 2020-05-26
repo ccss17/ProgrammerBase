@@ -464,6 +464,10 @@ $ gotop
   <img src="https://user-images.githubusercontent.com/16812446/82149895-5829c100-9892-11ea-9147-b97e122a265c.png" width="70%" height="auto">
   </div>
 
+## `python` ➜ `bpython`
+
+(python to bpython)
+
 ## fzf 
 
 [`fzf`](https://github.com/junegunn/fzf) 는 다음과 같은 범용 fuzzy finder 입니다. 
@@ -1526,6 +1530,10 @@ if __name__ == '__main__':
 </div>
 
 브레이크 포인트에서 멈춘 시점에서 <kbd>F10</kbd> 을 누르면 한줄의 코드씩 실행시켜볼 수 있고 <kbd>F5</kbd> 를 누르면 끝까지 진행시켜버릴 수 있습니다. 
+
+## 주피터 노트북
+
+(작성중)
 
 ---
 

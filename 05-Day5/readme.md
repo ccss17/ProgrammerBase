@@ -66,6 +66,10 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 ---
 
+(gdb, pwddbg, gdb-gef)
+
+---
+
 # Git 과 Github 못다한 이야기
 
 우리는 **Git** 과 **Github** 의 가장 기초적인 부분을 이미 다뤘었는데 여기에서는 **Git** 과 **Github** 에 관하여 아직 하지 못한 이야기를 해보겠습니다. 
