@@ -1176,17 +1176,11 @@ https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=Al
 
 다음 사진은 [**Andromeda**](https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda) 테마입니다.
 
-<img src="https://user-images.githubusercontent.com/16812446/82317619-87af0980-9a09-11ea-93bb-bff42d1794c6.png" width="70%" height="auto">
-
-![Screenshot from 2020-05-30 07-05-34](https://user-images.githubusercontent.com/16812446/83309395-190d4f80-a244-11ea-86a6-bc632e60f4ad.png)
-
 ![Screenshot from 2020-05-30 07-06-52](https://user-images.githubusercontent.com/16812446/83309406-21fe2100-a244-11ea-9609-e972b693eedb.png)
 
 ### 2077
 
 다음 사진은 [**2077**](https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme) 테마입니다.
-
-<img src="https://user-images.githubusercontent.com/16812446/82318040-2471a700-9a0a-11ea-9031-de3ecadb12c1.png" width="70%" height="auto">
 
 ![Screenshot from 2020-05-30 07-07-52](https://user-images.githubusercontent.com/16812446/83309441-3cd09580-a244-11ea-91cc-999c9e379ad1.png)
 
@@ -1213,6 +1207,12 @@ https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=Al
 다음 사진은 [**지평선**](https://marketplace.visualstudio.com/items?itemName=jolaleye.horizon-theme-vscode) 테마입니다.
 
 ![Screenshot from 2020-05-30 07-12-20](https://user-images.githubusercontent.com/16812446/83309673-dd26ba00-a244-11ea-960b-e606ab365f32.png)
+
+### SynthWave '84
+
+다음 사진은 [**SynthWave '84**](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode) 테마입니다.
+
+![Screenshot from 2020-05-30 07-29-25](https://user-images.githubusercontent.com/16812446/83310549-60490f80-a247-11ea-852e-775a8be82897.png)
 
 ## 유용한 확장 
 
