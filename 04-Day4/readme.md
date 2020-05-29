@@ -1260,6 +1260,10 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 ![Code_KFMh5BA08B](https://user-images.githubusercontent.com/16812446/82327355-3ad32f00-9a19-11ea-9c9c-edc3a20893e7.png)
 
+### VSCode PDF
+
+(과제나 레퍼런스를 VSCode 상에서 보면서 코딩)
+
 # VSCode Vim
 
 [**VSCodeVim**](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 은 **VSCode** 에서 `vim` 키맵을 사용할 수 있도록 해줍니다. 그래서 기존의 CLI 에서의 `vim` 에서는 사용할 수 없었던 **VSCode** 의 모든 풍부한 디버깅 기능, 확장, **VCS** 등을 `vim` 과 함께 사용할 수 있게 됩니다. 어차피 나중에라도 **VSCodeVim** 을 비활성화 시킬 수 있기 때문에 한번 설치해보세요. 
@@ -1533,7 +1537,7 @@ if __name__ == '__main__':
 
 ## 주피터 노트북
 
-(작성중)
+(파이썬으로 배우는 기계학습 PDF 와 함께 주피터 노트북 사용하는 것. 작성중)
 
 ---
 

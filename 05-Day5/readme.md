@@ -93,7 +93,6 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
     이렇게 하면 하위 디렉토리에서 `idea.txt` 가 생성되어도 **Git** 이 추적하지 않습니다. 
 
-
 ### .gitignore 의 편리한 기능 
 
 하지만 프로젝트가 조금만 커져도 블랙리스트에 넣고 싶은 파일이 많아져서 `.gitignore` 에 작성해야할 블랙리스트 파일들이 너무 많아서 귀찮습니다. 그래서 `.gitignore` 는 특수문자를 통해 다음과 같은 편리한 기능을 제공합니다. 
@@ -109,7 +108,6 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 |`doc/**/*.txt`|`doc/` 디렉토리와 모든 하위 디렉토리의 `.txt` 파일을 무시한다.|
 
 </div>
-
 
 ## Git Branching
 
@@ -373,6 +371,22 @@ $ g a
 $ g cm "merge testing"
 ```
 
+### 브랜치 삭제 
+
+이제 마지막으로 병합이 완료된 `testing` 브랜치를 삭제하는 일만 남았습니다. 
+
+- **`git branch -d <NAME>` : 병합이 완료된 `<NAME>` 브랜치를 삭제한다.**
+
+- **`git branch -D <NAME>` : 병합이 완료되지 않은 `<NAME>` 브랜치를 삭제한다.**
+
+다음 명령어로 `testing` 브랜치를 삭제하세요. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ g bd testing
+```
+
 > 지금까지 **Git Branching** 을 매우 간단하게 알아보았는데, 나중에 https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell 을 통하여 **Git Branching** 의 더욱 강력한 기능을 추가 학습하시길 강력하게 추천합니다.
 
 > **VSCode** 에서는 왼쪽 하단부의 **Branch** 를 클릭하거나 명령 팔레트에서 **branch** 를 검색하는 것으로 매우 쉽게 **Branch** 를 생성하거나 이주할 수 있습니다.
@@ -392,6 +406,13 @@ user.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니�
 - [sindresorhus](https://github.com/sindresorhus) 의 [블로그](https://sindresorhus.com/) : https://github.com/sindresorhus/sindresorhus.github.com
 
 - [도커 가이드](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html) : https://github.com/subicura/subicura.github.io 
+
+
+## hguapp.ghoster.cc/git/
+
+hguapp.ghoster.cc/git/
+
+(한동대 컴퓨터보안 동아리 고스트의 사설 깃허브. 도커로 운영중.)
 
 ## gist
 
@@ -413,11 +434,13 @@ for (let v of document.getElementsByTagName('input')){
 
 ### gist 사용법 
 
-[gist](https://gist.github.com/) 사용법은 매우 간단합니다. https://gist.github.com/ 에 들어가면 다짜고짜 제목과 파일이름 내용을 입력하는 텍스트 필드가 나오는데 이 3가지 텍스트 필드를 입력하고 <kbd>Create secret gist</kbd> 또는 <kbd>Create public gist</kbd> 버튼을 누르면 그게 다입니다. 그러면 gist 가 생성되는데 URL 을 다음과 같이 어디에서든 **clone** 할 수 있습니다. 
+[gist](https://gist.github.com/) 사용법은 매우 간단합니다. https://gist.github.com/ 에 들어가면 다짜고짜 제목과 파일이름 내용을 입력하는 텍스트 필드가 나오는데 이 3가지 텍스트 필드를 입력하고 <kbd>Create secret gist</kbd> 또는 <kbd>Create public gist</kbd> 버튼을 누르면 그게 다입니다. 그러면 **gist** 가 생성되는데 URL 을 다음과 같이 어디에서든 **clone** 할 수 있습니다. 
 
 ```shell
 $ g cl https://gist.github.com/ccss17/ff6944df7e8f3c9ab518629915857d85
 ```
+
+이 **gist** 또한 **staging**, **commit**, **push** 등등이 모두 다 가능한 **Git** 레포지토리와 똑같이 다룰 수 있습니다.
 
 ### gist 명령어 
 
