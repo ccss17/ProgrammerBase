@@ -691,6 +691,10 @@ $ g psom
 
 매년 하는 [Stackoverflow Survey](https://insights.stackoverflow.com/survey/2019) 도 좋은 정보를 얻을 수 있는 소스가 됩니다. 하지만 이미 다뤘기 때문에 넘기겠습니다.
 
+## Dev Community
+
+https://dev.to/
+
 ## 검색
 
 ### 영어 검색
