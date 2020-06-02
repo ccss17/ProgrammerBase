@@ -1172,25 +1172,58 @@ https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=Al
 
 <img src="https://user-images.githubusercontent.com/16812446/82317397-25560900-9a09-11ea-9585-d86e1fc6a7dc.png" width="70%" height="auto">
 
-코드 가독성이 정말 높아져서 제가 사용하고 있는 테마이기도 합니다. 
-
 ### Andromeda
 
 다음 사진은 [**Andromeda**](https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda) 테마입니다.
 
-<img src="https://user-images.githubusercontent.com/16812446/82317619-87af0980-9a09-11ea-93bb-bff42d1794c6.png" width="70%" height="auto">
+![Screenshot from 2020-05-30 07-06-52](https://user-images.githubusercontent.com/16812446/83309406-21fe2100-a244-11ea-9609-e972b693eedb.png)
 
 ### 2077
 
 다음 사진은 [**2077**](https://marketplace.visualstudio.com/items?itemName=Endormi.2077-theme) 테마입니다.
 
-<img src="https://user-images.githubusercontent.com/16812446/82318040-2471a700-9a0a-11ea-9031-de3ecadb12c1.png" width="70%" height="auto">
+![Screenshot from 2020-05-30 07-07-52](https://user-images.githubusercontent.com/16812446/83309441-3cd09580-a244-11ea-91cc-999c9e379ad1.png)
 
 ### Eva Theme
 
 다음 사진은 [**Eva Theme**](https://marketplace.visualstudio.com/items?itemName=fisheva.eva-theme) 테마입니다.
 
 <img src="https://user-images.githubusercontent.com/16812446/82318292-921dd300-9a0a-11ea-82b8-ebd62be28e35.png" width="70%" height="auto">
+
+### Cyberpunk
+
+다음 사진은 [**Cyberpunk**](https://marketplace.visualstudio.com/items?itemName=max-SS.cyberpunk) 테마입니다.
+
+![Screenshot from 2020-05-30 07-10-04](https://user-images.githubusercontent.com/16812446/83309556-8b7e2f80-a244-11ea-81bb-9cde5f247312.png)
+
+### Universe
+
+다음 사진은 [**Universe**](https://marketplace.visualstudio.com/items?itemName=MatiasOlivera.universe) 테마입니다.
+
+![Screenshot from 2020-05-30 07-10-54](https://user-images.githubusercontent.com/16812446/83309603-a8b2fe00-a244-11ea-9048-27967f402607.png)
+
+### 지평선
+
+다음 사진은 [**지평선**](https://marketplace.visualstudio.com/items?itemName=jolaleye.horizon-theme-vscode) 테마입니다.
+
+![Screenshot from 2020-05-30 07-12-20](https://user-images.githubusercontent.com/16812446/83309673-dd26ba00-a244-11ea-960b-e606ab365f32.png)
+
+### SynthWave '84
+
+다음 사진은 [**SynthWave '84**](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode) 테마입니다.
+
+![Screenshot from 2020-05-30 07-29-25](https://user-images.githubusercontent.com/16812446/83310549-60490f80-a247-11ea-852e-775a8be82897.png)
+
+### Cyberpunk
+
+다음 사진은 [**Cyberpunk**](https://marketplace.visualstudio.com/items?itemName=max-SS.cyberpunk) 테마입니다.
+
+![Screenshot from 2020-06-02 09-55-55](https://user-images.githubusercontent.com/16812446/83468256-3564f280-a4b7-11ea-8ec7-b4a4824d2262.png)
+
+![Screenshot from 2020-06-02 09-56-27](https://user-images.githubusercontent.com/16812446/83468277-49105900-a4b7-11ea-9d93-bc3b7aabfd63.png)
+
+![Screenshot from 2020-06-02 09-56-34](https://user-images.githubusercontent.com/16812446/83468295-50cffd80-a4b7-11ea-9a9a-0b0129c1f408.png)
+
 
 ## 유용한 확장 
 
@@ -1204,11 +1237,17 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 최상위에 랭크된 확장들은 설치하여 사용했을시 정말 좋은 확장들이기 때문에 나에게 필요한 확장이 있나 한번 찾아보세요. 여기에서는 몇가지 유용한 확장들만 알아보겠습니다. 
 
+### Git Lens
+
+(git lens)
+
 ### Git Graph 
 
 [**Git Graph**](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) 는 여러가지 좋은 기능을 제공합니다. 핵심적으로 다음과 같이 `git` 커밋 기록과 브랜치를 시각적으로 보여줍니다.
 
 <img src="https://raw.githubusercontent.com/mhutchie/vscode-git-graph/master/resources/demo.gif" width="70%" height="auto">
+
+> 이미지 출처 : 
 
 <img src="https://user-images.githubusercontent.com/16812446/82319050-d78ed000-9a0b-11ea-8e74-3f94a0e1c81e.png" width="70%" height="auto">
 
@@ -1217,6 +1256,8 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 [**Code Runner**](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 는 다음과 같이 코드를 손쉽게 실행해볼 수 있게 해줍니다.
 
 <img src="https://raw.githubusercontent.com/formulahendry/vscode-code-runner/master/images/usage.gif" width="70%" height="auto">
+
+> 이미지 출처 : 
 
 단순히 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>n</kbd> 만 누르면 되죠. 이 단축키만 누르면 **C/C++ 언어** 도 지알아서 컴파일하고 실행해주고 **Code Runner** 의 환경설정에서 컴파일 옵션을 바꿀 수도 있습니다. 
 
