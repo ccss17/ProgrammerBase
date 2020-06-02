@@ -1196,6 +1196,12 @@ https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=Al
 
 ![Screenshot from 2020-05-30 07-10-04](https://user-images.githubusercontent.com/16812446/83309556-8b7e2f80-a244-11ea-81bb-9cde5f247312.png)
 
+![Screenshot from 2020-06-02 09-56-27](https://user-images.githubusercontent.com/16812446/83468277-49105900-a4b7-11ea-9d93-bc3b7aabfd63.png)
+
+![Screenshot from 2020-06-02 09-56-34](https://user-images.githubusercontent.com/16812446/83468295-50cffd80-a4b7-11ea-9a9a-0b0129c1f408.png)
+
+![Screenshot from 2020-06-02 09-55-55](https://user-images.githubusercontent.com/16812446/83468256-3564f280-a4b7-11ea-8ec7-b4a4824d2262.png)
+
 ### Universe
 
 다음 사진은 [**Universe**](https://marketplace.visualstudio.com/items?itemName=MatiasOlivera.universe) 테마입니다.
@@ -1213,16 +1219,6 @@ https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=Al
 다음 사진은 [**SynthWave '84**](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode) 테마입니다.
 
 ![Screenshot from 2020-05-30 07-29-25](https://user-images.githubusercontent.com/16812446/83310549-60490f80-a247-11ea-852e-775a8be82897.png)
-
-### Cyberpunk
-
-다음 사진은 [**Cyberpunk**](https://marketplace.visualstudio.com/items?itemName=max-SS.cyberpunk) 테마입니다.
-
-![Screenshot from 2020-06-02 09-55-55](https://user-images.githubusercontent.com/16812446/83468256-3564f280-a4b7-11ea-8ec7-b4a4824d2262.png)
-
-![Screenshot from 2020-06-02 09-56-27](https://user-images.githubusercontent.com/16812446/83468277-49105900-a4b7-11ea-9d93-bc3b7aabfd63.png)
-
-![Screenshot from 2020-06-02 09-56-34](https://user-images.githubusercontent.com/16812446/83468295-50cffd80-a4b7-11ea-9a9a-0b0129c1f408.png)
 
 
 ## 유용한 확장 
