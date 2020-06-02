@@ -1214,6 +1214,17 @@ https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=Al
 
 ![Screenshot from 2020-05-30 07-29-25](https://user-images.githubusercontent.com/16812446/83310549-60490f80-a247-11ea-852e-775a8be82897.png)
 
+### Cyberpunk
+
+다음 사진은 [**Cyberpunk**](https://marketplace.visualstudio.com/items?itemName=max-SS.cyberpunk) 테마입니다.
+
+![Screenshot from 2020-06-02 09-55-55](https://user-images.githubusercontent.com/16812446/83468256-3564f280-a4b7-11ea-8ec7-b4a4824d2262.png)
+
+![Screenshot from 2020-06-02 09-56-27](https://user-images.githubusercontent.com/16812446/83468277-49105900-a4b7-11ea-9d93-bc3b7aabfd63.png)
+
+![Screenshot from 2020-06-02 09-56-34](https://user-images.githubusercontent.com/16812446/83468295-50cffd80-a4b7-11ea-9a9a-0b0129c1f408.png)
+
+
 ## 유용한 확장 
 
 다음 링크는 **VSCode** 마켓 플레이스에서 확장을 평가순으로 정렬한 것입니다.
@@ -1226,11 +1237,17 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 최상위에 랭크된 확장들은 설치하여 사용했을시 정말 좋은 확장들이기 때문에 나에게 필요한 확장이 있나 한번 찾아보세요. 여기에서는 몇가지 유용한 확장들만 알아보겠습니다. 
 
+### Git Lens
+
+(git lens)
+
 ### Git Graph 
 
 [**Git Graph**](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) 는 여러가지 좋은 기능을 제공합니다. 핵심적으로 다음과 같이 `git` 커밋 기록과 브랜치를 시각적으로 보여줍니다.
 
 <img src="https://raw.githubusercontent.com/mhutchie/vscode-git-graph/master/resources/demo.gif" width="70%" height="auto">
+
+> 이미지 출처 : 
 
 <img src="https://user-images.githubusercontent.com/16812446/82319050-d78ed000-9a0b-11ea-8e74-3f94a0e1c81e.png" width="70%" height="auto">
 
@@ -1239,6 +1256,8 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 [**Code Runner**](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 는 다음과 같이 코드를 손쉽게 실행해볼 수 있게 해줍니다.
 
 <img src="https://raw.githubusercontent.com/formulahendry/vscode-code-runner/master/images/usage.gif" width="70%" height="auto">
+
+> 이미지 출처 : 
 
 단순히 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>n</kbd> 만 누르면 되죠. 이 단축키만 누르면 **C/C++ 언어** 도 지알아서 컴파일하고 실행해주고 **Code Runner** 의 환경설정에서 컴파일 옵션을 바꿀 수도 있습니다. 
 
