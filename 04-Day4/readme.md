@@ -1198,10 +1198,6 @@ https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=Al
 
 ![Screenshot from 2020-06-02 09-56-27](https://user-images.githubusercontent.com/16812446/83468277-49105900-a4b7-11ea-9d93-bc3b7aabfd63.png)
 
-![Screenshot from 2020-06-02 09-56-34](https://user-images.githubusercontent.com/16812446/83468295-50cffd80-a4b7-11ea-9a9a-0b0129c1f408.png)
-
-![Screenshot from 2020-06-02 09-55-55](https://user-images.githubusercontent.com/16812446/83468256-3564f280-a4b7-11ea-8ec7-b4a4824d2262.png)
-
 ### Universe
 
 다음 사진은 [**Universe**](https://marketplace.visualstudio.com/items?itemName=MatiasOlivera.universe) 테마입니다.
