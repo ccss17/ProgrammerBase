@@ -50,6 +50,8 @@
 
 이제 수학의 역사는 충분히 알아보았으니 본격적으로 컴퓨터의 역사를 알아보겠습니다. 지금까지 한 일은 단지 컴퓨터의 본질을 이해하기 위한 사전작업에 불과했습니다. 지금까지는 드라마(컴퓨터)의 예고편(수학)을 본 것에 불과 합니다. 
 
+앞으로 괴델의 불완전성 정리를 알아볼 것인데, 불완전성 정리에 대한 이해는 컴퓨터의 본질을 이해할 수 있는 좋은 단서가 됩니다. 하지만 장담하건데 생각보다 막 어렵다거나 재미없다거나 하지 않아요. 정말 쉽고 재밌으니까 편하게 보셨으면 좋겠습니다.
+
 ## 배경과 용어
 
 그에 앞서 배경과 용어를 다시 점검하고 넘어가겠습니다. 
@@ -290,6 +292,8 @@
 
 여기에서는 다음의 12개의 상항 기호를 상정하고 각각 1 에서 12 의 수를 부여하겠습니다.
 
+<div align="center">
+
 | 상항기호 | 괴델 수 | 일상적 의미 |
 |:---:|:---:|:---:|
 | ![](https://math.now.sh/?from=\sim)  | ![](https://math.now.sh/?from=1) | 아니다 |
@@ -305,9 +309,13 @@
 | ![](https://math.now.sh/?from=%2B)  | ![](https://math.now.sh/?from=11) | 더하기 |
 | ![](https://math.now.sh/?from=\times)  | ![](https://math.now.sh/?from=11) | 곱하기 |
 
+</div>
+
 가령 "![](https://math.now.sh/?from=0%2Bs0=s0)" 은 일상적인 의미로 0+1=1 을 뜻합니다.
 
 또한 숫자변항, 문장변항, 술어변항으로 구성되는 변항기호에도 괴델수를 부여할 수 있습니다. 다음과 같이 숫자변항에는 12 보다 큰 소수를 차례로 부여합니다.
+
+<div align="center">
 
 | 숫자변항 | 괴델 수 | 가능한 대입 실례 |
 |:---:|:---:|:---:|
@@ -315,7 +323,11 @@
 | ![](https://math.now.sh/?from=y)  | ![](https://math.now.sh/?from=17) | ![](https://math.now.sh/?from=s0) |
 | ![](https://math.now.sh/?from=z)  | ![](https://math.now.sh/?from=19) | ![](https://math.now.sh/?from=y) |
 
+</div>
+
 다음과 같이 문장변항에는 12 보다 큰 소수의 제곱수를 부여합니다.
+
+<div align="center">
 
 | 문장변항 | 괴델 수 | 가능한 대입 실례 |
 |:---:|:---:|:---:|
@@ -323,7 +335,11 @@
 | ![](https://math.now.sh/?from=q)  | ![](https://math.now.sh/?from=17^{2}) | ![](https://math.now.sh/?from=(\exists{}x)(x=sy)) |
 | ![](https://math.now.sh/?from=r)  | ![](https://math.now.sh/?from=19^{2}) | ![](https://math.now.sh/?from=p\to{}q) |
 
+</div>
+
 다음과 같이 술어변항에는 12 보다 큰 소수의 세제곱수를 부여합니다.
+
+<div align="center">
 
 | 술어변항 | 괴델 수 | 가능한 대입 실례 |
 |:---:|:---:|:---:|
@@ -331,13 +347,19 @@
 | ![](https://math.now.sh/?from=Q)  | ![](https://math.now.sh/?from=17^{3}) | ![](https://math.now.sh/?from=~(x=ss0\times{}y)) |
 | ![](https://math.now.sh/?from=R)  | ![](https://math.now.sh/?from=19^{3}) | ![](https://math.now.sh/?from=(\exists{}z)(x=y%2Bsz)) |
 
+</div>
+
 ### 1-(2) 형식문에 괴델수 붙이기
 
 형식문에 괴델수를 붙이는 것은 매우 간답합니다. 가령 ![](https://math.now.sh/?from=y) 바로 다음 수 ![](https://math.now.sh/?from=x) 가 있다는 의미의 형식문 "![](https://math.now.sh/?from=(\exists{}x)(x=sy))" 의 기본 기호는 각각 괴델수
 
+<div align="center">
+
 | ![](https://math.now.sh/?from=\() | ![](https://math.now.sh/?from=\exists) | ![](https://math.now.sh/?from=x) | ![](https://math.now.sh/?from=\)) | ![](https://math.now.sh/?from=\() | ![](https://math.now.sh/?from=x) | ![](https://math.now.sh/?from==) | ![](https://math.now.sh/?from=s) | ![](https://math.now.sh/?from=y) | ![](https://math.now.sh/?from=\)) | 
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 8  | 4 |13 |9 |8 |13 |5 |7 |17 |9 |
+
+</div>
 
 를 갖는데 일련의 소수에 이 괴델수의 거듭제곱을 취하여 곱한 수
 

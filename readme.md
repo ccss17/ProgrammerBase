@@ -152,23 +152,23 @@
 
 ## 조금은 철학적인 이야기
 
-### 수학의 역사
+### [수학의 역사](https://github.com/ccss17/ProgrammerBase/blob/master/math.md)
 
 - [조금은 철학적인 이야기 ](https://github.com/ccss17/ProgrammerBase/blob/master/math.md#%EC%A1%B0%EA%B8%88%EC%9D%80-%EC%B2%A0%ED%95%99%EC%A0%81%EC%9D%B8-%EC%9D%B4%EC%95%BC%EA%B8%B0)
 
 - [수학의 역사 ](https://github.com/ccss17/ProgrammerBase/blob/master/math.md#%EC%88%98%ED%95%99%EC%9D%98-%EC%97%AD%EC%82%AC)
 
-### 괴델의 불완전성 정리
+### [괴델의 불완전성 정리](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md)
 
 - [컴퓨터의 역사 ](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EC%BB%B4%ED%93%A8%ED%84%B0%EC%9D%98-%EC%97%AD%EC%82%AC)
 
 - [괴델의 불완전성 정리 ](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EA%B4%B4%EB%8D%B8%EC%9D%98-%EB%B6%88%EC%99%84%EC%A0%84%EC%84%B1-%EC%A0%95%EB%A6%AC)
 
-### 튜링의 증명
+### [튜링의 증명](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md)
 
 - [튜링의 증명](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#%ED%8A%9C%EB%A7%81%EC%9D%98-%EC%A6%9D%EB%AA%85)
 
-### 기술적 특이점
+### [기술적 특이점](https://github.com/ccss17/ProgrammerBase/blob/master/future.md)
 
 - [미래 ](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EB%AF%B8%EB%9E%98)
 
