@@ -4,41 +4,33 @@
 
 # Table of Contents
 
-- [조금은 철학적인 이야기 - 튜링의 증명 ]()
+- [튜링의 증명](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#%ED%8A%9C%EB%A7%81%EC%9D%98-%EC%A6%9D%EB%AA%85)
 
-- [튜링의 증명]()
+  - [배경](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#%EB%B0%B0%EA%B2%BD)
 
-  - [배경]()
+  - [튜링의 논문 《On Computable Numbers, with an Application to the Entscheidungsproblem》](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#%ED%8A%9C%EB%A7%81%EC%9D%98-%EB%85%BC%EB%AC%B8-on-computable-numbers-with-an-application-to-the-entscheidungsproblem)
 
-  - [튜링의 논문 《On Computable Numbers, with an Application to the Entscheidungsproblem》]()
+  - [1. 튜링 기계](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#1-%ED%8A%9C%EB%A7%81-%EA%B8%B0%EA%B3%84)
 
-  - [1. 튜링 기계]()
+  - [2. 보편만능기계](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#2-%EB%B3%B4%ED%8E%B8%EB%A7%8C%EB%8A%A5%EA%B8%B0%EA%B3%84)
 
-  - [2. 보편만능기계]()
+    - [2-(1) 튜링기계를 텍스트로 사상시키기](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#2-1-%ED%8A%9C%EB%A7%81%EA%B8%B0%EA%B3%84%EB%A5%BC-%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A1%9C-%EC%82%AC%EC%83%81%EC%8B%9C%ED%82%A4%EA%B8%B0)
 
-    - [2-(1) 튜링기계를 텍스트로 사상시키기]()
+    - [2-(2) 텍스트로 사상된 튜링기계를 입력받아 실행하는 작동규칙표](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#2-2-%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%A1%9C-%EC%82%AC%EC%83%81%EB%90%9C-%ED%8A%9C%EB%A7%81%EA%B8%B0%EA%B3%84%EB%A5%BC-%EC%9E%85%EB%A0%A5%EB%B0%9B%EC%95%84-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%EC%9E%91%EB%8F%99%EA%B7%9C%EC%B9%99%ED%91%9C)
 
-      - [테이프 1 ]()
+  - [3. 튜링의 증명](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#3-%ED%8A%9C%EB%A7%81%EC%9D%98-%EC%A6%9D%EB%AA%85)
 
-      - [테이프 2]()
+    - [3-(1) 무한의 크기(대각선 논법)](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#3-1-%EB%AC%B4%ED%95%9C%EC%9D%98-%ED%81%AC%EA%B8%B0%EB%8C%80%EA%B0%81%EC%84%A0-%EB%85%BC%EB%B2%95)
 
-      - [테이프 3]()
+      - [실수의 개수가 자연수의 개수보다 더 크다.](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#%EC%8B%A4%EC%88%98%EC%9D%98-%EA%B0%9C%EC%88%98%EA%B0%80-%EC%9E%90%EC%97%B0%EC%88%98%EC%9D%98-%EA%B0%9C%EC%88%98%EB%B3%B4%EB%8B%A4-%EB%8D%94-%ED%81%AC%EB%8B%A4)
 
-    - [2-(2) 텍스트로 사상된 튜링기계를 입력받아 실행하는 작동규칙표]()
+      - [자연수의 부분집합의 개수가 자연수의 개수보다 더 크다.](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#%EC%9E%90%EC%97%B0%EC%88%98%EC%9D%98-%EB%B6%80%EB%B6%84%EC%A7%91%ED%95%A9%EC%9D%98-%EA%B0%9C%EC%88%98%EA%B0%80-%EC%9E%90%EC%97%B0%EC%88%98%EC%9D%98-%EA%B0%9C%EC%88%98%EB%B3%B4%EB%8B%A4-%EB%8D%94-%ED%81%AC%EB%8B%A4)
 
-  - [3. 튜링의 증명]()
+    - [3-(2) 튜링기계의 개수](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#3-2-%ED%8A%9C%EB%A7%81%EA%B8%B0%EA%B3%84%EC%9D%98-%EA%B0%9C%EC%88%98)
 
-    - [3-(1) 무한의 크기(대각선 논법)]()
+    - [3-(3) 보편만능기계로도 해결할 수 없는 정지문제](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#3-3-%EB%B3%B4%ED%8E%B8%EB%A7%8C%EB%8A%A5%EA%B8%B0%EA%B3%84%EB%A1%9C%EB%8F%84-%ED%95%B4%EA%B2%B0%ED%95%A0-%EC%88%98-%EC%97%86%EB%8A%94-%EC%A0%95%EC%A7%80%EB%AC%B8%EC%A0%9C)
 
-      - [실수의 개수가 자연수의 개수보다 더 크다.]()
-
-      - [자연수의 부분집합의 개수가 자연수의 개수보다 더 크다.]()
-
-    - [3-(2) 튜링기계의 개수]()
-
-    - [3-(3) 보편만능기계로도 해결할 수 없는 정지문제]()
-
-  - [튜링의 증명의 의미]()
+  - [튜링의 증명의 의미](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#%ED%8A%9C%EB%A7%81%EC%9D%98-%EC%A6%9D%EB%AA%85%EC%9D%98-%EC%9D%98%EB%AF%B8)
 
 ---
 

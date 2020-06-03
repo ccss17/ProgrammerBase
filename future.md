@@ -4,47 +4,43 @@
 
 # Table of Contents
 
-- [조금은 철학적인 이야기 - 기술적 특이점]()
+- [미래 ](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EB%AF%B8%EB%9E%98)
 
-- [Table of Contents]()
+  - [기술적 특이점 ](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EA%B8%B0%EC%88%A0%EC%A0%81-%ED%8A%B9%EC%9D%B4%EC%A0%90)
 
-- [미래 ]()
+- [Why the future doesn't need us](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#why-the-future-doesnt-need-us)
 
-  - [기술적 특이점 ]()
+  - [내가 커즈와일과 나눈 대화](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EB%82%B4%EA%B0%80-%EC%BB%A4%EC%A6%88%EC%99%80%EC%9D%BC%EA%B3%BC-%EB%82%98%EB%88%88-%EB%8C%80%ED%99%94)
 
-- [Why the future doesn't need us]()
+    - [기술적 특이점이 도래했을 때의 미래](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EA%B8%B0%EC%88%A0%EC%A0%81-%ED%8A%B9%EC%9D%B4%EC%A0%90%EC%9D%B4-%EB%8F%84%EB%9E%98%ED%96%88%EC%9D%84-%EB%95%8C%EC%9D%98-%EB%AF%B8%EB%9E%98)
 
-  - [내가 커즈와일과 나눈 대화]()
+      - [(1) 기계가 인간의 통제를 받지 않고 스스로 판단하는 것이 허용될 경우](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#1-%EA%B8%B0%EA%B3%84%EA%B0%80-%EC%9D%B8%EA%B0%84%EC%9D%98-%ED%86%B5%EC%A0%9C%EB%A5%BC-%EB%B0%9B%EC%A7%80-%EC%95%8A%EA%B3%A0-%EC%8A%A4%EC%8A%A4%EB%A1%9C-%ED%8C%90%EB%8B%A8%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B4-%ED%97%88%EC%9A%A9%EB%90%A0-%EA%B2%BD%EC%9A%B0)
 
-    - [기술적 특이점이 도래했을 때의 미래]()
+      - [(2) 기계에 대한 인간의 통제가 유지될 경우](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#2-%EA%B8%B0%EA%B3%84%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9D%B8%EA%B0%84%EC%9D%98-%ED%86%B5%EC%A0%9C%EA%B0%80-%EC%9C%A0%EC%A7%80%EB%90%A0-%EA%B2%BD%EC%9A%B0)
 
-      - [(1) 기계가 인간의 통제를 받지 않고 스스로 판단하는 것이 허용될 경우]()
+    - [왜 현 시대 인류는 기술공학 발전이 주는 위협에 관심을 갖지 않는가?](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EC%99%9C-%ED%98%84-%EC%8B%9C%EB%8C%80-%EC%9D%B8%EB%A5%98%EB%8A%94-%EA%B8%B0%EC%88%A0%EA%B3%B5%ED%95%99-%EB%B0%9C%EC%A0%84%EC%9D%B4-%EC%A3%BC%EB%8A%94-%EC%9C%84%ED%98%91%EC%97%90-%EA%B4%80%EC%8B%AC%EC%9D%84-%EA%B0%96%EC%A7%80-%EC%95%8A%EB%8A%94%EA%B0%80)
 
-      - [(2) 기계에 대한 인간의 통제가 유지될 경우]()
+    - [기술적 특이점의 실현 가능성에 관하여 (1) - GNR 기술의 원료](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EA%B8%B0%EC%88%A0%EC%A0%81-%ED%8A%B9%EC%9D%B4%EC%A0%90%EC%9D%98-%EC%8B%A4%ED%98%84-%EA%B0%80%EB%8A%A5%EC%84%B1%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC-1---gnr-%EA%B8%B0%EC%88%A0%EC%9D%98-%EC%9B%90%EB%A3%8C)
 
-    - [왜 현 시대 인류는 기술공학 발전이 주는 위협에 관심을 갖지 않는가?]()
+    - [기술적 특이점의 실현 가능성에 관하여 (2) - 초지능을 실행할만큼 강력한 컴퓨터](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EA%B8%B0%EC%88%A0%EC%A0%81-%ED%8A%B9%EC%9D%B4%EC%A0%90%EC%9D%98-%EC%8B%A4%ED%98%84-%EA%B0%80%EB%8A%A5%EC%84%B1%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC-2---%EC%B4%88%EC%A7%80%EB%8A%A5%EC%9D%84-%EC%8B%A4%ED%96%89%ED%95%A0%EB%A7%8C%ED%81%BC-%EA%B0%95%EB%A0%A5%ED%95%9C-%EC%BB%B4%ED%93%A8%ED%84%B0)
 
-    - [기술적 특이점의 실현 가능성에 관하여 (1) - GNR 기술의 원료]()
+    - [기계가 인류를 완전히 대체하는 것에 관하여](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EA%B8%B0%EA%B3%84%EA%B0%80-%EC%9D%B8%EB%A5%98%EB%A5%BC-%EC%99%84%EC%A0%84%ED%9E%88-%EB%8C%80%EC%B2%B4%ED%95%98%EB%8A%94-%EA%B2%83%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC)
 
-    - [기술적 특이점의 실현 가능성에 관하여 (2) - 초지능을 실행할만큼 강력한 컴퓨터]()
+  - [GNR 에 관하여](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#gnr-%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC)
 
-    - [기계가 인류를 완전히 대체하는 것에 관하여]()
+    - [G(유전자공학)에 관하여](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#g%EC%9C%A0%EC%A0%84%EC%9E%90%EA%B3%B5%ED%95%99%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC)
 
-  - [GNR 에 관하여]()
+    - [N(나노테크놀로지)에 관하여](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#n%EB%82%98%EB%85%B8%ED%85%8C%ED%81%AC%EB%86%80%EB%A1%9C%EC%A7%80%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC)
 
-    - [G(유전자공학)에 관하여]()
+  - [기술적 특이점에 대한 대안책](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EA%B8%B0%EC%88%A0%EC%A0%81-%ED%8A%B9%EC%9D%B4%EC%A0%90%EC%97%90-%EB%8C%80%ED%95%9C-%EB%8C%80%EC%95%88%EC%B1%85)
 
-    - [N(나노테크놀로지)에 관하여]()
+    - [인류가 미래의 평화를 위하여 합의를 할만한 존재가 아니라는 것에 관하여](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EC%9D%B8%EB%A5%98%EA%B0%80-%EB%AF%B8%EB%9E%98%EC%9D%98-%ED%8F%89%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%98%EC%97%AC-%ED%95%A9%EC%9D%98%EB%A5%BC-%ED%95%A0%EB%A7%8C%ED%95%9C-%EC%A1%B4%EC%9E%AC%EA%B0%80-%EC%95%84%EB%8B%88%EB%9D%BC%EB%8A%94-%EA%B2%83%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC)
 
-  - [기술적 특이점에 대한 대안책]()
+    - [NBC 기술보다 제한하기 어려운 GNR 기술](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#nbc-%EA%B8%B0%EC%88%A0%EB%B3%B4%EB%8B%A4-%EC%A0%9C%ED%95%9C%ED%95%98%EA%B8%B0-%EC%96%B4%EB%A0%A4%EC%9A%B4-gnr-%EA%B8%B0%EC%88%A0)
 
-    - [인류가 미래의 평화를 위하여 합의를 할만한 존재가 아니라는 것에 관하여]()
+    - [GNR 기술의 위험성에 대하여](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#gnr-%EA%B8%B0%EC%88%A0%EC%9D%98-%EC%9C%84%ED%97%98%EC%84%B1%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)
 
-    - [NBC 기술보다 제한하기 어려운 GNR 기술]()
-
-    - [GNR 기술의 위험성에 대하여]()
-
-  - [커즈와일과의 대화 일 년 후]()
+  - [커즈와일과의 대화 일 년 후](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#%EC%BB%A4%EC%A6%88%EC%99%80%EC%9D%BC%EA%B3%BC%EC%9D%98-%EB%8C%80%ED%99%94-%EC%9D%BC-%EB%85%84-%ED%9B%84)
 
 ---
 

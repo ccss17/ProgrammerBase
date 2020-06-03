@@ -4,45 +4,45 @@
 
 # Table of Contents
 
-- [컴퓨터의 역사 ]()
+- [컴퓨터의 역사 ](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EC%BB%B4%ED%93%A8%ED%84%B0%EC%9D%98-%EC%97%AD%EC%82%AC)
 
-  - [배경과 용어]()
+  - [배경과 용어](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EB%B0%B0%EA%B2%BD%EA%B3%BC-%EC%9A%A9%EC%96%B4)
 
-    - [예시 : 기초 명제 논리학]()
+    - [예시 : 기초 명제 논리학](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EC%98%88%EC%8B%9C--%EA%B8%B0%EC%B4%88-%EB%AA%85%EC%A0%9C-%EB%85%BC%EB%A6%AC%ED%95%99)
 
-  - [다시 점검해보고 넘어가기]()
+  - [다시 점검해보고 넘어가기](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EB%8B%A4%EC%8B%9C-%EC%A0%90%EA%B2%80%ED%95%B4%EB%B3%B4%EA%B3%A0-%EB%84%98%EC%96%B4%EA%B0%80%EA%B8%B0)
 
-- [괴델의 불완전성 정리 ]()
+- [괴델의 불완전성 정리 ](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EA%B4%B4%EB%8D%B8%EC%9D%98-%EB%B6%88%EC%99%84%EC%A0%84%EC%84%B1-%EC%A0%95%EB%A6%AC)
 
-  - [괴델의 논문 《Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I》]()
+  - [괴델의 논문 《Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I》](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EA%B4%B4%EB%8D%B8%EC%9D%98-%EB%85%BC%EB%AC%B8-%C3%BCber-formal-unentscheidbare-s%C3%A4tze-der-principia-mathematica-und-verwandter-systeme-i)
 
-  - [1. 괴델 수 붙이기]()
+  - [1. 괴델 수 붙이기](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#1-%EA%B4%B4%EB%8D%B8-%EC%88%98-%EB%B6%99%EC%9D%B4%EA%B8%B0)
 
-    - [1-(1) 기본 기호에 괴델수 붙이기]()
+    - [1-(1) 기본 기호에 괴델수 붙이기](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#1-1-%EA%B8%B0%EB%B3%B8-%EA%B8%B0%ED%98%B8%EC%97%90-%EA%B4%B4%EB%8D%B8%EC%88%98-%EB%B6%99%EC%9D%B4%EA%B8%B0)
 
-    - [1-(2) 형식문에 괴델수 붙이기]()
+    - [1-(2) 형식문에 괴델수 붙이기](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#1-2-%ED%98%95%EC%8B%9D%EB%AC%B8%EC%97%90-%EA%B4%B4%EB%8D%B8%EC%88%98-%EB%B6%99%EC%9D%B4%EA%B8%B0)
 
-    - [1-(3) 증명에 괴델수 붙이기]()
+    - [1-(3) 증명에 괴델수 붙이기](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#1-3-%EC%A6%9D%EB%AA%85%EC%97%90-%EA%B4%B4%EB%8D%B8%EC%88%98-%EB%B6%99%EC%9D%B4%EA%B8%B0)
 
-  - [2. 상위 수학명제를 수학 명제로 사상시키기]()
+  - [2. 상위 수학명제를 수학 명제로 사상시키기](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#2-%EC%83%81%EC%9C%84-%EC%88%98%ED%95%99%EB%AA%85%EC%A0%9C%EB%A5%BC-%EC%88%98%ED%95%99-%EB%AA%85%EC%A0%9C%EB%A1%9C-%EC%82%AC%EC%83%81%EC%8B%9C%ED%82%A4%EA%B8%B0)
 
-    - [증명함수]()
+    - [증명함수](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EC%A6%9D%EB%AA%85%ED%95%A8%EC%88%98)
 
-    - [대입함수]()
+    - [대입함수](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EB%8C%80%EC%9E%85%ED%95%A8%EC%88%98)
 
-  - [3. 핵심 논증]()
+  - [3. 핵심 논증](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-%ED%95%B5%EC%8B%AC-%EB%85%BC%EC%A6%9D)
 
-    - [3-(1) 자기 자신이 증명될 수 없다고 주장하는 형식문 ![](https://math.now.sh/?from=G)]()
+    - [3-(1) 자기 자신이 증명될 수 없다고 주장하는 형식문 ![](https://math.now.sh/?from=G)](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-1-%EC%9E%90%EA%B8%B0-%EC%9E%90%EC%8B%A0%EC%9D%B4-%EC%A6%9D%EB%AA%85%EB%90%A0-%EC%88%98-%EC%97%86%EB%8B%A4%EA%B3%A0-%EC%A3%BC%EC%9E%A5%ED%95%98%EB%8A%94-%ED%98%95%EC%8B%9D%EB%AC%B8-)
 
-    - [3-(2) **PM** 이 정합적 체계라면 형식문 ![](https://math.now.sh/?from=G) 는 **PM** 에 의하여 증명될 수 없다.]()
+    - [3-(2) **PM** 이 정합적 체계라면 형식문 ![](https://math.now.sh/?from=G) 는 **PM** 에 의하여 증명될 수 없다.](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-2-pm-%EC%9D%B4-%EC%A0%95%ED%95%A9%EC%A0%81-%EC%B2%B4%EA%B3%84%EB%9D%BC%EB%A9%B4-%ED%98%95%EC%8B%9D%EB%AC%B8--%EB%8A%94-pm-%EC%97%90-%EC%9D%98%ED%95%98%EC%97%AC-%EC%A6%9D%EB%AA%85%EB%90%A0-%EC%88%98-%EC%97%86%EB%8B%A4)
 
-    - [3-(3) 형식문 ![](https://math.now.sh/?from=G) 는 증명될 수 없지만 참이다.]()
+    - [3-(3) 형식문 ![](https://math.now.sh/?from=G) 는 증명될 수 없지만 참이다.](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-3-%ED%98%95%EC%8B%9D%EB%AC%B8--%EB%8A%94-%EC%A6%9D%EB%AA%85%EB%90%A0-%EC%88%98-%EC%97%86%EC%A7%80%EB%A7%8C-%EC%B0%B8%EC%9D%B4%EB%8B%A4)
 
-    - [3-(4) 그러므로 **PM** 이 정합적 체계라면 **PM** 은 불완전체계이다. (제 1 불완전성 정리)]()
+    - [3-(4) 그러므로 **PM** 이 정합적 체계라면 **PM** 은 불완전체계이다. (제 1 불완전성 정리)](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-4-%EA%B7%B8%EB%9F%AC%EB%AF%80%EB%A1%9C-pm-%EC%9D%B4-%EC%A0%95%ED%95%A9%EC%A0%81-%EC%B2%B4%EA%B3%84%EB%9D%BC%EB%A9%B4-pm-%EC%9D%80-%EB%B6%88%EC%99%84%EC%A0%84%EC%B2%B4%EA%B3%84%EC%9D%B4%EB%8B%A4-%EC%A0%9C-1-%EB%B6%88%EC%99%84%EC%A0%84%EC%84%B1-%EC%A0%95%EB%A6%AC)
 
-    - [3-(5) "**PM** 은 정합적 체계이다." 라는 주장은 **PM** 의 체계로는 증명할 수 없다. (제 2 불완전성 정리)]()
+    - [3-(5) "**PM** 은 정합적 체계이다." 라는 주장은 **PM** 의 체계로는 증명할 수 없다. (제 2 불완전성 정리)](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-5-pm-%EC%9D%80-%EC%A0%95%ED%95%A9%EC%A0%81-%EC%B2%B4%EA%B3%84%EC%9D%B4%EB%8B%A4-%EB%9D%BC%EB%8A%94-%EC%A3%BC%EC%9E%A5%EC%9D%80-pm-%EC%9D%98-%EC%B2%B4%EA%B3%84%EB%A1%9C%EB%8A%94-%EC%A6%9D%EB%AA%85%ED%95%A0-%EC%88%98-%EC%97%86%EB%8B%A4-%EC%A0%9C-2-%EB%B6%88%EC%99%84%EC%A0%84%EC%84%B1-%EC%A0%95%EB%A6%AC)
 
-  - [불완전성 정리의 의미 ]()
+  - [불완전성 정리의 의미 ](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EB%B6%88%EC%99%84%EC%A0%84%EC%84%B1-%EC%A0%95%EB%A6%AC%EC%9D%98-%EC%9D%98%EB%AF%B8)
 
 ---
 
