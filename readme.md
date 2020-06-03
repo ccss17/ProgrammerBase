@@ -66,9 +66,9 @@
 
   가 없는 코드 부분은 굳이 실행하지 않아도 되고 실행해도 됩니다. 시간 절약을 위하여 넘겨도 됩니다. 
 
-## Contents
+# Contents
 
-### [Day 1](01-Day1/)
+## [Day 1](01-Day1/)
 
 - [Docker](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#docker)
 
@@ -76,8 +76,7 @@
   
 - [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
-
-### [Day 2](02-Day2/)
+## [Day 2](02-Day2/)
 
 - [리눅스 교재 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
@@ -91,7 +90,7 @@
 
 - [Markdown ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#markdown)
 
-### [Day 3](03-Day3/)
+## [Day 3](03-Day3/)
 
 - [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
@@ -99,7 +98,7 @@
 
 - [tmux](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#tmux)
 
-### [Day 4](04-Day4/)
+## [Day 4](04-Day4/)
 
 - [CLI](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli)
 
@@ -119,7 +118,7 @@
 
 - [VSCode 디버깅 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%94%94%EB%B2%84%EA%B9%85)
 
-### [Day 5](05-Day5/)
+## [Day 5](05-Day5/)
 
 - [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
 
@@ -151,7 +150,31 @@
 
 - [Funny CLI ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#funny-cli)
 
-## Rule
+## 조금은 철학적인 이야기
+
+### 수학의 역사
+
+- [조금은 철학적인 이야기 ]()
+
+- [수학의 역사 ]()
+
+### 괴델의 불완전성 정리
+
+- [컴퓨터의 역사 ]()
+
+- [괴델의 불완전성 정리 ]()
+
+### 튜링의 증명
+
+- [튜링의 증명]()
+
+### 기술적 특이점
+
+- [미래 ]()
+
+- [Why the future doesn't need us]()
+
+# Rule
 
 GBC 참여자들은 **PASS** 와 **FAIL** 에 관련된 내용이니 다음의 룰을 꼭 확인해주세요. 
 

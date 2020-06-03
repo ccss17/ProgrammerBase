@@ -24,5 +24,9 @@ if __name__ == '__main__':
     # fname = '02-Day2/readme.md'
     # fname = '03-Day3/readme.md'
     # fname = '04-Day4/readme.md'
-    fname = '05-Day5/readme.md'
+    # fname = '05-Day5/readme.md'
+    # fname = 'godel.md'
+    # fname = 'math.md'
+    # fname = 'turing.md'
+    fname = 'future.md'
     clipboard.copy(toc(fname))

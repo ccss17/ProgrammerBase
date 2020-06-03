@@ -603,6 +603,8 @@ $ g psom
 
 여기에서 각자 관심있는 주제나 분야, 툴들의 **Awesome** 한 정보들을 찾아보세요. 
 
+https://awesomeopensource.com/
+
 ## Hacker News
 
 > 참고 : https://en.wikipedia.org/wiki/Hacker_News
