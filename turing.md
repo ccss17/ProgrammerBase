@@ -276,7 +276,7 @@
 
 실수의 개수가 자연수의 개수보다 훨씬 크다는 칸토어의 증명은 다음과 같습니다.
 
-1. 먼저 실수집합 전체 대신 구간 ![](https://math.now.sh/?from=(0,1)) 을 상정하자. 다음의 탄젠트 함수 ![](https://math.now.sh/?from=y=\tan\bigg(\pi{}x-\dfrac{\pi}{2}\bigg)) 을 살펴보면 구간 ![](https://math.now.sh/?from=(0,1)) 와 실수 전체의 크기가 같다는 것을 알 수 있다.
+1. 먼저 실수집합 전체 대신 구간 ![](https://math.now.sh/?from=(0,1)) 을 상정하자. 다음의 탄젠트 함수 ![](https://math.now.sh/?from=y=\tan\bigg(\pi{}x-\dfrac{\pi}{2}\bigg)) 을 살펴보면 구간 ![](https://math.now.sh/?from=(0,1)) 의 실수가 모든 실수 전체 집합로 사상되기 때문에 서로 크기가 같다는 것을 알 수 있다.
 
     ![desmos-graph](https://user-images.githubusercontent.com/16812446/83792797-8868c080-a6d6-11ea-8dac-6238abb22dfa.png)
 
@@ -298,7 +298,27 @@
 
     ![](https://math.now.sh/?from=\vdots)
 
-3. 이제 어떤 실수 ![](https://math.now.sh/?from=x=0.b_{1}b_{2}b_{3}b_{4}b_{5}\dots{}b_{i}\dots) 를 이렇게 만들어보자. 실수 ![](https://math.now.sh/?from=x) 의 소수 ![](https://math.now.sh/?from=i) 번째 자리수 ![](https://math.now.sh/?from=b_i) 를 위와 같은 실수에서 ![](https://math.now.sh/?from=a_{ii}) 가 ![](https://math.now.sh/?from=9) 보다 작은 자연수라면 ![](https://math.now.sh/?from=a_{ii}%2B1) 로 정하고, ![](https://math.now.sh/?from=9) 라면 ![](https://math.now.sh/?from=0) 으로 정하자.
+3. 이제 어떤 실수 ![](https://math.now.sh/?from=x=0.b_{1}b_{2}b_{3}b_{4}b_{5}\dots{}b_{i}\dots) 를 이렇게 만들어보자. 실수 ![](https://math.now.sh/?from=x) 의 소수 ![](https://math.now.sh/?from=i) 번째 자리수 ![](https://math.now.sh/?from=b_i) 를 위와 같은 실수 ![](https://math.now.sh/?from=R_i) 에서 ![](https://math.now.sh/?from=a_{ii}) 가 ![](https://math.now.sh/?from=9) 보다 작은 자연수라면 ![](https://math.now.sh/?from=a_{ii}%2B1) 로 정하고, ![](https://math.now.sh/?from=9) 라면 ![](https://math.now.sh/?from=0) 으로 정하자.
+
+    그러므로 만약 실수들이 
+
+    ![](https://math.now.sh/?from=R_1=0.3a_{12}a_{13}a_{14}a_{15}\dots{}a_{1i}\dots)
+
+    ![](https://math.now.sh/?from=R_2=0.a_{21}8a_{23}a_{24}a_{25}\dots{}a_{2i}\dots)
+
+    ![](https://math.now.sh/?from=R_3=0.a_{31}a_{32}9a_{34}a_{35}\dots{}a_{3i}\dots)
+
+    ![](https://math.now.sh/?from=R_4=0.a_{41}a_{42}a_{43}0a_{45}\dots{}a_{4i}\dots)
+
+    ![](https://math.now.sh/?from=R_5=0.a_{51}a_{52}a_{53}a_{54}1\dots{}a_{5i}\dots)
+
+    ![](https://math.now.sh/?from=\vdots)
+
+    ![](https://math.now.sh/?from=R_i=0.a_{i1}a_{i2}a_{i3}a_{i4}a_{i5}\dots{}5\dots)
+
+    ![](https://math.now.sh/?from=\vdots)
+
+    라고 되어 있었다면 ![](https://math.now.sh/?from=x=49012\dots{}6\\dots) 이 될 것이다.
 
 4. 그렇다면 이 실수 ![](https://math.now.sh/?from=x) 는 자연수로 번호 매겨진 모든 실수 ![](https://math.now.sh/?from=R_i) 들과 ![](https://math.now.sh/?from=i) 번째 소수 자리수에서 반드시 다르다. 그러므로 이 실수 ![](https://math.now.sh/?from=x) 는 자연수로 번호 매겨진 모든 실수와 다르다.
 
