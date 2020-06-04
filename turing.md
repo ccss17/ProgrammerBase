@@ -318,7 +318,7 @@
 
     ![](https://math.now.sh/?from=\vdots)
 
-    라고 되어 있었다면 ![](https://math.now.sh/?from=x=49012\dots{}6\\dots) 이 될 것이다.
+    라고 되어 있었다면 ![](https://math.now.sh/?from=x=0.49012\dots{}6\\dots) 이 될 것이다.
 
 4. 그렇다면 이 실수 ![](https://math.now.sh/?from=x) 는 자연수로 번호 매겨진 모든 실수 ![](https://math.now.sh/?from=R_i) 들과 ![](https://math.now.sh/?from=i) 번째 소수 자리수에서 반드시 다르다. 그러므로 이 실수 ![](https://math.now.sh/?from=x) 는 자연수로 번호 매겨진 모든 실수와 다르다.
 
