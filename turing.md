@@ -276,47 +276,51 @@
 
 실수의 개수가 자연수의 개수보다 훨씬 크다는 칸토어의 증명은 다음과 같습니다.
 
-1. 먼저 실수집합 전체 대신 구간 ![](https://math.now.sh/?from=(0,1)) 을 상정하자. 그리고 자연수로 이 구간 ![](https://math.now.sh/?from=(0,1)) 에 존재하는 모든 실수에 다음과 같이 번호를 매길 수 있다고 하자. ![](https://math.now.sh/?from=R_i) 는 자연수 ![](https://math.now.sh/?from=i) 로 번호매겨진 실수를 뜻하고, ![](https://math.now.sh/?from=a_{ij}) 는 ![](https://math.now.sh/?from=0) 부터 ![](https://math.now.sh/?from=9) 사이의 자연수이다.
+1. 먼저 실수집합 전체 대신 구간 ![](https://math.now.sh/?from=(0,1)) 을 상정하자. 다음의 탄젠트 함수 ![](https://math.now.sh/?from=y=\tan\bigg(\pi{}x-\dfrac{\pi}{2}\bigg)) 을 살펴보면 구간 ![](https://math.now.sh/?from=(0,1)) 와 실수 전체의 크기가 같다는 것을 알 수 있다.
 
-    ![](https://math.now.sh/?from=R_1=0.a_{11}a_{12}a_{13}a_{14}a_{15}\dots)
+    ![desmos-graph](https://user-images.githubusercontent.com/16812446/83792797-8868c080-a6d6-11ea-8dac-6238abb22dfa.png)
 
-    ![](https://math.now.sh/?from=R_2=0.a_{21}a_{22}a_{23}a_{24}a_{25}\dots)
+2. 그리고 이 구간 ![](https://math.now.sh/?from=(0,1)) 에 존재하는 모든 실수에 다음과 같이 자연수로 번호 매길 수 있다고 하자. 정말로 구간 ![](https://math.now.sh/?from=(0,1)) 에 존재하는 모든 실수에 자연수로 번호매길 수 있다면 실수의 크기와 자연수의 크기는 같은 것이 된다. ![](https://math.now.sh/?from=R_i) 는 자연수 ![](https://math.now.sh/?from=i) 로 번호매겨진 실수를 뜻하고, ![](https://math.now.sh/?from=a_{ij}) 는 ![](https://math.now.sh/?from=0) 부터 ![](https://math.now.sh/?from=9) 사이의 자연수이다.
 
-    ![](https://math.now.sh/?from=R_3=0.a_{31}a_{32}a_{33}a_{34}a_{35}\dots)
+    ![](https://math.now.sh/?from=R_1=0.a_{11}a_{12}a_{13}a_{14}a_{15}\dots{}a_{1i}\dots)
 
-    ![](https://math.now.sh/?from=R_4=0.a_{41}a_{42}a_{43}a_{44}a_{45}\dots)
+    ![](https://math.now.sh/?from=R_2=0.a_{21}a_{22}a_{23}a_{24}a_{25}\dots{}a_{2i}\dots)
 
-    ![](https://math.now.sh/?from=R_5=0.a_{51}a_{52}a_{53}a_{54}a_{55}\dots)
+    ![](https://math.now.sh/?from=R_3=0.a_{31}a_{32}a_{33}a_{34}a_{35}\dots{}a_{3i}\dots)
+
+    ![](https://math.now.sh/?from=R_4=0.a_{41}a_{42}a_{43}a_{44}a_{45}\dots{}a_{4i}\dots)
+
+    ![](https://math.now.sh/?from=R_5=0.a_{51}a_{52}a_{53}a_{54}a_{55}\dots{}a_{5i}\dots)
 
     ![](https://math.now.sh/?from=\vdots)
 
-2. 이제 어떤 실수 ![](https://math.now.sh/?from=x=0.b_{1}b_{2}b_{3}b_{4}b_{5}\dots{}b_{i}\dots) 를 이렇게 만들어보자. 실수 ![](https://math.now.sh/?from=x) 의 소수 ![](https://math.now.sh/?from=i) 번째 자리수 ![](https://math.now.sh/?from=b_i) 를 위와 같은 실수에서 ![](https://math.now.sh/?from=a_{ii}) 가 ![](https://math.now.sh/?from=9) 보다 작은 자연수라면 ![](https://math.now.sh/?from=a_{ii}%2B1) 로 정하고, ![](https://math.now.sh/?from=9) 라면 ![](https://math.now.sh/?from=0) 으로 정하자.
+    ![](https://math.now.sh/?from=R_i=0.a_{i1}a_{i2}a_{i3}a_{i4}a_{i5}\dots{}a_{ii}\dots)
 
-3. 그렇다면 이 실수 ![](https://math.now.sh/?from=x) 는 자연수로 번호 매겨진 모든 실수 ![](https://math.now.sh/?from=R_i) 들과 ![](https://math.now.sh/?from=i) 번째 소수 자리수에서 반드시 다르다. 그러므로 이 실수 ![](https://math.now.sh/?from=x) 는 자연수로 번호 매겨진 모든 실수와 다르다.
+    ![](https://math.now.sh/?from=\vdots)
 
-4. 자연수로 모든 실수에 번호를 매겼다고 가정했지만, 그 이외의 실수 ![](https://math.now.sh/?from=x) 가 발견되었으므로 모든 자연수로 실수에 번호를 매길 수 없다. 
+3. 이제 어떤 실수 ![](https://math.now.sh/?from=x=0.b_{1}b_{2}b_{3}b_{4}b_{5}\dots{}b_{i}\dots) 를 이렇게 만들어보자. 실수 ![](https://math.now.sh/?from=x) 의 소수 ![](https://math.now.sh/?from=i) 번째 자리수 ![](https://math.now.sh/?from=b_i) 를 위와 같은 실수에서 ![](https://math.now.sh/?from=a_{ii}) 가 ![](https://math.now.sh/?from=9) 보다 작은 자연수라면 ![](https://math.now.sh/?from=a_{ii}%2B1) 로 정하고, ![](https://math.now.sh/?from=9) 라면 ![](https://math.now.sh/?from=0) 으로 정하자.
 
-5. 그러므로 자연수의 개수보다 실수의 개수가 더 크다.
+4. 그렇다면 이 실수 ![](https://math.now.sh/?from=x) 는 자연수로 번호 매겨진 모든 실수 ![](https://math.now.sh/?from=R_i) 들과 ![](https://math.now.sh/?from=i) 번째 소수 자리수에서 반드시 다르다. 그러므로 이 실수 ![](https://math.now.sh/?from=x) 는 자연수로 번호 매겨진 모든 실수와 다르다.
+
+5. **자연수로 모든 실수에 번호를 매겼다고 가정했지만, 그 이외의 실수 ![](https://math.now.sh/?from=x) 가 발견되었으므로 자연수의 개수보다 실수의 개수가 더 크다.**
 
 #### 자연수의 부분집합의 개수가 자연수의 개수보다 더 크다.
 
 자연수의 개수보다 자연수의 부분집합의 개수가 훨씬 많다는 칸토어의 증명은 다음과 같습니다.
 
-1. 만약 자연수의 부분집합이 자연수만큼 있다면 그 집합들 모두에 다음과 같이 자연수로 번호를 매길 수 있다.
+1. **자연수의 부분집합이 자연수만큼 있다면 그 집합들 모두에 다음과 같이 자연수로 번호를 매길 수 있다.**
 
     ![](https://math.now.sh/?from=N_1,N_2,N_3,\dots,N_i,\dots)
 
-2. 그러면 자연수를 원소로 갖는 집합 ![](https://math.now.sh/?from=X) 를 이렇게 만들어보자. ![](https://math.now.sh/?from=N_1) 에 ![](https://math.now.sh/?from=1) 이 없다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=1) 을 넣고, ![](https://math.now.sh/?from=N_2) 에 ![](https://math.now.sh/?from=2) 가 없다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=2) 를 넣는다. 즉, 임의의 자연수 ![](https://math.now.sh/?from=i) 에 대하여 ![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 없다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=i) 를 넣는다. 반면 ![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 있다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=i) 를 넣지 않는다.
+2. 그러면 **자연수를 원소로 갖는 집합 ![](https://math.now.sh/?from=X) 를 이렇게 만들어보자.** ![](https://math.now.sh/?from=N_1) 에 ![](https://math.now.sh/?from=1) 이 없다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=1) 을 넣고, ![](https://math.now.sh/?from=N_2) 에 ![](https://math.now.sh/?from=2) 가 없다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=2) 를 넣는다. 즉, **임의의 자연수 ![](https://math.now.sh/?from=i) 에 대하여 ![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 없다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=i) 를 넣어 보자는 것이다. 반면 ![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 있다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=i) 를 넣지 말아보자.**
 
-3. 그렇다면 ![](https://math.now.sh/?from=X) 는 자연수의 부분집합이지만 ![](https://math.now.sh/?from=N_1,N_2,N_3,\dots,N_i,\dots) 들과 다르다. 왜냐하면 임의의 자연수 ![](https://math.now.sh/?from=i) 에 대하여 ![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 없다면 ![](https://math.now.sh/?from=X) 에는 있고 ![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 있다면 ![](https://math.now.sh/?from=X) 에는 없기 때문이다. 그러므로 ![](https://math.now.sh/?from=X) 는 모든 ![](https://math.now.sh/?from=N_i) 들과 다르다.
+3. 그렇다면 **![](https://math.now.sh/?from=X) 는 자연수의 부분집합이지만 ![](https://math.now.sh/?from=N_1,N_2,N_3,\dots,N_i,\dots) 들과 다르다.** 왜냐하면 임의의 자연수 ![](https://math.now.sh/?from=i) 에 대하여 **![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 없다면 ![](https://math.now.sh/?from=X) 에는 있고 ![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 있다면 ![](https://math.now.sh/?from=X) 에는 없기 때문**이다. 
 
-4. 자연수의 부분집합 모두에 자연수로 번호를 매겼다고 가정했지만, 그 이외의 자연수의 부분집합 ![](https://math.now.sh/?from=X) 가 발견되었으므로 모든 자연수로 자연수의 부분집합에 번호를 매길 수 없다. 
-
-5. 그러므로 자연수의 개수보다 자연수의 부분집합의 개수가 더 크다.
+4. 자연수의 부분집합 모두에 자연수로 번호를 매겼다고 가정했지만, 그 이외의 자연수의 부분집합 ![](https://math.now.sh/?from=X) 가 발견되었으므로 **자연수의 개수보다 자연수의 부분집합의 개수가 더 크다.**
 
 ### 3-(2) 튜링기계의 개수
 
-그렇다면 튜링기계의 개수는 셀 수 있을만큼(자연수만큼) 많을까요, 셀 수 없을만큼(실수만큼) 많을까요? 결론만 말하면 튜링기계의 개수는 셀 수 있을만큼(자연수만큼) 많습니다. 즉, 튜링기계의 개수는 자연수의 개수를 넘지 못합니다. 왜냐하면 튜링기계를 테이프로 사상시킬 수 있고, 그 테이프를 고유한 자연수로 사상시킬 수 있기 때문입니다.
+그렇다면 튜링기계의 개수는 셀 수 있을만큼(자연수만큼) 많을까요, 셀 수 없을만큼(실수만큼) 많을까요? 결론만 말하면 **튜링기계의 개수는 셀 수 있을만큼(자연수만큼) 많습니다.** 즉, **튜링기계의 개수는 자연수의 개수를 넘지 못합니다.** 왜냐하면 **튜링기계를 테이프로 사상시킬 수 있고, 그 테이프를 고유한 자연수로 사상시킬 수 있기 때문**입니다.
 
 우리는 튜링기계를 테이프로 사상시킬 때 유한한 기호 **S,T,>,<,||,0,1,2,3,4,5,6,7,8,9,X,\*** 를 사용했습니다. 그러므로 테이프를 자연수로 표현할 수 있는 한가지 방법은 다음과 같이 테이프를 17진수의 자연수로 사상시키는 것입니다.
 
@@ -328,7 +332,7 @@
 
 </div>
 
-그러면 존재하는 모든 튜링기계를 고유의 자연수로 사상시킬 수 있습니다. 
+그러면 존재하는 **모든 튜링기계를 고유의 자연수로 사상시킬 수 있습니다.**
 
 - 가령 **XS1T2>\*** 와 같이 표현된 튜링기계가 있다고 하겠습니다. 그러면 이것을 17진수 자연수로 해석하여 고유의 자연수
 
@@ -340,9 +344,9 @@
 
 ### 3-(3) 보편만능기계로도 해결할 수 없는 정지문제
 
-튜링의 증명의 목표는 모든 참인 명제를 기계적으로 만들 수 있는 튜링기계가 존재하지 않는다는 것을 보이는 것이었습니다. 튜링은 먼저 모든 참인 명제를 만들어낼 수 있는 튜링기계 ![](https://math.now.sh/?from=A) 가 존재한다고 가정하고 다음과 같은 논증을 펼쳤습니다.
+**튜링의 증명의 목표는 모든 참인 명제를 기계적으로 만들 수 있는 튜링기계가 존재하지 않는다는 것을 보이는 것**이었습니다. 튜링은 먼저 **모든 참인 명제를 만들어낼 수 있는 튜링기계 ![](https://math.now.sh/?from=A) 가 존재한다고 가정**하고 다음과 같은 논증을 펼쳤습니다.
 
-1. 이 튜링기계 ![](https://math.now.sh/?from=A) 를 사용하여 어떤 튜링기계가 실행이 종료될지 종료되지 않고 실행이 영원히 계속될지 판단하는 튜링기계 ![](https://math.now.sh/?from=H) 를 만들 수 있다.
+1. 이 튜링기계 ![](https://math.now.sh/?from=A) 를 사용하여 **어떤 튜링기계가 실행이 종료될지 종료되지 않고 실행이 영원히 계속될지 판단하는 튜링기계 ![](https://math.now.sh/?from=H) 를 만들 수 있다.**
 
 > ![](https://math.now.sh/?from=H) 는 정지문제(halting problem) 에서 따왔다.
 
@@ -352,13 +356,13 @@
 
 4. 그러면 ![](https://math.now.sh/?from=A) 는 모든 참인 명제를 만들어낸다고 가정했으므로 언젠가 "튜링기계 ![](https://math.now.sh/?from=M) 은 멈춘다." 또는 "튜링기계 ![](https://math.now.sh/?from=M) 은 멈추지 않는다." 라는 명제를 도출할 것이다.
 
-5. 이것은 곧 튜링기계 ![](https://math.now.sh/?from=H) 의 기능이므로 우리는 **"튜링기계 ![](https://math.now.sh/?from=A) 가 존재한다면 튜링기계 ![](https://math.now.sh/?from=H) 도 존재한다."** 는 결론을 얻는다.
+5. 이것은 곧 튜링기계 ![](https://math.now.sh/?from=H) 의 기능이므로 우리는 **"튜링기계 ![](https://math.now.sh/?from=A) 가 존재한다면 튜링기계 ![](https://math.now.sh/?from=H) 도 존재한다."(![](https://math.now.sh/?from=A\to{}H))** 는 결론을 얻는다.
 
-그런데 튜링기계 ![](https://math.now.sh/?from=H) 가 존재한다면 튜링기계의 개수가 자연수의 개수보다 많아집니다. 이에따라 튜링기계 ![](https://math.now.sh/?from=H) 는 존재할 수 없고 결국 튜링기계 ![](https://math.now.sh/?from=A) 도 존재해서는 안됩니다. 다음의 논증을 보겠습니다. 무한의 크기를 증명할 때 사용되었던 대각선 논법이 사용됩니다.
+**그런데 튜링기계 ![](https://math.now.sh/?from=H) 가 존재한다면 튜링기계의 개수가 자연수의 개수보다 많아집니다.** 그러나 튜링 기계의 개수는 자연수를 넘지 못합니다. 그러므로 **튜링기계 ![](https://math.now.sh/?from=H) 는 존재할 수 없고 결국 튜링기계 ![](https://math.now.sh/?from=A) 도 존재해서는 안됩니다.** 다음의 논증을 보겠습니다. 무한의 크기를 증명할 때 사용되었던 대각선 논법이 사용됩니다.
 
-1. 튜링기계의 개수는 자연수의 개수보다 많지 않다는 것을 우리는 이미 알고 있다. 그러므로 모든 튜링기계에 자연수로 번호 ![](https://math.now.sh/?from=M_1,M_2,\dots,M_i,\dots) 를 붙힐 수 있다.
+1. 튜링기계의 개수는 자연수의 개수보다 많지 않다. 그러므로 **모든 튜링기계에 자연수로 번호 ![](https://math.now.sh/?from=M_1,M_2,\dots,M_i,\dots) 를 붙힐 수 있다.**
 
-2. 그리고 어떤 튜링기계에 입력되는 테이프도 유한개의 기호로 이루어져있으므로 자연수로 사상될 수 있으며, 이에따라 입력 또한 자연수의 개수보다 많지 않다. 따라서 튜링기계에 입력될 수 있는 모든 입력에도 자연수로 번호 ![](https://math.now.sh/?from=I_1,I_2,I_3,\dots,I_i,\dots) 를 부여할 수 있다.
+2. 그리고 어떤 튜링기계에 입력되는 테이프도 유한개의 기호로 이루어져있으므로 자연수로 사상될 수 있으며, 이에따라 입력 또한 자연수의 개수보다 많지 않다. 따라서 **튜링기계에 입력될 수 있는 모든 입력에도 자연수로 번호 ![](https://math.now.sh/?from=I_1,I_2,I_3,\dots,I_i,\dots) 를 부여할 수 있다.**
 
 3. 그런데 ![](https://math.now.sh/?from=H) 가 존재한다면 모든 입력에 대한 모든 튜링기계를 ![](https://math.now.sh/?from=H) 에 입력시켜서 멈출지, 멈추지 않을지 판단한 결과를 다음과 같은 표로 만들 수 있다. ![](https://math.now.sh/?from=1) 이면 실행이 끝난다는 것이고, ![](https://math.now.sh/?from=0) 이면 끝나지 않는다는 것이다.
 
@@ -373,7 +377,7 @@
 
     위 표에 따르면 튜링기계 ![](https://math.now.sh/?from=M_i) 에 입력 ![](https://math.now.sh/?from=I_i) 를 입력시켜서 실행한 결과가 ![](https://math.now.sh/?from=0) 인데 이것은 ![](https://math.now.sh/?from=H) 가 입력 ![](https://math.now.sh/?from=I_i) 를 받은 기계 ![](https://math.now.sh/?from=M_i) 의 실행이 끝나지 않는다고 판단한 것이다.
 
-4. 그런데 이제 이렇게 튜링기계 ![](https://math.now.sh/?from=B) 를 만들어보자. ![](https://math.now.sh/?from=B) 는 위 표의 입력 ![](https://math.now.sh/?from=I_k) 와 기계 ![](https://math.now.sh/?from=M_k) 를 입력으로 받아서 ![](https://math.now.sh/?from=H) 의 결과가 ![](https://math.now.sh/?from=0) 이면 ![](https://math.now.sh/?from=1) 을 출력하고, ![](https://math.now.sh/?from=H) 의 결과가 ![](https://math.now.sh/?from=1) 이면 입력 ![](https://math.now.sh/?from=I_k) 를 ![](https://math.now.sh/?from=M_k) 에 넣고 실행한 결과에 ![](https://math.now.sh/?from=1) 을 더한 것을 출력한다. 
+4. 그러면 튜링기계 ![](https://math.now.sh/?from=B) 를 이렇게 만들어보자. ![](https://math.now.sh/?from=B) 는 위 표의 입력 ![](https://math.now.sh/?from=I_k) 와 기계 ![](https://math.now.sh/?from=M_k) 를 입력으로 받아서 ![](https://math.now.sh/?from=H) 의 결과가 ![](https://math.now.sh/?from=0) 이면 ![](https://math.now.sh/?from=1) 을 출력하고, ![](https://math.now.sh/?from=H) 의 결과가 ![](https://math.now.sh/?from=1) 이면 입력 ![](https://math.now.sh/?from=I_k) 를 ![](https://math.now.sh/?from=M_k) 에 넣고 실행한 결과에 ![](https://math.now.sh/?from=1) 을 더한 것을 출력한다. 
 
     - 그러므로 ![](https://math.now.sh/?from=A) 가 존재한다면 ![](https://math.now.sh/?from=H) 가 존재하고, ![](https://math.now.sh/?from=H) 가 존재한다면 ![](https://math.now.sh/?from=B) 가 존재한다는 결론(![](https://math.now.sh/?from=A\to{}H\to{}B))을 얻는다.
 
@@ -381,7 +385,7 @@
 
 6. 존재하는 모든 튜링기계에 자연수로 번호 ![](https://math.now.sh/?from=M_1,M_2,\dots,M_i,\dots) 를 부여했는데도 그 이외의 튜링기계 ![](https://math.now.sh/?from=B) 가 발견되었다. 튜링기계의 개수는 자연수를 넘지 못하므로 이것은 모순이다.
 
-7. 그러므로 튜링기계 ![](https://math.now.sh/?from=B) 는 존재해서는 안된다. 이에따라 ![](https://math.now.sh/?from=B) 를 있게한 튜링기계 ![](https://math.now.sh/?from=H) 도 존재하지 않는다. 또한 최종적으로 ![](https://math.now.sh/?from=H) 를 있게한 튜링기계 ![](https://math.now.sh/?from=A) 도 존재하지 않는다.
+7. 그러므로 튜링기계 ![](https://math.now.sh/?from=B) 는 존재해서는 안된다. 이에따라 ![](https://math.now.sh/?from=B) 를 있게한 튜링기계 ![](https://math.now.sh/?from=H) 도 존재하지 않는다. 그러므로 ![](https://math.now.sh/?from=H) 를 있게한 튜링기계 ![](https://math.now.sh/?from=A) 도 존재하지 않는다.
 
 이로써 우리는 **모든 참인 명제를 만들어내는 튜링기계 ![](https://math.now.sh/?from=A) 는 존재할 수 없다**는 결론에 도달했습니다. **이로써 튜링의 증명이 완료되었습니다.**
 
