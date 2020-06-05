@@ -76,6 +76,8 @@
   
 - [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
+- 조금은 철학적인 이야기 : [조금은 철학적인 이야기](https://github.com/ccss17/ProgrammerBase/blob/master/math.md#%EC%A1%B0%EA%B8%88%EC%9D%80-%EC%B2%A0%ED%95%99%EC%A0%81%EC%9D%B8-%EC%9D%B4%EC%95%BC%EA%B8%B0) ~ [예시 : 기초 명제 논리학](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EC%98%88%EC%8B%9C--%EA%B8%B0%EC%B4%88-%EB%AA%85%EC%A0%9C-%EB%85%BC%EB%A6%AC%ED%95%99)
+
 ## [Day 2](02-Day2/)
 
 - [리눅스 교재 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
@@ -90,6 +92,8 @@
 
 - [Markdown ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#markdown)
 
+- 조금은 철학적인 이야기 : [다시 점검해보고 넘어가기](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EB%8B%A4%EC%8B%9C-%EC%A0%90%EA%B2%80%ED%95%B4%EB%B3%B4%EA%B3%A0-%EB%84%98%EC%96%B4%EA%B0%80%EA%B8%B0) ~ [3. 핵심 논증](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-%ED%95%B5%EC%8B%AC-%EB%85%BC%EC%A6%9D)
+
 ## [Day 3](03-Day3/)
 
 - [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
@@ -97,6 +101,8 @@
 - [vim](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#vim)
 
 - [tmux](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#tmux)
+
+- 조금은 철학적인 이야기 : [3-(1) 자기 자신이 증명될 수 없다고 주장하는 형식문](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-1-%EC%9E%90%EA%B8%B0-%EC%9E%90%EC%8B%A0%EC%9D%B4-%EC%A6%9D%EB%AA%85%EB%90%A0-%EC%88%98-%EC%97%86%EB%8B%A4%EA%B3%A0-%EC%A3%BC%EC%9E%A5%ED%95%98%EB%8A%94-%ED%98%95%EC%8B%9D%EB%AC%B8-) ~ [불완전성 정리의 의미](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EB%B6%88%EC%99%84%EC%A0%84%EC%84%B1-%EC%A0%95%EB%A6%AC%EC%9D%98-%EC%9D%98%EB%AF%B8)
 
 ## [Day 4](04-Day4/)
 
@@ -117,6 +123,8 @@
 - [VSCode Vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim)
 
 - [VSCode 디버깅 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%94%94%EB%B2%84%EA%B9%85)
+
+- 조금은 철학적인 이야기 : [튜링의 증명](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#%ED%8A%9C%EB%A7%81%EC%9D%98-%EC%A6%9D%EB%AA%85)
 
 ## [Day 5](05-Day5/)
 
@@ -149,6 +157,8 @@
 - [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
 - [Funny CLI ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#funny-cli)
+
+- 조금은 철학적인 이야기 : [기술적 특이점](https://github.com/ccss17/ProgrammerBase/blob/master/future.md)
 
 ## 조금은 철학적인 이야기
 
