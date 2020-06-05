@@ -332,11 +332,11 @@
 
     ![](https://math.now.sh/?from=N_1,N_2,N_3,\dots,N_i,\dots)
 
-    자연수의 부분집합이므로 ![](https://math.now.sh/?from=N_1,N_2,N_3,\dots,N_i,\dots) 은 대강 
+    - 자연수의 부분집합이므로 ![](https://math.now.sh/?from=N_1,N_2,N_3,\dots,N_i,\dots) 은 대강 
 
-    **{2}, {42, 882}, {1}, {5, 8}, {}, {0}, {9, 2, 888}, {9292111}, ...**
+      **{2}, {42, 882}, {1}, {5, 8}, {}, {0}, {9, 2, 888}, {9292111}, ...**
 
-    와 같은 모습일 것이다.
+      와 같은 모습일 것이다.
 
 2. 그러면 자연수를 원소로 갖는 집합 ![](https://math.now.sh/?from=X) 를 이렇게 만들어보자. ![](https://math.now.sh/?from=N_1) 에 ![](https://math.now.sh/?from=1) 이 없다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=1) 을 넣고, ![](https://math.now.sh/?from=N_2) 에 ![](https://math.now.sh/?from=2) 가 없다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=2) 를 넣는다. 즉, **임의의 자연수 ![](https://math.now.sh/?from=i) 에 대하여 ![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 없다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=i) 를 넣어 보자는 것이다. 반면 ![](https://math.now.sh/?from=N_i) 에 ![](https://math.now.sh/?from=i) 가 있다면 ![](https://math.now.sh/?from=X) 에 ![](https://math.now.sh/?from=i) 를 넣지 말아보자.**
 
