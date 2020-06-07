@@ -288,6 +288,8 @@
 
 하지만 이 상황에서 괴델이 불완전성 정리를 설명한 논문《Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I》(『수학원리』 및 그와 연관된 체계들 속에서 형식적으로 결정될 수 없는 명제에 관하여) 을 발표합니다. 괴델은 이 논문을 통하여 **"자동적으로(기계적으로) 수학의 모든 사실들을 만들 수 없다."** 는 것을 증명했습니다.
 
+이 괴델의 **불완전성 정리**가 어찌나 중요한지 **모든 수학의 역사 속에서 가장 중요한 정리**라고 부르는 사람도 있습니다. 그리고 **컴퓨터를 탄생시킨 튜링에게 직접적인 아이디어를 제공한 정리**이기도 하니까 그 중요성이 얼마나 큰지 짐작할 수 있을 것 같습니다.
+
 ## 괴델의 논문 《Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I》
 
 이제부터 괴델의 증명과정을 간단하게 알아보겠습니다. 실제 괴델의 불완전성 정리는 다음과 같습니다. 
