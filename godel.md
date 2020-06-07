@@ -589,10 +589,14 @@
 
 이제 우리는 **PM** 이 정합적 체계라면 형식문 ![](https://math.now.sh/?from=G) 는 증명될 수 없다는 논증에 도착했는데, 이 논증은 매우 쉽습니다. 형식문 ![](https://math.now.sh/?from=G) 와 그 부정문이 다음과 같은 의미를 가진다는 것만 기억하면 됩니다. 
 
+<div align="center">
+
 | 형식문 | 의미 | 
 |:---:|:---:|
 | ![](https://math.now.sh/?from=G) | ![](https://math.now.sh/?from=G) 는 증명되지 않는다. |
 | ![](https://math.now.sh/?from=\sim{}G) | ![](https://math.now.sh/?from=G) 는 증명된다. |
+
+</div>
   
 - 만약 형식문 ![](https://math.now.sh/?from=G) 가 증명된다면 "![](https://math.now.sh/?from=G) 는 증명된다." 고 말한 부정문 ![](https://math.now.sh/?from=\sim{}G) 이 증명된다.
 
