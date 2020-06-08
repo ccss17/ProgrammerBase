@@ -238,7 +238,7 @@
 
 12. **(1900년)** 힐베르트는 **비유클리드 기하학의 정합성을 유클리드 기하학의 정합성으로 환원**시키고 **유클리드 기하학의 정합성을 대수학의 정합성**으로 환원시킴. 
 
-    |수학적 대상|비유클리드 기하학 &rarr; | &rarr; 유클리드 기하학 &rarr; | &rarr; 대수학|
+    |수학적 대상|비유클리드 기하학|유클리드 기하학|대수학|
     |:---:|:---:|:---:|:---:|
     |직선|<img src="https://user-images.githubusercontent.com/16812446/83409465-6e697c80-a44f-11ea-9b3f-c210fc2c954a.png" width="50%" height="auto">| <img src="https://user-images.githubusercontent.com/16812446/83409429-58f45280-a44f-11ea-990c-87bf0db3d6d9.png" width="50%" height="auto">|![](https://math.now.sh/?from=y=x)|
     |삼각형|<img src="https://user-images.githubusercontent.com/16812446/83410218-eedcad00-a450-11ea-85e1-03e4752cc625.png" width="50%" height="auto">|<img src="https://user-images.githubusercontent.com/16812446/83410251-0025b980-a451-11ea-9308-89ff83dd5849.png" width="50%" height="auto">||
