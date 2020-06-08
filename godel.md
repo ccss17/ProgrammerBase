@@ -240,9 +240,9 @@
 
     |수학적 대상|비유클리드 기하학|유클리드 기하학|대수학|
     |:---:|:---:|:---:|:---:|
-    |직선|<img src="https://user-images.githubusercontent.com/16812446/83409465-6e697c80-a44f-11ea-9b3f-c210fc2c954a.png" width="50%" height="auto">| <img src="https://user-images.githubusercontent.com/16812446/83409429-58f45280-a44f-11ea-990c-87bf0db3d6d9.png" width="50%" height="auto">|![](https://math.now.sh/?from=y=x)|
-    |삼각형|<img src="https://user-images.githubusercontent.com/16812446/83410218-eedcad00-a450-11ea-85e1-03e4752cc625.png" width="50%" height="auto">|<img src="https://user-images.githubusercontent.com/16812446/83410251-0025b980-a451-11ea-9308-89ff83dd5849.png" width="50%" height="auto">||
-    |원|<img src="https://user-images.githubusercontent.com/16812446/83410439-627eba00-a451-11ea-8244-09a3fa065b6b.png" width="50%" height="auto">|<img src="https://user-images.githubusercontent.com/16812446/83410382-40853780-a451-11ea-8b13-2b90a77fb9b0.png" width="50%" height="auto">|![](https://math.now.sh/?from=x^{2}%2By^{2}=1)|
+    |직선|<img src="https://user-images.githubusercontent.com/16812446/83409465-6e697c80-a44f-11ea-9b3f-c210fc2c954a.png" width="50%" height="auto">&rarr;| &rarr;<img src="https://user-images.githubusercontent.com/16812446/83409429-58f45280-a44f-11ea-990c-87bf0db3d6d9.png" width="50%" height="auto">&rarr;|&rarr;![](https://math.now.sh/?from=y=x)|
+    |삼각형|<img src="https://user-images.githubusercontent.com/16812446/83410218-eedcad00-a450-11ea-85e1-03e4752cc625.png" width="50%" height="auto">&rarr;|&rarr;<img src="https://user-images.githubusercontent.com/16812446/83410251-0025b980-a451-11ea-9308-89ff83dd5849.png" width="50%" height="auto">||
+    |원|<img src="https://user-images.githubusercontent.com/16812446/83410439-627eba00-a451-11ea-8244-09a3fa065b6b.png" width="50%" height="auto">&rarr;|&rarr;<img src="https://user-images.githubusercontent.com/16812446/83410382-40853780-a451-11ea-8b13-2b90a77fb9b0.png" width="50%" height="auto">&rarr;|&rarr;![](https://math.now.sh/?from=x^{2}%2By^{2}=1)|
 
     그러므로 만약 대수학이 정합적 체계라면 유클리드 기하학도 모순을 내뱉지 않는 정합적 체계이고, 이에따라 비유클리드 기하학도 정합적인 체계가 되는 것임. **대수학은 산술의 확장체이므로 힐베르트는 "기하학과 물리학의 무모순성(정합성)의 증명은 산술의 무모순성으로 귀결시킴으로써 성취된다."** 고 말함. 즉 산술에 모순이 없다면 산술의 확장체인 기하학의 대수적인 구성에도 모순이 없게되기 때문에 **이제 초미의 관심사는 산술의 정합성**이 되었음. 
 
