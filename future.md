@@ -80,15 +80,13 @@
 
   - **지금부터 우리는 이 빌 조이의 글을 살펴볼 것입니다.**
 
-- **2005년에는 레이 커즈와일**이 [『특이점이 온다』](https://book.naver.com/bookdb/book_detail.nhn?bid=2627729) 
+- **2005년에는 레이 커즈와일**이 [『특이점이 온다』](https://book.naver.com/bookdb/book_detail.nhn?bid=2627729) 를 집필하여 기술적 특이점의 개념을 더욱 구체화하고 대중화했습니다. 
 
   <div align="center">
 
   [![](https://bookthumb-phinf.pstatic.net/cover/026/277/02627729.jpg)](https://book.naver.com/bookdb/book_detail.nhn?bid=2627729)
 
   </div>
-
-  를 집필하여 기술적 특이점의 개념을 더욱 구체화하고 대중화했습니다. 
   
   > 방학 때나 휴학을 했을 때 한번 읽어보시길 추천합니다. 
 
