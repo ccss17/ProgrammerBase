@@ -142,7 +142,7 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 ## `vim` 으로 일반 텍스트 에디터 대체하기
 
-> 참고 : https://github.com/vim/vim/blob/master/runtime/tutor/tutor.ko.utf-8
+> 참고/출처 : https://github.com/vim/vim/blob/master/runtime/tutor/tutor.ko.utf-8
 
 이제부터 `vim` 을 사용하면 타수가 얼마나 줄어드는지 보여드림으로써 `vim` 을 사용하면 좋다는 것을 설득해드리겠습니다. 설득 안되면 어쩔 수 없지만..
 

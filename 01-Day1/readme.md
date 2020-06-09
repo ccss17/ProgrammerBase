@@ -32,7 +32,7 @@ GBC 첫번째 과정 **Programmer Base** 의 1일차 내용입니다.
 
 # Docker
 
-> 참고 : https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html
+> 참고/출처 : https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html
 
 - **도커(docker) : 컨테이너 기반의 오프소스 가상화 플랫폼이다.**
 
@@ -78,7 +78,7 @@ GBC 첫번째 과정 **Programmer Base** 의 1일차 내용입니다.
 
 ## 도커 설치
 
-> 참고 : https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html
+> 참고/출처 : https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html
 
 > 만약  컴퓨터 운영체제로 **Linux** 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 도커를 설치할 수 있다고 믿습니다. 
 

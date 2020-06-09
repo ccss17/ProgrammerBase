@@ -92,11 +92,11 @@
 
 # 수학의 역사 
 
-> 참고 : [『기하학원론(가): 평면기하(제1-4권)』, 유클리드](https://book.naver.com/bookdb/book_detail.nhn?bid=60711)
+> 참고/출처 : [『기하학원론(가): 평면기하(제1-4권)』, 유클리드](https://book.naver.com/bookdb/book_detail.nhn?bid=60711)
 
-> 참고 : [『수학사상사 1』, 『수학사상사 2』, 『수학사상사 3』, 모리스 클라인](https://book.naver.com/bookdb/book_detail.nhn?bid=10236389)
+> 참고/출처 : [『수학사상사 1』, 『수학사상사 2』, 『수학사상사 3』, 모리스 클라인](https://book.naver.com/bookdb/book_detail.nhn?bid=10236389)
 
-> 참고 : [『수학의 확실성』, 모리스 클라인](https://book.naver.com/bookdb/book_detail.nhn?bid=2900590)
+> 참고/출처 : [『수학의 확실성』, 모리스 클라인](https://book.naver.com/bookdb/book_detail.nhn?bid=2900590)
 
 아래의 내용은 **위 서적을 기반으로 작성**되었습니다.
 

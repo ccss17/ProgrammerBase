@@ -190,7 +190,7 @@ https://insights.stackoverflow.com/survey/2019
 
 # Git
 
-> 참고 : https://git-scm.com/book/en/v2
+> 참고/출처 : https://git-scm.com/book/en/v2
 
 코딩을 막 배우기 시작하면 종종 카톡이나 메일에 소스코드를 백업 하곤 합니다. 하지만 이 방식에는 몇 가지 단점이 있습니다. 먼저 소스코드의 저장장소가 매우 산발적이고 일관성이 없어서 매번 찾기가 힘듭니다. 그리고 소스코드의 변화과정을 제대로 이해하기 힘듭니다. 만약 백업하는 것도 잊어버리고 백업을 하지 않았다가 실수로 소스코드를 삭제해버린다면 복구할 수 있는 방법이 전혀 없습니다.
 
@@ -526,7 +526,7 @@ very important message
 
 ## VSCode 간단 사용법 
 
-> 참고 : https://code.visualstudio.com/docs
+> 참고/출처 : https://code.visualstudio.com/docs
 
 먼저 `git` 레포지토리를 **VSCode** 로 여는 두 가지 방법을 알아보겠습니다. 
 

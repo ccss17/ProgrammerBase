@@ -282,7 +282,7 @@
 
 # 괴델의 불완전성 정리 
 
-> 참고 : [『괴델의 증명』, 어니스트 네이글, 제임스 뉴먼, 더글러스 호프스태더](https://book.naver.com/bookdb/book_detail.nhn?bid=6395428)
+> 참고/출처 : [『괴델의 증명』, 어니스트 네이글, 제임스 뉴먼, 더글러스 호프스태더](https://book.naver.com/bookdb/book_detail.nhn?bid=6395428)
 
 아래의 내용은 **위 서적을 기반으로 작성**되었습니다.
 

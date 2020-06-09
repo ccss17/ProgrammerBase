@@ -150,9 +150,9 @@ GBC 첫번째 과정 **Programmer Base** 의 4일차 내용입니다.
 
 # CLI 업그레이드하기
 
-> 참고 : https://wiki.archlinux.org/index.php/Core_utilities#Alternatives
+> 참고/출처 : https://wiki.archlinux.org/index.php/Core_utilities#Alternatives
 
-> 참고 : https://missing.csail.mit.edu/ 
+> 참고/출처 : https://missing.csail.mit.edu/ 
 
 여러분은 지금까지 리눅스 교재와 이곳의 내용들을 통해서 `bash` 쉘, `git`, `find`, `cat`, `ls`, `vim`, `tmux` 같은 CLI 툴을 알아보았습니다. 
 

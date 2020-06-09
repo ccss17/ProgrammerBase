@@ -111,7 +111,7 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 ## Git Branching
 
-> 참고 : https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+> 참고/출처 : https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 
 프로젝트를 진행하면 새로운 기능을 추가할 때 그 기능이 전체 프로젝트와 호환되는지 알 수 없습니다. 개인 프로젝트라면 상관 없지만 함께 하는 프로젝트라면 걱정이 시작됩니다. **Git** 이 없을 때에는 이렇게 했습니다. 프로젝트를 통채로 복사하고 새로운 기능을 추가하고 호환되는지 충분히 검증한 다음에 원래의 레포지토리에 새로운 기능을 옮깁니다.
 
@@ -613,9 +613,9 @@ https://awesomeopensource.com/
 
 ## Hacker News
 
-> 참고 : https://en.wikipedia.org/wiki/Hacker_News
+> 참고/출처 : https://en.wikipedia.org/wiki/Hacker_News
 
-> 참고 : https://www.quora.com/What-is-Hacker-News
+> 참고/출처 : https://www.quora.com/What-is-Hacker-News
 
 [Hacker News](https://news.ycombinator.com/) 는 [Paul Graham](https://en.wikipedia.org/wiki/Paul_Graham_(programmer)) 이 만든 인터넷 커뮤니티로써 컴퓨터 해커에게 흥미로운 모든 것을 공유하기 위한 커뮤니티입니다. 
 
