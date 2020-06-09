@@ -601,7 +601,13 @@ $ g psom
 
 이 레포지토리는 **Github** 레포지토리의 스타가 **470,793** 개([2020/05/22 기준](https://gitstar-ranking.com/)) 로 가장 많은 [sindresorhus](https://github.com/sindresorhus) 가 **Awesome Repository** 들을 모아둔 레포지토리로써 이 단일 레포지토리에 스타가 약 **134,000** 개가 달려있습니다. 
 
-여기에서 각자 관심있는 주제나 분야, 툴들의 **Awesome** 한 정보들을 찾아보세요. 
+여기에서 각자 관심있는 주제나 분야, 툴들의 **Awesome** 한 정보들을 찾아보세요. 저는
+
+https://github.com/carpedm20/awesome-hacking#readme
+
+https://github.com/ChristosChristofidis/awesome-deep-learning#readme
+
+에 관심이 있습니다.
 
 https://awesomeopensource.com/
 
