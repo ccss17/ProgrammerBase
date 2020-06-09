@@ -268,7 +268,7 @@
 
 ### 3-(1) 무한의 크기(대각선 논법)
 
-칸토어는 **(1) 실수의 개수가 자연수의 개수보다 훨씬 크다**는 것과 **(2) 자연수의 부분집합의 개수가 자연수의 개수보다 훨씬 더 크다**는 것을 증명했습니다. 칸토어는 **무한이 자연수만큼 있으면 셀 수 있을만큼 많다**고 표현했고 **무한이 실수만큼 있으면 셀 수 없을만큼 많다**고 표현했습니다.
+[칸토어](https://ko.wikipedia.org/wiki/%EA%B2%8C%EC%98%A4%EB%A5%B4%ED%81%AC_%EC%B9%B8%ED%86%A0%EC%96%B4)는 **(1) 실수의 개수가 자연수의 개수보다 훨씬 크다**는 것과 **(2) 자연수의 부분집합의 개수가 자연수의 개수보다 훨씬 더 크다**는 것을 증명했습니다. 칸토어는 **무한이 자연수만큼 있으면 셀 수 있을만큼 많다**고 표현했고 **무한이 실수만큼 있으면 셀 수 없을만큼 많다**고 표현했습니다.
 
 > 아래의 칸토어의 증명을 대각선 논법이라고 하는데 이 증명이 너무 직관적이고 아름다워서 에르되시 팔은 이 증명이 "하나님이 갖고 있는 수학책에 있는 증명이다." 라고 말했습니다.
 
@@ -276,11 +276,15 @@
 
 실수의 개수가 자연수의 개수보다 훨씬 크다는 칸토어의 증명은 다음과 같습니다.
 
-1. 먼저 실수집합 전체 대신 구간 ![](https://math.now.sh/?from=(0,1)) 을 상정하자. 다음의 탄젠트 함수 ![](https://math.now.sh/?from=y=\tan\bigg(\pi{}x-\dfrac{\pi}{2}\bigg)) 을 살펴보면 구간 ![](https://math.now.sh/?from=(0,1)) 의 실수가 모든 실수 전체 집합로 사상되기 때문에 서로 크기가 같다는 것을 알 수 있다.
+1. 먼저 실수집합 전체 대신 구간 ![](https://math.now.sh/?from=(0,1)) 을 상정하자. 다음의 탄젠트 함수 ![](https://math.now.sh/?from=y=\tan\bigg(\pi{}x-\dfrac{\pi}{2}\bigg)) 을 살펴보면 구간 ![](https://math.now.sh/?from=(0,1)) 의 실수가 모든 실수 전체 집합로 사상(mapping)되기 때문에 구간 ![](https://math.now.sh/?from=(0,1)) 과 실수전체 집합은 서로 크기가 같다는 것을 알 수 있다.
+
+    <div align="center">
 
     ![desmos-graph](https://user-images.githubusercontent.com/16812446/83792797-8868c080-a6d6-11ea-8dac-6238abb22dfa.png)
+    
+    </div>
 
-2. 그리고 이 구간 ![](https://math.now.sh/?from=(0,1)) 에 존재하는 모든 실수에 다음과 같이 자연수로 번호 매길 수 있다고 하자. 정말로 구간 ![](https://math.now.sh/?from=(0,1)) 에 존재하는 모든 실수에 자연수로 번호매길 수 있다면 실수의 크기와 자연수의 크기는 같은 것이 된다. ![](https://math.now.sh/?from=R_i) 는 자연수 ![](https://math.now.sh/?from=i) 로 번호매겨진 실수를 뜻하고, ![](https://math.now.sh/?from=a_{ij}) 는 ![](https://math.now.sh/?from=0) 부터 ![](https://math.now.sh/?from=9) 사이의 자연수이다.
+2. 그리고 이 구간 ![](https://math.now.sh/?from=(0,1)) 에 존재하는 모든 실수에 다음과 같이 자연수로 번호 매길 수 있다고 하자. 
 
     ![](https://math.now.sh/?from=R_1=0.a_{11}a_{12}a_{13}a_{14}a_{15}\dots{}a_{1i}\dots)
 
@@ -297,6 +301,8 @@
     ![](https://math.now.sh/?from=R_i=0.a_{i1}a_{i2}a_{i3}a_{i4}a_{i5}\dots{}a_{ii}\dots)
 
     ![](https://math.now.sh/?from=\vdots)
+
+    정말로 구간 ![](https://math.now.sh/?from=(0,1)) 에 존재하는 모든 실수에 자연수로 번호매길 수 있다면 실수의 크기와 자연수의 크기는 같은 것이 된다. ![](https://math.now.sh/?from=R_i) 는 자연수 ![](https://math.now.sh/?from=i) 로 번호매겨진 실수를 뜻하고, ![](https://math.now.sh/?from=a_{ij}) 는 ![](https://math.now.sh/?from=0) 부터 ![](https://math.now.sh/?from=9) 사이의 자연수이다.
 
 3. 이제 어떤 실수 ![](https://math.now.sh/?from=x=0.b_{1}b_{2}b_{3}b_{4}b_{5}\dots{}b_{i}\dots) 를 이렇게 만들어보자. 실수 ![](https://math.now.sh/?from=x) 의 소수 ![](https://math.now.sh/?from=i) 번째 자리수 ![](https://math.now.sh/?from=b_i) 를 위와 같은 실수 ![](https://math.now.sh/?from=R_i) 에서 ![](https://math.now.sh/?from=a_{ii}) 가 ![](https://math.now.sh/?from=9) 보다 작은 자연수라면 ![](https://math.now.sh/?from=a_{ii}%2B1) 로 정하고, ![](https://math.now.sh/?from=9) 라면 ![](https://math.now.sh/?from=0) 으로 정하자.
 
