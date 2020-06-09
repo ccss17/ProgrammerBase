@@ -372,6 +372,8 @@
 
   를 부여할 수 있습니다. 이렇게 존재하는 모든 튜링기계에 고유의 자연수를 부여할 수 있기 때문에 튜링기계의 개수는 자연수의 개수를 넘지 못합니다.
 
+또한 이로써 우리는 **프로그램의 개수가 자연수의 개수를 넘지 못한다**는 결론에도 도달할 수 있습니다. 더 나아가 프로그램에 입력되는 입력 또한 고유의 자연수로 사상될 수 있으므로 **프로그램의 입력도 자연수의 개수를 넘지 못합니다.**
+
 **이제 튜링의 증명을 이해할 모든 준비가 끝났습니다.**
 
 ### 3-(3) 보편만능기계로도 해결할 수 없는 정지문제
@@ -398,6 +400,8 @@
 
 3. 그런데 ![](https://math.now.sh/?from=H) 가 존재한다면 모든 입력에 대한 모든 튜링기계를 ![](https://math.now.sh/?from=H) 에 입력시켜서 멈출지, 멈추지 않을지 판단한 결과를 다음과 같은 표로 만들 수 있다. ![](https://math.now.sh/?from=1) 이면 실행이 끝난다는 것이고, ![](https://math.now.sh/?from=0) 이면 끝나지 않는다는 것이다.
 
+    <div align="center">
+
     ||![](https://math.now.sh/?from=I_{1})|![](https://math.now.sh/?from=I_{2})|![](https://math.now.sh/?from=I_{3})|![](https://math.now.sh/?from=\dots)|![](https://math.now.sh/?from=I_{i})|![](https://math.now.sh/?from=\dots)|
     |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
     |![](https://math.now.sh/?from=M_{1})|![](https://math.now.sh/?from=1)|![](https://math.now.sh/?from=1)|![](https://math.now.sh/?from=0)|![](https://math.now.sh/?from=\dots)|![](https://math.now.sh/?from=1)|![](https://math.now.sh/?from=\dots)|
@@ -406,6 +410,8 @@
     |![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\ddots)|![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\vdots)|
     |![](https://math.now.sh/?from=M_{i})|![](https://math.now.sh/?from=0)|![](https://math.now.sh/?from=0)|![](https://math.now.sh/?from=1)|![](https://math.now.sh/?from=\dots)|![](https://math.now.sh/?from=0)|![](https://math.now.sh/?from=\dots)|
     |![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\vdots)|![](https://math.now.sh/?from=\ddots)|
+    
+    </div>
 
     위 표에 따르면 튜링기계 ![](https://math.now.sh/?from=M_i) 에 입력 ![](https://math.now.sh/?from=I_i) 를 입력시켜서 실행한 결과가 ![](https://math.now.sh/?from=0) 인데 이것은 ![](https://math.now.sh/?from=H) 가 입력 ![](https://math.now.sh/?from=I_i) 를 받은 기계 ![](https://math.now.sh/?from=M_i) 의 실행이 끝나지 않는다고 판단한 것이다.
 
