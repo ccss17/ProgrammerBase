@@ -184,6 +184,10 @@
 
 - [Why the future doesn't need us](https://github.com/ccss17/ProgrammerBase/blob/master/future.md#why-the-future-doesnt-need-us)
 
+- [기술적 특이점의 의미]()
+
+- [ProgrammerBase 를 마치며]()
+
 # Rule
 
 GBC 참여자들은 **PASS** 와 **FAIL** 에 관련된 내용이니 다음의 룰을 꼭 확인해주세요. 
