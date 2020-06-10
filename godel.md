@@ -506,21 +506,37 @@
 
 가령 "영은 영과 같지 않다." 고 말하는 수학명제 "![](https://math.now.sh/?from=\sim(0=0))" 와 그것에 **관하여** 언급하는 상위 수학명제 **"형식문 ![](https://math.now.sh/?from=\sim(0=0)) 의 첫번째 기호는 틸드(~)이다."** 를 예로 들어보겠습니다. 먼저 형식문(수학명제)의 괴델수는 
 
+<div align="center">
+
 ![](https://math.now.sh/?from=a=2^{1}\times{}3^{8}\times{}5^{6}\times{}7^{5}\times{}11^{6}\times{}13^{9})
+
+</div>
 
 입니다. 그런데 상위 수학명제가 틸드(\~)를 언급하므로 상위 수학명제가 ![](https://math.now.sh/?from=a) 의 가장 작은 소수의 거듭제곱 ![](https://math.now.sh/?from=2^1) 와 관계되어 있다는 것을 알 수 있습니다. 이것에 착안하여 상위 수학명제 **"형식문 ![](https://math.now.sh/?from=\sim(0=0)) 의 첫번째 기호는 틸드(\~)이다."** 를 수학명제 **"형식문 ![](https://math.now.sh/?from=\sim(0=0)) 의 괴델수 ![](https://math.now.sh/?from=a) 의 첫번째 소수 ![](https://math.now.sh/?from=2) 의 지수는 ![](https://math.now.sh/?from=1) 이다."** 로 사상시킬 수 있습니다. 이 수학명제는 **"![](https://math.now.sh/?from=2) 는 ![](https://math.now.sh/?from=a) 의 인수이고 ![](https://math.now.sh/?from=2^{2}) 는 ![](https://math.now.sh/?from=a) 의 인수가 아니다."** 라는 수학명제와 동치입니다. 
 
 그런데 수학명제 "![](https://math.now.sh/?from=x) 는 ![](https://math.now.sh/?from=y) 의 인수이다." 는 수학명제 "![](https://math.now.sh/?from=x) 를 곱하면 ![](https://math.now.sh/?from=y) 가 되는 수 ![](https://math.now.sh/?from=z) 가 있다." 와 같으므로 형식문 ![](https://math.now.sh/?from=(\exists{}z)(y=z{}\times{}x)) 와 같습니다. 그러므로 결론적으로 수학명제 **"![](https://math.now.sh/?from=2) 는 ![](https://math.now.sh/?from=a) 의 인수이고 ![](https://math.now.sh/?from=2^{2}) 는 ![](https://math.now.sh/?from=a) 의 인수가 아니다."** 에서 **"![](https://math.now.sh/?from=2) 는 ![](https://math.now.sh/?from=a) 의 인수이다."** 는 형식문 
 
+<div align="center">
+
 ![](https://latex.codecogs.com/svg.latex?(\exists{}z)(\overbrace{sss\dots{}sss0}^{a}=z\times{}2))
+
+</div>
 
 으로 사상되고 **"![](https://math.now.sh/?from=2^{2}) 는 ![](https://math.now.sh/?from=a) 의 인수가 아니다."** 는
 
+<div align="center">
+
 ![](https://latex.codecogs.com/svg.latex?\sim(\exists{}z)(\overbrace{sss\dots{}sss0}^{a}=z\times(2\times{}2)))
+
+</div>
 
 로 사상됩니다. 이에 따라 최종적으로 상위 수학명제 **"형식문 ![](https://math.now.sh/?from=\sim(0=0)) 의 첫번째 기호는 틸드(~)이다."** 를 수학명제 **"![](https://math.now.sh/?from=2) 는 ![](https://math.now.sh/?from=a) 의 인수이고 ![](https://math.now.sh/?from=2^{2}) 는 ![](https://math.now.sh/?from=a) 의 인수가 아니다."** 로 사상시킨 형식문
 
+<div align="center">
+
 ![](https://latex.codecogs.com/svg.latex?(\exists{}z)(\overbrace{sss\dots{}sss0}^{a}=z\times{}2)\land\sim(\exists{}z)(\overbrace{sss\dots{}sss0}^{a}=z\times(2\times{}2)))
+
+</div>
 
 을 얻습니다. 또 이 형식문의 괴델수는 매우 크겠지만 지금까지의 방식으로 아주 쉽게 구할 수 있습니다. 
 
@@ -532,11 +548,15 @@
 
 ### 증명함수
 
-"**1-(3) 증명에 괴델수를 붙이기**" 에서 괴델수 ![](https://math.now.sh/?from=n) 을 갖는 형식문의 증명의 괴델수 ![](https://math.now.sh/?from=k=2^{m}\times{}3^{n}) 를 살펴보았습니다. 이렇게 어떤 증명에 해당하는 괴델수는 그 증명의 결론에 해당하는 형식문의 괴델수와 산술학적 관계를 갖습니다.
+"**1-(3) 증명에 괴델수를 붙이기**" 에서 괴델수 ![](https://math.now.sh/?from=n) 을 갖는 형식문의 증명의 괴델수 ![](https://math.now.sh/?from=k=2^{m}\times{}3^{n}) 를 살펴보았습니다. 이렇게 어떤 **증명에 해당하는 괴델수 ![](https://math.now.sh/?from=k) 는 그 증명의 결론에 해당하는 형식문의 괴델수 ![](https://math.now.sh/?from=n) 과 산술학적 관계**를 갖습니다.
 
-이때 "괴델수 ![](https://math.now.sh/?from=x) 를 가지는 형식문 모임은 괴델수 ![](https://math.now.sh/?from=z) 를 가진 형식문의 증명이다." 라는 상위 수학명제에서 ![](https://math.now.sh/?from=x) 와 ![](https://math.now.sh/?from=z) 의 관계를 ![](https://math.now.sh/?from=\text{dem}(x,z)) 로 정의하겠습니다. 
+우리는 형식문 ![](https://math.now.sh/?from=n) 을 증명하는 형식문 모임의 괴델수 ![](https://math.now.sh/?from=k) 의 산술학적 관계(![](https://math.now.sh/?from=k=2^{m}\times{}3^{n})) 를 ![](https://math.now.sh/?from=\text{dem}(k,n)) 으로 표현할 수 있습니다. 이 ![](https://math.now.sh/?from=\text{dem}(k,n)) 은 단순히 ![](https://math.now.sh/?from=k) 가 ![](https://math.now.sh/?from=n) 의 증명이다 라고 말하고 있는 것입니다.
+
+그러면 이것을 일반화해서 "괴델수 ![](https://math.now.sh/?from=x) 를 가지는 형식문 모임은 괴델수 ![](https://math.now.sh/?from=z) 를 가진 형식문의 증명이다." 라는 상위 수학명제에서 ![](https://math.now.sh/?from=x) 와 ![](https://math.now.sh/?from=z) 의 관계를 ![](https://math.now.sh/?from=\text{dem}(x,z)) 로 정의하겠습니다. 
 
 - **증명함수 ![](https://math.now.sh/?from=\text{dem}(x,z)) : 괴델수 ![](https://math.now.sh/?from=x) 가 괴델수 ![](https://math.now.sh/?from=z) 의 증명일 때 이 둘의 산술학적 관계이다.**
+
+  - 그냥 ![](https://math.now.sh/?from=x) 가 ![](https://math.now.sh/?from=z) 의 증명이다 라고 생각하면 된다.
 
 > 증명(demonstration) 의 줄임말입니다.
 
@@ -576,11 +596,11 @@
 
 </div>
 
-라는 대입함수로 표현할 수 있습니다.
+라는 대입함수로 표현할 수 있습니다. ![](https://math.now.sh/?from=y) 에 해당하는 괴델수가 **17** 이므로 두번째 인자가 **17** 인 것입니다.
 
 - **대입함수 ![](https://math.now.sh/?from=\text{sub}(x,17,x)) : 괴델수 ![](https://math.now.sh/?from=x) 를 가진 형식문의 모든 숫자변항 ![](https://math.now.sh/?from=y) 에 괴델수 ![](https://math.now.sh/?from=x) 를 대입하여 얻은 형식문의 괴델수이다.**
 
-> 대입(substitution)의 줄임말입니다. ![](https://math.now.sh/?from=y) 에 해당하는 괴델수가 **17** 이므로 두번째 인자가 **17** 인 것입니다.
+> 대입(substitution)의 줄임말입니다. 
 
 이 대입함수 ![](https://math.now.sh/?from=\text{sub}(x,17,x)) 또한 수들의 산술학적 관계를 표현하므로 형식문으로 사상될 수 있습니다. 그 형식문을 ![](https://math.now.sh/?from=\text{Sub}(x,17,x)) 이라고 하겠습니다. 
 
@@ -608,7 +628,7 @@
 
 ### 3-(1) 자기 자신이 증명될 수 없다고 주장하는 형식문 ![](https://math.now.sh/?from=G)
 
-상위 수학명제 **"괴델수 ![](https://math.now.sh/?from=z) 를 가진 형식문은 증명할 수 있다."** 를 생각할 수 있습니다. 이 상위 수학명제는 "**괴델수 ![](https://math.now.sh/?from=z) 를 가진 형식문을 증명하는 괴델수 ![](https://math.now.sh/?from=x) 를 가진 형식문 모임(증명)이 존재한다."** 와 같습니다. 그러므로 **"![](https://math.now.sh/?from=z) 를 증명할 수 있다"** 라는 상위 수학명제를 **![](https://math.now.sh/?from=z) 에 대한 증명 ![](https://math.now.sh/?from=x) 가 존재한다**고 주장하는 형식문 
+상위 수학명제 **"괴델수 ![](https://math.now.sh/?from=z) 를 가진 형식문은 증명할 수 있다."** 를 생각합시다. 이 상위 수학명제는 "**괴델수 ![](https://math.now.sh/?from=z) 를 가진 형식문을 증명하는 괴델수 ![](https://math.now.sh/?from=x) 를 가진 형식문 모임(증명)이 존재한다."** 와 같습니다. 그러므로 **"![](https://math.now.sh/?from=z) 를 증명할 수 있다"** 라는 상위 수학명제를 **![](https://math.now.sh/?from=z) 에 대한 증명 ![](https://math.now.sh/?from=x) 가 존재한다**고 주장하는 형식문 
 
 <div align="center">
 
@@ -632,7 +652,7 @@
 
 </div>
 
-를 만들 수 있고 이 형식문을 ![](https://math.now.sh/?from=S) 라고 하겠습니다. 형식문 ![](https://math.now.sh/?from=S) 는 단순히 "괴델수 ![](https://math.now.sh/?from=\text{sub}(y,17,y)) 를 가진 형식문은 증명될 수 없다." 라고 주장합니다. 형식문 ![](https://math.now.sh/?from=S) 에 대응하는 괴델수를 ![](https://math.now.sh/?from=n) 이라고 하겠습니다.
+를 만들 수 있습니다. 이 형식문을 ![](https://math.now.sh/?from=S) 라고 하겠습니다. 형식문 ![](https://math.now.sh/?from=S) 는 단순히 **"괴델수 ![](https://math.now.sh/?from=\text{sub}(y,17,y)) 를 가진 형식문은 증명될 수 없다."** 라고 주장합니다. 형식문 ![](https://math.now.sh/?from=S) 에 대응하는 괴델수를 ![](https://math.now.sh/?from=n) 이라고 하겠습니다.
 
 > "![](https://math.now.sh/?from=S(n):)" 은 단순히 형식문과 그 괴델수를 의미하며 실질적인 형식문에 포함되지 않습니다. 가독성을 높히기 위하여 편의상 추가한 것입니다. 콜론(:) 오른쪽 부분부터 실질적인 형식문입니다. 
 
@@ -677,11 +697,11 @@
 
 </div>
   
-- 만약 형식문 ![](https://math.now.sh/?from=G) 가 증명된다면 "![](https://math.now.sh/?from=G) 는 증명된다." 고 말한 부정문 ![](https://math.now.sh/?from=\sim{}G) 이 증명된다.
+- 만약 형식문 ![](https://math.now.sh/?from=G) 가 증명된다면 **"![](https://math.now.sh/?from=G) 는 증명된다."** 고 말한 부정문 ![](https://math.now.sh/?from=\sim{}G) 이 증명된다.
 
-- 반대로 "![](https://math.now.sh/?from=G) 는 증명된다." 고 말한 부정문 ![](https://math.now.sh/?from=\sim{}G) 이 증명된다면 ![](https://math.now.sh/?from=G) 가 증명되는 것이다.
+- 반대로 **"![](https://math.now.sh/?from=G) 는 증명된다."** 고 말한 부정문 ![](https://math.now.sh/?from=\sim{}G) 이 증명된다면 ![](https://math.now.sh/?from=G) 가 증명되는 것이다.
 
-그러므로 우리는 **형식문 ![](https://math.now.sh/?from=G) 가 그 부정문 ![](https://math.now.sh/?from=\sim{}G) 이 증명될 경우에만 증명된다**는 결론을 얻습니다. 그런데 어떤 형식문과 그 부정문이 동시에 연역되면 그 형식 체계는 부정합 체계입니다. 그러므로 **PM 이 정합적 체계라면 형식문 ![](https://math.now.sh/?from=G) 와 ![](https://math.now.sh/?from=\sim{}G) 가 둘 다 PM 에 의하여 증명될 수 없다**는 결론에 도달합니다.
+그러므로 우리는 **형식문 ![](https://math.now.sh/?from=G) 가 그 부정문 ![](https://math.now.sh/?from=\sim{}G) 이 증명될 경우에만 증명된다**는 결론을 얻습니다. 그런데 어떤 형식문과 그 부정문이 동시에 연역되면 그 형식 체계는 부정합 체계입니다. 따라서 우리는 **PM 이 정합적 체계라면 형식문 ![](https://math.now.sh/?from=G) 와 ![](https://math.now.sh/?from=\sim{}G) 가 둘 다 PM 에 의하여 증명될 수 없다**는 결론에 도달합니다.
 
 ### 3-(3) 형식문 ![](https://math.now.sh/?from=G) 는 증명될 수 없지만 참이다.
 
@@ -727,11 +747,11 @@
 
 이제 우리는 **"PM 이 정합적 체계이면 PM 은 불완전 체계이다."** 라는 상위 수학명제를 얻었습니다. 이 상위 수학명제를 ![](https://math.now.sh/?from=B) 라고 하겠습니다. 이때 ![](https://math.now.sh/?from=B) 의 조건절 **"PM 은 정합적 체계이다."** 를 명제 ![](https://math.now.sh/?from=A) 로 표현하고, ![](https://math.now.sh/?from=B) 의 귀결절 **"PM 은 불완전 체계이다."** 를 명제 ![](https://math.now.sh/?from=X) 로 표현하겠습니다. 그렇다면 ![](https://math.now.sh/?from=B) 를 ![](https://math.now.sh/?from=A\to{}X) 으로 표현할 수 있습니다. 
 
-- **![](https://math.now.sh/?from=B) 의 조건절 명제 ![](https://math.now.sh/?from=A) PM 은 정합적 체계이다." 를 형식문으로 사상시키기**
+- **![](https://math.now.sh/?from=B) 의 조건절 명제 ![](https://math.now.sh/?from=A) "PM 은 정합적 체계이다." 를 형식문으로 사상시키기**
 
   그런데 상위 수학명제 ![](https://math.now.sh/?from=A) 는 매우 쉽게 **PM** 속의 형식문으로 사상될 수 있습니다. 왜냐하면 **PM** 이 정합적 체계라는 것은 **"PM 속에 증명될 수 없는(형식적으로 연역될 수 없는) 형식문이 적어도 하나 있다."** 라는 상위 수학명제와 같기 때문입니다. 
   
-  이 진술은 **"어떤 ![](https://math.now.sh/?from=x) 와도 ![](https://math.now.sh/?from=\text{dem}) 함수 관계를 맺지 못하는 괴델수 ![](https://math.now.sh/?from=y) 가 적어도 하나 있다."** 라는 수학명제로 사상됩니다. 즉, 쉽게 말해서 증명에 해당하는 괴델수 ![](https://math.now.sh/?from=x) 가 없는 ![](https://math.now.sh/?from=y) 가 존재한다는 말입니다.
+  이 진술은 **"어떤 ![](https://math.now.sh/?from=x) 와도 ![](https://math.now.sh/?from=\text{dem}) 함수 관계를 맺지 못하는 괴델수 ![](https://math.now.sh/?from=y) 가 적어도 하나 있다."** 라는 수학명제로 사상됩니다. 쉽게 말해서 증명에 해당하는 괴델수 ![](https://math.now.sh/?from=x) 가 없는 ![](https://math.now.sh/?from=y) 가 존재한다는 말입니다.
   
   그렇다면 이 상위 수학명제 ![](https://math.now.sh/?from=A) 는 **"괴델수 ![](https://math.now.sh/?from=y) 가 존재하는데, ![](https://math.now.sh/?from=y) 는 증명에 해당하는 괴델수 ![](https://math.now.sh/?from=x) 가 없는 괴델수야."** 라고 주장하는 수학명제 
 
@@ -753,7 +773,7 @@
 
   > 정리란 공리로부터 연역된 형식문, 즉 공리와 추론규칙을 통해 증명된 형식문임을 기억하세요. 따라서 증명될 수 없는 형식문은 정리가 아닙니다.
 
-그러므로 우리가 얻은 상위 수학명제 ![](https://math.now.sh/?from=B) **"PM 이 정합적 체계이면 PM 은 불완전 체계이다."** 를 완벽하게 순수한 수학명제 ![](https://math.now.sh/?from=A\to{}G) 로 사상시킬 수 있습니다. 즉, 
+그러므로 우리가 얻은 상위 수학명제 ![](https://math.now.sh/?from=B) **"PM 이 정합적 체계이면 PM 은 불완전 체계이다."** 를 완벽하게 순수한 수학명제 ![](https://math.now.sh/?from=A\to{}G) 로 사상시킬 수 있습니다. 즉, 형식문
 
 <div align="center">
 
@@ -763,13 +783,13 @@
 
 로 사상시킬 수 있는 것입니다. 이제 제 2 불완전성 정리를 증명하는 일만 남았는데, 여기까지 잘 따라왔다면 마찬가지로 매우 쉽습니다. 
 
-- 만약 **PM** 속에서 ![](https://math.now.sh/?from=A) 가 증명될 수 있다고 한다면 **분리규칙에 의하여** ![](https://math.now.sh/?from=G) 도 증명된다. 
+- 만약 **PM** 속에서 ![](https://math.now.sh/?from=A) 가 증명될 수 있다면 **분리규칙에 의하여** ![](https://math.now.sh/?from=G) 도 증명된다. 
 
 - 그런데 **PM** 이 정합적 체계라면 ![](https://math.now.sh/?from=G) 는 형식적으로 결정될 수 없어야 한다. 즉, ![](https://math.now.sh/?from=G) 는 **PM** 에 의하여 증명될 수 없어야 한다.
 
-- 그러므로 **PM** 이 정합적 체계인 한 ![](https://math.now.sh/?from=A) 는 **PM** 에 의하여 증명될 수 없다.
+- 그러므로 **PM** 이 정합적 체계라면 ![](https://math.now.sh/?from=A) 는 **PM** 에 의하여 증명될 수 없다.
 
-결론적으로 "**PM** 은 정합적 체계이다." 라고 말하는 ![](https://math.now.sh/?from=A) 는 **PM** 에 의하여 증명될 수 없는 것입니다. **이로써 제 2 불완전성 정리가 증명되었습니다.**
+결론적으로 "**PM 은 정합적 체계이다.**" 라고 말하는 ![](https://math.now.sh/?from=A) 는 **PM** 에 의하여 증명될 수 없는 것입니다. **이로써 제 2 불완전성 정리가 증명되었습니다.**
 
 > 이로써 우리는 **PM** 이 정합적 체계라면 **PM** 의 정합성이 **PM** 에 사상될 수 있는 그 어떠한 상위 수학적 추론으로도 증명될 수 없다는 결론에 도달합니다. 왜냐하면 **PM** 의 정합성에 대한 증명이 **PM** 의 수학명제로 환원된다면 그것은 ![](https://math.now.sh/?from=A) 를 증명하는 꼴이 되고 결국 ![](https://math.now.sh/?from=G) 도 증명하는 꼴이 되며 최종적으로 **PM** 에 정합성이 없다는 말이 되기 때문입니다. 하지만 **3-(3)** 에서 ![](https://math.now.sh/?from=G) 가 **PM 에 의해서가 아니라 상위 수학적 추론에 의하여** 참이라는 것이 증명된 것처럼 **PM 의 정합성도 PM 으로 사상되지 않는 상위 수학적 추론에 의하여** 증명될 수 있습니다.
 
