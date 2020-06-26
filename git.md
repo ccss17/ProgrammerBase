@@ -1,0 +1,357 @@
+# Git
+
+---
+
+# Table of Contents
+
+- [Git](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git)
+
+  - [Git 설치](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git-%EC%84%A4%EC%B9%98)
+
+    - [Windows 설치](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#windows-%EC%84%A4%EC%B9%98)
+
+    - [MacOS 설치](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#macos-%EC%84%A4%EC%B9%98)
+
+    - [우분투 도커 컨테이너에서 git 초기 설정](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%8F%84%EC%BB%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EC%97%90%EC%84%9C-git-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95)
+
+  - [git 이 파일을 관리하는 상태](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git-%EC%9D%B4-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94-%EC%83%81%ED%83%9C)
+
+    - [git 레포지토리 생성하기 (untracked 상태)](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-untracked-%EC%83%81%ED%83%9C)
+
+    - [파일 생성하고 스테이징하기 (untracked 상태 &rarr; staged 상태)](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%95%ED%95%98%EA%B8%B0-untracked-%EC%83%81%ED%83%9C--staged-%EC%83%81%ED%83%9C)
+
+    - [커밋해서 하나의 버전으로 만들기 (staged 상태 &rarr; committed 상태)](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%BB%A4%EB%B0%8B%ED%95%B4%EC%84%9C-%ED%95%98%EB%82%98%EC%9D%98-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-staged-%EC%83%81%ED%83%9C--committed-%EC%83%81%ED%83%9C)
+
+    - [변경된 파일 커밋하기 (modified 상태 &rarr; staged 상태 &rarr; committed 상태)](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%B3%80%EA%B2%BD%EB%90%9C-%ED%8C%8C%EC%9D%BC-%EC%BB%A4%EB%B0%8B%ED%95%98%EA%B8%B0-modified-%EC%83%81%ED%83%9C--staged-%EC%83%81%ED%83%9C--committed-%EC%83%81%ED%83%9C)
+
+    - [커밋 기록 보기 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%BB%A4%EB%B0%8B-%EA%B8%B0%EB%A1%9D-%EB%B3%B4%EA%B8%B0)
+
+- [Github](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github)
+
+  - [Github 가입 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github-%EA%B0%80%EC%9E%85)
+
+  - [Github 레포지토리 생성](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EC%83%9D%EC%84%B1)
+
+  - [git 에서 레포지토리 공유](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git-%EC%97%90%EC%84%9C-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EA%B3%B5%EC%9C%A0)
+
+  - [원격 레포지토리 가져오고 수정하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B3%A0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0)
+
+  - [수정된 원격 레포지토리로부터 업데이트하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%88%98%EC%A0%95%EB%90%9C-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EB%A1%9C%EB%B6%80%ED%84%B0-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0)
+
+---
+
+# Git
+
+코딩을 막 배우기 시작하면 종종 카톡이나 메일에 소스코드를 백업 하곤 합니다. 하지만 이 방식에는 몇 가지 단점이 있습니다. 먼저 소스코드의 저장장소가 매우 산발적이고 일관성이 없어서 매번 찾기가 힘듭니다. 그리고 소스코드의 변화과정을 제대로 이해하기 힘듭니다. 만약 백업하는 것도 잊어버리고 백업을 하지 않았다가 실수로 소스코드를 삭제해버린다면 복구할 수 있는 방법이 전혀 없습니다.
+
+> 이런 문제는 규모가 큰 단체 프로젝트에서 더 심각해집니다. 누가 무엇을 고쳤는지, 소스코드 저장소가 어디에 있는지, 만약 누가 실수로 소스코드를 지워버렸을 때 복구를 할 수 없을 때 기업은 실질적인 금전적인 피해를 받게 됩니다. 
+
+이 문제를 해결하기 위해 나온 것이 **버전 컨트롤 시스템(Version Control System)** 입니다. 줄여서 **VCS** 는 단어 그대로 **"프로젝트의 버전을 손쉽게 다룰 수 있게 해주는 시스템"** 입니다. VCS 에는 여러 종류가 있지만 이제 우리는 그 중에서 가장 많이 사용되는 VCS 인 `git` 을 간단하게 알아보겠습니다. `git` 을 익히면 제가 위에서 설명한 문제들이 다 해결되는 것입니다!
+
+`git` 의 자세한 설명과 의미를 공부하기 위해서는 
+
+https://git-scm.com/book/en/v2
+
+https://git-scm.com/book/ko/v2
+
+를 참고해주세요. 
+
+>그리고 방학 때나 휴학을 했을 때 시간이 남으니까 `git` 의 `Branching` 기능까지 익혀두시길 **강력하게** 추천합니다. 왜냐면 여러분이 개발자로 살아가는 이상 **어차피 언젠가는 `git Branching` 기능까지 알아야만 하기 때문**입니다. 
+
+- **`git` : 가장 인기있고 자주 사용되는 VCS 이다.**
+
+  - `git` 은 파일을 **untracked 상태, modified 상태, staged 상태, committed 상태**로 관리한다.
+
+## Git 설치
+
+> 만약  컴퓨터 운영체제로 **Linux** 를 사용하는 분이 있다면 당신은 전세계 컴퓨터 사용자 중 **`1.63%`** 의 사용자이기 때문에 스스로 `git` 를 설치할 수 있다고 믿습니다. 
+
+### Windows 설치
+
+1. [이 링크](https://git-scm.com/download/win) 에서 `git` 설치파일을 다운로드 받아서 설치하세요.
+
+2. `git` 을 설치한 후 가장 처음 해야 할 일은 초기 설정입니다. `git` 이 잘 설치되었다면 **Git Bash** 를 실행한 다음 `<NAME>, <EMAIL>` 을 본인의 이름과 이메일로 치환하여 다음 명령어를 입력해주세요. 
+
+    ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+    ```shell
+    $ git config --global user.name "<NAME>"
+    $ git config --global user.email "<EMAIL>"
+    ```
+
+### MacOS 설치
+
+1. [이 링크](https://git-scm.com/download/mac) 에서 `git` 설치파일을 다운로드 받아서 설치하세요.
+
+2. `git` 을 설치한 후 가장 처음 해야 할 일은 초기 설정입니다. 터미널을 열어서 `<NAME>, <EMAIL>` 을 본인의 이름과 이메일로 치환하여 다음 명령어를 입력해주세요. 
+
+    ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+    ```shell
+    $ git config --global user.name "<NAME>"
+    $ git config --global user.email "<EMAIL>"
+    ```
+
+### 우분투 도커 컨테이너에서 git 초기 설정
+
+우분투 도커 컨테이너에서 접속하셔서 마찬가지로 `<NAME>, <EMAIL>` 을 본인의 이름과 이메일로 치환하여 다음 명령어를 입력해주세요. 
+
+> 종료된 컨테이너에 다시 접속하는 명령어는 `docker ps -a` 로 종료된 컨테이너의 아이디를 확인하고 `docker start -ai <ID>` 를 입력하는 것이었습니다. 그냥 완전히 새로운 컨테이너를 시작하는 명령어는 `docker run -it ccss17/ubuntu` 였습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ git config --global user.name "<NAME>"
+$ git config --global user.email "<EMAIL>"
+```
+
+## git 이 파일을 관리하는 상태
+
+`git` 은 다음과 같은 상태로 파일들을 관리합니다. 이 상태들의 의미와 원리를 이해하면 **`git` 을 어느정도 이해했다** 고 볼 수 있습니다. 
+
+- **untracked 상태 : `git` 이 변경사항을 추적하지 않는 파일이다.**
+
+- **modified 상태 : 파일을 변경했지만 아직 스테이징되지 않은 상태이다.**
+
+- **staged 상태 : 변경된 파일을 커밋이 될 리스트에 포함시킨 상태이다.**
+
+- **committed 상태 : `git` 데이터베이스에 하나의 버전으로 저장된 상태이다.**
+
+아직은 이게 뭔 소린지 감이 안오네요. `git` 을 실제로 실습해보면서 이 상태들이 어떤 건지 알아보겠습니다. 먼저 우분투 컨테이너에 접속한 상태에서 다음 명령어들을 실행하세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ mkdir git-test      # 디렉토리 생성
+$ cd git-test
+```
+
+### git 레포지토리 생성하기 (untracked 상태)
+
+그리고 다음 명령어를 실행해보세요. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ git init
+```
+
+이 명령어는 현재 디렉토리를 `git` 레포지토리로 만들고 `git` 이 파일의 변경을 추적하게 합니다.
+
+- **`git init` : 디렉토리를 `git` 레포지토리로 만들어 디렉토리 내의 파일을 `git` 이 추적하게 한다.**
+
+### 파일 생성하고 스테이징하기 (untracked 상태 &rarr; staged 상태)
+
+이제 프로젝트를 위하여 `test.txt` 라는 파일을 만들었다고 하고 다음 명령어를 입력하세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ touch test.txt
+$ git status
+...
+Untracked files:
+	test.txt
+...
+```
+
+`git status` 로 현재 `git` 레포지토리의 상태, 즉 디렉토리 내 파일들이 **untracked 상태, modified 상태, staged 상태, committed 상태** 중 어떤 상태인지 알아볼 수 있습니다.
+
+- **`git status` : `git` 레포지토리의 상태를 출력한다.**
+
+  - `-s` 옵션을 붙히면 간단하게 출력한다.
+
+실행 결과가 위와 같은데 금방 만든 `test.txt` 가 `Untracked files` 인 걸로 보아 **untracked 상태**라는 것을 알 수 있습니다. 이 상태에 있는 파일들은 `git` 이 변경사항을 추적하면서 버전에 포함시키지 않습니다.
+
+`git` 이 이 파일을 추적하고 버전에 포함시키도록 하기 위해 다음 명령어를 실행해주세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ git add test.txt
+$ git status
+...
+Changes to be committed:
+  ...
+	new file:   test.txt
+```
+
+이로써 `test.txt` 가 `Changes to be committed`, 즉 **staged 상태**가 되었습니다. **staged 상태**는 이렇게 커밋이 되기로 예정된 파일을 의미합니다. 그리고 스테이징한다는 것은 파일을 **staged 상태**로 만든다는 것이죠.
+
+- **`git add <FILE>` : `<FILE>` 을 스테이징한다.**
+
+  - 즉, 파일을 커밋 예정 상태(**staged 상태**)로 만든다.
+
+  - `git add .` 로 파일명을 일일이 입력하지 않고 모든 파일을 자동으로 `staged` 상태로 만들 수 있다.
+
+### 커밋해서 하나의 버전으로 만들기 (staged 상태 &rarr; committed 상태)
+
+이제 스테이징된 파일들을 커밋해서 하나의 버전으로 만들기만 하면 됩니다!
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ git commit -m "my first commit"
+$ git status
+On branch master
+nothing to commit, working tree clean
+```
+
+그러면 커밋할 때 당시의 레포지토리의 파일들이 하나의 스냅샷으로 찍혀서 하나의 버전이 되었습니다. 
+
+- **`git commit` : 스테이징된 파일들을 커밋하여 하나의 버전으로 만들어 `git` 데이터베이스에 저장한다.**
+
+  - `git commit -m <MESSAGE>` 로 커밋 메시지를 바로 입력할 수 있다.
+
+이렇게 커밋된 스냅샷은 `git` 데이터베이스에 안전하고 일관되게 보관됩니다. 그래서 언제든지 이 커밋들을 열람할 수 있고 복원도 할 수 있고 그때 당시의 파일들이 어떤 상태였는지도 확인할 수 있습니다.
+
+> 다만, 그렇기 때문에 커밋 메시지를 상당히 의미있게 작성하는 것이 중요합니다. 왜냐하면 나중에 커밋들을 살펴볼 때 커밋 메시지에 의존하여 이때 당시의 프로젝트가 어떤 기능이 추가되고 변경되었는지 판단할 수 있기 때문이죠.
+
+### 변경된 파일 커밋하기 (modified 상태 &rarr; staged 상태 &rarr; committed 상태)
+
+코딩을 하다보면 파일을 변경하지 않을 수 없겠죠? 그렇게 새로운 기능이나 변경사항을 추가하면 또 다시 커밋해서 하나의 버전으로 만들어두세요.
+
+> 커밋은 레포지토리에 유의미한 크기의 기능이 추가되었을 때, 또는 레포지토리에 유의미한 변경이 이루어졌을 때 하는 것이 좋지만 처음에는 일단 그냥 "커밋을 많이 하는 것이 좋다" 라는 마인드로 `git` 을 사용해보세요. 그리고 이곳에서 배우진 않지만 `Branching` 기능도 일부러 자주자주 써서 익숙해져보세요. 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ echo "My test memo" > test.txt
+$ cat test.txt
+My test memo
+$ git add .
+$ git commit -m "My memo file"
+```
+
+위 명령어를 입력함으로써 `test.txt` 에 데이터를 추가하고 스테이징한 후 커밋하여 또 하나의 버전으로 만들어보세요.
+
+### 커밋 기록 보기 
+
+프로그램을 개발하면서 무언가 잘못되었을 때, 또는 프로젝트가 어떻게 변경되었는지 이해하고 싶을 때 커밋 기록을 살펴볼 수 있습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ git log
+commit 9a58815ccb87fb516feb22e02a55232cf45da7d5 (HEAD -> master)
+Author: awef <awef@naver.com>
+Date:   Sun May 3 09:48:23 2020 +0000
+
+    My memo file
+```
+
+저는 위와 같은 결과가 나오네요. 초기 설정시 입력하였던 이름과 이메일이 커밋 기록에 남기 때문에 누가 변경한 시점부터 프로젝트가 잘못되었는지, 또는 잘되었는지 확인하는 용도로도 사용할 수 있어서 편리합니다.
+
+- **`git log` : 커밋 기록을 출력한다.**
+
+  - `git log -2` : 최근 커밋 `2` 개를 보여준다. 
+
+  - `git log -p` : 변경 사항도 출력하면서 커밋 기록을 보여준다.
+
+---
+
+# Github
+
+여러분이 지금 보고 있는 웹사이트인 **Github** 는 `git` 레포지토리를 다른 사람과 공유할 수 있는 플랫폼입니다. 이곳을 통하여 협업을 할 수 있기도 하고 자신이 관심있는 프로그램들이 무엇인지 알려줄 수도 있습니다.
+
+> 최근에는 **Github** 에 있는 그 사람의 레포지토리들을 포트폴리오로 취급하고 능력을 가늠해보기도 한다니까 **Github** 에 레포지토리를 많이 공유하는 것이 좋을 것 같습니다.
+
+## Github 가입 
+
+**Github** 에 가입되어 있지 않으신 분들은 먼저 https://github.com/ 에서 가입을 해주세요.
+
+## Github 레포지토리 생성
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/80912176-21be5300-8d76-11ea-8098-4ca30a560c4c.PNG" >
+</div>
+
+가입한 다음에는 왼쪽 위에서 초록색 **"New"** 버튼을 찾아서 누르면 레포지토리 생성 창으로 넘어갑니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/80912222-706bed00-8d76-11ea-8c25-b90e9bed11a4.PNG" >
+</div>
+
+그러고 레포지토리 이름을 그냥 **"git-test"** 라고 하고 테스트용 레포지토리니까 다른 사람들이 못 보게 **"Private"** 에 체크를 하고 아래에 **"Create repository"** 버튼을 눌러 생성을 완료해줍시다.
+
+## git 에서 레포지토리 공유
+
+이제 좀 전에 우분투 컨테이너에서 만들었던 레포지토리를 여기에 공유해보겠습니다. 먼저 다음 명령어에서 `<USER>` 를 자신의 아이디로 치환하여 입력함으로써 원격 레포지토리를 추가해주세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ git remote add origin https://github.com/<USER>/git-test
+```
+
+- **`git remote add <NAME> <URL>` : `<NAME>` 이라는 별칭으로 `<URL>` 의 원격 레포지토리를 등록한다.**
+
+  - `git remote rm <NAME>` 으로 원격 레포지토리를 삭제할 수 있다.
+
+  - `git remote rename <NAME> <NEW>` 으로 원격 레포지토리의 별칭을 수정할 수 있다.
+
+그러고 나면 단순히 다음의 `git push` 명령어를 입력하는 것으로 레포지토리를 공유할 수 있습니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ git push -u origin master
+```
+
+- **`git push <NAME> <BRANCH>` : `<NAME>` 의 원격 레포지토리로 변경사항을 업데이트한다.**
+
+  - `git push origin master` 로도 업데이트 할 수 있다.
+
+## 원격 레포지토리 가져오고 수정하기
+
+이제 다른 컴퓨터에서 원격 레포지토리를 가져와서 작업하거나, 다른 사람의 레포지토리를 가져와서 작업하고 싶은 상황이라고 하겠습니다. 그러면 `<USER>` 를 자신의 아이디로 치환하여 단순히 다음 명령어를 입력하면 됩니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ cd        # 홈 디렉토리로 이동
+$ git clone https://github.com/<USER>/git-test git-test-remote
+$ cd git-test-remote
+```
+
+그러면 홈 디렉토리 밑에 `git-test-remote` 라는 디렉토리가 생기고 들어가보면 `git push` 로 공유했던 프로젝트가 그대로 가져와졌다는 것을 알 수 있습니다.
+
+- **`git clone <URL> <NAME>` : `<URL>` 의 원격 레포지토리를 가져와서 `<NAME>` 디렉토리에 복제한다.**
+
+  - 만약 디렉토리 이름 `<NAME>` 을 생략하고 `git clone <URL>` 으로 입력하면 원격 레포지토리의 이름으로 디렉토리가 자동 생성된다.
+
+이제 원격 레포지토리가 복제되었으니 작업을 하고 업데이트해보겠습니다. 사실 아까와 다를 것이 없습니다! 다음 명령어를 입력해보세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ echo "very important message" > test.txt
+$ git add .
+$ git commit -m "very important file.."
+$ git push origin master
+```
+
+## 수정된 원격 레포지토리로부터 업데이트하기
+
+이렇게 원격 레포지토리를 가져와서 수정한 후 다시 업데이트 해보았습니다. 그러면 다시 원래의 레포지토리로 돌아가서 누군가 수정한 것을, 또는 내가 다른 곳에서 수정한 내용을 업데이트해야겠죠? 
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ cd ~/git-test
+$ cat test.txt
+My test memo
+$ git pull origin master
+$ cat test.txt
+very important message
+```
+
+위 명령어를 입력해보면 `test.txt` 가 다른 곳에서 수정한 내용으로 업데이트 되었다는 것을 알 수 있습니다.
+
+- **`git pull <REMOTE> <BRANCH>` : `<REMOTE>` 의 원격 레포지토리를 가져온 후 `<BRANCH>` 에 병합한다.**
+
+> **5일**이라는 매우 제한된 시간 때문에 `Branch` 라는 개념을 이 시간에 설명하지는 않겠지만 `git` 은 레포지토리의 변경사항을 평행적으로 관리하기 위하여 여러개의 브랜치 즉, 가지들을 생성합니다. 가령 프로젝트에 새로운 기능을 추가하고 싶은데 그 기능이 프로젝트 전체와 잘 어울리는지 장담할 수가 없으니까 새로운 브랜치를 만들어서 마치 평행세계처럼 완전히 새로운 레포지토리에서 작업하는 것입니다.
+
+`git init` 으로 디렉토리가 `git` 이 관리하는 레포지토리가 될 때 `git` 은 자동적으로 현재 브랜치를 `master` 브랜치로 만들기 때문에, `git pull origin master` 라고 하면 **`origin` 이라는 원격 레포지토리의 내용을 가져와서 `master` 브랜치로 병합해라**는 뜻이 되는 것입니다.
+
+그래서 방금 말했던 새로운 브랜치에서 시험중이었던 기능이 충분히 검증이 되면 `master` 브랜치로 병합을 하게 되는 것입니다. 

@@ -12,7 +12,7 @@
 
 > Students spend hundreds of hours using these tools over the course of their education (and thousands over their career), so **it makes sense to make the experience as fluid and frictionless as possible.** Mastering these tools not only enables you to spend less time on figuring out how to bend your tools to your will, but it also lets you solve problems that would previously seem impossibly complex.
 
-하지만 기존 GBC 의 진행과정인 **Linux** 의 내용을 어느정도 담고 있어야 하고 **5일** 이라는 제한된 시간 조건도 고려해야 했기 때문에 이 레포지토리는 _"프로그래머의 기본"_ 이라는 거창한 이름을 달고 있는 것과 달리 **부족한 제가 주관적으로 선정한** 프로그래밍을 할 때 필요한 여러가지 내용들을 담고 있습니다. 
+이 레포지토리는 이러한 아이디어에서 착안하여 제가 주관적으로 선정한 프로그래밍을 할 때 필요한 여러가지 툴들과 **Linux** 에 관련된 내용과 컴퓨터에 대한 약간 철학적인 이야기에 대한 내용을 담고 있습니다.
 
 ## Notice 
 
@@ -159,6 +159,24 @@
 - [Funny CLI ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#funny-cli)
 
 - 조금은 철학적인 이야기 : [기술적 특이점](https://github.com/ccss17/ProgrammerBase/blob/master/future.md)
+
+## Content List
+
+- **[Docker](docker.md)**
+
+- **[information](Information.md)**
+
+- **[Git](git.md)**
+
+- **[VSCode](vscode.md)**
+
+- **[Markdown](markdown.md)**
+
+- **[Tmux](tmux.md)**
+
+- **[Vim](vim.md)**
+
+- **[CLI](cli.md)**
 
 ## 조금은 철학적인 이야기
 

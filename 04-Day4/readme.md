@@ -394,6 +394,8 @@ $ hexyl lolcat | less
 <img src="https://raw.githubusercontent.com/sharkdp/fd/master/doc/screencast.svg?sanitize=true" width="50%" height="auto">
 </div>
 
+> 이미지 출처 : https://github.com/sharkdp/fd
+
 `fd` 의 상세한 설명을 알고 싶다면 공식 레포지토리 https://github.com/sharkdp/fd 를 참고해주세요.
 
 ## `top` ➜ `htop` ➜ `gotop`
@@ -466,13 +468,29 @@ $ gotop
 
 ## `python` ➜ `bpython`
 
-(python to bpython)
+이번에는 파이썬 인터프리터 `python` 에 코드 하이라이팅과 자동완성 기능 등의 편리한 기능이 추가된 `bpython` 입니다.
+
+기존의 파이썬 인터프리터는 다음과 같이 실행됬었습니다.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/84473704-7b466580-acc4-11ea-99b0-c8b69d923f3c.gif" width="70%" height="auto">
+</div>
+
+하지만 `bpython` 을 사용하면 다음과 같이 코드 하이라이팅, 자동 완성, 함수 추천 기능, 자동 인덴트 등의 기능을 사용할 수 있습니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/84473719-84373700-acc4-11ea-91a8-d0985210e9ce.gif" width="70%" height="auto">
+</div>
+
+희미한 글씨로 자동 완성 추천 기능이 발동되면 방향키 <kbd>&rarr;</kbd> 를 눌러서 자동완성을 시켜보세요.
 
 ## fzf 
 
 [`fzf`](https://github.com/junegunn/fzf) 는 다음과 같은 범용 fuzzy finder 입니다. 
 
 ![](https://raw.githubusercontent.com/junegunn/i/master/fzf-preview.png)
+
+> 이미지 출처 : https://github.com/junegunn/fzf
 
 다음 명령어로 `fzf` 를 실행하고 `.c` 를 입력해서 **C 언어 소스 파일** 찾아보시고, `.py` **Python 파일**을 찾아보세요. 
 
@@ -907,11 +925,11 @@ bind-key C-a send-prefix
 
 `vim` 은 수많은 명령어를 제공하고 그 명령어로 사용자가 함수도 제작할 수 있기 때문에 `vim` 에는 사용자들이 만든 수많은 플러그인들이 존재합니다. 다음의 링크에서 가장 인기있는 커스터마이징 `vim` 을 찾아볼 수 있습니다. 
 
-https://vimawesome.com/
+- https://vimawesome.com/
 
-https://github.com/vim-awesome/vim-awesome
+- https://github.com/vim-awesome/vim-awesome
 
-https://github.com/amix/vimrc
+- https://github.com/amix/vimrc
 
 여기에서는 간단하게 제가 `vim` 을 커스터마이징 한 내용을 살펴보겠습니다. 물론 여러분도 여러분에게 더 편한 커스텀 `vim` 을 만들 수 있습니다. 
 
@@ -1150,7 +1168,7 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 **VSCode** 는 수많은 테마를 지원합니다. 그 중에서 여러분 마음에 꼭 드는 테마가 분명히 있을거에요. 다음 링크는 **VSCode** 의 확장 마켓플레이스에서 `theme` 으로 검색했을 때 나오는 결과입니다. 
 
-https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=All%20categories&sortBy=Relevance
+- https://marketplace.visualstudio.com/search?term=theme&target=VSCode&category=All%20categories&sortBy=Relevance
 
 한번 들어가서 마음에 드는 테마가 있는지 찾아보세요. 여기에서는 상위에 랭크된 몇 가지 테마를 소개해드리겠습니다. 
 
@@ -1252,6 +1270,22 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 > 이미지 출처 : 
 
 단순히 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>n</kbd> 만 누르면 되죠. 이 단축키만 누르면 **C/C++ 언어** 도 지알아서 컴파일하고 실행해주고 **Code Runner** 의 환경설정에서 컴파일 옵션을 바꿀 수도 있습니다. 
+
+### PDF 
+
+**VSCode** 에는 **PDF**를 편하게 볼 수 있게 해주는 확장이 있습니다. 두 가지 확장을 추천해드릴 것인데, 편한 것을 쓰면 됩니다.
+
+[vscode-pdf](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf) 는 다음과 같이 **PDF** 파일을 **VSCode** 로 볼 수 있게 해주는 확장입니다.
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/tomoki1207/vscode-pdfviewer/images/screenshot.png" width="70%" height="auto">
+
+</div>
+
+> 이미지 출처 : https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf
+
+[LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) 은 ![](https://math.now.sh/?from=\LaTeX) 의 기능을 사용하게 해주는 강력한 확장이고, 그 기능 중에 **PDF** 도 **VSCode** 에서 볼 수 있게 해주는 기능도 있습니다.
 
 ### mdmath
 
@@ -1360,7 +1394,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 여기에서는 이 설정이 적용된 **VSCode** 에서 `vim` 을 사용하여 어떻게 코드를 효율적으로 편집하는지 몇개의 예시를 보여드리겠습니다. **Python** 으로 예시를 들었지만 **모든 언어에 적용될 수 있는 상황들**입니다.
 
-# VSCode Vim 예시
+# VSCode Vim 
 
 여기에서는 **VSCode** 에서 **VSCodeVim** 확장으로 어떻게 코드 편집을 편하게 편하게 할 수 있는지 보여드리겠습니다. **VSCodeVim** 을 사용하고 싶지 않은 분들이라도 한번 따라해보면서 코드 편집을 얼마나 더 효율적으로 할 수 있는지 꼭 체험해보세요. 
 
@@ -1570,15 +1604,157 @@ if __name__ == '__main__':
 
 # VSCode 와 Docker 로 머신러닝 공부하기
 
-여기에서는 **VSCode** 와 **Docker** 로 [김영섭 교수님](https://github.com/idebtor)의 [파이썬으로 배우는 기계학습](https://github.com/idebtor/KMOOC-ML) 의 주피터 노트북을 실습해보겠습니다. 이로써 **VSCode** 와 **Docker** 를 사용하면 머신러닝 공부가 얼마나 효율적이고 시간낭비 없이 진행될 수 있는지 알아보도록 하겠습니다. 따라서 머신러닝이나 주피터노트북에 관심이 없으신 분들은 이 부분을 넘어가도 됩니다.
+여기에서는 **VSCode** 와 **Docker** 로 [김영섭 교수님](https://github.com/idebtor)의 [파이썬으로 배우는 기계학습](https://github.com/idebtor/KMOOC-ML) 의 주피터 노트북을 실습해보겠습니다. 이로써 **VSCode** 와 **Docker** 를 사용하면 머신러닝 공부가 얼마나 효율적이고 시간낭비 없이 진행될 수 있는지 알아보도록 하겠습니다. 머신러닝이나 주피터노트북에 관심이 없으신 분들은 이 부분을 넘어가도 됩니다.
 
-(파이썬으로 배우는 기계학습 PDF 와 함께 주피터 노트북 사용하는 것. 작성중)
+머신러닝을 공부하려면 3가지 선택지가 있습니다.
 
-(**VSCode** 와 **Docker** 로 김영섭 교수님의 파이썬으로 배우는 기계학습을 공부하며 실습하기.)
+1. 직접 일일이 모든 패키지와 환경을 수작업으로 세팅하기.
 
-실제로 기계학습을 공부하거나 개발하며 많은 개발자들이 **Docker** 로 진행. 파이토치는 파이썬 3.7 로 해야 하는데 로컬에 파이썬 3.7 이 설치되어있다는 보장이 없고, 매번 복잡한 패키지들을 일일이 설치해야 하는 번거로움 때문에 **Docker** 로 한방에 속시원~하게 설치하고 시간낭비 없이 기계학습을 공부할 수 있는 것. 그리고 이것을 **VSCode** 로 편하게 실습!
+2. 무거운 아나콘다를 설치하고 첫번째 선택지보다는 덜 복잡한 세팅을 한 후에 웹 브라우저로 주피터 노트북을 사용하기.
 
-머신러닝을 공부하려면 3가지 선택지가 있음. 첫째 직접 일일이 모든 패키지와 환경을 수작업으로 세팅하기. 둘째 (무겁고 오래걸리는) 아나콘다를 설치하고 첫번째 선택지보다는 덜 복잡한 세팅을 한 후에 주피터 노트북을 사용하기. 셋째 (가볍고 빠른) 도커로 한방에 모든 설정을 마무리한 후에 **VSCode** 로 학습하기.
+3. 가볍운 도커로 한방에 모든 설정을 마무리한 후에 **VSCode** 로 주피터 노트북 학습하기.
+
+## 파이썬으로 배우는 기계학습
+
+여기에서는 **Docker** 로 머신러닝 환경설정을 단번에 설치하고 **VSCode** 로 주피터 노트북을 연동하여 사용해보겠습니다. 먼저 **VSCode** 의 [**Python** 확장](https://marketplace.visualstudio.com/items?itemName=ms-python.python) 과 위에서 소개해드린 **PDF** 확장을 설치해주세요.
+
+그리고 [김영섭 교수님](https://github.com/idebtor/) 의 [**KMOOC**](http://www.kmooc.kr/) 강의 [파이썬으로 배우는 기계학습](http://www.kmooc.kr/courses/course-v1:HGUk+HGU05+2018_T1/about) 의 레포지토리 https://github.com/idebtor/KMOOC-ML 를 로컬 컴퓨터에 **Clone** 하겠습니다.
+
+다음과 같이 쉘로 **Clone** 해도 되고,
+
+```shell
+$ g cl https://github.com/idebtor/KMOOC-ML
+```
+
+**VSCode** 에서 **Clone** 기능을 이용하여 **Clone** 해도 됩니다. 그러고 나서 레포지토리를 **VSCode** 로 열어주세요.
+
+그리고 다음과 같이 `pdf/JoyML04-2PerceptronAlgorithm.pdf` 와 `ipynb/JoyML04-2Code.ipynb` 를 열어주세요.
+
+![Screen Capture_code_20200612163342](https://user-images.githubusercontent.com/16812446/84477430-88fee980-acca-11ea-8c2d-a30b8ce83305.png)
+
+이러면 재밌게 머신러닝 강의를 들으면서 **VSCode** 로 공부할 준비가 다 되었습니다. 이제 주피터 노트북의 기계학습 코드들을 실행할 수 있도록 **Docker** 컨테이너와 연동하기만 하면 됩니다.
+
+기계학습 환경이 세팅되어 있는 이미지는 도커 허브에서 많이 찾을 수 있습니다. [**Tensorflow 이미지**](https://hub.docker.com/r/tensorflow/tensorflow) 는 번거로운 설치 없이 도커 컨테이너로 **tensorflow** 를 사용할 수 있게 해줍니다. [**PyTorch 이미지**](https://hub.docker.com/r/pytorch/pytorch) 도 번거로운 설치 없이 도커 컨테이너로 **pytorch** 를 사용할 수 있게 해주죠. 하지만 이 이미지들은 각각의 기계학습 라이브러리만을 담고 있어서 **tensorflow** 도 사용하고 싶고 **pytorch** 도 사용하고 싶고 **keras** 도 사용하고 싶은 사람에게 너무 불편합니다. 이것을 위하여 유저들이 다양한 기계학습 라이브러리와 주피터 노트북을 사용할 수 있도록 통합된 환경을 도커 이미지로 만들어 놓았습니다.
+
+저도 **tensorflow**, **pytorch**, **opencv**, **torchtext**, **torchvision**, **jupyter_tensorboard**, **pandas**, **matplotlib** 등등이 다 함께 설치되어 있는 환경이 필요해서 개인적으로 [`torch-notebook` 이라는 도커 이미지](https://hub.docker.com/repository/docker/ccss17/torch-notebook)를 만들어보았습니다. 자세한 설명과 **Dockerfile** 의 소스코드는 [torch-notebook 레포지토리](https://github.com/ccss17/torch-notebook) 에 있습니다. 여기에서는 이 이미지를 받아서 기계학습 도커 컨테이너를 **VSCode** 와 연동해보겠습니다. 
+
+다음 명령어를 실행해보세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ docker run -d -p 8888:8888 -p 6006:6006 ccss17/torch-notebook
+77c5f7e57a3be90967cd7967f672b1cf97c339bce4a498b682247b920e338298
+```
+
+그러면 `-d` 옵션 때문에 컨테이너가 백그라운드로 실행되고, 위와 같이 컨테이너 아이디만 출력됩니다. 컨테이너가 완전히 실행될 때까지 기다리고 다음과 같이 `docker logs` 명령어로 컨테이너의 출력을 확인합니다.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ docker logs 7
+...
+     or http://127.0.0.1:8888/?token=bea66985c7d6c36d0712374ae803435c15229531e599b125
+```
+
+> 컨테이너 아이디 `77c5f7e5...` 는 각자 다를 수 있습니다. 이 컨테이너 아이디를 축약하여 `docker logs 7` 만 입력한 것입니다.
+
+그러면 맨 밑에 **localhost** 의 `8888` 포트에 토큰이 파라미터로 전달된 형태의 **URL** 이 출력됩니다. 한 번 웹브라우저로 이 주소에 들어가보세요.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/84479724-62db4880-acce-11ea-9711-07ff60797fc8.png" width="70%" height="auto">
+</div>
+
+그러면 그냥 이 상태에서도 **tensorflow**, **pytorch**, **opencv**, **torchtext**, **torchvision**, **jupyter_tensorboard**, **pandas**, **matplotlib** 등이 설치된 주피터 노트북과 텐저보드를 사용할 수 있습니다. 이제 이것을 **VSCode** 에 연동해보겠습니다.
+
+**VSCode** 에서 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd> 를 눌러 **명령 팔레트**를 연 후 `jupyter` 만 입력해보세요. 그럼 다음과 같이 **Python: Specify local or remote Jupyter server for connections** 기능이 뜨는데 이것을 실행하세요.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/84479947-b9e11d80-acce-11ea-914b-1bb38040fbf8.png" width="70%" height="auto">
+</div>
+
+그리고 다음과 같이 **Existing** 을 누르면 주피터 노트북의 **URL** 을 입력할 수 있는 텍스트 필드가 떠오릅니다. 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/84480136-0b89a800-accf-11ea-8f1a-5a7a5070bdbc.png" width="70%" height="auto">
+</div>
+
+그러면 각자의 
+
+<div align="center">
+
+`http://127.0.0.1:8888/?token=bea66985c7d6c36d0712374ae803435c15229531e599b125` 
+
+</div>
+
+를 입력하고 <kbd>Enter</kbd> 를 치기만 하면 됩니다. 그러면 다음과 같이 창을 다시 로드하라는 메시지가 뜨는데 <kbd>Reload</kbd> 버튼을 누르기만 하면 됩니다.
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/16812446/84480416-7a670100-accf-11ea-8e87-29cb10612c54.png" width="70%" height="auto">
+</div>
+
+이제 연동이 끝났으니까 ▶ 버튼과 ⏩ 버튼을 눌러서 코드를 실행하면 됩니다. ▶ 버튼은 하나의 셀을 실행하는 버튼이고 ⏩ 버튼은 전체 셀을 실행하는 것입니다.
+
+## 로컬 데이터셋 사용하기
+
+하지만 이렇게 도커 컨테이너를 연동한 것은 단지 셀을 실행할 수 있도록 연결해준 것입니다. 로컬에 기계학습 데이터 셋이 있으면 아직 그것을 사용할 수 없죠. 이 경우 `docker run` 명령어에 `-v` 옵션을 붙혀서 사용하면 됩니다. `-v` 옵션은 로컬 컴퓨터에 있는 경로를 도커 컨테이너로 공유해주는 기능을 합니다.
+
+### Windows 에서
+
+**Windows** 시스템에서 기계학습 데이터 셋이 경로 `d:\repo\ml-data` 에 있다면 `-v d:\repo\ml-data:/workspace` 옵션을 추가하여 다음과 같이 도커 컨테이너를 실행하면 됩니다.
+
+```shell
+$ docker run -d -p 8888:8888 -p 6006:6006 -v d:\repo\ml-data:/workspace ccss17/torch-notebook
+```
+
+### MacOS 와 Linux 에서
+
+**MacOS** 나 **Linux** 시스템에서 데이터 셋이 경로 `/home/user/repo/KMOOC-ML/ipynb` 에 있다면 `-v /home/user/repo/KMOOC-ML/ipynb:/workspace` 옵션을 추가하여
+
+```shell
+$ docker run -d -p 8888:8888 -p 6006:6006 -v /home/user/repo/KMOOC-ML/ipynb/data:/workspace ccss17/torch-notebook
+```
+
+를 실행하거나, 해당 경로로 이동하면 `$PWD` 가 현재 경로를 나타내는 것을 이용하여 `/home/user/repo/KMOOC-ML/ipynb` 로 이동하여 다음과 같이 실행하면 됩니다.
+
+```shell
+$ cd /home/user/repo/KMOOC-ML/ipynb
+$ docker run -d -p 8888:8888 -p 6006:6006 -v $PWD:/workspace ccss17/torch-notebook
+```
+
+이렇게 하면 로컬에 있는 데이터 셋도 도커 컨테이너에서 잘 사용할 수 있습니다.
+
+## 컴퓨터를 재부팅 했을 때
+
+컴퓨터를 재부팅하거나 도커 자체를 껐다가 켰을 때 기계학습 환경을 구동중이던 도커 컨테이너가 종료될 수 있습니다. 이 경우 다음의 명령어로 도커 컨테이너를 다시 실행할 수 있습니다. 
+
+```shell
+$ docker start 7
+```
+
+그리고 도커 컨테이너가 구동중인 주피터 노트북의 **URL** 을 다시 알아내야 하는데, 그것을 알기 위하여 우리는 다음의 명령어를 입력했었습니다.
+
+```shell
+$ docker logs 7
+...
+     or http://127.0.0.1:8888/?token=bea66985c7d6c36d0712374ae803435c15229531e599b125
+```
+
+하지만 컴퓨터를 재부팅하는 등의 경우에 더 이상 이 로그가 보이지 않을 수도 있습니다. 이 경우 다음 명령어로 도커 컨테이너가 구동중인 주피터 노트북 리스트를 강제로 출력하면 됩니다.
+
+```shell
+$ docker exec 7 jupyter notebook list
+Currently running servers:
+http://0.0.0.0:8888/?token=0b95a3d951ae884e5d3b99a5bf642cbb801a5304a879c2db :: /workspace
+```
+
+도커 컨테이터 아이디의 축약인 `7` 은 각자 다를 수 있습니다.
+
+# VSCode Snippets
+
+**VSCode** 는 강력한 커스텀 스니펫 기능을 제공합니다. 사용자는 개인적인 스니펫을 설정해서 긴 코드를 짧은 단축키와 <kbd>Tab</kbd> 만으로 입력할 수 있습니다.
+
+가령
 
 ---
 
