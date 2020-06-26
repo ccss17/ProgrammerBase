@@ -4,101 +4,121 @@
 
 # Table of Contents
 
-- [VSCode](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#vscode)
+- [VSCode](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#vscode-1)
 
-  - [VSCode 설치](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#vscode-%EC%84%A4%EC%B9%98)
+  - [VSCode 설치](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#vscode-%EC%84%A4%EC%B9%98)
 
-    - [Windows 설치](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#windows-%EC%84%A4%EC%B9%98-1)
+  - [VSCode 간단 사용법 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#vscode-%EA%B0%84%EB%8B%A8-%EC%82%AC%EC%9A%A9%EB%B2%95)
 
-    - [MacOS 설치](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#macos-%EC%84%A4%EC%B9%98-1)
+    - [로컬에서 레포지토리 만들기 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0)
 
-  - [VSCode 간단 사용법 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#vscode-%EA%B0%84%EB%8B%A8-%EC%82%AC%EC%9A%A9%EB%B2%95)
+    - [새 파일 만들고 저장하기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EC%83%88-%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0)
 
-    - [로컬에서 레포지토리 만들기 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+    - [변경된 파일 스테이징하고 커밋하기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EB%B3%80%EA%B2%BD%EB%90%9C-%ED%8C%8C%EC%9D%BC-%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%95%ED%95%98%EA%B3%A0-%EC%BB%A4%EB%B0%8B%ED%95%98%EA%B8%B0)
 
-    - [새 파일 만들고 저장하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%83%88-%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0)
+    - [원격 레포지토리 등록하기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0)
 
-    - [변경된 파일 스테이징하고 커밋하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%B3%80%EA%B2%BD%EB%90%9C-%ED%8C%8C%EC%9D%BC-%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%95%ED%95%98%EA%B3%A0-%EC%BB%A4%EB%B0%8B%ED%95%98%EA%B8%B0)
+    - [원격 레포지토리로 공유하기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EB%A1%9C-%EA%B3%B5%EC%9C%A0%ED%95%98%EA%B8%B0)
 
-    - [원격 레포지토리 등록하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0)
+    - [원격 레포지토리 가져오고 수정하기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B3%A0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0)
 
-    - [원격 레포지토리로 공유하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EB%A1%9C-%EA%B3%B5%EC%9C%A0%ED%95%98%EA%B8%B0)
+    - [원격 레포지토리로부터 업데이트하기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EB%A1%9C%EB%B6%80%ED%84%B0-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0)
 
-    - [원격 레포지토리 가져오고 수정하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B3%A0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0-1)
+  - [더 빨라진 개발환경](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD)
 
-    - [원격 레포지토리로부터 업데이트하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EB%A1%9C%EB%B6%80%ED%84%B0-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0)
+    - [파일 열기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%ED%8C%8C%EC%9D%BC-%EC%97%B4%EA%B8%B0)
 
-  - [더 빨라진 개발환경](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD)
+    - [파일 닫기 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%ED%8C%8C%EC%9D%BC-%EB%8B%AB%EA%B8%B0)
 
-    - [파일 열기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%ED%8C%8C%EC%9D%BC-%EC%97%B4%EA%B8%B0)
+    - [열린 파일 포커싱 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EC%97%B4%EB%A6%B0-%ED%8C%8C%EC%9D%BC-%ED%8F%AC%EC%BB%A4%EC%8B%B1)
 
-    - [파일 닫기 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%ED%8C%8C%EC%9D%BC-%EB%8B%AB%EA%B8%B0)
+    - [화면 옮기기 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%ED%99%94%EB%A9%B4-%EC%98%AE%EA%B8%B0%EA%B8%B0)
 
-    - [열린 파일 포커싱 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%97%B4%EB%A6%B0-%ED%8C%8C%EC%9D%BC-%ED%8F%AC%EC%BB%A4%EC%8B%B1)
+    - [분할된 화면 포커싱 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EB%B6%84%ED%95%A0%EB%90%9C-%ED%99%94%EB%A9%B4-%ED%8F%AC%EC%BB%A4%EC%8B%B1)
 
-    - [화면 옮기기 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%ED%99%94%EB%A9%B4-%EC%98%AE%EA%B8%B0%EA%B8%B0)
+    - [화면 레이아웃 변경](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%ED%99%94%EB%A9%B4-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EB%B3%80%EA%B2%BD)
 
-    - [분할된 화면 포커싱 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%B6%84%ED%95%A0%EB%90%9C-%ED%99%94%EB%A9%B4-%ED%8F%AC%EC%BB%A4%EC%8B%B1)
+    - [화면 복제](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%ED%99%94%EB%A9%B4-%EB%B3%B5%EC%A0%9C)
 
-    - [화면 레이아웃 변경](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%ED%99%94%EB%A9%B4-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EB%B3%80%EA%B2%BD)
+- [VSCode 업그레이드 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#vscode-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C)
 
-    - [화면 복제](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%ED%99%94%EB%A9%B4-%EB%B3%B5%EC%A0%9C)
+  - [테마 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%ED%85%8C%EB%A7%88)
 
-- [VSCode 업그레이드 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vscode-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C)
+    - [기본 테마](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EA%B8%B0%EB%B3%B8-%ED%85%8C%EB%A7%88)
 
-  - [테마 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%ED%85%8C%EB%A7%88-1)
+    - [Dank Neon](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#dank-neon)
 
-    - [기본 테마](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EA%B8%B0%EB%B3%B8-%ED%85%8C%EB%A7%88)
+    - [Andromeda](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#andromeda)
 
-    - [Dank Neon](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#dank-neon)
+    - [2077](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#2077)
 
-    - [Andromeda](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#andromeda)
+    - [Eva Theme](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#eva-theme)
 
-    - [2077](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#2077)
+    - [Cyberpunk](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#cyberpunk)
 
-    - [Eva Theme](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#eva-theme)
+    - [지평선](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EC%A7%80%ED%8F%89%EC%84%A0)
 
-  - [유용한 확장 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%99%95%EC%9E%A5)
+    - [SynthWave '84](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#synthwave-84)
 
-    - [Git Graph ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#git-graph)
+  - [유용한 확장 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EC%9C%A0%EC%9A%A9%ED%95%9C-%ED%99%95%EC%9E%A5)
 
-    - [Code Runner](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#code-runner)
+    - [Git Lens](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#git-lens)
 
-    - [mdmath](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#mdmath)
+    - [Git Graph](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#git-graph)
 
-    - [Bracket Pair Colorizer 2](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#bracket-pair-colorizer-2)
+    - [Code Runner](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#code-runner)
 
-    - [Prettier - Code formatter](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#prettier---code-formatter)
+    - [PDF](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#pdf)
 
-    - [Diff Tool](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#diff-tool)
+    - [mdmath](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#mdmath)
 
-    - [Material Icon Theme](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#material-icon-theme)
+    - [Bracket Pair Colorizer 2](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#bracket-pair-colorizer-2)
 
-    - [Glassit-VSC](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#glassit-vsc)
+    - [Prettier - Code formatter](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#prettier---code-formatter)
 
-- [VSCode Vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim)
+    - [Diff Tool](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#diff-tool)
 
-  - [Python - List to Dictionary](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---list-to-dictionary)
+    - [Material Icon Theme](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#material-icon-theme)
 
-  - [Python - copy & paste](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---copy--paste)
+    - [Glassit-VSC](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#glassit-vsc)
 
-  - [Python - multi cursor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---multi-cursor)
+- [VSCode Vim](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#vscode-vim)
 
-  - [Python - rename argument](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---rename-argument)
+  - [단축키](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EB%8B%A8%EC%B6%95%ED%82%A4)
 
-  - [C 언어 - 변수 한 줄로 선언하기](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#c-%EC%96%B8%EC%96%B4---%EB%B3%80%EC%88%98-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%84%A0%EC%96%B8%ED%95%98%EA%B8%B0)
+- [VSCode Vim 예시]()
 
-  - [Markdown - example 1](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-1)
+  - [Python - List to Dictionary](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#python---list-to-dictionary)
 
-  - [Markdown - example 2](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-2)
+  - [Python - copy & paste](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#python---copy--paste)
 
-  - [Python - multicursor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python---multicursor)
+  - [Python - multi cursor](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#python---multi-cursor)
 
-  - [Markdown - example 3](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#markdown---example-3)
+  - [Python - rename argument](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#python---rename-argument)
 
-- [VSCode 디버깅 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%94%94%EB%B2%84%EA%B9%85)
+  - [C 언어 - 변수 한 줄로 선언하기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#c-%EC%96%B8%EC%96%B4---%EB%B3%80%EC%88%98-%ED%95%9C-%EC%A4%84%EB%A1%9C-%EC%84%A0%EC%96%B8%ED%95%98%EA%B8%B0)
 
-  - [Python 디버깅](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#python-%EB%94%94%EB%B2%84%EA%B9%85)
+  - [Markdown - example 1](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#markdown---example-1)
+
+  - [Markdown - example 2](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#markdown---example-2)
+
+  - [Python - multicursor](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#python---multicursor)
+
+  - [Markdown - example 3](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#markdown---example-3)
+
+- [VSCode 디버깅 ](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#vscode-%EB%94%94%EB%B2%84%EA%B9%85)
+
+  - [Python 디버깅](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#python-%EB%94%94%EB%B2%84%EA%B9%85)
+
+- [VSCode 와 Docker 로 머신러닝 공부하기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#vscode-%EC%99%80-docker-%EB%A1%9C-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0)
+
+  - [파이썬으로 배우는 기계학습](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-%EA%B8%B0%EA%B3%84%ED%95%99%EC%8A%B5)
+
+  - [로컬 데이터셋 사용하기](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EB%A1%9C%EC%BB%AC-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+
+  - [컴퓨터를 재부팅 했을 때](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#%EC%BB%B4%ED%93%A8%ED%84%B0%EB%A5%BC-%EC%9E%AC%EB%B6%80%ED%8C%85-%ED%96%88%EC%9D%84-%EB%95%8C)
+
+- [VSCode Snippets](https://github.com/ccss17/ProgrammerBase/blob/master/vscode.md#vscode-snippets)
 
 ---
 
@@ -363,8 +383,6 @@ git clone https://github.com/<USER>/git-test2
 
 # VSCode 업그레이드 
 
-- ㅇㅇ
-
 `vim` 이 일반 에디터보다 좋다고 생각했다면 앞으로 `vim` 을 쓰기로 결정했을 겁니다. 하지만 `vim` 은 아무래도 CLI 의 범주에 속하다 보니까 아무리 좋은 플러그인들을 많이 사용해도 GUI 에디터들이 제공하는 편리한 인터페이스와 수많은 디버깅 기능들과 수많은 플랫폼별 개발 환경들이 지원되지 않습니다. 
 
 하지만 **VSCode** 를 사용하면 **VSCode** 확장과 편리한 코드 찾기 기능, 편리한 디버깅 기능들을 사용할 수 있습니다. **VSCode** 확장 중에는 `vim` 도 있어서 **VSCode** 에서 `vim` 을 사용할 수도 있습니다.
@@ -468,7 +486,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 <img src="https://raw.githubusercontent.com/mhutchie/vscode-git-graph/master/resources/demo.gif" width="70%" height="auto">
 
-> 이미지 출처 : 
+> 이미지 출처 : https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
 
 <img src="https://user-images.githubusercontent.com/16812446/82319050-d78ed000-9a0b-11ea-8e74-3f94a0e1c81e.png" width="70%" height="auto">
 
@@ -478,7 +496,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 <img src="https://raw.githubusercontent.com/formulahendry/vscode-code-runner/master/images/usage.gif" width="70%" height="auto">
 
-> 이미지 출처 : 
+> 이미지 출처 : https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
 
 단순히 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>n</kbd> 만 누르면 되죠. 이 단축키만 누르면 **C/C++ 언어** 도 지알아서 컴파일하고 실행해주고 **Code Runner** 의 환경설정에서 컴파일 옵션을 바꿀 수도 있습니다. 
 
@@ -537,10 +555,6 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 [**Glassit-VSC**](https://marketplace.visualstudio.com/items?itemName=s-nlf-fh.glassit) 는 **Windows** 와 **Linux** 에서 적용되는 투명창 효과 확장입니다. 이 확장을 적용하면 다음과 같이 **VSCode** 가 약간 투명해져서 배경화면이 보입니다. 
 
 ![Code_KFMh5BA08B](https://user-images.githubusercontent.com/16812446/82327355-3ad32f00-9a19-11ea-9c9c-edc3a20893e7.png)
-
-### VSCode PDF
-
-(과제나 레퍼런스를 VSCode 상에서 보면서 코딩)
 
 # VSCode Vim
 
@@ -605,7 +619,7 @@ https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categor
 
 여기에서는 이 설정이 적용된 **VSCode** 에서 `vim` 을 사용하여 어떻게 코드를 효율적으로 편집하는지 몇개의 예시를 보여드리겠습니다. **Python** 으로 예시를 들었지만 **모든 언어에 적용될 수 있는 상황들**입니다.
 
-# VSCode Vim 
+# VSCode Vim 예시
 
 여기에서는 **VSCode** 에서 **VSCodeVim** 확장으로 어떻게 코드 편집을 편하게 편하게 할 수 있는지 보여드리겠습니다. **VSCodeVim** 을 사용하고 싶지 않은 분들이라도 한번 따라해보면서 코드 편집을 얼마나 더 효율적으로 할 수 있는지 꼭 체험해보세요. 
 

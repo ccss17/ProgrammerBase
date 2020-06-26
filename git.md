@@ -4,75 +4,79 @@
 
 # Table of Contents
 
-- [Git](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git)
+- [Git](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#git-1)
 
-  - [Git 설치](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git-%EC%84%A4%EC%B9%98)
+  - [Git 설치](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#git-%EC%84%A4%EC%B9%98)
 
-    - [Windows 설치](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#windows-%EC%84%A4%EC%B9%98)
+    - [Windows 설치](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#windows-%EC%84%A4%EC%B9%98)
 
-    - [MacOS 설치](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#macos-%EC%84%A4%EC%B9%98)
+    - [MacOS 설치](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#macos-%EC%84%A4%EC%B9%98)
 
-    - [우분투 도커 컨테이너에서 git 초기 설정](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%8F%84%EC%BB%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EC%97%90%EC%84%9C-git-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95)
+    - [우분투 도커 컨테이너에서 git 초기 설정](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%8F%84%EC%BB%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EC%97%90%EC%84%9C-git-%EC%B4%88%EA%B8%B0-%EC%84%A4%EC%A0%95)
 
-  - [git 이 파일을 관리하는 상태](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git-%EC%9D%B4-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94-%EC%83%81%ED%83%9C)
+  - [git 이 파일을 관리하는 상태](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#git-%EC%9D%B4-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94-%EC%83%81%ED%83%9C)
 
-    - [git 레포지토리 생성하기 (untracked 상태)](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-untracked-%EC%83%81%ED%83%9C)
+    - [git 레포지토리 생성하기 (untracked 상태)](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#git-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-untracked-%EC%83%81%ED%83%9C)
 
-    - [파일 생성하고 스테이징하기 (untracked 상태 &rarr; staged 상태)](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%95%ED%95%98%EA%B8%B0-untracked-%EC%83%81%ED%83%9C--staged-%EC%83%81%ED%83%9C)
+    - [파일 생성하고 스테이징하기 (untracked 상태 &rarr; staged 상태)](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1%ED%95%98%EA%B3%A0-%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%A7%95%ED%95%98%EA%B8%B0-untracked-%EC%83%81%ED%83%9C--staged-%EC%83%81%ED%83%9C)
 
-    - [커밋해서 하나의 버전으로 만들기 (staged 상태 &rarr; committed 상태)](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%BB%A4%EB%B0%8B%ED%95%B4%EC%84%9C-%ED%95%98%EB%82%98%EC%9D%98-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-staged-%EC%83%81%ED%83%9C--committed-%EC%83%81%ED%83%9C)
+    - [커밋해서 하나의 버전으로 만들기 (staged 상태 &rarr; committed 상태)](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EC%BB%A4%EB%B0%8B%ED%95%B4%EC%84%9C-%ED%95%98%EB%82%98%EC%9D%98-%EB%B2%84%EC%A0%84%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-staged-%EC%83%81%ED%83%9C--committed-%EC%83%81%ED%83%9C)
 
-    - [변경된 파일 커밋하기 (modified 상태 &rarr; staged 상태 &rarr; committed 상태)](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%B3%80%EA%B2%BD%EB%90%9C-%ED%8C%8C%EC%9D%BC-%EC%BB%A4%EB%B0%8B%ED%95%98%EA%B8%B0-modified-%EC%83%81%ED%83%9C--staged-%EC%83%81%ED%83%9C--committed-%EC%83%81%ED%83%9C)
+    - [변경된 파일 커밋하기 (modified 상태 &rarr; staged 상태 &rarr; committed 상태)](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B3%80%EA%B2%BD%EB%90%9C-%ED%8C%8C%EC%9D%BC-%EC%BB%A4%EB%B0%8B%ED%95%98%EA%B8%B0-modified-%EC%83%81%ED%83%9C--staged-%EC%83%81%ED%83%9C--committed-%EC%83%81%ED%83%9C)
 
-    - [커밋 기록 보기 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%BB%A4%EB%B0%8B-%EA%B8%B0%EB%A1%9D-%EB%B3%B4%EA%B8%B0)
+    - [커밋 기록 보기 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EC%BB%A4%EB%B0%8B-%EA%B8%B0%EB%A1%9D-%EB%B3%B4%EA%B8%B0)
 
-- [Github](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github)
+- [Github](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#github)
 
-  - [Github 가입 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github-%EA%B0%80%EC%9E%85)
+  - [Github 가입 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#github-%EA%B0%80%EC%9E%85)
 
-  - [Github 레포지토리 생성](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EC%83%9D%EC%84%B1)
+  - [Github 레포지토리 생성](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#github-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EC%83%9D%EC%84%B1)
 
-  - [git 에서 레포지토리 공유](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git-%EC%97%90%EC%84%9C-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EA%B3%B5%EC%9C%A0)
+  - [git 에서 레포지토리 공유](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#git-%EC%97%90%EC%84%9C-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EA%B3%B5%EC%9C%A0)
 
-  - [원격 레포지토리 가져오고 수정하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B3%A0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0)
+  - [원격 레포지토리 가져오고 수정하기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B3%A0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0)
 
-  - [수정된 원격 레포지토리로부터 업데이트하기](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EC%88%98%EC%A0%95%EB%90%9C-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EB%A1%9C%EB%B6%80%ED%84%B0-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0)
+  - [수정된 원격 레포지토리로부터 업데이트하기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EC%88%98%EC%A0%95%EB%90%9C-%EC%9B%90%EA%B2%A9-%EB%A0%88%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%AC%EB%A1%9C%EB%B6%80%ED%84%B0-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8%ED%95%98%EA%B8%B0)
 
-- [더 빨라진 git](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-git)
+- [더 빨라진 git](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-git)
 
-- [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
+- [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
 
-  - [.gitignore](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gitignore)
+  - [.gitignore](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gitignore)
 
-    - [.gitignore 의 편리한 기능 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gitignore-%EC%9D%98-%ED%8E%B8%EB%A6%AC%ED%95%9C-%EA%B8%B0%EB%8A%A5)
+    - [.gitignore 의 편리한 기능 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gitignore-%EC%9D%98-%ED%8E%B8%EB%A6%AC%ED%95%9C-%EA%B8%B0%EB%8A%A5)
 
-  - [Git Branching](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-branching)
+  - [Git Branching](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#git-branching)
 
-    - [브랜치란? ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80)
+    - [브랜치란? ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80)
 
-    - [브랜치 생성](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%83%9D%EC%84%B1)
+    - [브랜치 생성](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%83%9D%EC%84%B1)
 
-    - [브랜치 이주 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%9D%B4%EC%A3%BC)
+    - [브랜치 이주 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%9D%B4%EC%A3%BC)
 
-    - [브랜치 병합 시나리오 (1) - Fast-forward](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-1---fast-forward)
+    - [브랜치 병합 시나리오 (1) - Fast-forward](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-1---fast-forward)
 
-    - [브랜치 병합 시나리오 (2) - Merge Conflict](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-2---merge-conflict)
+    - [브랜치 병합 시나리오 (2) - Merge Conflict](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-2---merge-conflict)
 
-  - [user.github.io](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#usergithubio)
+    - [브랜치 삭제](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%82%AD%EC%A0%9C)
 
-  - [gist](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gist)
+  - [user.github.io](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#usergithubio)
 
-    - [gist 사용법 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gist-%EC%82%AC%EC%9A%A9%EB%B2%95)
+  - [hguappl.ghoster.cc/git/](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#hguappghosterccgit)
 
-    - [gist 명령어 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gist-%EB%AA%85%EB%A0%B9%EC%96%B4)
+  - [gist](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gist)
 
-  - [Pull Request](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#pull-request)
+    - [gist 사용법 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gist-%EC%82%AC%EC%9A%A9%EB%B2%95)
 
-    - [1. fork 하고 clone 하기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#1-fork-%ED%95%98%EA%B3%A0-clone-%ED%95%98%EA%B8%B0)
+    - [gist 명령어 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gist-%EB%AA%85%EB%A0%B9%EC%96%B4)
 
-    - [2. 편집하고 push 하기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#2-%ED%8E%B8%EC%A7%91%ED%95%98%EA%B3%A0-push-%ED%95%98%EA%B8%B0)
+  - [Pull Request](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#pull-request)
 
-    - [3. **pull request** 하기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#3-pull-request-%ED%95%98%EA%B8%B0)
+    - [1. fork 하고 clone 하기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#1-fork-%ED%95%98%EA%B3%A0-clone-%ED%95%98%EA%B8%B0)
+
+    - [2. 편집하고 push 하기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#2-%ED%8E%B8%EC%A7%91%ED%95%98%EA%B3%A0-push-%ED%95%98%EA%B8%B0)
+
+    - [3. **pull request** 하기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#3-pull-request-%ED%95%98%EA%B8%B0)
 
 ---
 

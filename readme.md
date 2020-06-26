@@ -72,15 +72,13 @@
 
 - [Docker](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#docker)
 
-- [도커 요약](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%8F%84%EC%BB%A4-%EC%9A%94%EC%95%BD)
-  
 - [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
 - 조금은 철학적인 이야기 : [조금은 철학적인 이야기](https://github.com/ccss17/ProgrammerBase/blob/master/math.md#%EC%A1%B0%EA%B8%88%EC%9D%80-%EC%B2%A0%ED%95%99%EC%A0%81%EC%9D%B8-%EC%9D%B4%EC%95%BC%EA%B8%B0) ~ [예시 : 기초 명제 논리학](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EC%98%88%EC%8B%9C--%EA%B8%B0%EC%B4%88-%EB%AA%85%EC%A0%9C-%EB%85%BC%EB%A6%AC%ED%95%99)
 
 ## [Day 2](02-Day2/)
 
-- [리눅스 교재 ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
+- [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 
 - [Stackoverflow Survey](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#stackoverflow-survey)
 
@@ -164,7 +162,7 @@
 
 - **[Docker](docker.md)**
 
-- **[information](Information.md)**
+- **[Information](information.md)**
 
 - **[Git](git.md)**
 

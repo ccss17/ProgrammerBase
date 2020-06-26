@@ -4,31 +4,33 @@
 
 # Table of Contents
 
-- [Stackoverflow Survey](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#stackoverflow-survey)
+- [Stackoverflow Survey](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#stackoverflow-survey)
 
-  - [개발자들이 가장 사랑하는 플랫폼](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%ED%94%8C%EB%9E%AB%ED%8F%BC)
+  - [개발자들이 가장 사랑하는 플랫폼](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%ED%94%8C%EB%9E%AB%ED%8F%BC)
 
-  - [개발자들이 가장 사랑하는 개발환경](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD)
+  - [개발자들이 가장 사랑하는 개발환경](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%B4-%EA%B0%80%EC%9E%A5-%EC%82%AC%EB%9E%91%ED%95%98%EB%8A%94-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD)
 
-- [좋은 정보 얻기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%A2%8B%EC%9D%80-%EC%A0%95%EB%B3%B4-%EC%96%BB%EA%B8%B0)
+- [좋은 정보 얻기](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EC%A2%8B%EC%9D%80-%EC%A0%95%EB%B3%B4-%EC%96%BB%EA%B8%B0)
 
-  - [Awesome Repository](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#awesome-repository)
+  - [Awesome Repository](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#awesome-repository)
 
-  - [Hacker News](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#hacker-news)
+  - [Hacker News](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#hacker-news)
 
-  - [Reddit ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#reddit)
+  - [Reddit ](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#reddit)
 
-  - [Github trending](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#github-trending)
+  - [Github trending](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#github-trending)
 
-  - [Stackoverflow Survey](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#stackoverflow-survey)
+  - [Stackoverflow Survey](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#stackoverflow-survey-1)
 
-  - [검색](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EA%B2%80%EC%83%89)
+  - [Dev Community](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#dev-community)
 
-    - [영어 검색](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%98%81%EC%96%B4-%EA%B2%80%EC%83%89)
+  - [검색](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EA%B2%80%EC%83%89)
 
-    - [아니 그럼 어떻게 검색해야 하나?](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%95%84%EB%8B%88-%EA%B7%B8%EB%9F%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B2%80%EC%83%89%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98)
+    - [영어 검색](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EC%98%81%EC%96%B4-%EA%B2%80%EC%83%89)
 
-    - [원작자 찾기 ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%9B%90%EC%9E%91%EC%9E%90-%EC%B0%BE%EA%B8%B0)
+    - [아니 그럼 어떻게 검색해야 하나?](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EC%95%84%EB%8B%88-%EA%B7%B8%EB%9F%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B2%80%EC%83%89%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98)
+
+    - [원작자 찾기 ](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EC%9B%90%EC%9E%91%EC%9E%90-%EC%B0%BE%EA%B8%B0)
 
 ---
 
