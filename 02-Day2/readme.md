@@ -32,9 +32,9 @@ GBC 첫번째 과정 **Programmer Base** 의 2일차 내용입니다.
 
 ---
 
-# Stackoverflow Survey
+**다음 내용을 학습하세요.**
 
-다음 내용을 학습하세요.
+# Stackoverflow Survey
 
 - ㅇㅇ
 
@@ -42,25 +42,17 @@ GBC 첫번째 과정 **Programmer Base** 의 2일차 내용입니다.
 
 # Git
 
-다음 내용을 학습하세요.
-
 - ㅇㅇ
 
 # Github
-
-다음 내용을 학습하세요.
 
 - ㅇㅇ
 
 # VSCode
 
-다음 내용을 학습하세요.
-
 - ㅇㅇ
 
 # Markdown 
-
-다음 내용을 학습하세요.
 
 - ㅇㅇ
 
