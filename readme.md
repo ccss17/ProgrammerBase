@@ -128,29 +128,7 @@
 
 - [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
 
-  - [.gitignore](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gitignore)
-
-  - [Git Branching](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-branching)
-
-  - [user.github.io](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#usergithubio)
-
-  - [gist](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#gist)
-
-  - [Pull Request](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#pull-request)
-
 - [좋은 정보 얻기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%A2%8B%EC%9D%80-%EC%A0%95%EB%B3%B4-%EC%96%BB%EA%B8%B0)
-
-  - [Awesome Repository](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#awesome-repository)
-
-  - [Hacker News](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#hacker-news)
-
-  - [Reddit ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#reddit)
-
-  - [Github trending](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#github-trending)
-
-  - [Stackoverflow Survey](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#stackoverflow-survey)
-
-  - [검색](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EA%B2%80%EC%83%89)
 
 - [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
 

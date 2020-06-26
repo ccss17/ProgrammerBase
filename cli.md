@@ -4,41 +4,43 @@
 
 # Table of Contents
 
-- [CLI](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli)
+- [CLI](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#cli-1)
 
-- [CLI 업그레이드하기](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C%ED%95%98%EA%B8%B0)
+- [CLI 업그레이드하기](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#cli-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C%ED%95%98%EA%B8%B0)
 
-  - [dotfiles](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#dotfiles)
+  - [dotfiles](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#dotfiles)
 
-  - [alias - 더 빨라진 명령 입력 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#alias---%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EB%AA%85%EB%A0%B9-%EC%9E%85%EB%A0%A5)
+  - [alias - 더 빨라진 명령 입력 ](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#alias---%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EB%AA%85%EB%A0%B9-%EC%9E%85%EB%A0%A5)
 
-  - [`ls` ➜ `lsd`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#ls--lsd)
+  - [`ls` ➜ `lsd`](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#ls--lsd)
 
-  - [`cat` ➜ `bat`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cat--bat)
+  - [`cat` ➜ `bat`](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#cat--bat)
 
-  - [`xxd` ➜ `hexyl`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#xxd--hexyl)
+  - [`xxd` ➜ `hexyl`](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#xxd--hexyl)
 
-  - [`find` ➜ `fd`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#find--fd)
+  - [`find` ➜ `fd`](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#find--fd)
 
-  - [`top` ➜ `htop` ➜ `gotop`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#top--htop--gotop)
+  - [`top` ➜ `htop` ➜ `gotop`](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#top--htop--gotop)
 
-  - [`man` ➜ `tldr` ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#man--tldr)
+  - [`man` ➜ `tldr` ](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#man--tldr)
 
-  - [`fzf`](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#fzf)
+  - [`python` ➜ `bpython` ](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#python--bpython)
 
-- [`bash` ➜ `zsh` - 더 빨라진 쉘](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#bash--zsh---%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EC%89%98)
+  - [`fzf`](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#fzf)
 
-  - [테마](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%ED%85%8C%EB%A7%88)
+- [`bash` ➜ `zsh` - 더 빨라진 쉘](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#bash--zsh---%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EC%89%98)
 
-  - [`tab-completion` 기능](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#tab-completion-%EA%B8%B0%EB%8A%A5)
+  - [테마](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#%ED%85%8C%EB%A7%88)
 
-  - [`auto-completion` 기능](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#auto-completion-%EA%B8%B0%EB%8A%A5)
+  - [`tab-completion` 기능](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#tab-completion-%EA%B8%B0%EB%8A%A5)
 
-  - [`z` 명령어 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#z-%EB%AA%85%EB%A0%B9%EC%96%B4)
+  - [`auto-completion` 기능](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#auto-completion-%EA%B8%B0%EB%8A%A5)
 
-  - [`auto-suggestions` 기능](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#auto-suggestions-%EA%B8%B0%EB%8A%A5)
+  - [`z` 명령어 ](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#z-%EB%AA%85%EB%A0%B9%EC%96%B4)
 
-- [Funny CLI ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#funny-cli)
+  - [`auto-suggestions` 기능](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#auto-suggestions-%EA%B8%B0%EB%8A%A5)
+
+- [Funny CLI ](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#funny-cli)
 
 ---
 

@@ -4,31 +4,31 @@
 
 # Table of Contents 
 
-- [tmux](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#tmux)
+- [tmux](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#tmux-1)
 
-  - [tmux 시작과 종료 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#tmux-%EC%8B%9C%EC%9E%91%EA%B3%BC-%EC%A2%85%EB%A3%8C)
+  - [tmux 시작과 종료 ](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#tmux-%EC%8B%9C%EC%9E%91%EA%B3%BC-%EC%A2%85%EB%A3%8C)
 
-  - [메타 키](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%A9%94%ED%83%80-%ED%82%A4)
+  - [메타 키](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EB%A9%94%ED%83%80-%ED%82%A4)
 
-  - [터미널 분할 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%ED%84%B0%EB%AF%B8%EB%84%90-%EB%B6%84%ED%95%A0)
+  - [터미널 분할 ](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%ED%84%B0%EB%AF%B8%EB%84%90-%EB%B6%84%ED%95%A0)
 
-  - [새로운 화면 생성 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%99%94%EB%A9%B4-%EC%83%9D%EC%84%B1)
+  - [새로운 화면 생성 ](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%99%94%EB%A9%B4-%EC%83%9D%EC%84%B1)
 
-- [더 빨라진 tmux](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-tmux)
+- [더 빨라진 tmux](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-tmux)
 
-  - [더 빨라진 alias](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-alias)
+  - [더 빨라진 alias](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-alias)
 
-  - [더 이뻐진 테마 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EC%9D%B4%EB%BB%90%EC%A7%84-%ED%85%8C%EB%A7%88)
+  - [더 이뻐진 테마 ](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EB%8D%94-%EC%9D%B4%EB%BB%90%EC%A7%84-%ED%85%8C%EB%A7%88)
 
-  - [더 빨라진 메타 키](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EB%A9%94%ED%83%80-%ED%82%A4)
+  - [더 빨라진 메타 키](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EB%A9%94%ED%83%80-%ED%82%A4)
 
-  - [더 빨라진 터미널 분할 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%84%B0%EB%AF%B8%EB%84%90-%EB%B6%84%ED%95%A0)
+  - [더 빨라진 터미널 분할 ](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%84%B0%EB%AF%B8%EB%84%90-%EB%B6%84%ED%95%A0)
 
-  - [더 빨라진 화면 생성 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%99%94%EB%A9%B4-%EC%83%9D%EC%84%B1)
+  - [더 빨라진 화면 생성 ](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%99%94%EB%A9%B4-%EC%83%9D%EC%84%B1)
 
-  - [더 빨라진 터미널 이동](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9D%B4%EB%8F%99)
+  - [더 빨라진 터미널 이동](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%84%B0%EB%AF%B8%EB%84%90-%EC%9D%B4%EB%8F%99)
 
-  - [더 빨라진 터미널 크기 조절](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%84%B0%EB%AF%B8%EB%84%90-%ED%81%AC%EA%B8%B0-%EC%A1%B0%EC%A0%88)
+  - [더 빨라진 터미널 크기 조절](https://github.com/ccss17/ProgrammerBase/blob/master/tmux.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%84%B0%EB%AF%B8%EB%84%90-%ED%81%AC%EA%B8%B0-%EC%A1%B0%EC%A0%88)
 
 ---
 

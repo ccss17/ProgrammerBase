@@ -6,79 +6,79 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 # Table of Contents 
 
-- [vim](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#vim)
+- [vim](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#vim-1)
 
-  - [텍스트 편집에서 단축키 개수와 입력 횟수의 관계](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%ED%85%8D%EC%8A%A4%ED%8A%B8-%ED%8E%B8%EC%A7%91%EC%97%90%EC%84%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EA%B0%9C%EC%88%98%EC%99%80-%EC%9E%85%EB%A0%A5-%ED%9A%9F%EC%88%98%EC%9D%98-%EA%B4%80%EA%B3%84)
+  - [텍스트 편집에서 단축키 개수와 입력 횟수의 관계](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%ED%85%8D%EC%8A%A4%ED%8A%B8-%ED%8E%B8%EC%A7%91%EC%97%90%EC%84%9C-%EB%8B%A8%EC%B6%95%ED%82%A4-%EA%B0%9C%EC%88%98%EC%99%80-%EC%9E%85%EB%A0%A5-%ED%9A%9F%EC%88%98%EC%9D%98-%EA%B4%80%EA%B3%84)
 
-    - [일반 텍스트 에디터의 단축키 개수와 입력 회수](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%9D%BC%EB%B0%98-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%97%90%EB%94%94%ED%84%B0%EC%9D%98-%EB%8B%A8%EC%B6%95%ED%82%A4-%EA%B0%9C%EC%88%98%EC%99%80-%EC%9E%85%EB%A0%A5-%ED%9A%8C%EC%88%98)
+    - [일반 텍스트 에디터의 단축키 개수와 입력 회수](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%9D%BC%EB%B0%98-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%97%90%EB%94%94%ED%84%B0%EC%9D%98-%EB%8B%A8%EC%B6%95%ED%82%A4-%EA%B0%9C%EC%88%98%EC%99%80-%EC%9E%85%EB%A0%A5-%ED%9A%8C%EC%88%98)
 
-    - [`vim` 의 단축키 개수와 입력 회수](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#vim-%EC%9D%98-%EB%8B%A8%EC%B6%95%ED%82%A4-%EA%B0%9C%EC%88%98%EC%99%80-%EC%9E%85%EB%A0%A5-%ED%9A%8C%EC%88%98)
+    - [`vim` 의 단축키 개수와 입력 회수](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#vim-%EC%9D%98-%EB%8B%A8%EC%B6%95%ED%82%A4-%EA%B0%9C%EC%88%98%EC%99%80-%EC%9E%85%EB%A0%A5-%ED%9A%8C%EC%88%98)
 
-  - [`vim` 으로 일반 텍스트 에디터 대체하기](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#vim-%EC%9C%BC%EB%A1%9C-%EC%9D%BC%EB%B0%98-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%97%90%EB%94%94%ED%84%B0-%EB%8C%80%EC%B2%B4%ED%95%98%EA%B8%B0)
+  - [`vim` 으로 일반 텍스트 에디터 대체하기](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#vim-%EC%9C%BC%EB%A1%9C-%EC%9D%BC%EB%B0%98-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%97%90%EB%94%94%ED%84%B0-%EB%8C%80%EC%B2%B4%ED%95%98%EA%B8%B0)
 
-    - [기본 커서 이동](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EA%B8%B0%EB%B3%B8-%EC%BB%A4%EC%84%9C-%EC%9D%B4%EB%8F%99)
+    - [기본 커서 이동](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EA%B8%B0%EB%B3%B8-%EC%BB%A4%EC%84%9C-%EC%9D%B4%EB%8F%99)
 
-    - [기능 반복 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EA%B8%B0%EB%8A%A5-%EB%B0%98%EB%B3%B5)
+    - [기능 반복 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EA%B8%B0%EB%8A%A5-%EB%B0%98%EB%B3%B5)
 
-    - [입력모드로 들어가기 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%9E%85%EB%A0%A5%EB%AA%A8%EB%93%9C%EB%A1%9C-%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0)
+    - [입력모드로 들어가기 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%9E%85%EB%A0%A5%EB%AA%A8%EB%93%9C%EB%A1%9C-%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0)
 
-    - [에디터 종료](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%97%90%EB%94%94%ED%84%B0-%EC%A2%85%EB%A3%8C)
+    - [에디터 종료](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%97%90%EB%94%94%ED%84%B0-%EC%A2%85%EB%A3%8C)
 
-    - [지우기 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%A7%80%EC%9A%B0%EA%B8%B0)
+    - [지우기 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%A7%80%EC%9A%B0%EA%B8%B0)
 
-    - [지우고 편집하기](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%A7%80%EC%9A%B0%EA%B3%A0-%ED%8E%B8%EC%A7%91%ED%95%98%EA%B8%B0)
+    - [지우고 편집하기](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%A7%80%EC%9A%B0%EA%B3%A0-%ED%8E%B8%EC%A7%91%ED%95%98%EA%B8%B0)
 
-    - [화면 내의 커서 이동 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%ED%99%94%EB%A9%B4-%EB%82%B4%EC%9D%98-%EC%BB%A4%EC%84%9C-%EC%9D%B4%EB%8F%99)
+    - [화면 내의 커서 이동 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%ED%99%94%EB%A9%B4-%EB%82%B4%EC%9D%98-%EC%BB%A4%EC%84%9C-%EC%9D%B4%EB%8F%99)
 
-    - [취소](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%B7%A8%EC%86%8C)
+    - [취소](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%B7%A8%EC%86%8C)
 
-    - [드래그 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%93%9C%EB%9E%98%EA%B7%B8)
+    - [드래그 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%93%9C%EB%9E%98%EA%B7%B8)
 
-    - [복사하기](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0)
+    - [복사하기](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%B3%B5%EC%82%AC%ED%95%98%EA%B8%B0)
 
-    - [잘라내기](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%9E%98%EB%9D%BC%EB%82%B4%EA%B8%B0)
+    - [잘라내기](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%9E%98%EB%9D%BC%EB%82%B4%EA%B8%B0)
 
-    - [화면 밖으로의 커서 이동 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%ED%99%94%EB%A9%B4-%EB%B0%96%EC%9C%BC%EB%A1%9C%EC%9D%98-%EC%BB%A4%EC%84%9C-%EC%9D%B4%EB%8F%99)
+    - [화면 밖으로의 커서 이동 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%ED%99%94%EB%A9%B4-%EB%B0%96%EC%9C%BC%EB%A1%9C%EC%9D%98-%EC%BB%A4%EC%84%9C-%EC%9D%B4%EB%8F%99)
 
-    - [찾기](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%B0%BE%EA%B8%B0)
+    - [찾기](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%B0%BE%EA%B8%B0)
 
-    - [화면 이동](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%ED%99%94%EB%A9%B4-%EC%9D%B4%EB%8F%99)
+    - [화면 이동](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%ED%99%94%EB%A9%B4-%EC%9D%B4%EB%8F%99)
 
-    - [커서를 기준으로 화면 이동](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%BB%A4%EC%84%9C%EB%A5%BC-%EA%B8%B0%EC%A4%80%EC%9C%BC%EB%A1%9C-%ED%99%94%EB%A9%B4-%EC%9D%B4%EB%8F%99)
+    - [커서를 기준으로 화면 이동](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%BB%A4%EC%84%9C%EB%A5%BC-%EA%B8%B0%EC%A4%80%EC%9C%BC%EB%A1%9C-%ED%99%94%EB%A9%B4-%EC%9D%B4%EB%8F%99)
 
-    - [명령 실행 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%AA%85%EB%A0%B9-%EC%8B%A4%ED%96%89)
+    - [명령 실행 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%AA%85%EB%A0%B9-%EC%8B%A4%ED%96%89)
 
-    - [대문자, 소문자 변경](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%8C%80%EB%AC%B8%EC%9E%90-%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%EA%B2%BD)
+    - [대문자, 소문자 변경](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%8C%80%EB%AC%B8%EC%9E%90-%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B3%80%EA%B2%BD)
 
-    - [다중 입력](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%8B%A4%EC%A4%91-%EC%9E%85%EB%A0%A5)
+    - [다중 입력](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%8B%A4%EC%A4%91-%EC%9E%85%EB%A0%A5)
 
-    - [문장 붙히기 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%AC%B8%EC%9E%A5-%EB%B6%99%ED%9E%88%EA%B8%B0)
+    - [문장 붙히기 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%AC%B8%EC%9E%A5-%EB%B6%99%ED%9E%88%EA%B8%B0)
 
-    - [화면 분할 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%ED%99%94%EB%A9%B4-%EB%B6%84%ED%95%A0)
+    - [화면 분할 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%ED%99%94%EB%A9%B4-%EB%B6%84%ED%95%A0)
 
-    - [코드 포맷팅 ](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EC%BD%94%EB%93%9C-%ED%8F%AC%EB%A7%B7%ED%8C%85)
+    - [코드 포맷팅 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EC%BD%94%EB%93%9C-%ED%8F%AC%EB%A7%B7%ED%8C%85)
 
-- [더 빨라진 vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim)
+- [더 빨라진 vim](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim)
 
-  - [더 빨라진 alias](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-alias-1)
+  - [더 빨라진 alias](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-alias)
 
-  - [vim-plug](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim-plug)
+  - [vim-plug](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#vim-plug)
 
-  - [vimrc](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vimrc)
+  - [vimrc](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#vimrc)
 
-    - [더 이뻐진 테마 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EC%9D%B4%EB%BB%90%EC%A7%84-%ED%85%8C%EB%A7%88-1)
+    - [더 이뻐진 테마 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%8D%94-%EC%9D%B4%EB%BB%90%EC%A7%84-%ED%85%8C%EB%A7%88)
 
-    - [더 빨라진 `vim` 종료/저장](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim-%EC%A2%85%EB%A3%8C%EC%A0%80%EC%9E%A5)
+    - [더 빨라진 `vim` 종료/저장](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim-%EC%A2%85%EB%A3%8C%EC%A0%80%EC%9E%A5)
 
-  - [NERDTree ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#nerdtree)
+  - [NERDTree ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#nerdtree)
 
-    - [더 빨라진 화면 이동 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%99%94%EB%A9%B4-%EC%9D%B4%EB%8F%99)
+    - [더 빨라진 화면 이동 ](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%ED%99%94%EB%A9%B4-%EC%9D%B4%EB%8F%99)
 
-    - [더 빨라진 `vim` 화면크기조정](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim-%ED%99%94%EB%A9%B4%ED%81%AC%EA%B8%B0%EC%A1%B0%EC%A0%95)
+    - [더 빨라진 `vim` 화면크기조정](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim-%ED%99%94%EB%A9%B4%ED%81%AC%EA%B8%B0%EC%A1%B0%EC%A0%95)
 
-  - [NERDCommentor](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#nerdcommentor)
+  - [NERDCommentor](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#nerdcommentor)
 
-  - [vim-multiple-cursors](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim-multiple-cursors)
+  - [vim-multiple-cursors](https://github.com/ccss17/ProgrammerBase/blob/master/vim.md#vim-multiple-cursors)
 
 ---
 

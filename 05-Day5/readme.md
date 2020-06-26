@@ -10,11 +10,67 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 # Git 과 Github 못다한 이야기
 
-- ㅇㅇ
+- [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
+
+  - [.gitignore](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gitignore)
+
+    - [.gitignore 의 편리한 기능 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gitignore-%EC%9D%98-%ED%8E%B8%EB%A6%AC%ED%95%9C-%EA%B8%B0%EB%8A%A5)
+
+  - [Git Branching](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#git-branching)
+
+    - [브랜치란? ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80)
+
+    - [브랜치 생성](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%83%9D%EC%84%B1)
+
+    - [브랜치 이주 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%9D%B4%EC%A3%BC)
+
+    - [브랜치 병합 시나리오 (1) - Fast-forward](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-1---fast-forward)
+
+    - [브랜치 병합 시나리오 (2) - Merge Conflict](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B3%91%ED%95%A9-%EC%8B%9C%EB%82%98%EB%A6%AC%EC%98%A4-2---merge-conflict)
+
+    - [브랜치 삭제](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%82%AD%EC%A0%9C)
+
+  - [user.github.io](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#usergithubio)
+
+  - [hguappl.ghoster.cc/git/](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#hguappghosterccgit)
+
+  - [gist](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gist)
+
+    - [gist 사용법 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gist-%EC%82%AC%EC%9A%A9%EB%B2%95)
+
+    - [gist 명령어 ](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#gist-%EB%AA%85%EB%A0%B9%EC%96%B4)
+
+  - [Pull Request](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#pull-request)
+
+    - [1. fork 하고 clone 하기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#1-fork-%ED%95%98%EA%B3%A0-clone-%ED%95%98%EA%B8%B0)
+
+    - [2. 편집하고 push 하기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#2-%ED%8E%B8%EC%A7%91%ED%95%98%EA%B3%A0-push-%ED%95%98%EA%B8%B0)
+
+    - [3. **pull request** 하기](https://github.com/ccss17/ProgrammerBase/blob/master/git.md#3-pull-request-%ED%95%98%EA%B8%B0)
 
 # 좋은 정보 얻기
 
-- ㅇㅇ
+- [좋은 정보 얻기](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EC%A2%8B%EC%9D%80-%EC%A0%95%EB%B3%B4-%EC%96%BB%EA%B8%B0)
+
+  - [Awesome Repository](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#awesome-repository)
+
+  - [Hacker News](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#hacker-news)
+
+  - [Reddit ](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#reddit)
+
+  - [Github trending](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#github-trending)
+
+  - [Stackoverflow Survey](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#stackoverflow-survey-1)
+
+  - [Dev Community](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#dev-community)
+
+  - [검색](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EA%B2%80%EC%83%89)
+
+    - [영어 검색](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EC%98%81%EC%96%B4-%EA%B2%80%EC%83%89)
+
+    - [아니 그럼 어떻게 검색해야 하나?](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EC%95%84%EB%8B%88-%EA%B7%B8%EB%9F%BC-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B2%80%EC%83%89%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98)
+
+    - [원작자 찾기 ](https://github.com/ccss17/ProgrammerBase/blob/master/information.md#%EC%9B%90%EC%9E%91%EC%9E%90-%EC%B0%BE%EA%B8%B0)
 
 ---
 
@@ -66,4 +122,4 @@ GBC 첫번째 과정 **Programmer Base** 의 5일차 내용입니다.
 
 이 부분은 옵션입니다. 관심 있으신 분들만 학습하면 됩니다.
 
-- ㅇㅇ
+- [Funny CLI ](https://github.com/ccss17/ProgrammerBase/blob/master/cli.md#funny-cli)
