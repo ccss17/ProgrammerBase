@@ -1,8 +1,6 @@
 # Programmer Base
 
-# GBC (Ghost Base Camp) 1주차 과정
-
-한동대학교 컴퓨터보안 동아리 **GHOST** 에서 신입기수를 대상으로 진행하는 **GBC** 의 `1` 번째 과정을 진행하기 위한 내용을 담은 레포지토리입니다. 
+컴퓨터 공학자에게 기반 지식이 되는 **수학의 역사**, **괴델의 불완전성 정리**, **튜링기계**, **기술적 특이점** 등과 프로그래머에게 유용한 툴(**VSCode**, **vim**, **tmux**, **zsh** 등)과 그것의 생산성을 최대화할 수 있는 여러가지 팁들을 5일 동안 가이드해주는 레포지토리입니다.
 
 ## inspired by
 
@@ -16,17 +14,15 @@
 
 ## Notice 
 
-- 모든 내용은 출처를 명시하였습니다. 
+- 모든 내용은 출처를 명시하였습니다. 잘못된 내용에 대한 지적과 풀 리퀘스트는 항상 환영합니다. 
 
-- 잘못된 내용에 대한 지적은 항상 환영합니다. 
-
-- 본 내용들은 누구나 자유롭게 무료로 학습할 수 있습니다. 한동대 컴퓨터보안 동아리 고스트원이 아니라도 본 내용들이 도움이 된다면 누구나 자유롭게 학습하고 즐겨주시면 됩니다. 
+- 본 내용들은 누구나 자유롭게 무료로 학습할 수 있습니다.
 
 - 본문에서 말하는 "교재" 란 
 
   <div align="center">
   
-  [<img src="https://bookthumb-phinf.pstatic.net/cover/077/993/07799304.jpg" width="30%" height="auto">](https://book.naver.com/bookdb/book_detail.nhn?bid=7799304)
+  [<img src="https://bookthumb-phinf.pstatic.net/cover/077/993/07799304.jpg" width="20%" height="auto">](https://book.naver.com/bookdb/book_detail.nhn?bid=7799304)
 
   </div>
 
@@ -70,73 +66,73 @@
 
 ## [Day 1](01-Day1/)
 
-- [Docker](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#docker)
+- Docker
 
-- [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/01-Day1#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
+- 리눅스 교재
 
 - 조금은 철학적인 이야기 : [조금은 철학적인 이야기](https://github.com/ccss17/ProgrammerBase/blob/master/math.md#%EC%A1%B0%EA%B8%88%EC%9D%80-%EC%B2%A0%ED%95%99%EC%A0%81%EC%9D%B8-%EC%9D%B4%EC%95%BC%EA%B8%B0) ~ [예시 : 기초 명제 논리학](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EC%98%88%EC%8B%9C--%EA%B8%B0%EC%B4%88-%EB%AA%85%EC%A0%9C-%EB%85%BC%EB%A6%AC%ED%95%99)
 
 ## [Day 2](02-Day2/)
 
-- [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
+- 리눅스 교재
 
-- [Stackoverflow Survey](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#stackoverflow-survey)
+- Stackoverflow Survey
 
-- [Git](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#git)
+- Git
 
-- [Github](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#github)
+- Github
 
-- [VSCode](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#vscode)
+- VSCode
 
-- [Markdown ](https://github.com/ccss17/ProgrammerBase/tree/master/02-Day2#markdown)
+- Markdown
 
 - 조금은 철학적인 이야기 : [다시 점검해보고 넘어가기](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EB%8B%A4%EC%8B%9C-%EC%A0%90%EA%B2%80%ED%95%B4%EB%B3%B4%EA%B3%A0-%EB%84%98%EC%96%B4%EA%B0%80%EA%B8%B0) ~ [3. 핵심 논증](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-%ED%95%B5%EC%8B%AC-%EB%85%BC%EC%A6%9D)
 
 ## [Day 3](03-Day3/)
 
-- [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
+- 리눅스 교재
 
-- [vim](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#vim)
+- vim
 
-- [tmux](https://github.com/ccss17/ProgrammerBase/tree/master/03-Day3#tmux)
+- tmux
 
 - 조금은 철학적인 이야기 : [3-(1) 자기 자신이 증명될 수 없다고 주장하는 형식문](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#3-1-%EC%9E%90%EA%B8%B0-%EC%9E%90%EC%8B%A0%EC%9D%B4-%EC%A6%9D%EB%AA%85%EB%90%A0-%EC%88%98-%EC%97%86%EB%8B%A4%EA%B3%A0-%EC%A3%BC%EC%9E%A5%ED%95%98%EB%8A%94-%ED%98%95%EC%8B%9D%EB%AC%B8-) ~ [불완전성 정리의 의미](https://github.com/ccss17/ProgrammerBase/blob/master/godel.md#%EB%B6%88%EC%99%84%EC%A0%84%EC%84%B1-%EC%A0%95%EB%A6%AC%EC%9D%98-%EC%9D%98%EB%AF%B8)
 
 ## [Day 4](04-Day4/)
 
-- [CLI](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli)
+- CLI
 
-- [CLI 업그레이드하기](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#cli-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C%ED%95%98%EA%B8%B0)
+- 더 빨라진 git
 
-- [더 빨라진 git](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-git)
+- `bash` ➜ `zsh` - 더 빨라진 쉘
 
-- [`bash` ➜ `zsh` - 더 빨라진 쉘](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#bash--zsh---%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-%EC%89%98)
+- 더 빨라진 tmux
 
-- [더 빨라진 tmux](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-tmux)
+- 더 빨라진 vim
 
-- [더 빨라진 vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%8D%94-%EB%B9%A8%EB%9D%BC%EC%A7%84-vim)
+- VSCode 업그레이드
 
-- [VSCode 업그레이드 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vscode-%EC%97%85%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C)
+- VSCode Vim
 
-- [VSCode Vim](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#vim)
-
-- [VSCode 디버깅 ](https://github.com/ccss17/ProgrammerBase/tree/master/04-Day4#%EB%94%94%EB%B2%84%EA%B9%85)
+- VSCode 디버깅
 
 - 조금은 철학적인 이야기 : [튜링의 증명](https://github.com/ccss17/ProgrammerBase/blob/master/turing.md#%ED%8A%9C%EB%A7%81%EC%9D%98-%EC%A6%9D%EB%AA%85)
 
 ## [Day 5](05-Day5/)
 
-- [Git 과 Github 못다한 이야기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#git-%EA%B3%BC-github-%EB%AA%BB%EB%8B%A4%ED%95%9C-%EC%9D%B4%EC%95%BC%EA%B8%B0)
+- Git 과 Github 못다한 이야기
 
-- [좋은 정보 얻기](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EC%A2%8B%EC%9D%80-%EC%A0%95%EB%B3%B4-%EC%96%BB%EA%B8%B0)
+- 좋은 정보 얻기
 
-- [리눅스 교재](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#%EB%A6%AC%EB%88%85%EC%8A%A4-%EA%B5%90%EC%9E%AC)
+- 리눅스 교재
 
-- [Funny CLI ](https://github.com/ccss17/ProgrammerBase/tree/master/05-Day5#funny-cli)
+- Funny CLI
 
 - 조금은 철학적인 이야기 : [기술적 특이점](https://github.com/ccss17/ProgrammerBase/blob/master/future.md)
 
 ## Content List
+
+위에서 **Day1** 부터 **Day5** 까지 컨텐츠들을 5일 동안 학습할 수 있도록 순서를 적절히 배치해놓았는데, 해당 내용의 일관된 내용을 살펴보고 싶으시다면 다음의 리스트를 보시면 됩니다.
 
 - **[Docker](docker.md)**
 
@@ -184,20 +180,4 @@
 
 # Rule
 
-GBC 참여자들은 **PASS** 와 **FAIL** 에 관련된 내용이니 다음의 룰을 꼭 확인해주세요. 
-
-- **PASS** 기준(작성중)
-
-  - 과제 
-
-    - **과제가 좀 빡센거 압니다. 하지만 무리해서 하진 마세요. 뭔가 노력한 흔적이 보이면 다 PASS 니까. 건강이 최곱니다. 밤새지 마세요. 정말 뭔가 이 친구가 일말의 노력이라도 했구나 하면 FAIL 절대 안 받습니다. 건강 잃어버리면 실력 좋아지는거 무의미합니다. 하다가 너무 어렵거나 시간이 너무 부족하다 싶으면 포기하시고 하는데까지해서 마무리하세요. 단 이건 누가봐도 아무런 노력도 안하고 성의도 없고 정말 최악의 최악이다, 내가 PASS 기준을 수월하게 해준 것을 이용해서 아무것도 안하고 PASS 받으려 한다라는 느낌이 확 들면 FAIL 을 줄 수밖에 없는 것이에오..**
-
-  - 지각과 결석 
-
-  - 발표 
-
-- 발표자 랜덤 선정 
-
-- 지각/결석 규칙(작성중)
-
-  - 코로나 때문에 화상회의로 할건데 어떠케 할까
+GBC 참여자들은 **PASS** 와 **FAIL** 에 관련된 내용이니 [rule.md](rule.md) 를 꼭 확인해주세요. 
