@@ -32,7 +32,7 @@
 
 가상화 기술은 기존의 **VMWare**, **VirtualBox** 로 많이 체험해보았을 거라고 예상됩니다. 안 해보셨어도 상관없습니다. 이제부터 이러한 기존 가상화 기술이 아닌 최신 가상화 기술을 배울 것입니다. 이 기존 가상화 기술은 운영체제(OS) 자체를 가상화시켜서 사용할 수 있게 해주었습니다. 가령 **Windows** 나 **MacOS** 에서 **Ubuntu Linux** 를 사용할 수 있게 해준 것입니다.
 
-> 물론 윈도우에서 WSL 로 리눅스를 사용할 수 있지만, **Docker** 를 사용하면서 익히는 것을 목적으로 두었기 때문에 WSL 은 사용하지 않겠습니다. 그리고 실질적으로 **MacOS** 에서도 리눅스의 실습을 다 할 수 있지만 마찬가지로 **Docker** 를 사용하는 법을 배운다는 의미에서 **MacOS** 에서도 **Docker** 를 사용해주세요. 
+M 물론 윈도우에서 WSL 로 리눅스를 사용할 수 있지만, **Docker** 를 사용하면서 익히는 것을 목적으로 두었기 때문에 WSL 은 사용하지 않겠습니다. 그리고 실질적으로 **MacOS** 에서도 리눅스의 실습을 다 할 수 있지만 마찬가지로 **Docker** 를 사용하는 법을 배운다는 의미에서 **MacOS** 에서도 **Docker** 를 사용해주세요. 
 
 <div align="center">
 <img src="https://images.idgesg.net/images/article/2017/06/virtualmachines-vs-containers-100727624-large.jpg" width="70%" height="auto">
@@ -86,7 +86,11 @@
 
     - 그리고 윈도우 제품키를 구매한 에듀케이션 제품키로 변경하면 됩니다.
 
+    **히즈넷에서 윈도우 업그레이드하는 방법이 좀 바뀌었음! 업데이트 필요**
+
 2. [이 링크](https://hub.docker.com/editions/community/docker-ce-desktop-windows) 에서 도커 설치파일을 다운로드 받아서 설치하세요.
+
+3. **Hyper-V enable &rarr; [BIOS] Intel - CPU Virtualization enable / AMD - SVM mode enable**
 
 ### MacOS 도커 설치
 
