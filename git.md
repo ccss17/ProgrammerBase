@@ -330,6 +330,8 @@ $ git remote add origin https://github.com/<USER>/git-test
 
   - `git remote rename <NAME> <NEW>` 으로 원격 레포지토리의 별칭을 수정할 수 있다.
 
+> `git remote add` 가 `git add` 와 비슷하지만 스테이징하는 게 아니라 다만, 원격 레포지토리 URL 을 등록하는 것일 뿐입니다. `git remote add` 는 스테이징과 하등 상관없습니다.
+
 그러고 나면 단순히 다음의 `git push` 명령어를 입력하는 것으로 레포지토리를 공유할 수 있습니다.
 
 ##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
