@@ -32,6 +32,8 @@
 
 ---
 
+## **<div align="center"> ☀️ ️여기서부터 Day3 내용입니다. ☀️ </div>**
+
 # tmux
 
 `vim` 을 사용하다보면 다른 터미널 작업을 해야 할 때가 생깁니다. 물론 `:!<CMD>` 나 `:shell` 로 `vim` 내부에서 명령어를 실행할 수 있지만 솔직히 너무 불편하죠. 이런 경우를 위하여 `tmux` 로 터미널 하나를 여러 터미널로 분리할 수 있습니다. 
@@ -100,6 +102,10 @@ $ exit
   > **GIF** 를 클릭하면 원본화질로 볼 수 있는 새 창이 열려요.
 
   - 위 예시에서는 화면을 `2` 개만 생성해봤지만 더 많이 생성할 수도 있습니다. 
+
+## **<div align="center"> 🌜 ️여기까지 Day3 내용입니다. 수고하셨습니다. 🌜️ </div>**
+
+## **<div align="center"> ☀️ ️여기서부터 Day4 내용입니다. ☀️ </div>**
 
 # 더 빨라진 tmux
 
@@ -252,3 +258,5 @@ bind-key C-a send-prefix
   다음과 같이 터미널 단축키 <kbd>Alt</kbd> 를 계속 누른 채로 <kbd>&rarr;</kbd>, <kbd>&larr;</kbd>, <kbd>&uarr;</kbd>, <kbd>&darr;</kbd> 을 눌러서 터미널 크기를 너무나도 쉽게 조절해보세요. 
 
   ![mpiJ2Gh3hi](https://user-images.githubusercontent.com/16812446/81962685-06452900-964f-11ea-8da0-e7363eb2dd4a.gif)
+
+## **<div align="center"> 🌜 ️여기까지 Day4 내용입니다. 수고하셨습니다. 🌜️ </div>**

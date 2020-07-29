@@ -402,6 +402,8 @@ very important message
 
 ## **<div align="center"> 🌜 ️여기까지 Day2 내용입니다. 수고하셨습니다. 🌜️ </div>**
 
+## **<div align="center"> ☀️ ️여기서부터 Day4 내용입니다. ☀️ </div>**
+
 # 더 빨라진 git
 
 `git` 은 지원하는 지능이 하도 많다보니 내부적으로 `alias` 를 지원합니다. 가령 `git commit -m` 이라는 명령어를 매번 입력하기가 너무 귀찮아서 견딜 수가 없으니까 다음 명령어를 입력하여 `alias` 를 지정할 수 있습니다. 
@@ -542,6 +544,10 @@ $ bat test.txt
 이러한 `git` 레포지토리 관리 패턴은 코딩을 할 때마다 반복되는데, 이 패턴을 개발자로 살아가면서 적게 잡아서 **10000** 번 반복한다고 한다면, 여러분은 **10000 * 213 = 2백 13만** 번 칠 것을 **10000 * 79 = 79만** 만쳤습니다. 
 
 즉, 똑같은 일을 하는데 **134만** 번의 타자를 안 친것입니다!
+
+## **<div align="center"> 🌜 ️여기까지 Day4 내용입니다. 수고하셨습니다. 🌜️ </div>**
+
+## **<div align="center"> ☀️ ️여기서부터 Day5 내용입니다. ☀️ </div>**
 
 # Git 과 Github 못다한 이야기
 
@@ -880,7 +886,6 @@ user.github.io 은 **Github** 이 제공하는 개인 블로그 플랫폼입니�
 
 - [도커 가이드](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html) : https://github.com/subicura/subicura.github.io 
 
-
 ## hguapp.ghoster.cc/git/
 
 hguapp.ghoster.cc/git/
@@ -1028,3 +1033,5 @@ $ g psom
 그러면 **Pull Request** 의 제목과 설명을 할 수 있는 텍스트 필드가 나타나는데, 지금은 역시 그냥 텍스트 필드 우측 하단에 있는 <kbd>Create pull request</kbd> 버튼을 한번 더 눌러주세요. 
 
 그러면 이제 정말 **Pull Request** 가 완료되었습니다. 이제 원작자가 여러분이 멋지게 고친 레포지토리를 비교하고 괜찮다고 판단하여 **pull** 을 하기만을 기다리면 됩니다. 
+
+## **<div align="center"> 🌜 ️여기까지 Day5 내용입니다. 수고하셨습니다. 🌜️ </div>**

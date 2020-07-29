@@ -44,6 +44,8 @@
 
 ---
 
+## **<div align="center"> ☀️ ️여기서부터 Day4 내용입니다. ☀️ </div>**
+
 # CLI
 
 **CLI** 란 **Command Line Interface** 의 줄임말로써 말 그대로 터미널 인터페이스만 제공하는 프로그램을 뜻합니다. 반대로 **GUI**, 즉 **Graphic User Interface** 에는 우리가 이미 익숙해져 있습니다. 카카오톡, 배틀그라운드, 한컴, 파워포인트, `VSCode` 같은 게 전부 다 **GUI** 이기 때문이죠. 
@@ -524,6 +526,10 @@ $ fzf
 
   > `q` 명령어는 `alias` 파트에서 `alias q=exit` 라고 정의된 것을 확인했었습니다.
 
+## **<div align="center"> 🌜 ️여기까지 Day4 내용입니다. 수고하셨습니다. 🌜️ </div>**
+
+## **<div align="center"> ☀️ ️여기서부터 Day5 내용입니다. ☀️ </div>**
+
 # Funny CLI 
 
 이제 여기까지 달려온 여러분들을 위해 머리를 좀 식히자는 의미에서 **퍼니 CLI**, 즉 실용성이 없이 순전히 재미를 목적으로 만들어진 **CLI** 들을 알아보겠습니다. 
@@ -692,3 +698,5 @@ $ python3 main.py test/3030.txt
 > 출처 : http://nemonemologic.com/play_logic.php?quid=10170&page=0&size=15
 
 의 데이터를 담고 있는데 이것을 자동으로 풀기 위하여 `python3 main.py test/1515.txt` 를 입력하면 되는 것입니다. 
+
+## **<div align="center"> 🌜 ️여기까지 Day5 내용입니다. 수고하셨습니다. 🌜️ </div>**

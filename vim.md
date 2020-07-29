@@ -82,6 +82,8 @@ GBC 첫번째 과정 **Programmer Base** 의 3일차 내용입니다.
 
 ---
 
+## **<div align="center"> ☀️ ️여기서부터 Day3 내용입니다. ☀️ </div>**
+
 # vim
 
 ## 텍스트 편집에서 단축키 개수와 입력 횟수의 관계
@@ -678,6 +680,10 @@ int main(int argc, char** argv)
 |:---:|:---:|:---:|
 | 코드 포맷팅 |  | `=G` | 
 
+## **<div align="center"> 🌜 ️여기까지 Day3 내용입니다. 수고하셨습니다. 🌜️ </div>**
+
+## **<div align="center"> ☀️ ️여기서부터 Day4 내용입니다. ☀️ </div>**
+
 # 더 빨라진 vim
 
 `vim` 은 수많은 명령어를 제공하고 그 명령어로 사용자가 함수도 제작할 수 있기 때문에 `vim` 에는 사용자들이 만든 수많은 플러그인들이 존재합니다. 다음의 링크에서 가장 인기있는 커스터마이징 `vim` 을 찾아볼 수 있습니다. 
@@ -906,3 +912,5 @@ nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
   ![render1589727634891](https://user-images.githubusercontent.com/16812446/82152210-ae026700-989a-11ea-877e-cb592dca5a46.gif)
 
   그러고나서 <kbd>Esc</kbd> 를 연타하여 멀티 커서를 다 없애고 <kbd>Ctrl</kbd>+<kbd>s</kbd>, <kbd>Ctrl</kbd>+<kbd>q</kbd> 로 저장 후 종료합니다. 
+
+## **<div align="center"> 🌜 ️여기까지 Day4 내용입니다. 수고하셨습니다. 🌜️ </div>**
