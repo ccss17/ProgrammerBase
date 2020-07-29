@@ -4,7 +4,11 @@ GBC 첫번째 과정 **Programmer Base** 의 1일차 내용입니다.
 
 ---
 
-**다음 내용을 학습하세요.**
+<div align="center">
+
+# **다음 내용을 학습하세요.**
+
+</div>
 
 # Docker
 

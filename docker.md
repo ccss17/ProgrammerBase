@@ -32,7 +32,7 @@
 
 가상화 기술은 기존의 **VMWare**, **VirtualBox** 로 많이 체험해보았을 거라고 예상됩니다. 안 해보셨어도 상관없습니다. 이제부터 이러한 기존 가상화 기술이 아닌 최신 가상화 기술을 배울 것입니다. 이 기존 가상화 기술은 운영체제(OS) 자체를 가상화시켜서 사용할 수 있게 해주었습니다. 가령 **Windows** 나 **MacOS** 에서 **Ubuntu Linux** 를 사용할 수 있게 해준 것입니다.
 
-M 물론 윈도우에서 WSL 로 리눅스를 사용할 수 있지만, **Docker** 를 사용하면서 익히는 것을 목적으로 두었기 때문에 WSL 은 사용하지 않겠습니다. 그리고 실질적으로 **MacOS** 에서도 리눅스의 실습을 다 할 수 있지만 마찬가지로 **Docker** 를 사용하는 법을 배운다는 의미에서 **MacOS** 에서도 **Docker** 를 사용해주세요. 
+물론 윈도우에서 WSL 로 리눅스를 사용할 수 있지만, **Docker** 를 사용하면서 익히는 것을 목적으로 두었기 때문에 WSL 은 사용하지 않겠습니다. 그리고 실질적으로 **MacOS** 에서도 리눅스의 실습을 다 할 수 있지만 마찬가지로 **Docker** 를 사용하는 법을 배운다는 의미에서 **MacOS** 에서도 **Docker** 를 사용해주세요. 
 
 <div align="center">
 <img src="https://images.idgesg.net/images/article/2017/06/virtualmachines-vs-containers-100727624-large.jpg" width="70%" height="auto">
@@ -51,6 +51,12 @@ M 물론 윈도우에서 WSL 로 리눅스를 사용할 수 있지만, **Docker*
 </div>
 
 쉽게 말해서 이미지는 청동기 거푸집이고 컨테이너는 그 거푸집으로 제작되는 청동기 칼입니다. 다시 말해 이미지는 변하지 않는 모델이고 컨테이너는 그 이미지를 실제로 실행시킨 인스턴스입니다. 그래서 이미지를 여러번 실행해서 여러 컨테이너를 만들 수 있습니다. 또 실행된 컨테이너를 중지하여 삭제할 수도 있지만 이미지는 여전히 변하지 않기 때문에 다시 이미지로부터 컨테이너를 실행할 수 있습니다. 
+
+> 청동기 거푸집은 ... 외국 학생은 이해 못함.
+
+> 도커 레이어를 설명해야함.
+
+> 도커가 시스템 리소스를 딱 필요한 만큼만 쓰는 설명해주면 좋음.
 
 > 도커 이미지는 [도커 허브](https://hub.docker.com/)에 등록해서 다른 사람이 사용하게 할 수 있습니다. 도커 허브에는 무수히 많은 이미지들이 있습니다. **Java**, **Python**, `gcc`, **MySQL**, **postgres**, **redis**, **Ubuntu Linux**, **NodeJS**, **Nginx**, **Kali Linux** 등등 기업과 커뮤니티들이 앞다투어 자신의 프로그램을 도커 이미지로 만들고 있습니다. 
 
@@ -91,7 +97,7 @@ M 물론 윈도우에서 WSL 로 리눅스를 사용할 수 있지만, **Docker*
 2. [이 링크](https://hub.docker.com/editions/community/docker-ce-desktop-windows) 에서 도커 설치파일을 다운로드 받아서 설치하세요.
 
 3. **Hyper-V enable &rarr; [BIOS] Intel - CPU Virtualization enable / AMD - SVM mode enable**
-
+y(w∗⋅x)≥γ
 ### MacOS 도커 설치
 
 1. 맥은 단순히 [이 링크](https://hub.docker.com/editions/community/docker-ce-desktop-mac) 에서 도커 설치파일을 다운로드 받아 설치하면 됩니다.
