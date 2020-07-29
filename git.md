@@ -80,6 +80,8 @@
 
 ---
 
+## **<div align="center"> ☀️ ️여기서부터 Day2 내용입니다. ☀️ </div>**
+
 # Git
 
 코딩을 막 배우기 시작하면 종종 카톡이나 메일에 소스코드를 백업 하곤 합니다. 하지만 이 방식에는 몇 가지 단점이 있습니다. 먼저 소스코드의 저장장소가 매우 산발적이고 일관성이 없어서 매번 찾기가 힘듭니다. 그리고 소스코드의 변화과정을 제대로 이해하기 힘듭니다. 만약 백업하는 것도 잊어버리고 백업을 하지 않았다가 실수로 소스코드를 삭제해버린다면 복구할 수 있는 방법이 전혀 없습니다.
@@ -397,6 +399,8 @@ very important message
 `git init` 으로 디렉토리가 `git` 이 관리하는 레포지토리가 될 때 `git` 은 자동적으로 현재 브랜치를 `master` 브랜치로 만들기 때문에, `git pull origin master` 라고 하면 **`origin` 이라는 원격 레포지토리의 내용을 가져와서 `master` 브랜치로 병합해라**는 뜻이 되는 것입니다.
 
 그래서 방금 말했던 새로운 브랜치에서 시험중이었던 기능이 충분히 검증이 되면 `master` 브랜치로 병합을 하게 되는 것입니다. 
+
+## **<div align="center"> 🌜 ️여기까지 Day2 내용입니다. 수고하셨습니다. 🌜️ </div>**
 
 # 더 빨라진 git
 
@@ -953,15 +957,21 @@ $ g cl https://gist.github.com/ccss17/ff6944df7e8f3c9ab518629915857d85
 <img src="https://user-images.githubusercontent.com/16812446/82677048-5ee57900-9c82-11ea-99f5-3567455581bc.png" width="70%" height="auto">
 </div>
 
-레포지토리가 자신의 소유의 레포지토리로 복제됩니다. 여기에서는 **hgu-student** 라는 아이디를 갖고 있는 학생이 레포지토리를 **fork** 해왔습니다. **fork** 된 레포지토리의 **URL** 도 원래의 **URL** 인 https://github.com/ccss17/pull-request-me 에서 https://github.com/hgu-student/pull-request-me 로 바뀌었습니다. 이제 이것을 로컬 컴퓨터로 **clone** 합니다. 지금까지 배웠던 **Git** 의 명령어를 다음과 같이 사용하면 됩니다. 
-
-##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+레포지토리가 자신의 소유의 레포지토리로 복제됩니다. 여기에서는 **hgu-student** 라는 아이디를 갖고 있는 학생이 레포지토리를 **fork** 해왔습니다. **fork** 된 레포지토리의 **URL** 도 원래의 **URL** 인 https://github.com/ccss17/pull-request-me 에서 https://github.com/hgu-student/pull-request-me 로 바뀌었습니다. 이제 이것을 로컬 컴퓨터로 **clone** 합니다. 지금까지 배웠던 **Git** 의 명령어를 다음과 같이 사용하면 됩니다. **hgu-student** 라는 **Github** 아이디를 갖고 있는 학생이라면 다음과 같은 명령어를 입력하면 됩니다.
 
 ```shell
 $ g cl https://github.com/hgu-student/pull-request-me
 ```
 
-도커 컨테이너에서 해도 되고 로컬 컴퓨터에서 **VSCode** 로 해도 됩니다. 그리고 사실 **당장 실습하고 싶지 않은 분들은 안하셔도 됩니다**. 
+이제 각자 **fork** 한 자신의 레포지토리를 다음 명령어를 입력해서 **clone** 해주세요.
+
+##### **<div align="center"> ⬇ EXECUTE! ⬇ </div>**
+
+```shell
+$ g cl https://github.com/<USER>/pull-request-me
+```
+
+도커 컨테이너에서 해도 되고 로컬 컴퓨터에서 **VSCode** 로 해도 됩니다.
 
 ### 2. 편집하고 push 하기
 

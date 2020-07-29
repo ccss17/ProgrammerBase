@@ -122,6 +122,8 @@
 
 ---
 
+## **<div align="center"> ☀️ ️여기서부터 Day2 내용입니다. ☀️ </div>**
+
 # VSCode
 
 여기에서는 **VSCode** 에 대하여 알아보겠습니다. 도커 컨테이너가 아니라 로컬에서 실습하면 됩니다. 
@@ -380,6 +382,8 @@ git clone https://github.com/<USER>/git-test2
   ![v70ylfP1Ld](https://user-images.githubusercontent.com/16812446/82409239-44f03e80-9aa8-11ea-8b91-12df0d825110.gif)
 
 > 여러번 누르면 여러번 복제됩니다.
+
+## **<div align="center"> 🌜 ️여기까지 Day2 내용입니다. 수고하셨습니다. 🌜️ </div>**
 
 # VSCode 업그레이드 
 

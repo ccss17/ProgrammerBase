@@ -26,6 +26,8 @@
 
 ---
 
+## **<div align="center"> ☀️ ️여기서부터 Day2 내용입니다. ☀️ </div>**
+
 # Markdown 
 
 **Markdown** 은 [여러가지 형식으로 텍스트를 작성할 수 있게 해주는 마크업 언어](https://en.wikipedia.org/wiki/Markdown)입니다. **Markdown** 파일은 확장자 `.md` 를 갖고 있습니다. **Markdown** 을 알아야 하는 주된 이유 중 하나는 레포지토리를 **Github** 에 공유할 때 프로그램을 효과적으로 설명하기 위해서입니다. 
@@ -344,3 +346,5 @@ print s
 그리고 어떤 디렉토리로 들어가면 그 디렉토리의 최상위 경로에 있는 `README.md` 를 랜더링해서 보여줍니다. 여러분은 지금 `markdown.md` 파일이 랜더링된 것을 읽고 있습니다.
 
 지금까지 **Markdown** 문법을 공부한 것은 이 `readme.md` 을 스스로 작성할 수 있는 능력을 기르기 위함입니다. 
+
+## **<div align="center"> 🌜 ️여기까지 Day2 내용입니다. 수고하셨습니다. 🌜️ </div>**
