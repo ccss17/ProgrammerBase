@@ -160,7 +160,7 @@ $ git init
 
 여기에서 **git init** 만 입력하면 **Git: Initialize Repository** 가 검색되어 나옵니다. 그것에 커서가 포커싱되었다면 그냥 <kbd>Enter</kbd> 쳐주세요. 그러면 **VSCode** 가 알아서 디렉토리를 `git` 레포지토리로 초기화합니다.
 
-- **<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd> : VSCode 에서 명령 팔레트를 연다.**
+- **<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd> or <kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>p</kbd> : VSCode 에서 명령 팔레트를 연다.**
 
   - 명령 팔레트는 **VSCode** 의 모든 기능을 실행할 수 있는 메뉴판이다.
 
@@ -172,9 +172,9 @@ $ git init
 
 **VSCode** 에서는 <kbd>Ctrl</kbd>+<kbd>n</kbd> 으로 새 파일을 만들 수 있고 <kbd>Ctrl</kbd>+<kbd>s</kbd> 로 파일을 저장할 수 있습니다. 
 
-- **<kbd>Ctrl</kbd>+<kbd>n</kbd> : **VSCode** 에서 새 파일을 만든다.**
+- **<kbd>Ctrl</kbd>+<kbd>n</kbd> or <kbd>command</kbd>+<kbd>n</kbd> : **VSCode** 에서 새 파일을 만든다.**
 
-- **<kbd>Ctrl</kbd>+<kbd>s</kbd> : **VSCode** 에서 파일을 저장한다.**
+- **<kbd>Ctrl</kbd>+<kbd>s</kbd> or <kbd>command</kbd>+<kbd>s</kbd> : **VSCode** 에서 파일을 저장한다.**
 
 새 파일을 만들고 `test.txt` 로 저장해보세요.
 
@@ -273,7 +273,7 @@ git clone https://github.com/<USER>/git-test2
 
 |기능|단축키|
 |:---:|:---:|
-|파일 열기|<kbd>Ctrl</kbd>+<kbd>p</kbd>|
+|파일 열기|<kbd>Ctrl</kbd>+<kbd>p</kbd> + <kbd>command</kbd>+ <kbd>p</kbd>|
 
 **VSCode** 에서 파일을 열 때 왼쪽 **Explorer** 패널에서 파일을 클릭하여 열 수도 있지만 <kbd>Ctrl</kbd>+<kbd>p</kbd> 를 누르고 파일 이름을 입력하면 매우 빠르게 파일을 열 수 있습니다.
 
@@ -290,7 +290,7 @@ git clone https://github.com/<USER>/git-test2
 
 |기능|단축키|
 |:---:|:---:|
-|파일 닫기|<kbd>Ctrl</kbd>+<kbd>w</kbd>|
+|파일 닫기|<kbd>Ctrl</kbd>+<kbd>w</kbd> or <kbd>command</kbd>+<kbd>w</kbd>|
 
 열린 파일의 <kbd>X</kbd> 버튼을 눌러서 파일을 닫을 수도 있지만 <kbd>Ctrl</kbd>+<kbd>w</kbd> 를 누르면 매우 빠르게 닫을 수 있습니다. 
 
@@ -321,8 +321,8 @@ git clone https://github.com/<USER>/git-test2
 
 |기능|단축키|
 |:---:|:---:|
-|화면 오른쪽으로 분할하여 옮기기|<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&rarr;</kbd>|
-|화면 왼쪽으로 분할하여 옮기기|<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&larr;</kbd>|
+|화면 오른쪽으로 분할하여 옮기기|<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&rarr;</kbd> or <kbd>command</kbd>+<kbd>k</kbd>+<kbd>&rarr;</kbd>|
+|화면 왼쪽으로 분할하여 옮기기|<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>&larr;</kbd> or <kbd>command</kbd>+<kbd>k</kbd>+<kbd>&larr;</kbd>|
 
 코딩을 하다보면 두 파일을 같이 보고싶을 때가 있습니다. 그럴 때 마우스로 화면을 오른쪽이나 왼쪽으로 이동시키면 **VSCode** 가 자동으로 화면을 분할해주지면 위 단축키를 이용하면 훨씬 더 빠르게 화면을 분할하여 옮길 수 있습니다.
 
@@ -336,7 +336,7 @@ git clone https://github.com/<USER>/git-test2
 
 |기능|단축키|
 |:---:|:---:|
-|오른쪽 화면 포커싱|<kbd>Ctrl</kbd>+<kbd>1</kbd>|
+|오른쪽 화면 포커싱|<kbd>Ctrl</kbd>+<kbd>1</kbd> |
 |왼쪽 화면 포커싱|<kbd>Ctrl</kbd>+<kbd>2</kbd>|
 
 화면을 분할했을 때 왼쪽 화면으로 커서를 두고 싶을 때 <kbd>Alt</kbd>+<kbd>1</kbd> 로는 되지 않습니다. <kbd>Alt</kbd>+<kbd>1</kbd>, <kbd>Alt</kbd>+<kbd>2</kbd>, <kbd>Alt</kbd>+<kbd>3</kbd> 은 해당 화면에서의 열린 탭의 순서이기 때문입니다. 
@@ -355,7 +355,7 @@ git clone https://github.com/<USER>/git-test2
 
 |기능|단축키|
 |:---:|:---:|
-|화면 레이아웃 변경|<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd>|
+|화면 레이아웃 변경|<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd> or <kbd>option</kbd>+<kbd>command</kbd>+<kbd>0</kbd>|
 
 코딩을 하다보면 화면을 수평으로 분할하는 것이 아니라 수직으로 분할하는 것이 더 편할 때도 있습니다. 그럴때 이 단축키로 화면 레이아웃을 변경하면 됩니다. <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>0</kbd> 를 한번 더 누르면 레이아웃이 원래대로 되돌아옵니다.
 

@@ -24,6 +24,8 @@
   
 ---
 
+## **<div align="center"> ☀️ ️여기서부터 Day1 내용입니다. ☀️ </div>**
+
 # Docker
 
 > 참고/출처 : https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html
@@ -289,3 +291,5 @@ $ docker rmi ccss17/ubuntu
 | **`docker start <OPTIONS> <CONTAINER>`** | 종료된 컨테이너를 다시 실행한다. |
 | **`docker rm <OPTIONS> <CONTAINER>`** | 컨테이너를 삭제한다.|
 | **`docker rmi <OPTIONS> <CONTAINER>`** | 이미지를 삭제한다.|
+
+## **<div align="center"> 🌜 ️여기까지 Day1 내용입니다. 수고하셨습니다. 🌜️ </div>**
