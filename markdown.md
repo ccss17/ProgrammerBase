@@ -44,9 +44,9 @@ https://markdown-it.github.io/
 
 ## **VSCode** 의 **Markdown** 미리보기
 
-|기능|단축키|
-|:---:|:---:|
-|**Markdown** 미리보기|<kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>v</kbd>|
+|기능|단축키|**MacOS**  단축키|
+|:---:|:---:|:---:|
+|**Markdown** 미리보기|<kbd>Ctrl</kbd>+<kbd>k</kbd>, <kbd>v</kbd>| <kbd>control</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd>|
 
 먼저 **VSCode** 를 열어서 `test.md` 파일을 하나 만들고 다음 내용을 입력하고 저장해봅시다. 
 
