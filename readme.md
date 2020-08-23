@@ -1,3 +1,7 @@
+# This reposity has been abandoned. Please see https://ccss17.github.io/ProgrammerBase/readme/
+
+# 이 레포지토리는 더 이상 관리되지 않습니다. https://ccss17.github.io/ProgrammerBase/readme/ 에 방문해주세요.
+
 # Programmer Base
 
 컴퓨터 공학자에게 기반 지식이 되는 **수학의 역사**, **괴델의 불완전성 정리**, **튜링기계**, **기술적 특이점** 등과 프로그래머에게 유용한 툴(**Docker**, **Git**, **VSCode**, **vim**, **tmux**, **zsh** 등)과 그것의 생산성을 최대화할 수 있는 여러가지 팁들을 5일 동안 가이드해주는 레포지토리입니다.
