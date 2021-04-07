@@ -1,7 +1,7 @@
 
-# This reposity has been abandoned. Please see https://ccss17.github.io/ProgrammerBase/readme/
+# This reposity has been abandoned. Please see https://ccss17.github.io/ProgrammerBase
 
-# 이 레포지토리는 더 이상 관리되지 않습니다. https://ccss17.github.io/ProgrammerBase/readme/ 에 방문해주세요.
+# 이 레포지토리는 더 이상 관리되지 않습니다. https://ccss17.github.io/ProgrammerBase 에 방문해주세요.
 
 # 조금은 철학적인 이야기 - 기술적 특이점
 
